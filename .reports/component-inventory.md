@@ -9,22 +9,34 @@ scratchpad and scanned with
 
 ## Totals — how much app is left
 
+Re-surveyed after the first porting pass (`c89f9f9` — song model, history view,
+song and lyrics pages, dialogs).
+
 | | upstream | `ruby` branch |
 |---|---:|---:|
-| widget rows (source + `.ui`) | 195 | 3 |
-| distinct widget types | 51 | 3 |
-| distinct CSS classes | 29 | 0 |
-| distinct signals connected | 47 | 1 |
-| GAction names | 16 | 0 |
+| widget rows (source + `.ui`) | 195 | ~95 |
+| distinct widget types | 51 | 42 |
+| distinct CSS classes | 29 | 13 |
+| distinct signals connected | 47 | 22 |
+| GAction names | 16 | 10 |
 | `.ui` templates / standalone objects | 17 + 1 | 0 (house style builds in code) |
-| translated messages (`po/mousai.pot`) | 132 | 0 |
+| translated messages (`po/mousai.pot`) | 132 | 0 (no `po/` yet) |
 | locales (`po/LINGUAS`) | 48 | 0 |
 
-`lib/` currently holds `lib/mousai.rb` and `lib/mousai/application.rb` — a
-placeholder `Adwaita::ApplicationWindow` + `ToolbarView` + `HeaderBar` +
-`StatusPage` saying the port has not been written. **Every component below is
-absent**; the only existing file is the application shell, and it carries none
-of upstream's actions, accelerators or views.
+`lib/` now holds 28 files. The history half of the app is ported — window
+shell, history view with search/selection/menus/empty states/undo toast, song
+tile, album cover, song page, lyrics page, information row, external link
+tile, the preferences/shortcuts/about dialogs, the stylesheet, the settings
+wrapper and the song model/list/filter/sorter plus database, migrations, uid,
+i18n, date_time and utils.
+
+**The whole recognition half is still absent**, and with it the playback
+layer: no `PlaybackButton`, `SongBar`, `RecognizerView`, `Waveform`,
+`RecognizerStatus`, `ProgressIcon`, `RecognizedPage`, `RecognizedPageTile`,
+`InspectorPage`, none of the three `Adw.AlertDialog` flows, and none of the
+`Player` / `Recognizer` / `Recorder` / provider / `AlbumArt` / `Device`
+support classes. `win.toggle-playback` and `win.toggle-recognize` are not
+installed, so the "Listen" button in the header bar has no action behind it.
 
 ## Component map
 
@@ -33,21 +45,21 @@ the port merges both into one `lib/*.rb`. Ordered as a user meets them.
 
 | # | Upstream file(s) | → port file | Kind | In `lib/`? |
 |---|---|---|---|---|
-| 1 | `src/main.rs`, `src/application.rs` | `lib/mousai/application.rb` | application | placeholder only |
-| 2 | `src/window/mod.rs` + `data/resources/ui/window.ui` | `lib/window.rb` | window | no |
-| 3 | `src/window/history_view.rs` + `ui/history_view.ui` | `lib/history_view.rb` | view | no |
-| 4 | `ui/history_view.ui` (`menu id="menu"`) | part of `lib/history_view.rb` | menu | no |
-| 5 | `ui/history_view.ui` (`menu id="selection_menu"`) | part of `lib/history_view.rb` | menu | no |
-| 6 | `ui/history_view.ui` (`content_empty_page`) | part of `lib/history_view.rb` | empty state | no |
-| 7 | `ui/history_view.ui` (`content_empty_search_result_page`) | part of `lib/history_view.rb` | empty state | no |
-| 8 | `src/window/history_view.rs` (`show_undo_remove_song_toast`) | part of `lib/history_view.rb` | toast | no |
-| 9 | `src/window/song_tile.rs` + `ui/song_tile.ui` | `lib/song_tile.rb` | tile | no |
-| 10 | `src/window/album_cover.rs` + `ui/album_cover.ui` | `lib/album_cover.rb` | widget | no |
+| 1 | `src/main.rs`, `src/application.rs` | `lib/mousai/application.rb` | application | yes (partial — no toggle-playback/recognize accel targets, no db error dialog) |
+| 2 | `src/window/mod.rs` + `data/resources/ui/window.ui` | `lib/window.rb` | window | yes (partial — no SongBar revealer, no RecognizerView stack page, no win.toggle-playback / win.toggle-recognize) |
+| 3 | `src/window/history_view.rs` + `ui/history_view.ui` | `lib/history_view.rb` | view | yes |
+| 4 | `ui/history_view.ui` (`menu id="menu"`) | part of `lib/history_view.rb` | menu | yes |
+| 5 | `ui/history_view.ui` (`menu id="selection_menu"`) | part of `lib/history_view.rb` | menu | yes |
+| 6 | `ui/history_view.ui` (`content_empty_page`) | part of `lib/history_view.rb` | empty state | yes |
+| 7 | `ui/history_view.ui` (`content_empty_search_result_page`) | part of `lib/history_view.rb` | empty state | yes |
+| 8 | `src/window/history_view.rs` (`show_undo_remove_song_toast`) | part of `lib/history_view.rb` | toast | yes |
+| 9 | `src/window/song_tile.rs` + `ui/song_tile.ui` | `lib/song_tile.rb` | tile | yes (partial — PlaybackButton overlay missing) |
+| 10 | `src/window/album_cover.rs` + `ui/album_cover.ui` | `lib/album_cover.rb` | widget | yes (partial — no AlbumArtStore behind it) |
 | 11 | `src/window/playback_button.rs` + `ui/playback_button.ui` | `lib/playback_button.rb` | widget | no |
-| 12 | `src/window/song_page.rs` + `ui/song_page.ui` | `lib/song_page.rb` | page | no |
-| 13 | `src/window/information_row.rs` + `ui/information_row.ui` | `lib/information_row.rb` | row | no |
-| 14 | `src/window/external_link_tile.rs` + `ui/external_link_tile.ui` | `lib/external_link_tile.rb` | tile | no |
-| 15 | `src/window/lyrics_page.rs` + `ui/lyrics_page.ui` | `lib/lyrics_page.rb` | page | no |
+| 12 | `src/window/song_page.rs` + `ui/song_page.ui` | `lib/song_page.rb` | page | yes (partial — PlaybackButton missing) |
+| 13 | `src/window/information_row.rs` + `ui/information_row.ui` | `lib/information_row.rb` | row | yes |
+| 14 | `src/window/external_link_tile.rs` + `ui/external_link_tile.ui` | `lib/external_link_tile.rb` | tile | yes |
+| 15 | `src/window/lyrics_page.rs` + `ui/lyrics_page.ui` | `lib/lyrics_page.rb` | page | yes |
 | 16 | `src/window/song_bar.rs` + `ui/song_bar.ui` | `lib/song_bar.rb` | bar | no |
 | 17 | `src/window/recognizer_view.rs` + `ui/recognizer_view.ui` | `lib/recognizer_view.rb` | view | no |
 | 18 | `src/window/waveform.rs` | `lib/waveform.rb` | custom-drawn widget | no |
@@ -55,15 +67,15 @@ the port merges both into one `lib/*.rb`. Ordered as a user meets them.
 | 20 | `src/window/progress_icon.rs` | `lib/progress_icon.rb` | custom-drawn widget | no |
 | 21 | `src/window/recognized_page.rs` + `ui/recognized_page.ui` | `lib/recognized_page.rb` | page | no |
 | 22 | `src/window/recognized_page_tile.rs` + `ui/recognized_page_tile.ui` | `lib/recognized_page_tile.rb` | tile | no |
-| 23 | `src/preferences_dialog.rs` + `ui/preferences_dialog.ui` | `lib/preferences_dialog.rb` | preferences | no |
-| 24 | `data/resources/ui/shortcuts.ui` | `lib/shortcuts_dialog.rb` | shortcuts | no |
-| 25 | `src/about.rs` | `lib/about_dialog.rb` | about | no |
+| 23 | `src/preferences_dialog.rs` + `ui/preferences_dialog.ui` | `lib/preferences_dialog.rb` | preferences | yes |
+| 24 | `data/resources/ui/shortcuts.ui` | `lib/shortcuts_dialog.rb` | shortcuts | yes |
+| 25 | `src/about.rs` | `lib/about_dialog.rb` | about | yes |
 | 26 | `src/application.rs` (`present_database_error_dialog`) | `lib/database_error_dialog.rb` | error dialog | no |
 | 27 | `src/window/mod.rs` (`present_recognize_error`) | `lib/recognize_error_dialog.rb` | error dialog | no |
 | 28 | `src/window/mod.rs` (`present_recording_saved_message`) | `lib/recording_saved_dialog.rb` | error dialog | no |
 | 29 | `src/inspector_page.rs` + `ui/inspector_page.ui` | `lib/inspector_page.rb` | devel page | no |
-| 30 | `data/resources/style.css` | `lib/style.rb` (inline `Gtk::CssProvider`) | stylesheet | no |
-| 31 | `data/io.github.seadve.Mousai.gschema.xml.in` | `lib/settings.rb` | GSettings | no |
+| 30 | `data/resources/style.css` | `lib/style.rb` (inline `Gtk::CssProvider`) | stylesheet | yes (partial — waveform, recognizedpagetile, show-results-button, activate-song-button, playback-position-scale rules still needed) |
+| 31 | `data/io.github.seadve.Mousai.gschema.xml.in` | `lib/settings.rb` | GSettings | yes |
 | 32 | `po/mousai.pot`, `po/*.po` (48) | `po/` | translations | no |
 
 ### Per-component detail
@@ -385,6 +397,39 @@ set — the port's equivalents are the `lib/*.rb` files in this table.
 | `src/database/{mod,migrations}.rs` | `lib/database.rb`, `lib/migrations.rb` | heed env + migrations |
 | `src/i18n.rs` | `lib/i18n.rb` | `gettext_f` / `ngettext_f` interpolation helpers |
 | `src/utils.rs`, `src/cancelled.rs`, `src/serde_helpers.rs` | `lib/utils.rb`, `lib/cancelled.rb` | misc |
+
+Present on `ruby` today: `song.rb`, `song_list.rb`, `song_filter.rb`,
+`song_sorter.rb`, `settings.rb`, `database.rb`, `migrations.rb`, `uid.rb`,
+`i18n.rb`, `date_time.rb`, `external_link.rb`, `external_links.rb`,
+`utils.rb`, `cancelled.rb`. Absent: `player.rb`, `recognizer.rb`,
+`recorder.rb`, `recording.rb`, `recordings.rb`, `provider.rb`,
+`recognize_error.rb`, `provider_settings.rb`, `aud_d.rb`,
+`aud_d_response.rb`, `mock_provider.rb`, `error_tester_provider.rb`,
+`album_art.rb`, `device.rb`.
+
+## Remaining work, in the order a port should take it
+
+1. `lib/player.rb` + `lib/playback_button.rb` + `lib/album_art.rb` — makes the
+   existing `SongTile` and `SongPage` complete and gives `win.toggle-playback`
+   something to toggle.
+2. `lib/song_bar.rb` — the revealer at the bottom of `lib/window.rb`.
+3. `lib/device.rb`, `lib/recorder.rb`, `lib/recognizer.rb`, the provider tree
+   (`provider.rb`, `recognize_error.rb`, `provider_settings.rb`, `aud_d.rb`,
+   `aud_d_response.rb`, `mock_provider.rb`, `error_tester_provider.rb`),
+   `lib/recording.rb`, `lib/recordings.rb`.
+4. `lib/waveform.rb`, `lib/recognizer_view.rb` — the listening screen, plus
+   `win.toggle-recognize` on the window.
+5. `lib/progress_icon.rb`, `lib/recognizer_status.rb` — the header-bar status.
+6. `lib/recognized_page.rb`, `lib/recognized_page_tile.rb` — the results page.
+7. `lib/recognize_error_dialog.rb`, `lib/recording_saved_dialog.rb`,
+   `lib/database_error_dialog.rb` — the three alert flows.
+8. `lib/inspector_page.rb` — devel-only.
+9. The missing `style.rb` rules, then `po/` (132 messages, 48 locales).
+
+Verify: `lib/window.rb` builds `Adwaita::ApplicationWindow`, which the
+`ruby-gtk` skill lists as unreliable in these bindings. It runs today; if it
+starts failing, the documented fallback is `Gtk::ApplicationWindow` with an
+`Adwaita::ToolbarView` inside.
 
 ## Notes for whoever ports next
 
