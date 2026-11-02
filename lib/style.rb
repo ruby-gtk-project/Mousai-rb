@@ -1,0 +1,191 @@
+# frozen_string_literal: true
+
+require "gtk4"
+
+module Mousai
+  # The app's stylesheet.
+  #
+  # Ported from upstream's data/resources/style.css, which is loaded from the
+  # gresource bundle at startup. The port has no gresource bundle, so the rules
+  # are held here as a string and loaded into the default display with a
+  # `Gtk::CssProvider`.
+  module Style
+    CSS = <<~CSS
+      :root {
+        --tile-hover-oklch: calc(l * 1.08) c h;
+        --tile-active-oklch: calc(l * 0.95) calc(c * 0.95) h;
+      }
+
+      waveform {
+        color: var(--accent-color);
+        transition: 200ms linear color;
+      }
+
+      waveform.red {
+        color: var(--error-color);
+      }
+
+      /* ExternalLinkTile */
+
+      .external-link-tile {
+        transition-property: background;
+      }
+
+      .external-link-tile.applemusic {
+        background: linear-gradient(180deg, #fb5b73 30%, #fa243c 100%);
+        color: white;
+      }
+      .external-link-tile.applemusic:hover {
+        background: linear-gradient(180deg, oklch(from #fb5b73 var(--tile-hover-oklch)) 30%, oklch(from #fa243c var(--tile-hover-oklch)) 100%);
+      }
+      .external-link-tile.applemusic:active {
+        background: linear-gradient(180deg, oklch(from #fb5b73 var(--tile-active-oklch)) 30%, oklch(from #fa243c var(--tile-active-oklch)) 100%);
+      }
+
+      .external-link-tile.audd {
+        background: linear-gradient(180deg, #ee1c52 30%, #c12279 100%);
+        color: white;
+      }
+      .external-link-tile.audd:hover {
+        background: linear-gradient(180deg, oklch(from #ee1c52 var(--tile-hover-oklch)) 30%, oklch(from #c12279 var(--tile-hover-oklch)) 100%);
+      }
+      .external-link-tile.audd:active {
+        background: linear-gradient(180deg, oklch(from #ee1c52 var(--tile-active-oklch)) 30%, oklch(from #c12279 var(--tile-active-oklch)) 100%);
+      }
+
+      .external-link-tile.spotify {
+        background: #1dd05d;
+        color: white;
+      }
+      .external-link-tile.spotify:hover {
+        background: oklch(from #1dd05d var(--tile-hover-oklch));
+      }
+      .external-link-tile.spotify:active {
+        background: oklch(from #1dd05d var(--tile-active-oklch));
+      }
+
+      .external-link-tile.youtube {
+        background: #FF0000;
+        color: white;
+      }
+      .external-link-tile.youtube:hover {
+        background: oklch(from #FF0000 var(--tile-hover-oklch));
+      }
+      .external-link-tile.youtube:active {
+        background: oklch(from #FF0000 var(--tile-active-oklch));
+      }
+
+      /* HistoryView */
+
+      .history-view {
+        padding: 12px;
+      }
+
+      .history-view > child {
+        margin: 9px;
+        padding: 0px;
+      }
+
+      /* LyricsPage */
+
+      .lyrics-label {
+        line-height: 1.8em;
+      }
+
+      /* RecognizedPageTile */
+      /* Note: Must be synced with libadwaita flat button style */
+
+      recognizedpagetile songtile {
+        border-radius: 6px;
+        padding: 6px;
+      }
+
+      recognizedpagetile songtile:hover {
+        background-color: color-mix(in srgb, currentColor 7%, transparent);
+      }
+
+      recognizedpagetile songtile:active {
+        background-color: color-mix(in srgb, currentColor 16%, transparent);
+      }
+
+      /* RecognizerStatus */
+
+      .show-results-button {
+        padding: 5px 8px;
+      }
+
+      .show-results-button > label {
+        padding: 2px 6px;
+
+        color: var(--accent-fg-color);
+        background-color: var(--accent-bg-color);
+        border-radius: 99999px;
+
+        font-feature-settings: "tnum";
+        font-size: 0.8em;
+      }
+
+      /* SongBar */
+
+      .activate-song-button {
+        padding: 6px;
+        padding-right: 12px;
+      }
+
+      .playback-position-scale {
+        padding: 0;
+        min-height: 6px;
+      }
+
+      .playback-position-scale trough,
+      .playback-position-scale highlight {
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+        min-height: 6px;
+        transition: min-height 100ms ease-out;
+      }
+
+      .playback-position-scale:hover trough,
+      .playback-position-scale:hover highlight,
+      .playback-position-scale:active trough,
+      .playback-position-scale:active highlight {
+        min-height: 12px;
+      }
+
+      /* SongTile */
+
+      label.new {
+        padding: 3px 8px;
+
+        color: var(--accent-fg-color);
+        background-color: var(--accent-bg-color);
+        border-radius: 99999px;
+
+        font-weight: bold;
+      }
+    CSS
+
+    module_function
+
+    # Loads the stylesheet into the default display. Called once, from the
+    # application's startup.
+    def load
+      Gdk::Display.default.then do |display|
+        if display
+          Gtk::StyleContext.add_provider_for_display(
+            display,
+            provider,
+            Gtk::StyleProvider::PRIORITY_APPLICATION,
+          )
+        end
+      end
+    end
+
+    def provider
+      @provider ||= Gtk::CssProvider.new.tap do |css|
+        css.load(data: CSS)
+      end
+    end
+  end
+end
