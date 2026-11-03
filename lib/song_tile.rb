@@ -3,6 +3,8 @@
 require "adwaita"
 require_relative "album_cover"
 require_relative "i18n"
+require_relative "playback_button"
+require_relative "player"
 require_relative "song"
 
 module Mousai
@@ -14,16 +16,19 @@ module Mousai
   # selection mode is active, or on hover when the grid asks for that, and a
   # right-click or a long press asks the view to enter selection mode.
   #
-  # Upstream also overlays a playback button here. The port has no player yet —
-  # see lib/player.rb in the round's remaining work — so the tile carries no
-  # playback button rather than an inert one.
+  # A playback button is overlaid on the cover for a song that has a playback
+  # link, showing the player's state while that song is the active one, and the
+  # `song-tile.toggle-playback` action puts the song on the player or pauses it
+  # again.
   class SongTile
     NORMAL_ALBUM_COVER_PIXEL_SIZE = 180
     NARROW_ALBUM_COVER_PIXEL_SIZE = 120
 
     attr_reader :song, :adaptive_mode
 
-    def initialize(shows_select_button_on_hover: false)
+    def initialize(player:, album_art_store:, shows_select_button_on_hover: false)
+      @player = player
+      @album_art_store = album_art_store
       @shows_select_button_on_hover = shows_select_button_on_hover
       @selection_mode_active = false
       @selected = false
@@ -45,6 +50,7 @@ module Mousai
           cover_overlay.tap do |o|
             o.child = album_cover.build
             o.add_overlay(new_label)
+            o.add_overlay(playback_button.build)
           end
 
           labels_box.tap do |b|
@@ -60,6 +66,10 @@ module Mousai
             button.signal_connect("toggled") { on_select_button_toggled }
           end
         end
+
+        root.insert_action_group("song-tile", action_group)
+
+        @player.on_state_changed { update_playback_ui }
 
         root.add_controller(motion_controller)
         root.add_controller(secondary_click_gesture)
@@ -94,6 +104,7 @@ module Mousai
         update_select_button_tooltip_text
         update_select_button_visibility
         update_album_cover_size
+        update_playback_ui
       end
     end
 
@@ -239,6 +250,30 @@ module Mousai
       end
     end
 
+    def playback_button
+      @playback_button ||= PlaybackButton.new.tap do |button|
+        button.root.halign = :end
+        button.root.valign = :end
+        button.root.margin_end = 12
+        button.root.margin_bottom = 12
+        button.root.action_name = "song-tile.toggle-playback"
+        button.root.add_css_class("osd")
+        button.root.add_css_class("circular")
+      end
+    end
+
+    def action_group
+      @action_group ||= Gio::SimpleActionGroup.new.tap do |group|
+        group.add_action(toggle_playback_action)
+      end
+    end
+
+    def toggle_playback_action
+      @toggle_playback_action ||= Gio::SimpleAction.new("toggle-playback").tap do |action|
+        action.signal_connect("activate") { toggle_playback }
+      end
+    end
+
     def motion_controller = @motion_controller ||= Gtk::EventControllerMotion.new
 
     def secondary_click_gesture
@@ -275,9 +310,66 @@ module Mousai
         title_label.label = @song&.title.to_s
         artist_label.label = @song&.artist.to_s
         new_label.visible = @song&.newly_heard? == true
-        # The album art link is only a link until there is a service to fetch
-        # it with, so the cover shows its placeholder.
+        show_album_art
+        update_playback_ui
+      end
+
+      # Upstream's album cover takes the song and downloads its art itself; the
+      # port's cover takes a texture, so the download is asked for here and the
+      # answer is dropped when the tile has been recycled onto another song.
+      def show_album_art
         album_cover.paintable = nil
+
+        @song&.album_art_link.then do |link|
+          if link
+            @album_art_store.get_or_init(link).texture do |texture|
+              if @song&.album_art_link == link
+                album_cover.paintable = texture
+              end
+            end
+          end
+        end
+      end
+
+      # Upstream's `toggle_playback`: the active song is paused, any other song
+      # is put on the player and started.
+      def toggle_playback
+        @song.then do |song|
+          if song
+            if @player.state == Player::PLAYING && @player.active_song?(song.id)
+              @player.pause
+            else
+              @player.song = song
+              @player.play
+            end
+          end
+        end
+      end
+
+      # Upstream's `update_playback_ui` together with
+      # `update_playback_button_visibility`: the button is only there for a
+      # song that can be played, and it follows the player while that song is
+      # the active one.
+      def update_playback_ui
+        playback_button.root.visible = !@song&.playback_link.to_s.empty?
+
+        @song.then do |song|
+          if song
+            playback_button.mode = playback_button_mode(song)
+          end
+        end
+      end
+
+      def playback_button_mode(song)
+        @player.active_song?(song.id).then do |is_active_song|
+          if is_active_song && @player.state == Player::BUFFERING
+            PlaybackButton::BUFFERING
+          elsif is_active_song && @player.state == Player::PLAYING
+            PlaybackButton::PAUSE
+          else
+            PlaybackButton::PLAY
+          end
+        end
       end
 
       def update_select_button_tooltip_text

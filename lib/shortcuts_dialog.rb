@@ -10,9 +10,11 @@ module Mousai
   # General and Controls, whose items either name an accelerator directly or
   # name an action and let libadwaita look its accelerator up.
   #
-  # The items whose actions the port does not install yet — toggling the
-  # recognizer and the playback — are not listed: a shortcut row for an action
-  # nothing answers would be a promise the app cannot keep.
+  # Upstream's Controls section also lists Toggle Listen, which points at
+  # `win.toggle-recognize`; the port installs no such action, because the
+  # recognizer needs an audio recorder and so GStreamer, which has no binding
+  # in the port's dependencies. A shortcut row for an action nothing answers
+  # would be a promise the app cannot keep, so that one row is left out.
   module ShortcutsDialog
     GENERAL_ITEMS = [
       # Translators: shortcut window
@@ -29,6 +31,11 @@ module Mousai
       { title: "Quit", action_name: "app.quit" },
     ].freeze
 
+    CONTROLS_ITEMS = [
+      # Translators: shortcut window
+      { title: "Toggle Playback", action_name: "win.toggle-playback" },
+    ].freeze
+
     module_function
 
     def present(parent)
@@ -38,6 +45,7 @@ module Mousai
     def dialog
       Adwaita::ShortcutsDialog.new.tap do |shortcuts|
         shortcuts.add(general_section)
+        shortcuts.add(controls_section)
       end
     end
 
@@ -45,6 +53,13 @@ module Mousai
       # Translators: shortcut window
       Adwaita::ShortcutsSection.new(I18n.gettext("General")).tap do |section|
         GENERAL_ITEMS.each { |item| section.add(shortcuts_item(item)) }
+      end
+    end
+
+    def controls_section
+      # Translators: shortcut window
+      Adwaita::ShortcutsSection.new(I18n.gettext("Controls")).tap do |section|
+        CONTROLS_ITEMS.each { |item| section.add(shortcuts_item(item)) }
       end
     end
 

@@ -3,9 +3,13 @@
 require "gtk4"
 require "adwaita"
 require_relative "../about_dialog"
+require_relative "../album_art"
 require_relative "../database"
+require_relative "../database_error_dialog"
 require_relative "../migrations"
+require_relative "../player"
 require_relative "../preferences_dialog"
+require_relative "../provider_settings"
 require_relative "../settings"
 require_relative "../shortcuts_dialog"
 require_relative "../song_list"
@@ -19,9 +23,13 @@ module Mousai
   # loaded at startup, the song history loaded from the database, the `app.*`
   # actions the main menu points at, and the accelerators.
   #
-  # Upstream also owns the player, the recognizer, the HTTP session and the
-  # album art store, and presents a dialog when the database cannot be opened;
-  # none of those are ported yet.
+  # The player, the album art store and the provider settings are owned here,
+  # as upstream owns them, and a database that could not be read brings up the
+  # critical database error dialog over the window.
+  #
+  # Upstream also owns the recognizer, which needs an audio recorder and so
+  # GStreamer; the port's dependencies carry no GStreamer binding, so there is
+  # no recognizer to own.
   #
   # House style (see .claude/skills/ruby-gtk): every widget is a memoized
   # method, all configuration lives in its `tap`, assembly happens only in
@@ -33,12 +41,14 @@ module Mousai
       "app.quit"             => ["<Control>q"],
       "app.show-preferences" => ["<Control>comma"],
       "window.close"         => ["<Control>w"],
+      "win.toggle-playback"  => ["<Control>space"],
       "win.toggle-search"    => ["<Control>f"],
     }.freeze
 
     def build
       app.tap do
         app.signal_connect("startup") do
+          detach_glib_log_handlers
           Style.load
           load_icons
         end
@@ -46,6 +56,7 @@ module Mousai
         app.signal_connect("activate") do
           window.build
           window.present
+          present_database_error
         end
 
         app.add_action(quit_action)
@@ -65,6 +76,19 @@ module Mousai
 
     def settings = @settings ||= Settings.new
     def database = @database ||= Database.new
+    def player = @player ||= Player.new
+    def album_art_store = @album_art_store ||= AlbumArtStore.new
+
+    # The process-global provider settings the test providers read — upstream's
+    # `ProviderSettings::lock`.
+    def provider_settings = ProviderSettings.instance
+
+    # The provider the recognition goes through, built from the active provider
+    # type and the token the preferences dialog edits — upstream's
+    # `ProviderType::to_provider`.
+    def provider
+      ProviderType.to_provider(provider_settings.active, api_token: settings.aud_d_api_token)
+    end
 
     # The history, loaded from the database. Upstream runs the database
     # migrations before reading it, and so does this.
@@ -82,8 +106,10 @@ module Mousai
     def window
       @window ||= Window.new(
         app,
-        song_list: song_list,
-        settings:  settings,
+        song_list:       song_list,
+        settings:        settings,
+        player:          player,
+        album_art_store: album_art_store,
       )
     end
 
@@ -118,10 +144,36 @@ module Mousai
 
     private
 
+      # glib2 routes GLib log messages into a Ruby callback, and calling into
+      # Ruby from a thread Ruby does not own crashes the process. GTK's media
+      # backend logs from GStreamer's own worker threads, so playing a song
+      # would take the app down with it. Detaching the Ruby handlers puts GLib
+      # back on its own default handler, which prints the message to stderr
+      # from whichever thread logged it.
+      def detach_glib_log_handlers
+        begin
+          GLib::Log.cancel_handler
+        rescue StandardError => e
+          warn("Failed to detach the GLib log handler: #{e.message}")
+        end
+      end
+
       def load_icons
         Gdk::Display.default.then do |display|
           if display
             Gtk::IconTheme.get_for_display(display).add_search_path(icons_path)
+          end
+        end
+      end
+
+      # Upstream creates the window either way and leaves its models unbound
+      # when the database could not be opened, then presents this dialog over
+      # it; the port's window is up with an empty history in the same case.
+      def present_database_error
+        database.load_error.then do |error|
+          if error
+            warn("Failed to setup db env: #{error.message}")
+            DatabaseErrorDialog.present(window.root) { app.quit }
           end
         end
       end

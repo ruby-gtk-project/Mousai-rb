@@ -72,6 +72,22 @@
           xorgproto
         ]);
 
+        # GTK4's media backend is GStreamer: `GtkMediaFile` builds a `playbin3`,
+        # and when the element is missing GStreamer aborts the process rather
+        # than failing softly. The app plays song previews over https, so the
+        # base and good plugin sets (soup, typefind, the audio decoders and
+        # sinks) have to be on GST_PLUGIN_SYSTEM_PATH_1_0 both in the dev shell
+        # and in the wrapper.
+        gstStack = with pkgs.gst_all_1; [
+          gstreamer
+          gst-plugins-base
+          gst-plugins-good
+          gst-libav
+        ];
+
+        gstPluginPath = pkgs.lib.makeSearchPath "lib/gstreamer-1.0"
+          (map (drv: drv.out or drv) gstStack);
+
         # ruby-gnome gems build C extensions with extconf.rb + the pkg-config
         # gem; nixpkgs only ships gemConfig entries for the GTK3-era subset, so
         # the GTK4 gems get their build inputs declared here.
@@ -129,7 +145,7 @@
           # the wrapper never looks. The wrapper below is built by hand and
           # points at both the pre- and post-move paths.
           nativeBuildInputs = [ pkgs.makeWrapper ];
-          buildInputs = [ gems ] ++ gtkStack;
+          buildInputs = [ gems ] ++ gtkStack ++ gstStack;
 
           dontBuild = true;
 
@@ -160,6 +176,7 @@
               --add-flags "-I$out/share/Mousai/lib" \
               --add-flags "$out/share/Mousai/exe/${launcher}" \
               --set GI_TYPELIB_PATH "${typelibPath}" \
+            --set GST_PLUGIN_SYSTEM_PATH_1_0 "${gstPluginPath}" \
               --prefix XDG_DATA_DIRS : "$out/share" \
               --prefix XDG_DATA_DIRS : "$out/share/gsettings-schemas/Mousai-0.1.0" \
               --prefix XDG_DATA_DIRS : "${pkgs.gsettings-desktop-schemas}/share/gsettings-schemas/${pkgs.gsettings-desktop-schemas.name}" \
@@ -201,13 +218,14 @@
             pkgs.xvfb-run
             pkgs.gsettings-desktop-schemas
             pkgs.adwaita-icon-theme
-          ] ++ gtkStack;
+          ] ++ gtkStack ++ gstStack;
 
           # Icons, GSettings schemas and the GTK portal all resolve through
           # XDG_DATA_DIRS; without these the window opens with blank icons.
           shellHook = ''
             export XDG_DATA_DIRS="${pkgs.gsettings-desktop-schemas}/share/gsettings-schemas/${pkgs.gsettings-desktop-schemas.name}:${pkgs.gtk4}/share/gsettings-schemas/${pkgs.gtk4.name}:${pkgs.adwaita-icon-theme}/share:$XDG_DATA_DIRS"
             export GI_TYPELIB_PATH="${typelibPath}''${GI_TYPELIB_PATH:+:$GI_TYPELIB_PATH}"
+            export GST_PLUGIN_SYSTEM_PATH_1_0="${gstPluginPath}"
             export RUBYLIB="$PWD/lib''${RUBYLIB:+:$RUBYLIB}"
             [ -d data/schemas ] && export GSETTINGS_SCHEMA_DIR="$PWD/data/schemas"
             unset BUNDLE_GEMFILE BUNDLE_FROZEN

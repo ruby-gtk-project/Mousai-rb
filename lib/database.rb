@@ -15,6 +15,11 @@ module Mousai
   # and writes that commit as one batch — is backed by a single JSON file in
   # the same directory. The API is what upstream's callers use: `#table`,
   # `#put`, `#delete` and `#with_write`, which is upstream's `with_write_txn`.
+  #
+  # A file that is there but cannot be read is upstream's critical database
+  # error: the store comes up empty, `#load_error` says why, and nothing is
+  # written back, so the application can show the error dialog over an empty
+  # window without the tampered file being overwritten first.
   class Database
     SONG_LIST_TABLE = "song_list"
     RECORDINGS_TABLE = "saved_recordings"
@@ -24,7 +29,7 @@ module Mousai
     # is worth a warning — upstream warns at the same threshold.
     SLOW_WRITE_SECONDS = 0.015
 
-    attr_reader :path
+    attr_reader :path, :load_error
 
     def initialize(path: nil)
       @path = path || default_path
@@ -77,7 +82,7 @@ module Mousai
     private
 
       def commit
-        (@depth.zero? && @dirty).then do |due|
+        (@depth.zero? && @dirty && @load_error.nil?).then do |due|
           if due
             @dirty = false
             write
@@ -102,7 +107,10 @@ module Mousai
       def read
         begin
           JSON.parse(File.read(@path))
-        rescue Errno::ENOENT, JSON::ParserError
+        rescue Errno::ENOENT
+          {}
+        rescue JSON::ParserError, SystemCallError, IOError => e
+          @load_error = e
           {}
         end
       end

@@ -58,6 +58,10 @@ GtkDriver.drive(app, shots: "tmp/shots") do |d, application|
     view.call.search_entry.text = "toto"
   end
 
+  # GtkSearchEntry holds `search-changed` back for its search delay, so the
+  # filter has not run yet when the step that typed the text returns.
+  d.step("the search entry's delay elapses") { nil }
+
   d.step("only the match is left") do
     d.check("one row left") { view.call.filter_model.n_items == 1 }
     d.check("grid page still showing") do
@@ -69,6 +73,8 @@ GtkDriver.drive(app, shots: "tmp/shots") do |d, application|
   d.step("a search that matches nothing") do
     view.call.search_entry.text = "zzzzz"
   end
+
+  d.step("the search entry's delay elapses again") { nil }
 
   d.step("shows the no-results page") do
     d.check("no rows left") { view.call.filter_model.n_items.zero? }
@@ -82,6 +88,8 @@ GtkDriver.drive(app, shots: "tmp/shots") do |d, application|
     view.call.search_entry.text = ""
     view.call.search_bar.search_mode = false
   end
+
+  d.step("the search entry's delay elapses once more") { nil }
 
   d.step("selection mode is entered and a song selected") do
     view.call.toggle_selection_mode_action.activate(nil)

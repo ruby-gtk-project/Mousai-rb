@@ -27,8 +27,10 @@ module Mousai
 
     attr_reader :song_list
 
-    def initialize(song_list:, on_toast: nil, on_message_toast: nil)
+    def initialize(song_list:, player:, album_art_store:, on_toast: nil, on_message_toast: nil)
       @song_list = song_list
+      @player = player
+      @album_art_store = album_art_store
       @on_toast = on_toast
       @on_message_toast = on_message_toast
       @selection_mode_active = false
@@ -561,7 +563,11 @@ module Mousai
       end
 
       def setup_list_item(item)
-        SongTile.new(shows_select_button_on_hover: true).then do |tile|
+        SongTile.new(
+          shows_select_button_on_hover: true,
+          player:                       @player,
+          album_art_store:              @album_art_store,
+        ).then do |tile|
           @tiles[item.object_id] = tile
           tile.selection_mode_active = @selection_mode_active
           tile.adaptive_mode = @adaptive_mode
@@ -624,7 +630,12 @@ module Mousai
       def lyrics_pages = @lyrics_pages ||= []
 
       def new_song_page(song)
-        SongPage.new(song_list: @song_list, on_toast: @on_message_toast).tap do |page|
+        SongPage.new(
+          song_list:       @song_list,
+          player:          @player,
+          album_art_store: @album_art_store,
+          on_toast:        @on_message_toast,
+        ).tap do |page|
           page.build
           page.song = song
           page.adaptive_mode = @adaptive_mode

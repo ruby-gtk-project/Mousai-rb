@@ -5,6 +5,8 @@ require_relative "album_cover"
 require_relative "external_link_tile"
 require_relative "i18n"
 require_relative "information_row"
+require_relative "playback_button"
+require_relative "player"
 require_relative "song"
 
 module Mousai
@@ -15,18 +17,22 @@ module Mousai
   # group of provider tiles, and the information rows — last heard, album,
   # release date and a row that opens the lyrics page.
   #
-  # Upstream's playback button is not here: the port has no player yet, so the
-  # page carries no button rather than a dead one.
+  # The playback button under the title is there for a song that has a playback
+  # link; it shows the player's state while that song is the active one, and
+  # clicking it puts the song on the player or pauses it again.
   class SongPage
     NORMAL_ALBUM_COVER_PIXEL_SIZE = 180
     NARROW_ALBUM_COVER_PIXEL_SIZE = 120
+    PLAYBACK_BUTTON_SIZE = 40
 
     attr_reader :song, :adaptive_mode
 
     # `song_list` is what the remove button's sensitivity follows: a song that
     # is no longer in the history cannot be removed again.
-    def initialize(song_list:, on_toast: nil)
+    def initialize(song_list:, player:, album_art_store:, on_toast: nil)
       @song_list = song_list
+      @player = player
+      @album_art_store = album_art_store
       @on_toast = on_toast
       @adaptive_mode = :normal
       @remove_request_listeners = []
@@ -76,6 +82,11 @@ module Mousai
             title_box.tap do |tb|
               tb.append(title_label)
               tb.append(artist_label)
+              tb.append(playback_button.build)
+
+              playback_button.tap do |button|
+                button.root.signal_connect("clicked") { toggle_playback }
+              end
             end
           end
 
@@ -101,11 +112,14 @@ module Mousai
             end
           end
         end
+
+        @player.on_state_changed { update_playback_ui }
       end.tap do
         update_information
         update_page_title
         update_remove_button_sensitivity
         update_album_cover_size
+        update_playback_ui
       end
     end
 
@@ -177,6 +191,15 @@ module Mousai
     end
 
     def title_box = @title_box ||= Gtk::Box.new(:vertical, 6)
+
+    def playback_button
+      @playback_button ||= PlaybackButton.new.tap do |button|
+        button.root.halign = :start
+        button.root.width_request = PLAYBACK_BUTTON_SIZE
+        button.root.height_request = PLAYBACK_BUTTON_SIZE
+        button.root.add_css_class("circular")
+      end
+    end
 
     def title_label
       @title_label ||= Gtk::Label.new.tap do |label|
@@ -275,13 +298,83 @@ module Mousai
       def update_song_ui
         title_label.label = @song&.title.to_s
         artist_label.label = @song&.artist.to_s
-        # The album art link is only a link until there is a service to fetch
-        # it with, so the cover shows its placeholder.
-        album_cover.paintable = nil
+        show_album_art
         lyrics_row.visible = !@song&.lyrics.nil?
         update_information
         update_page_title
         update_remove_button_sensitivity
+        update_playback_ui
+      end
+
+      # Upstream only cross-fades when the album art has still to be
+      # downloaded, so a cover that can be shown at once does not fade in.
+      def show_album_art
+        @song&.album_art_link.then do |link|
+          album_art_of(link).then do |album_art|
+            album_cover.enables_crossfade = album_art.nil? || !album_art.loaded?
+            album_cover.paintable = album_art&.cached_texture
+            request_album_art(album_art, link)
+          end
+        end
+      end
+
+      def album_art_of(link)
+        if link
+          @album_art_store.get_or_init(link)
+        end
+      end
+
+      # Upstream's album cover takes the song and downloads its art itself; the
+      # port's cover takes a texture, so the download is asked for here and the
+      # answer is dropped once the page has moved on to another song.
+      def request_album_art(album_art, link)
+        if album_art && !album_art.loaded?
+          album_art.texture do |texture|
+            if @song&.album_art_link == link
+              album_cover.paintable = texture
+            end
+          end
+        end
+      end
+
+      # Upstream's `toggle_playback`: the active song is paused, any other song
+      # is put on the player and started.
+      def toggle_playback
+        @song.then do |song|
+          if song
+            if @player.state == Player::PLAYING && @player.active_song?(song.id)
+              @player.pause
+            else
+              @player.song = song
+              @player.play
+            end
+          end
+        end
+      end
+
+      # Upstream's `update_playback_ui`: the button is only there for a song
+      # that can be played, and it follows the player while that song is the
+      # active one.
+      def update_playback_ui
+        playback_button.root.visible = !@song&.playback_link.to_s.empty?
+
+        @song.then do |song|
+          if song
+            playback_button.mode = playback_button_mode(song)
+          end
+        end
+      end
+
+      def playback_button_mode(song)
+        @player.active_song?(song.id).then do |is_active_song|
+          if is_active_song && @player.state == Player::BUFFERING
+            PlaybackButton::BUFFERING
+          elsif is_active_song && @player.state == Player::PLAYING
+            PlaybackButton::PAUSE
+          else
+            PlaybackButton::PLAY
+          end
+        end
       end
 
       def update_information
