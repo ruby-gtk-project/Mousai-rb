@@ -6,6 +6,7 @@ require_relative "history_view"
 require_relative "i18n"
 require_relative "player"
 require_relative "recognize_error_dialog"
+require_relative "recognizer"
 require_relative "recording_saved_dialog"
 require_relative "settings"
 require_relative "song_bar"
@@ -24,23 +25,26 @@ module Mousai
   # the player has a song and the history view is not in selection mode, and
   # `win.toggle-playback` is enabled for exactly as long.
   #
-  # Upstream's stack also holds the recognizer view, which needs the recognizer
-  # and so the audio recorder; GStreamer has no binding in the port's
-  # dependencies, so the stack has the history view alone and the window
-  # installs only the actions it can actually carry out. The two dialogs the
-  # recognizer's failures raise are ported and are presented through
-  # #present_recognize_error and #present_recording_saved_message.
+  # Upstream's stack also holds the recognizer view, keyed to the recognizer's
+  # state; that view (src/window/recognizer_view.rs) is not ported yet, so the
+  # stack still has the history view alone. `win.toggle-recognize` is
+  # installed and wired to the real `Recognizer`, though — upstream's
+  # `install_action_async` handler, minus pushing the recognizer view onto the
+  # stack. A recognition that finishes shows up the way upstream's
+  # `bind_models` says: inserted into the history and pushed as a song page,
+  # or through #present_recognize_error / #present_recording_saved_message.
   class Window
     NARROW_BREAKPOINT_CONDITION = "max-width: 450px"
     MIN_WIDTH = 360
     MIN_HEIGHT = 294
 
-    def initialize(app, song_list:, settings: nil, player: nil, album_art_store: nil)
+    def initialize(app, song_list:, settings: nil, player: nil, album_art_store: nil, recognizer: nil)
       @app = app
       @song_list = song_list
       @settings = settings || Settings.new
       @player = player || Player.new
       @album_art_store = album_art_store || AlbumArtStore.new
+      @recognizer = recognizer || Recognizer.new(settings: @settings)
     end
 
     attr_reader :player
@@ -78,6 +82,8 @@ module Mousai
         @player.on_error { add_message_toast(I18n.gettext("An error occurred in the player")) }
 
         history_view.on_selection_mode_changed { update_song_bar_revealer }
+
+        bind_recognizer
 
         win.add_breakpoint(narrow_breakpoint)
         win.add_controller(key_controller)
@@ -193,6 +199,7 @@ module Mousai
       @action_group ||= Gio::SimpleActionGroup.new.tap do |group|
         group.add_action(toggle_search_action)
         group.add_action(toggle_playback_action)
+        group.add_action(toggle_recognize_action)
       end
     end
 
@@ -205,6 +212,16 @@ module Mousai
     def toggle_playback_action
       @toggle_playback_action ||= Gio::SimpleAction.new("toggle-playback").tap do |action|
         action.signal_connect("activate") { toggle_playback }
+      end
+    end
+
+    # Upstream's `win.toggle-recognize`.
+    def toggle_recognize_action
+      @toggle_recognize_action ||= Gio::SimpleAction.new("toggle-recognize").tap do |action|
+        action.signal_connect("activate") do
+          @player.song = nil
+          @recognizer.toggle_recognize
+        end
       end
     end
 
@@ -262,6 +279,30 @@ module Mousai
         else
           false
         end
+      end
+
+      # Upstream's `bind_models`, minus the recognizer view it also binds:
+      # a recognized song goes into the history (freshly heard unless it was
+      # already heard before) and is pushed as a song page; a recording kept
+      # for later and a permanent failure go through the window's own dialogs.
+      def bind_recognizer
+        @recognizer.on_song_recognized { |_recognizer, song| on_song_recognized(song) }
+        @recognizer.on_recording_saved { |_recognizer, cause| present_recording_saved_message(cause) { @app.activate_action("show-preferences", nil) } }
+        @recognizer.on_recognize_failed { |_recognizer, error| present_recognize_error(error) { @recognizer.toggle_recognize } }
+      end
+
+      def on_song_recognized(song)
+        # Freshly heard unless it was already in the history and already
+        # heard before — upstream's `is_none_or(|prev| prev.is_newly_heard())`.
+        @song_list.get(song.id).then do |previous|
+          if previous.nil? || previous.newly_heard?
+            song.newly_heard = true
+          end
+        end
+
+        @song_list.insert(song)
+        history_view.push_song_page(song)
+        history_view.scroll_to_top
       end
   end
 end

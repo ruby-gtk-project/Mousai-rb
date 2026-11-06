@@ -21,7 +21,8 @@ module Mousai
   #
   # Upstream also hosts the recognizer status in its header bar and pushes a
   # RecognizedPage when a recognition finishes; neither is ported yet, so the
-  # header bar carries the rest of its buttons and nothing claims to listen.
+  # Listen button's own window action drives the recognizer directly (see
+  # window.rb) instead of through a recognizer status widget.
   class HistoryView
     APP_ICON_NAME = "io.github.seadve.Mousai"
 
@@ -188,9 +189,8 @@ module Mousai
 
     def main_header_bar = @main_header_bar ||= Adwaita::HeaderBar.new
 
-    # Upstream's Listen button drives `win.toggle-recognize`. The recognizer is
-    # not ported yet, so no window installs that action and GTK keeps the
-    # button insensitive — which is the honest state for it.
+    # Upstream's Listen button drives `win.toggle-recognize`, which the window
+    # installs against the real `Recognizer`.
     def listen_button
       @listen_button ||= Gtk::Button.new(label: I18n.gettext("Listen")).tap do |button|
         button.tooltip_text = I18n.gettext("Recognize Song")

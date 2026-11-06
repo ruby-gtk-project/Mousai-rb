@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "gtk4"
+require "gstreamer_play"
 require_relative "song"
 
 module Mousai
@@ -12,11 +12,13 @@ module Mousai
   # reported to the window.
   #
   # Upstream drives GStreamer's `gst_play::Play` and translates its bus
-  # messages into property notifications. The port has no GStreamer binding, so
-  # playback goes through `Gtk::MediaFile`, which GTK itself backs with
-  # GStreamer: its `prepared`, `playing`, `ended`, `timestamp`, `duration` and
-  # `error` properties carry the same information upstream reads off the bus,
-  # and the state is derived from them the way upstream maps `PlayState`.
+  # messages into property notifications. The port drives the same
+  # `GstPlay::Play` through the `gstreamer_play` gem: `GstPlay::PlaySignalAdapter`
+  # turns the play's bus into GObject signals — `state-changed`,
+  # `position-updated`, `duration-changed`, `end-of-stream`, `seek-done` and
+  # `error` — which is exactly the set upstream's `handle_gst_play_message`
+  # switches on, minus the metadata-only messages (`media-info-updated`,
+  # `buffering`, `warning`) upstream only logs.
   #
   # Upstream also publishes the same state on the session bus as an MPRIS
   # player. The port's dependencies carry no MPRIS server, so the player is
@@ -27,7 +29,7 @@ module Mousai
     PAUSED = :paused
     PLAYING = :playing
 
-    MICROSECONDS_PER_SECOND = 1_000_000.0
+    NANOSECONDS_PER_SECOND = 1_000_000_000.0
 
     attr_reader :song, :state
 
@@ -40,7 +42,7 @@ module Mousai
       @position_listeners = []
       @duration_listeners = []
       @error_listeners = []
-      connect_media
+      connect_signal_adapter
     end
 
     # Upstream's `set_song`: the player stops, the position and duration are
@@ -49,16 +51,22 @@ module Mousai
     def song=(new_song)
       new_song.then do |song|
         unless song == @song
-          media.playing = false
+          gst_play.stop
+          update_position(0.0)
+          update_duration(0.0)
 
           if song && song.playback_link.to_s.empty?
             warn("Trying to put a song without playback link on the Player")
           else
             @song = song
-            media.file = song && Gio::File.new_for_uri(song.playback_link)
-            update_position(0.0)
-            update_duration(0.0)
-            update_state
+
+            # `GstPlay::Play#uri=` segfaults on `nil` — the uri is only set
+            # when there is actually a song to play, mirroring upstream's
+            # `if let Some(ref song) = song`.
+            if song
+              gst_play.uri = song.playback_link
+            end
+
             @song_listeners.each { |listener| listener.call(self) }
           end
         end
@@ -70,8 +78,8 @@ module Mousai
 
     def active_song?(song_id) = !@song.nil? && @song.id == song_id
 
-    def play = media.playing = true
-    def pause = media.playing = false
+    def play = gst_play.play
+    def pause = gst_play.pause
 
     # Upstream pauses first when the player is stopped, so the pipeline is in a
     # state that can be seeked.
@@ -80,7 +88,7 @@ module Mousai
         pause
       end
 
-      media.seek((seconds * MICROSECONDS_PER_SECOND).round)
+      gst_play.seek((seconds * NANOSECONDS_PER_SECOND).round)
     end
 
     def on_song_changed(&block)
@@ -108,41 +116,45 @@ module Mousai
       block
     end
 
-    def media = @media ||= Gtk::MediaFile.new
+    def gst_play = @gst_play ||= GstPlay::Play.new
+
+    def signal_adapter = @signal_adapter ||= GstPlay::PlaySignalAdapter.new(gst_play)
 
     private
 
-      def connect_media
-        media.tap do |stream|
-          stream.signal_connect("notify::playing") { update_state }
-          stream.signal_connect("notify::prepared") { update_state }
-          stream.signal_connect("notify::ended") { on_ended }
-          stream.signal_connect("notify::error") { on_error_notified }
-          stream.signal_connect("notify::timestamp") { update_position(stream.timestamp / MICROSECONDS_PER_SECOND) }
-          stream.signal_connect("notify::duration") { update_duration(stream.duration / MICROSECONDS_PER_SECOND) }
+      def connect_signal_adapter
+        signal_adapter.tap do |adapter|
+          adapter.signal_connect("state-changed") { |_adapter, state| update_state(state) }
+          adapter.signal_connect("position-updated") { |_adapter, position| update_position(position / NANOSECONDS_PER_SECOND) }
+          adapter.signal_connect("duration-changed") { |_adapter, duration| update_duration(duration / NANOSECONDS_PER_SECOND) }
+          # Upstream resets the position when the stream ends.
+          adapter.signal_connect("end-of-stream") { update_position(0.0) }
+          adapter.signal_connect("seek-done") { |_adapter, position| update_position(position / NANOSECONDS_PER_SECOND) }
+          adapter.signal_connect("error") { |_adapter, error, *_rest| on_error_notified(error) }
         end
       end
 
-      # Upstream's `PlayState` mapping: a song that is loading is buffering,
-      # and a player with no song at all is stopped.
-      def current_state
-        if @song.nil?
-          STOPPED
-        elsif !media.prepared?
-          BUFFERING
-        elsif media.playing?
-          PLAYING
-        else
-          PAUSED
-        end
-      end
-
-      def update_state
-        current_state.then do |state|
+      # Upstream's `PlayState` mapping, read straight off the signal instead of
+      # being derived: a player with no song at all is still reported as
+      # stopped by `GstPlay::Play` itself, so no extra case is needed here.
+      def update_state(gst_state)
+        mapped_state(gst_state).then do |state|
           unless state == @state
             @state = state
             @state_listeners.each { |listener| listener.call(self) }
           end
+        end
+      end
+
+      def mapped_state(gst_state)
+        if gst_state == GstPlay::PlayState::PLAYING
+          PLAYING
+        elsif gst_state == GstPlay::PlayState::PAUSED
+          PAUSED
+        elsif gst_state == GstPlay::PlayState::BUFFERING
+          BUFFERING
+        else
+          STOPPED
         end
       end
 
@@ -164,18 +176,10 @@ module Mousai
         end
       end
 
-      # Upstream resets the position when the stream ends.
-      def on_ended
-        if media.ended?
-          update_position(0.0)
-          update_state
-        end
-      end
-
-      def on_error_notified
-        media.error.then do |error|
-          if error
-            @error_listeners.each { |listener| listener.call(self, error) }
+      def on_error_notified(error)
+        error.then do |err|
+          if err
+            @error_listeners.each { |listener| listener.call(self, err) }
           end
         end
       end

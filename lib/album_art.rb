@@ -1,8 +1,7 @@
 # frozen_string_literal: true
 
 require "gtk4"
-require "net/http"
-require "uri"
+require "soup3"
 
 module Mousai
   # A song's album art, downloaded once and kept in memory.
@@ -13,10 +12,12 @@ module Mousai
   # cached from then on.
   #
   # Upstream downloads through the application's `soup::Session` and awaits the
-  # result; the port downloads with Net::HTTP on a worker thread and builds the
-  # texture back on the main loop, because `Gdk::Texture` must be created
-  # there. Upstream's `OnceCell` makes concurrent `texture()` calls share one
-  # download, and so does the list of waiters here.
+  # result; the port downloads through the `soup3` gem's `Soup::Session` on a
+  # worker thread — `Soup::Session#send_and_read` blocks, and upstream's await
+  # is where the thread boundary goes instead — and builds the texture back on
+  # the main loop, because `Gdk::Texture` must be created there. Upstream's
+  # `OnceCell` makes concurrent `texture()` calls share one download, and so
+  # does the list of waiters here.
   class AlbumArtStore
     def initialize
       @map = {}
@@ -32,9 +33,7 @@ module Mousai
 
   # One album art, identified by the URL it is downloaded from.
   class AlbumArt
-    OPEN_TIMEOUT = 10
-    READ_TIMEOUT = 30
-    MAX_REDIRECTS = 5
+    TIMEOUT_SECONDS = 30
 
     attr_reader :download_url
 
@@ -98,40 +97,30 @@ module Mousai
         end
       end
 
-      def fetch_bytes(url = @download_url, redirects_left = MAX_REDIRECTS)
+      def fetch_bytes
         begin
-          get(URI.parse(url)).then do |response|
-            case response
-            when Net::HTTPSuccess then response.body
-            when Net::HTTPRedirection then follow(response, redirects_left)
-            else
-              warn("Failed to download album art bytes: #{response.code}")
+          message.then do |msg|
+            response_bytes = session.send_and_read(msg, nil)
+
+            if msg.status_code >= 400
+              warn("Failed to download album art bytes: #{msg.status_code}")
               nil
+            else
+              response_bytes.to_s
             end
           end
-        rescue StandardError => e
+        rescue GLib::Error => e
           warn("Failed to download album art bytes: #{e.message}")
           nil
         end
       end
 
-      def follow(response, redirects_left)
-        if redirects_left.positive?
-          fetch_bytes(response["location"], redirects_left - 1)
-        else
-          warn("Failed to download album art bytes: too many redirects")
-          nil
-        end
-      end
+      def message = Soup::Message.new("GET", @download_url)
 
-      def get(uri)
-        Net::HTTP.start(
-          uri.host,
-          uri.port,
-          use_ssl:      uri.scheme == "https",
-          open_timeout: OPEN_TIMEOUT,
-          read_timeout: READ_TIMEOUT,
-        ) { |http| http.request(Net::HTTP::Get.new(uri)) }
+      def session
+        @session ||= Soup::Session.new.tap do |s|
+          s.timeout = TIMEOUT_SECONDS
+        end
       end
   end
 end

@@ -1,8 +1,7 @@
 # frozen_string_literal: true
 
 require "json"
-require "net/http"
-require "uri"
+require "soup3"
 require_relative "aud_d_response"
 require_relative "external_links"
 require_relative "provider"
@@ -21,15 +20,15 @@ module Mousai
   # sections in upstream's order of preference.
   #
   # Upstream posts through the application's shared `soup::Session`; the port
-  # has no soup binding, so the request goes through Ruby's Net::HTTP and the
-  # name-resolution failures upstream turns into `Connection` errors are the
-  # ones Net::HTTP raises for the same conditions.
+  # does the same through the `soup3` gem's `Soup::Session`, and the
+  # `g-resolver-error-quark` GLib::Error the GI loader raises for a
+  # name-resolution failure is upstream's `ResolverError::NotFound`/
+  # `TemporaryFailure` case, mapped to the same `Connection` kind.
   class AudD < Provider
     ENDPOINT = "https://api.audd.io/"
     RETURN_FIELDS = "spotify,apple_music,musicbrainz,lyrics"
     LISTEN_DURATION = 5.0
-    OPEN_TIMEOUT = 10
-    READ_TIMEOUT = 30
+    TIMEOUT_SECONDS = 30
 
     # Upstream trims this prefix off the info link because the remainder is
     # unique to every song.
@@ -38,17 +37,13 @@ module Mousai
     # Apple Music artwork URLs carry size placeholders.
     ARTWORK_SIZE = "600"
 
-    # The errors Net::HTTP raises when the server could not be reached at all,
-    # which is upstream's `ResolverError::NotFound`/`TemporaryFailure` case.
-    CONNECTION_ERRORS = [
-      SocketError,
-      Errno::ECONNREFUSED,
-      Errno::ECONNRESET,
-      Errno::EHOSTUNREACH,
-      Errno::ENETUNREACH,
-      Errno::ETIMEDOUT,
-      Net::OpenTimeout,
-      Net::ReadTimeout,
+    # The GLib::Error domains that mean the server could not be reached at
+    # all — resolution, connection and TLS failures alike — which is
+    # upstream's `ResolverError`/`IOErrorEnum` connection case.
+    CONNECTION_ERROR_DOMAINS = [
+      "g-resolver-error-quark",
+      "g-io-error-quark",
+      "g-tls-error-quark",
     ].freeze
 
     class << self
@@ -158,31 +153,46 @@ module Mousai
     private
 
       def post(bytes)
-        begin
-          Net::HTTP.start(uri.host, uri.port, use_ssl: true, open_timeout: OPEN_TIMEOUT, read_timeout: READ_TIMEOUT) do |http|
-            http.request(request(bytes)).body
+        request(bytes).then do |msg|
+          begin
+            session.send_and_read(msg, nil).then do |response_bytes|
+              if msg.status_code >= 400
+                raise(RecognizeError.new(RecognizeError::OTHER_PERMANENT, "HTTP #{msg.status_code}"))
+              end
+
+              response_bytes.to_s
+            end
+          rescue GLib::Error => e
+            if CONNECTION_ERROR_DOMAINS.include?(e.domain)
+              raise(RecognizeError.new(RecognizeError::CONNECTION, e.message))
+            else
+              raise(RecognizeError.new(RecognizeError::OTHER_PERMANENT, e.message))
+            end
           end
-        rescue *CONNECTION_ERRORS => e
-          raise(RecognizeError.new(RecognizeError::CONNECTION, e.message))
-        rescue StandardError => e
-          raise(RecognizeError.new(RecognizeError::OTHER_PERMANENT, e.message))
         end
       end
 
       def request(bytes)
-        Net::HTTP::Post.new(uri).tap do |post|
-          post["Content-Type"] = "application/json"
-          post.body = JSON.generate(
-            "api_token" => @api_token,
-            "return"    => RETURN_FIELDS,
-            # `[str].pack("m0")` is strict base64: no line breaks, padded —
-            # which is what upstream's `glib::base64_encode` produces. The
-            # base64 gem is not a default gem any more, so it is not required.
-            "audio"     => [bytes.to_s].pack("m0"),
-          )
+        Soup::Message.new("POST", ENDPOINT).tap do |msg|
+          msg.set_request_body_from_bytes("application/json", GLib::Bytes.new(body(bytes)))
         end
       end
 
-      def uri = @uri ||= URI.parse(ENDPOINT)
+      def body(bytes)
+        JSON.generate(
+          "api_token" => @api_token,
+          "return"    => RETURN_FIELDS,
+          # `[str].pack("m0")` is strict base64: no line breaks, padded — which
+          # is what upstream's `glib::base64_encode` produces. The base64 gem
+          # is not a default gem any more, so it is not required.
+          "audio"     => [bytes.to_s].pack("m0"),
+        )
+      end
+
+      def session
+        @session ||= Soup::Session.new.tap do |s|
+          s.timeout = TIMEOUT_SECONDS
+        end
+      end
   end
 end

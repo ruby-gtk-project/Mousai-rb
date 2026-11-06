@@ -25,6 +25,9 @@
           libadwaita
           harfbuzz
           librsvg
+          # The soup3 gem's typelib: it loads `Soup-3.0.typelib` from this
+          # package at `require` time.
+          libsoup_3
         ]
         # The Ruby `pkg-config` gem resolves `Requires.private` transitively and
         # hard-fails if any .pc in the chain is missing, so gtk4's whole private
@@ -55,6 +58,11 @@
           libdeflate
           xz
           zstd
+          # gstreamer-1.0.pc's Requires.private chain, pulled in only for the
+          # native `gstreamer` ruby-gnome extension.
+          libunwind
+          elfutils
+          orc
         ])
         # Un-prefixed names: the `xorg.*` package set is deprecated.
         ++ (with pkgs; [
@@ -78,14 +86,24 @@
         # base and good plugin sets (soup, typefind, the audio decoders and
         # sinks) have to be on GST_PLUGIN_SYSTEM_PATH_1_0 both in the dev shell
         # and in the wrapper.
+        #
+        # gst-plugins-bad carries GstPlay itself (`GstPlay-1.0.typelib`),
+        # which the gstreamer_play gem loads at `require` time — it is not
+        # optional plugin coverage, it is where the binding's types live.
         gstStack = with pkgs.gst_all_1; [
           gstreamer
           gst-plugins-base
           gst-plugins-good
+          gst-plugins-bad
           gst-libav
         ];
 
         gstPluginPath = pkgs.lib.makeSearchPath "lib/gstreamer-1.0"
+          (map (drv: drv.out or drv) gstStack);
+
+        # GstPlay-1.0's typelib lives under gst-plugins-bad, so the recognizer
+        # needs gstStack on the typelib path too, not just the plugin path.
+        gstTypelibPath = pkgs.lib.makeSearchPath "lib/girepository-1.0"
           (map (drv: drv.out or drv) gstStack);
 
         # ruby-gnome gems build C extensions with extconf.rb + the pkg-config
@@ -103,6 +121,13 @@
           graphene1 = rubyGnomeGem;
           adwaita = rubyGnomeGem;
           rsvg2 = rubyGnomeGem;
+          # Unlike gstreamer_play (a pure-Ruby GI loader), the `gstreamer` gem
+          # itself is a native ruby-gnome extension and needs `gstreamer-1.0.pc`
+          # on PKG_CONFIG_PATH, which only gstStack's packages provide.
+          gstreamer = _attrs: {
+            nativeBuildInputs = [ pkgs.pkg-config ];
+            buildInputs = gtkStack ++ gstStack;
+          };
         };
 
         # `makeSearchPath` would take each package's *first* output, and glib's
@@ -121,6 +146,11 @@
           inherit gemConfig;
           gemdir = ./nix;
         };
+
+        # glib-networking is GIO's TLS backend, loaded as a GIO module rather
+        # than linked — without it on GIO_EXTRA_MODULES, Soup::Session raises
+        # "TLS support is not available" on the first https request.
+        gioModulePath = "${pkgs.glib-networking}/lib/gio/modules";
 
         # The launcher is whatever the gemspec installs into exe/. Reading the
         # directory keeps this flake generic: no name to keep in step by hand.
@@ -145,7 +175,7 @@
           # the wrapper never looks. The wrapper below is built by hand and
           # points at both the pre- and post-move paths.
           nativeBuildInputs = [ pkgs.makeWrapper ];
-          buildInputs = [ gems ] ++ gtkStack ++ gstStack;
+          buildInputs = [ gems pkgs.glib-networking ] ++ gtkStack ++ gstStack;
 
           dontBuild = true;
 
@@ -175,8 +205,9 @@
               --add-flags "-rbundler/setup" \
               --add-flags "-I$out/share/Mousai/lib" \
               --add-flags "$out/share/Mousai/exe/${launcher}" \
-              --set GI_TYPELIB_PATH "${typelibPath}" \
+              --set GI_TYPELIB_PATH "${typelibPath}:${gstTypelibPath}" \
             --set GST_PLUGIN_SYSTEM_PATH_1_0 "${gstPluginPath}" \
+              --set GIO_EXTRA_MODULES "${gioModulePath}" \
               --prefix XDG_DATA_DIRS : "$out/share" \
               --prefix XDG_DATA_DIRS : "$out/share/gsettings-schemas/Mousai-0.1.0" \
               --prefix XDG_DATA_DIRS : "${pkgs.gsettings-desktop-schemas}/share/gsettings-schemas/${pkgs.gsettings-desktop-schemas.name}" \
@@ -218,14 +249,16 @@
             pkgs.xvfb-run
             pkgs.gsettings-desktop-schemas
             pkgs.adwaita-icon-theme
+            pkgs.glib-networking
           ] ++ gtkStack ++ gstStack;
 
           # Icons, GSettings schemas and the GTK portal all resolve through
           # XDG_DATA_DIRS; without these the window opens with blank icons.
           shellHook = ''
             export XDG_DATA_DIRS="${pkgs.gsettings-desktop-schemas}/share/gsettings-schemas/${pkgs.gsettings-desktop-schemas.name}:${pkgs.gtk4}/share/gsettings-schemas/${pkgs.gtk4.name}:${pkgs.adwaita-icon-theme}/share:$XDG_DATA_DIRS"
-            export GI_TYPELIB_PATH="${typelibPath}''${GI_TYPELIB_PATH:+:$GI_TYPELIB_PATH}"
+            export GI_TYPELIB_PATH="${typelibPath}:${gstTypelibPath}''${GI_TYPELIB_PATH:+:$GI_TYPELIB_PATH}"
             export GST_PLUGIN_SYSTEM_PATH_1_0="${gstPluginPath}"
+            export GIO_EXTRA_MODULES="${gioModulePath}''${GIO_EXTRA_MODULES:+:$GIO_EXTRA_MODULES}"
             export RUBYLIB="$PWD/lib''${RUBYLIB:+:$RUBYLIB}"
             [ -d data/schemas ] && export GSETTINGS_SCHEMA_DIR="$PWD/data/schemas"
             unset BUNDLE_GEMFILE BUNDLE_FROZEN

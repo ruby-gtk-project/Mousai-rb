@@ -10,6 +10,8 @@ require_relative "../migrations"
 require_relative "../player"
 require_relative "../preferences_dialog"
 require_relative "../provider_settings"
+require_relative "../recognizer"
+require_relative "../recordings"
 require_relative "../settings"
 require_relative "../shortcuts_dialog"
 require_relative "../song_list"
@@ -23,13 +25,9 @@ module Mousai
   # loaded at startup, the song history loaded from the database, the `app.*`
   # actions the main menu points at, and the accelerators.
   #
-  # The player, the album art store and the provider settings are owned here,
-  # as upstream owns them, and a database that could not be read brings up the
-  # critical database error dialog over the window.
-  #
-  # Upstream also owns the recognizer, which needs an audio recorder and so
-  # GStreamer; the port's dependencies carry no GStreamer binding, so there is
-  # no recognizer to own.
+  # The player, the album art store, the provider settings and the recognizer
+  # are owned here, as upstream owns them, and a database that could not be
+  # read brings up the critical database error dialog over the window.
   #
   # House style (see .claude/skills/ruby-gtk): every widget is a memoized
   # method, all configuration lives in its `tap`, assembly happens only in
@@ -57,6 +55,7 @@ module Mousai
           window.build
           window.present
           present_database_error
+          recordings
         end
 
         app.add_action(quit_action)
@@ -78,6 +77,14 @@ module Mousai
     def database = @database ||= Database.new
     def player = @player ||= Player.new
     def album_art_store = @album_art_store ||= AlbumArtStore.new
+    def recognizer = @recognizer ||= Recognizer.new(settings: settings)
+
+    # The recordings saved for later recognition, loaded from the database and
+    # bound to the recognizer so it retries them as connectivity allows —
+    # upstream's `imp.recognizer.bind_saved_recordings(recordings)`.
+    def recordings
+      @recordings ||= Recordings.new(database: database).load.tap { |loaded| recognizer.bind_saved_recordings(loaded) }
+    end
 
     # The process-global provider settings the test providers read — upstream's
     # `ProviderSettings::lock`.
@@ -110,6 +117,7 @@ module Mousai
         settings:        settings,
         player:          player,
         album_art_store: album_art_store,
+        recognizer:      recognizer,
       )
     end
 
