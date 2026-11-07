@@ -131,6 +131,23 @@ GtkDriver.drive(app, shots: "tmp/shots") do |d, application|
     d.check("toggle-playback is disabled again") { !window.call.toggle_playback_action.enabled? }
   end
 
+  # This sandbox has no PulseAudio/PipeWire device, so GStreamer's device
+  # provider cannot start: `Recorder#start` raises synchronously, Recognizer
+  # rescues it (warns and reverts to NULL) exactly as it does for any
+  # start-up failure, and the action never reaches LISTENING for a tick to
+  # catch. That is the real, environment-forced path through this code, not
+  # a stand-in for one — it is still worth pinning that it degrades instead
+  # of raising out of the action handler.
+  d.step("win.toggle-recognize is activated with no audio device available") do
+    window.call.toggle_recognize_action.activate(nil)
+  end
+
+  d.step("it degraded gracefully instead of crashing the window") do
+    d.check("recognizer settled back to null") { application.recognizer.state == Mousai::Recognizer::NULL }
+    d.check("no song landed on the player from it") { player.call.song.nil? }
+    d.check("recognizer action is still wired") { window.call.toggle_recognize_action.enabled? }
+  end
+
   d.step("the mock provider recognizes a song") do
     Mousai::ProviderSettings.lock do |settings|
       settings.test_mode = Mousai::TestProviderMode::VALID_ONLY
