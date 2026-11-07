@@ -6,6 +6,7 @@ require_relative "../about_dialog"
 require_relative "../album_art"
 require_relative "../database"
 require_relative "../database_error_dialog"
+require_relative "../inspector_page"
 require_relative "../migrations"
 require_relative "../player"
 require_relative "../preferences_dialog"
@@ -65,6 +66,7 @@ module Mousai
         app.add_action(show_preferences_action)
         app.add_action(show_about_action)
         app.add_action(shortcuts_action)
+        app.add_action(show_inspector_page_action) if devel?
 
         ACCELS.each { |action, accels| app.set_accels_for_action(action, accels) }
       end
@@ -147,6 +149,21 @@ module Mousai
         action.signal_connect("activate") { ShortcutsDialog.present(window.root) }
       end
     end
+
+    def show_inspector_page_action
+      @show_inspector_page_action ||= Gio::SimpleAction.new("show-inspector-page").tap do |action|
+        action.signal_connect("activate") { inspector_page.present(window.root) }
+      end
+    end
+
+    # Upstream's devel build installs `InspectorPage` as a GTK Inspector
+    # extension unconditionally, gated at runtime only by GTK Inspector's own
+    # object-property check; the app id itself does not vary. This port has
+    # no devel build profile, so the action the page sits behind is gated on
+    # this environment variable instead.
+    def devel? = ENV.key?("MOUSAI_DEVEL")
+
+    def inspector_page = @inspector_page ||= InspectorPage.new
 
     # The icons upstream ships in its gresource bundle — the app icon and the
     # three symbolic ones its UI names — live in data/icons here, so the icon

@@ -10,11 +10,6 @@ module Mousai
   # General and Controls, whose items either name an accelerator directly or
   # name an action and let libadwaita look its accelerator up.
   #
-  # Upstream's Controls section also lists Toggle Listen, which points at
-  # `win.toggle-recognize`; the port installs no such action, because the
-  # recognizer needs an audio recorder and so GStreamer, which has no binding
-  # in the port's dependencies. A shortcut row for an action nothing answers
-  # would be a promise the app cannot keep, so that one row is left out.
   module ShortcutsDialog
     GENERAL_ITEMS = [
       # Translators: shortcut window
@@ -32,6 +27,8 @@ module Mousai
     ].freeze
 
     CONTROLS_ITEMS = [
+      # Translators: shortcut window
+      { title: "Toggle Listen", action_name: "win.toggle-recognize" },
       # Translators: shortcut window
       { title: "Toggle Playback", action_name: "win.toggle-playback" },
     ].freeze
