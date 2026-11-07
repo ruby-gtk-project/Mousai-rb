@@ -52,10 +52,13 @@ module Mousai
         end
 
         app.signal_connect("activate") do
+          # The recordings must be bound to the recognizer before the window
+          # is built: `RecognizerStatus` reads `recognizer.saved_recordings`
+          # while building itself.
+          recordings
           window.build
           window.present
           present_database_error
-          recordings
         end
 
         app.add_action(quit_action)

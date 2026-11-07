@@ -7,6 +7,7 @@ require_relative "i18n"
 require_relative "player"
 require_relative "recognize_error_dialog"
 require_relative "recognizer"
+require_relative "recognizer_view"
 require_relative "recording_saved_dialog"
 require_relative "settings"
 require_relative "song_bar"
@@ -25,14 +26,14 @@ module Mousai
   # the player has a song and the history view is not in selection mode, and
   # `win.toggle-playback` is enabled for exactly as long.
   #
-  # Upstream's stack also holds the recognizer view, keyed to the recognizer's
-  # state; that view (src/window/recognizer_view.rs) is not ported yet, so the
-  # stack still has the history view alone. `win.toggle-recognize` is
-  # installed and wired to the real `Recognizer`, though — upstream's
-  # `install_action_async` handler, minus pushing the recognizer view onto the
-  # stack. A recognition that finishes shows up the way upstream's
-  # `bind_models` says: inserted into the history and pushed as a song page,
-  # or through #present_recognize_error / #present_recording_saved_message.
+  # The stack also holds the recognizer view, keyed to the recognizer's state
+  # the way upstream's `install_action_async`/`bind_models` keep it: the
+  # history view is shown while the recognizer is idle, and the recognizer
+  # view comes up for as long as it is listening or recognizing.
+  # `win.toggle-recognize` drives the real `Recognizer`; a recognition that
+  # finishes shows up the way upstream's `bind_models` says: inserted into the
+  # history and pushed as a song page, or through #present_recognize_error /
+  # #present_recording_saved_message.
   class Window
     NARROW_BREAKPOINT_CONDITION = "max-width: 450px"
     MIN_WIDTH = 360
@@ -62,6 +63,7 @@ module Mousai
 
             stack.tap do |s|
               s.add_child(history_view.build)
+              s.add_child(recognizer_view.build)
             end
 
             song_bar_revealer.tap do |revealer|
@@ -115,7 +117,7 @@ module Mousai
         history_view.search_bar.key_capture_widget = win
       end.tap do
         @settings.apply_to(root)
-        update_toggle_search_action
+        update_stack_visible_child
         update_toggle_playback_action
         update_song_bar_revealer
       end
@@ -149,10 +151,13 @@ module Mousai
         song_list:        @song_list,
         player:           @player,
         album_art_store:  @album_art_store,
+        recognizer:       @recognizer,
         on_toast:         method(:add_toast),
         on_message_toast: method(:add_message_toast),
       )
     end
+
+    def recognizer_view = @recognizer_view ||= RecognizerView.new(@recognizer)
 
     def root
       @root ||= Adwaita::ApplicationWindow.new(@app).tap do |win|
@@ -287,8 +292,30 @@ module Mousai
       # for later and a permanent failure go through the window's own dialogs.
       def bind_recognizer
         @recognizer.on_song_recognized { |_recognizer, song| on_song_recognized(song) }
-        @recognizer.on_recording_saved { |_recognizer, cause| present_recording_saved_message(cause) { @app.activate_action("show-preferences", nil) } }
+        @recognizer.on_recording_saved { |_recognizer, cause| on_recording_saved(cause) }
         @recognizer.on_recognize_failed { |_recognizer, error| present_recognize_error(error) { @recognizer.toggle_recognize } }
+        @recognizer.on_state_changed { update_stack_visible_child }
+      end
+
+      # The stack shows the recognizer view for as long as the recognizer is
+      # listening or recognizing, and falls back to the history view once it
+      # is idle again.
+      def update_stack_visible_child
+        if @recognizer.state == Recognizer::NULL
+          stack.visible_child = history_view.root
+        else
+          stack.visible_child = recognizer_view.root
+        end
+
+        history_view.update_recognizer_status_ui
+        recognizer_view.update_offline_mode_ui
+        update_toggle_search_action
+      end
+
+      def on_recording_saved(cause)
+        history_view.update_recognizer_status_ui
+        recognizer_view.update_offline_mode_ui
+        present_recording_saved_message(cause) { @app.activate_action("show-preferences", nil) }
       end
 
       def on_song_recognized(song)

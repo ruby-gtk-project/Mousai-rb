@@ -3,6 +3,8 @@
 require "adwaita"
 require_relative "i18n"
 require_relative "lyrics_page"
+require_relative "recognized_page"
+require_relative "recognizer_status"
 require_relative "song"
 require_relative "song_filter"
 require_relative "song_list"
@@ -19,19 +21,21 @@ module Mousai
   # (`content_empty_page` and `content_empty_search_result_page`) and the undo
   # toast from `show_undo_remove_song_toast`.
   #
-  # Upstream also hosts the recognizer status in its header bar and pushes a
-  # RecognizedPage when a recognition finishes; neither is ported yet, so the
-  # Listen button's own window action drives the recognizer directly (see
-  # window.rb) instead of through a recognizer status widget.
+  # Upstream also hosts the recognizer status in its header bar, which the
+  # port now does too: `recognizer_status` sits next to the Listen button and
+  # its "show results" request pulls the saved recordings that finished
+  # recognizing into the history and pushes a RecognizedPage for them —
+  # upstream's `show_recognizer_results`.
   class HistoryView
     APP_ICON_NAME = "io.github.seadve.Mousai"
 
     attr_reader :song_list
 
-    def initialize(song_list:, player:, album_art_store:, on_toast: nil, on_message_toast: nil)
+    def initialize(song_list:, player:, album_art_store:, recognizer:, on_toast: nil, on_message_toast: nil)
       @song_list = song_list
       @player = player
       @album_art_store = album_art_store
+      @recognizer = recognizer
       @on_toast = on_toast
       @on_message_toast = on_message_toast
       @selection_mode_active = false
@@ -59,6 +63,7 @@ module Mousai
 
             main_header_bar.tap do |bar|
               bar.pack_start(listen_button)
+              bar.pack_start(recognizer_status.build)
               bar.pack_end(main_menu_button)
               bar.pack_end(select_button)
               bar.pack_end(search_button)
@@ -117,6 +122,8 @@ module Mousai
         end
 
         root.insert_action_group("history-view", action_group)
+
+        recognizer_status.on_show_results_requested { show_recognizer_results }
       end.tap do
         update_selection_actions
         update_selection_mode_ui
@@ -173,6 +180,24 @@ module Mousai
       end
     end
 
+    # Pushes a RecognizedPage for the given songs — upstream's
+    # `push_recognized_page`.
+    def push_recognized_page(songs)
+      RecognizedPage.new(
+        songs,
+        player:            @player,
+        album_art_store:   @album_art_store,
+        on_song_activated: method(:push_song_page),
+      ).tap do |page|
+        page.adaptive_mode = @adaptive_mode
+        root.push(page.build)
+      end
+    end
+
+    # Must be called whenever the recognizer's offline mode or state may have
+    # changed, so the header bar status cluster stays current.
+    def update_recognizer_status_ui = recognizer_status.update_offline_mode_ui
+
     def pop_page = root.pop
 
     def scroll_to_top = content_main_page.emit("scroll-child", Gtk::ScrollType::START, false)
@@ -188,6 +213,8 @@ module Mousai
     end
 
     def main_header_bar = @main_header_bar ||= Adwaita::HeaderBar.new
+
+    def recognizer_status = @recognizer_status ||= RecognizerStatus.new(@recognizer)
 
     # Upstream's Listen button drives `win.toggle-recognize`, which the window
     # installs against the real `Recognizer`.
@@ -659,6 +686,28 @@ module Mousai
           page.build
           page.song = song
           lyrics_pages << page
+        end
+      end
+
+      # Upstream's `show_recognizer_results`: takes the saved recordings the
+      # recognizer has finished with, keeps only the ones that came back with
+      # a song (a permanent failure is dropped — there is nothing to show for
+      # it), inserts them into the history as newly heard unless they were
+      # already heard before, and pushes a RecognizedPage for them.
+      def show_recognizer_results
+        songs = @recognizer.take_recognized_saved_recordings.filter_map(&:recognized_song)
+
+        unless songs.empty?
+          songs.each do |song|
+            previous = @song_list.get(song.id)
+
+            if previous.nil? || previous.newly_heard?
+              song.newly_heard = true
+            end
+          end
+
+          @song_list.insert_many(songs)
+          push_recognized_page(songs)
         end
       end
   end

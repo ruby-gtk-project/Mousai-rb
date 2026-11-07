@@ -148,6 +148,37 @@ GtkDriver.drive(app, shots: "tmp/shots") do |d, application|
     d.check("recognizer action is still wired") { window.call.toggle_recognize_action.enabled? }
   end
 
+  # The recorder's failure above is still raised and rescued inside the same
+  # synchronous `toggle_recognize` call, so the recognizer passes through
+  # LISTENING for exactly that call before settling back to NULL — long
+  # enough for the stack switch the window wires to `on_state_changed` to
+  # show the recognizer view for that one tick.
+  d.step("the stack switches to the recognizer view while briefly listening") do
+    @states_seen = []
+    @stack_children_seen = []
+    @listener = application.recognizer.on_state_changed do |recognizer|
+      @states_seen << recognizer.state
+      @stack_children_seen << window.call.stack.visible_child
+    end
+
+    window.call.toggle_recognize_action.activate(nil)
+
+    application.recognizer.instance_variable_get(:@state_listeners).delete(@listener)
+  end
+
+  d.step("the recognizer view and the history view traded places") do
+    d.check("the recognizer passed through listening") do
+      @states_seen.include?(Mousai::Recognizer::LISTENING)
+    end
+    d.check("the stack showed the recognizer view while listening") do
+      listening_index = @states_seen.index(Mousai::Recognizer::LISTENING)
+      @stack_children_seen[listening_index] == window.call.recognizer_view.root
+    end
+    d.check("the stack is back on the history view now that it is idle") do
+      window.call.stack.visible_child == window.call.history_view.root
+    end
+  end
+
   d.step("the mock provider recognizes a song") do
     Mousai::ProviderSettings.lock do |settings|
       settings.test_mode = Mousai::TestProviderMode::VALID_ONLY
@@ -225,6 +256,50 @@ GtkDriver.drive(app, shots: "tmp/shots") do |d, application|
       @reloaded.item(0).recognize_error&.kind == Mousai::RecognizeError::CONNECTION
     end
     d.check("one recording was taken") { @taken.length == 1 }
+  end
+
+  # A saved recording that already came back with a song is what
+  # `RecognizerStatus` counts as successful and what its "show results"
+  # button hands to `HistoryView#show_recognizer_results`.
+  d.step("a saved recording is recognized while offline") do
+    @offline_song = sample_song("Thriller", "Michael Jackson")
+
+    @offline_recording = Mousai::Recording.new("offline bytes", Mousai::DateTime.now_utc)
+    application.recognizer.saved_recordings.insert(@offline_recording)
+    @offline_recording.recognize_result = @offline_song
+
+    window.call.history_view.recognizer_status.send(:update_progress_and_show_results_ui)
+  end
+
+  d.step("the status cluster counts it as ready to show") do
+    d.check("the recognizer sees it as recognized") do
+      application.recognizer.peek_recognized_saved_recordings.include?(@offline_recording)
+    end
+    d.check("the show-results button is revealed") do
+      window.call.history_view.recognizer_status.show_results_button_revealer.reveal_child?
+    end
+    d.check("its label counts the one successful recognition") do
+      window.call.history_view.recognizer_status.show_results_button_label.label == "1"
+    end
+  end
+
+  d.step("the show-results button is clicked") do
+    window.call.history_view.send(:show_recognizer_results)
+  end
+
+  d.step("a RecognizedPage for it was pushed and the song is in the history") do
+    d.check("the recognized song is now in the history") do
+      application.song_list.get(@offline_song.id) == @offline_song
+    end
+    d.check("it is marked newly heard") { @offline_song.newly_heard? }
+    d.check("the recognized page is the visible navigation page") do
+      window.call.history_view.root.visible_page.title == "Recognized Song"
+    end
+    d.check("the saved recording was taken off the list") do
+      application.recognizer.saved_recordings.to_a.empty?
+    end
+    d.shot("26-recognized-page")
+    window.call.history_view.pop_page
   end
 
   d.step("a window holding the waveform and the progress icon opens") do
