@@ -4,68 +4,60 @@ Survey of `origin/main` (Rust / gtk-rs / libadwaita) against `lib/` on `ruby`.
 No app code was written in this step.
 
 Read with `git show origin/main:<path>`; upstream's full tree is listed with
-`git ls-tree -r --name-only origin/main`. This is the fourth survey of this
-fork, taken after the recognizer/recorder/device pass (`f2f6dca`,
-`7557e29`), which is itself after the gem-wiring pass that this report's
-previous revision flagged as a blocker.
+`git ls-tree -r --name-only origin/main`. This is the fifth survey of this
+fork, taken after `f25ff9a` (devel Inspector page + Toggle Listen shortcut
+row) and `322aa11` (driving the About/Shortcuts/Inspector dialogs), both of
+which close gaps the fourth survey (`6fef548`) flagged as outstanding.
 
 ## Totals — how much app is left
 
-`lib/` now holds 54 files (51 at top level plus `lib/mousai/application.rb`,
-`lib/mousai/rb/version.rb`), up from 44 at the previous survey. The entire
-recognition pipeline the last survey called "what remains" — `Recognizer`,
-`Recorder`, `Device`, `RecognizerView`, `RecognizerStatus`, `RecognizedPage`,
-`RecognizedPageTile` — is now present and wired to real GStreamer/libsoup
-bindings, not hand-rolled.
+`lib/` now holds 55 files (52 at top level plus `lib/mousai/application.rb`,
+`lib/mousai/rb/version.rb`, plus `lib/inspector_page.rb` added since the last
+survey). The devel-only `InspectorPage` and the "Toggle Listen" shortcuts
+row, both called out as open gaps last time, are now present.
 
 | | upstream | `ruby` branch |
 |---|---:|---:|
-| source files contributing a component (excl. `.ui`) | 64 | 54 |
+| source files contributing a component (excl. `.ui`) | 64 | 55 |
 | `.ui` templates / standalone objects | 17 + 1 (shortcuts) | 0 (house style builds in code) |
-| GAction names (app + win) | 16 | 10 installed (`toggle-recognize` now among them) |
+| GAction names (app + win) | 16 | 11 installed (`show-inspector-page` now among them) |
 | translated messages (`po/mousai.pot`) | 132 | 0 (no `po/` yet — `lib/i18n.rb` is a passthrough) |
 | locales (`po/LINGUAS`) | 48 | 0 |
 
 What is left, in the order a user would meet it:
 
-- The keyboard-shortcuts dialog is missing the "Toggle Listen" row — see the
-  finding below; this is a one-line gap now that the action exists.
-- `InspectorPage` (`src/inspector_page.rs` + `ui/inspector_page.ui`), the
-  devel-build diagnostics page — no `lib/inspector_page.rb`. Lower priority:
-  it only appears in `Devel` builds.
+- `song-page.copy-song` is not installed as a real `Gio::SimpleAction` in
+  `lib/song_page.rb` — the copy button works via a plain `signal_connect`,
+  but the action-group entry upstream installs
+  (`src/window/song_page.rs:75`) has no port-side counterpart. Flagged in
+  `.reports/component-parity.md` gap #1; recorded here as the one remaining
+  behaviour-axis gap in the window/page component map.
 - `po/` — no message catalogue or locale files exist on `ruby` at all. This
   is `translation-parity`'s job, not this survey's, but it is the largest
-  single gap left on the board (132 msgids, 48 locales, zero ported).
+  single gap left on the board (132 msgids, 48 locales, zero ported). Also
+  note `component-parity.md` gap #2: `lib/i18n.rb` has no `msgctxt`-aware
+  entry point, so even a ported `po/` won't line up with upstream's
+  `(msgctxt, msgid)` pairs for shortcuts/menu strings without further work.
+- `data/resources/style.css` is still not ported to `lib/style.rb` in full
+  (see `component-parity.md` gap #3) — check that report before treating
+  the stylesheet row below as settled.
 - Everything else in the "Component map" below that upstream has and the
   port either doesn't, or has only partially — see the "partial" rows.
 
-### Finding — a stale "no binding" excuse left in the code after the gem was wired
+### Previous findings — now resolved
 
-`lib/shortcuts_dialog.rb:13-17` still reads:
+The fourth survey's two flagged gaps are both closed:
 
-> Upstream's Controls section also lists Toggle Listen, which points at
-> `win.toggle-recognize`; the port installs no such action, because the
-> recognizer needs an audio recorder and so GStreamer, which has no binding
-> in the port's dependencies. A shortcut row for an action nothing answers
-> would be a promise the app cannot keep, so that one row is left out.
-
-Both halves of that justification are now false:
-
-- `win.toggle-recognize` **is** installed — `lib/window.rb:225`,
-  `Gio::SimpleAction.new("toggle-recognize")`.
-- GStreamer **does** have a binding in the port's dependencies —
-  `gstreamer_play` and `gstreamer` are in `mousai-rb.gemspec` and
-  `nix/Gemfile`, and `lib/recorder.rb`/`lib/device.rb` use `Gst::` classes
-  directly.
-
-The comment was accurate when it was written and was never revisited once
-the blocker it names was removed. The "Toggle Listen" `AdwShortcutsItem` row
-(upstream `data/resources/ui/shortcuts.ui`, `Controls` section) is still
-absent from `CONTROLS_ITEMS` in `lib/shortcuts_dialog.rb`, so the shortcuts
-dialog under-reports the app's own keyboard shortcuts. This is not fixed
-here — this step is survey-only — but it is a real gap, not a settled
-decision, and the comment claiming otherwise should be corrected when that
-file is next touched.
+- **"Toggle Listen" shortcut row** — `lib/shortcuts_dialog.rb`'s
+  `CONTROLS_ITEMS` now includes
+  `{ title: "Toggle Listen", action_name: "win.toggle-recognize" }` ahead of
+  "Toggle Playback", matching `shortcuts.ui`'s `Controls` section order. The
+  stale comment explaining the gap as a GStreamer-binding blocker is gone.
+- **`InspectorPage`** — `lib/inspector_page.rb` exists, ported from
+  `src/inspector_page.rs` + `ui/inspector_page.ui`. It is wired into
+  `lib/mousai/application.rb`: `app.show-inspector-page` is installed only
+  `if devel?` (line 69), and `inspector_page.present(window.root)` (line
+  166) matches upstream gating the page to `Devel` builds.
 
 ### Gem wiring — verified in place, not reimplemented
 
@@ -116,12 +108,12 @@ Rows changed since the last survey are marked **changed**.
 | 21 | `src/window/recognized_page.rs` + `ui/recognized_page.ui` | `lib/recognized_page.rb` | page | **yes (new since last survey)** |
 | 22 | `src/window/recognized_page_tile.rs` + `ui/recognized_page_tile.ui` | `lib/recognized_page_tile.rb` | tile | **yes (new since last survey)** |
 | 23 | `src/preferences_dialog.rs` + `ui/preferences_dialog.ui` | `lib/preferences_dialog.rb` | preferences | yes |
-| 24 | `data/resources/ui/shortcuts.ui` | `lib/shortcuts_dialog.rb` | shortcuts | yes (partial — missing the "Toggle Listen" row; see finding above) |
+| 24 | `data/resources/ui/shortcuts.ui` | `lib/shortcuts_dialog.rb` | shortcuts | yes — "Toggle Listen" row now present **(changed)** |
 | 25 | `src/about.rs` | `lib/about_dialog.rb` | about | yes |
 | 26 | `src/application.rs` (`present_database_error_dialog`) | `lib/database_error_dialog.rb` | error dialog | yes |
 | 27 | `src/window/mod.rs` (`present_recognize_error`) | `lib/recognize_error_dialog.rb` | error dialog | yes |
 | 28 | `src/window/mod.rs` (`present_recording_saved_message`) | `lib/recording_saved_dialog.rb` | error dialog | yes |
-| 29 | `src/inspector_page.rs` + `ui/inspector_page.ui` | `lib/inspector_page.rb` | devel page | **no** |
+| 29 | `src/inspector_page.rs` + `ui/inspector_page.ui` | `lib/inspector_page.rb` | devel page | **yes (new since last survey)** — gated on `devel?` in `lib/mousai/application.rb` |
 | 30 | `data/resources/style.css` | `lib/style.rb` (inline `Gtk::CssProvider`) | stylesheet | yes |
 | 31 | `data/io.github.seadve.Mousai.gschema.xml.in` | `lib/settings.rb` | GSettings | yes |
 | 32 | `src/recognizer/mod.rs` | `lib/recognizer.rb` | model/orchestrator | **yes (new since last survey)** |
@@ -156,19 +148,14 @@ Rows changed since the last survey are marked **changed**.
 
 ### Per-component detail — what's still missing
 
-#### 29. `src/inspector_page.rs` + `ui/inspector_page.ui` → `lib/inspector_page.rb` — devel-build diagnostics
+#### `song_page.rs:75` → `lib/song_page.rb` — `song-page.copy-song` not installed as an action
 
-Only relevant in devel builds (`Devel` app id). Lets a developer force a
-`ProviderType`/`TestProviderMode` without a real recognition. No gem
-blocker — this is just not written yet.
-
-#### 24. `data/resources/ui/shortcuts.ui` → `lib/shortcuts_dialog.rb` — the missing "Toggle Listen" row
-
-See the finding above. `CONTROLS_ITEMS` in `lib/shortcuts_dialog.rb` has one
-entry (`Toggle Playback`); upstream's `Controls` section has two (`Toggle
-Listen` first, then `Toggle Playback`). Adding the row is now unblocked —
-`win.toggle-recognize` exists — but the comment that explains the gap still
-describes a blocker that is gone.
+See `component-parity.md` gap #1. The copy button works today (plain
+`signal_connect("clicked")`), so this is a structural gap, not a visible
+regression: the action namespace upstream exposes
+(`song-page.copy-song`) has no port-side `Gio::SimpleAction` to target it,
+so nothing else (a future shortcut, a menu item, a test driving the action
+by name) could address it the way upstream allows.
 
 ## Translations
 
