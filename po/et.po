@@ -1,0 +1,784 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the mousai package.
+# Henri <contact@hen.ee>, 2022.
+# Priit Jõerüüt <hwlate@joeruut.com>, 2024.
+# Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>, 2025, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: mousai\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-19 17:29+0800\n"
+"PO-Revision-Date: 2026-04-20 10:10+0000\n"
+"Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
+"Language-Team: Estonian <https://hosted.weblate.org/projects/seadve/mousai/"
+"et/>\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.17.1-dev\n"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:2
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:7 src/about.rs:12
+#: src/main.rs:64
+msgid "Mousai"
+msgstr "Mousai"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:3
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:8
+msgid "Identify songs in seconds"
+msgstr "Tuvasta laule sekunditega"
+
+#. Translators: These are search terms to find this application. Do NOT translate or localize the semicolons. The list MUST also end with a semicolon.
+#: data/io.github.seadve.Mousai.desktop.in.in:9
+msgid "Shazam;Audio;Music;Song;Recognize;Identify;Recognition;"
+msgstr "Shazam;Audio;Music;Song;Recognize;Identify;Recognition;tuvastamine;muusika;autor;esitaja;lugu:pala;laul;"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:6
+msgid "Window width"
+msgstr "Akna laius"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:11
+msgid "Window height"
+msgstr "Akna kõrgus"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:16
+msgid "Whether the window is maximized"
+msgstr "Kas aken on maksimaalses vaates"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:26
+msgid "Audio source type to use in recording audio"
+msgstr "Heliallikas kasutamiseks salvestamisel"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:32
+msgid "API token used by AudD recognition"
+msgstr "AudDi tuvastusteenuse API tunnusluba"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:37
+msgid "Legacy (Kept for migration)"
+msgstr "Pärandvalik (on kasutusel vaid andmete kolimiseks)"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:10
+msgid "Discover songs you are aching to know with an easy-to-use interface."
+msgstr ""
+"Mugava kasutajaliidese abil avasta vaevata laule, mida oled alati tahtnud "
+"teada."
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:11
+msgid ""
+"Mousai is a simple application that can recognize songs similar to Shazam. "
+"Just click the listen button, and then wait a few seconds. It will magically "
+"return the title and artist of that song!"
+msgstr ""
+"Mousai on lihtne rakendus, mis oskab tuvastada lugusid (sarnane Shazamile). "
+"Vajuta nuppu „Kuula“ ja oota mõni hetk ning varsti näedki loo pealkirja ja "
+"esitajat!"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:12
+msgid ""
+"Note: This uses the API of audd.io, so it is necessary to log in to their "
+"site to get more trials."
+msgstr ""
+"Hoiatus: Rakendus kasutab audd.io APIt ja sul on selleks vaja nende "
+"kasutajakontot."
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:13
+msgid "Why you will love Mousai?"
+msgstr "Miks Mousai võib meeldida?"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:15
+msgid "🎵 Identify songs within seconds or save for later when offline"
+msgstr ""
+"🎵 Tuvasta lood mõne hetkega ning salvesta hiljem vallasrežiimis kasutamiseks"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:16
+msgid "🎙️ Recognize from desktop audio or your microphone"
+msgstr "🎙️ Tuvasta kas töölaua helisisendist või mikrofonist"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:17
+msgid "🎸 Build a repertoire of recognized songs"
+msgstr "🎸 Koosta tuvastatud lugude loend"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:18
+msgid "🎼 Quickly preview the song within the interface"
+msgstr "🎼 Kuula või vaata lugu kohe samast kasutajaliidesest"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:19
+msgid "🌐 Browse and listen the song from different providers"
+msgstr "🌐 Sirvi ja/või kuula lugu erinevate teenusepakkujate juures"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:20
+msgid "📱 Easy-to-use user interface"
+msgstr "📱 Lihtne kasutajaliides"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:26
+msgid "Mousai Home Page"
+msgstr "Mousai koduleht"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:30
+msgid "Detailed view of identified song"
+msgstr "Tuvastatud loo üksikasjalik vaade"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:34
+msgid "Listening mode detecting the song"
+msgstr "Kuulamisrežiim loo tuvastamisel"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:38
+msgid "Recognized songs"
+msgstr "Tuvastatud lood"
+
+#: data/resources/ui/history_view.ui:6
+msgid "_Preferences"
+msgstr "_Eelistused"
+
+#: data/resources/ui/history_view.ui:10
+msgid "_Keyboard Shortcuts"
+msgstr "_Kiirklahvid"
+
+#: data/resources/ui/history_view.ui:14
+msgid "_About Mousai"
+msgstr "Mousai _teave"
+
+#: data/resources/ui/history_view.ui:22
+msgid "Select _All"
+msgstr "Vali _kõik"
+
+#: data/resources/ui/history_view.ui:26
+msgid "_Unselect All"
+msgstr "Eemalda kog_u valik"
+
+#: data/resources/ui/history_view.ui:42
+msgid "Home"
+msgstr "Avaleht"
+
+#: data/resources/ui/history_view.ui:52
+msgid "Recognize Song"
+msgstr "Tuvasta lugu"
+
+#: data/resources/ui/history_view.ui:53 data/resources/ui/song_page.ui:109
+msgid "Listen"
+msgstr "Tuvasta"
+
+#: data/resources/ui/history_view.ui:65
+msgid "Main Menu"
+msgstr "Peamenüü"
+
+#: data/resources/ui/history_view.ui:73 src/window/song_tile.rs:361
+msgid "Select"
+msgstr "Vali"
+
+#: data/resources/ui/history_view.ui:80 data/resources/ui/history_view.ui:103
+msgid "Search Songs"
+msgstr "Otsi lugusid"
+
+#: data/resources/ui/history_view.ui:96
+msgid "Cancel Selection"
+msgstr "Tühista valik"
+
+#: data/resources/ui/history_view.ui:97 data/resources/ui/recognizer_view.ui:14
+msgid "Cancel"
+msgstr "Katkesta"
+
+#: data/resources/ui/history_view.ui:117
+msgid "Search songs"
+msgstr "Otsi lugusid"
+
+#: data/resources/ui/history_view.ui:140
+msgid "Start Recognizing Songs!"
+msgstr "Alusta laulude ja lugude tuvastamisega!"
+
+#: data/resources/ui/history_view.ui:141
+msgid "Click the listen button to start"
+msgstr "Alustamiseks vajuta nupule „Kuula“"
+
+#: data/resources/ui/history_view.ui:150
+msgid "No Results"
+msgstr "Tulemusi pole"
+
+#: data/resources/ui/lyrics_page.ui:10 data/resources/ui/song_page.ui:140
+msgid "Lyrics"
+msgstr "Sõnad"
+
+#: data/resources/ui/preferences_dialog.ui:8
+msgid "General"
+msgstr "Üldised seadistused"
+
+#: data/resources/ui/preferences_dialog.ui:11
+msgid "Audio Source"
+msgstr "Heliallikas"
+
+#: data/resources/ui/preferences_dialog.ui:12
+msgid "Device used for listening"
+msgstr "Kuulamiseks kasutatud seade"
+
+#: data/resources/ui/preferences_dialog.ui:19
+#: src/window/external_link_tile.rs:64
+msgid "AudD"
+msgstr "AudD"
+
+#: data/resources/ui/preferences_dialog.ui:20
+msgid ""
+"You can get yourself an API token from <a href=\"https://dashboard.audd.io/"
+"\">audd.io</a>. Leaving this blank will give you a few trials per day"
+msgstr ""
+"Saad vajaliku API tunnusloa siit lehelt: <a href=\"https://dashboard.audd.io/"
+"\">audd.io</a>. Kui väli on tühi, siis on sul võimalik teha paar "
+"tuvastamiskatset päevas"
+
+#: data/resources/ui/preferences_dialog.ui:23
+msgid "API Token"
+msgstr "API tunnusluba"
+
+#: data/resources/ui/recognizer_status.ui:17
+msgid "Offline Mode Enabled"
+msgstr "Vallasrežiim on kasutusel"
+
+#: data/resources/ui/recognizer_status.ui:44
+msgid "Show Offline Mode Recognition Results"
+msgstr "Näita vallasrežiimis tehtud tuvastamisi"
+
+#: data/resources/ui/recognizer_view.ui:13
+msgid "Cancel Listening"
+msgstr "Tühista tuvastamine"
+
+#: data/resources/ui/recognizer_view.ui:49
+msgid "Offline Mode"
+msgstr "Vallasrežiim"
+
+#: data/resources/ui/shortcuts.ui:6
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Üldine"
+
+#: data/resources/ui/shortcuts.ui:9
+msgctxt "shortcut window"
+msgid "Open Main Menu"
+msgstr "Ava põhimenüü"
+
+#: data/resources/ui/shortcuts.ui:15
+msgctxt "shortcut window"
+msgid "Search"
+msgstr "Otsi"
+
+#: data/resources/ui/shortcuts.ui:21
+msgctxt "shortcut window"
+msgid "Show Preferences"
+msgstr "Näita eelistusi"
+
+#: data/resources/ui/shortcuts.ui:27
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Näita kiirklahve"
+
+#: data/resources/ui/shortcuts.ui:33
+msgctxt "shortcut window"
+msgid "Close Window"
+msgstr "Sulge aken"
+
+#: data/resources/ui/shortcuts.ui:39
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Välju"
+
+#: data/resources/ui/shortcuts.ui:47
+msgctxt "shortcut window"
+msgid "Controls"
+msgstr "Juhtimine"
+
+#: data/resources/ui/shortcuts.ui:50
+msgctxt "shortcut window"
+msgid "Toggle Listen"
+msgstr "Lülita tuvastamine sisse/välja"
+
+#: data/resources/ui/shortcuts.ui:56
+msgctxt "shortcut window"
+msgid "Toggle Playback"
+msgstr "Esita/Peata lugu"
+
+#: data/resources/ui/song_bar.ui:85
+msgid "Show Song Information"
+msgstr "Näita loo teavet"
+
+#: data/resources/ui/song_bar.ui:145
+msgid "Stop"
+msgstr "Peata"
+
+#: data/resources/ui/song_page.ui:13
+msgid "Remove From History"
+msgstr "Eemalda ajaloost"
+
+#: data/resources/ui/song_page.ui:19
+msgid "Copy"
+msgstr "Kopeeri"
+
+#: data/resources/ui/song_page.ui:122
+msgid "Information"
+msgstr "Teave"
+
+#: data/resources/ui/song_page.ui:125
+msgid "Last Heard"
+msgstr "Viimati kuuldud"
+
+#: data/resources/ui/song_page.ui:130
+msgid "Album"
+msgstr "Album"
+
+#: data/resources/ui/song_page.ui:135
+msgid "Release Date"
+msgstr "Ilmumiskuupäev"
+
+#: data/resources/ui/song_tile.ui:30
+msgid "New"
+msgstr "Uus"
+
+#. Translators: Replace "translator-credits" with your names. Put a comma between.
+#: src/about.rs:18
+msgid "translator-credits"
+msgstr "Henri; Priit Jõerüüt 2024-2025"
+
+#: src/about.rs:27
+msgid "Donate"
+msgstr "Toeta meid rahaliselt"
+
+#: src/about.rs:28
+msgid "GitHub"
+msgstr "GitHub"
+
+#: src/about.rs:30
+msgid "Translate"
+msgstr "Tõlgi"
+
+#: src/application.rs:209
+msgid "Critical Database Error"
+msgstr "Kriitiline andmebaasiviga"
+
+#: src/application.rs:210
+msgid ""
+"Sorry, a critical database error has occurred. This is likely caused by a "
+"tampered or corrupted database. You can try clearing application data. "
+"However, this is not recommended and will delete all your songs and saved "
+"recordings.\n"
+"\n"
+"To report this issue, please launch Mousai in the terminal to include the "
+"logs and submit the bug report to the <a href=\"https://github.com/SeaDve/"
+"Mousai/issues/\">issue page</a>"
+msgstr ""
+"Vabandust, andmebaasiga tekkis kriitiline viga. Ilmselt põhjustas seda "
+"andmebaasi väline muutmine või muu katkiminek. Sa võid proovida, kas "
+"rakenduse andmete kustutamine parandab vea. Küll, aga arvesta, et siis "
+"kaovad ka kõik tuvastatud ja salvestatud lood.\n"
+"\n"
+"Veast teatamiseks palun käivita Mousai terminalis ning kaasa saadud logid "
+"veateatesse, mille saad esitada <a href=\"https://github.com/SeaDve/Mousai/"
+"issues/\">meie veahalduse lehel</a>"
+
+#: src/application.rs:215
+msgid "Quit"
+msgstr "Välju"
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:31
+msgid "today at %R"
+msgstr "täna %R"
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:34
+msgid "yesterday at %R"
+msgstr "eile %R"
+
+#: src/preferences_dialog.rs:103
+msgid "Microphone"
+msgstr "Mikrofon"
+
+#: src/preferences_dialog.rs:104
+msgid "Desktop Audio"
+msgstr "Töölaua heli"
+
+#: src/recognizer/provider/error.rs:50
+msgid "No Matches Found"
+msgstr "Tulemusi ei leidunud"
+
+#: src/recognizer/provider/error.rs:51
+msgid "Cannot Create Fingerprint From Audio"
+msgstr "Helist ei õnnestu sõrmejälje luua"
+
+#: src/recognizer/provider/error.rs:52
+msgid "Invalid Token Given"
+msgstr "Oled salvestanud vigase tunnusloa"
+
+#: src/recognizer/provider/error.rs:53
+msgid "Token Limit Reached"
+msgstr "Tunnusloaga seotud päringute ülempiir on käes"
+
+#: src/recognizer/provider/error.rs:54
+msgid "Cannot Connect to the Server"
+msgstr "Serveriga ei saa ühendust"
+
+#: src/recognizer/provider/error.rs:55
+msgid "Received Other Permanent Error"
+msgstr "Tekkis muu püsiv viga"
+
+#: src/window/external_link_tile.rs:59
+msgid "Apple Music"
+msgstr "Apple Music"
+
+#: src/window/external_link_tile.rs:60
+msgid "Browse on Apple Music"
+msgstr "Otsi Apple Musicist"
+
+#: src/window/external_link_tile.rs:65
+msgid "Browse on AudD"
+msgstr "Otsi AudDist"
+
+#: src/window/external_link_tile.rs:69
+msgid "Spotify"
+msgstr "Spotify"
+
+#: src/window/external_link_tile.rs:70
+msgid "Listen on Spotify"
+msgstr "Kuula Spotifyst"
+
+#: src/window/external_link_tile.rs:74
+msgid "YouTube"
+msgstr "YouTube"
+
+#: src/window/external_link_tile.rs:75
+msgid "Search on YouTube"
+msgstr "Otsi YouTube'ist"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/external_link_tile.rs:145
+msgid "Failed to launch {key}"
+msgstr "{key} käivitamine ei õnnestunud"
+
+#: src/window/history_view.rs:147 src/window/song_page.rs:80
+msgid "Copied to clipboard"
+msgstr "Kopeeritud lõikelauale"
+
+#: src/window/history_view.rs:160
+msgid "Failed to remove selected songs"
+msgstr "Valitud lugude eemaldamine ei õnnestunud"
+
+#: src/window/history_view.rs:357
+msgid "Failed to remove song"
+msgstr "Loo eemaldamine ei õnnestunud"
+
+#: src/window/history_view.rs:562
+msgid "Failed to show recognizer results"
+msgstr "Tuvastamise tulemuste kuvamine ei õnnestunud"
+
+#: src/window/history_view.rs:669
+msgid "_Undo"
+msgstr "_Tühista"
+
+#: src/window/history_view.rs:681
+msgid "Failed to undo"
+msgstr "Tegevuse tagasivõtmine ei õnnestunud"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:706
+msgid "Removed {n_removed} song"
+msgid_plural "Removed {n_removed} songs"
+msgstr[0] "Eemaldasime {n_removed} loo"
+msgstr[1] "Eemaldasime {n_removed} lugu"
+
+#: src/window/history_view.rs:829
+msgid "Select items"
+msgstr "Vali objektid"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:833
+msgid "Selected {selection_size} song"
+msgid_plural "Selected {selection_size} songs"
+msgstr[0] "Valisime {selection_size} loo"
+msgstr[1] "Valisime {selection_size} lugu"
+
+#: src/window/history_view.rs:843
+msgid "Copy Song"
+msgid_plural "Copy Songs"
+msgstr[0] "Kopeeri lugu"
+msgstr[1] "Kopeeri lood"
+
+#: src/window/history_view.rs:850
+msgid "Remove Song From History"
+msgid_plural "Remove Songs From History"
+msgstr[0] "Eemalda lugu ajaloost"
+msgstr[1] "Eemalda lood ajaloost"
+
+#: src/window/mod.rs:214
+msgid "Failed to insert song to history"
+msgstr "Loo lisamine ajalukku ei õnnestunud"
+
+#: src/window/mod.rs:262
+msgid "Please open an issue on GitHub and provide the necessary information"
+msgstr "Palun lisa veateade koos vajaliku teabega GitHubis"
+
+#: src/window/mod.rs:265 src/window/mod.rs:297
+msgid "No, Thanks"
+msgstr "Tänan, ei"
+
+#: src/window/mod.rs:267
+msgid "Open an Issue"
+msgstr "Alusta veateate koostamist"
+
+#: src/window/mod.rs:294
+msgid ""
+"Try moving closer to the source or using a different excerpt of the song"
+msgstr "Proovi liikuda heliallikale lähemale või kasuta loost mõnda muud lõiku"
+
+#: src/window/mod.rs:299
+msgid "Try Again"
+msgstr "Proovi uuesti"
+
+#: src/window/mod.rs:334
+msgid "Recording Saved"
+msgstr "Salvestus on talletatud"
+
+#: src/window/mod.rs:342
+msgid "The result will be available when you're back online"
+msgstr "Tulemus on näha siis, kui oled tagasi võrgus"
+
+#: src/window/mod.rs:345
+msgid "Ok, Got It"
+msgstr "Selge, sain aru"
+
+#: src/window/mod.rs:355
+msgid ""
+"The result will be available when your token limit is reset. Wait until the "
+"limit is reset or open preferences and try setting a different token"
+msgstr ""
+"Tulemus on näha siis, kui sinu tunnuslubadega seotud päringute piir on "
+"uuesti nullitud. Palun oota kuni see juhtub või proovi lisada mõni muu "
+"tunnusluba"
+
+#: src/window/mod.rs:358
+msgid "I'll Wait"
+msgstr "Eks ma siis ootan"
+
+#: src/window/mod.rs:362
+msgid ""
+"The result will be available when your token is replaced with a valid one. "
+"Open preferences and try setting a different token"
+msgstr ""
+"Tulemus on näha siis, kui asendad oma tunnusloa kehtiva tunnusloaga. Palun "
+"ava eelistused ja proovi lisada mõni muu tunnusluba"
+
+#: src/window/mod.rs:365
+msgid "Later"
+msgstr "Hiljem"
+
+#: src/window/mod.rs:370
+msgid "Open Preferences"
+msgstr "Ava eelistused"
+
+#: src/window/mod.rs:466
+msgid "An error occurred in the player"
+msgstr "Meediaesitajas tekkis viga"
+
+#: src/window/playback_button.rs:97
+msgid "Play"
+msgstr "Esita"
+
+#: src/window/playback_button.rs:103
+msgid "Pause"
+msgstr "Peata"
+
+#: src/window/recognized_page.rs:151
+msgid "Recognized Song"
+msgid_plural "Recognized Songs"
+msgstr[0] "Tuvastatud lugu"
+msgstr[1] "Tuvastatud lood"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognized_page.rs:157
+msgid "Recognized {n_songs} New Song"
+msgid_plural "Recognized {n_songs} New Songs"
+msgstr[0] "Tuvastasime {n_songs} uue loo"
+msgstr[1] "Tuvastasime {n_songs} uut lugu"
+
+#: src/window/recognized_page.rs:163
+msgid "This song was recognized from your saved recording"
+msgid_plural "These songs were recognized from your saved recordings"
+msgstr[0] "See lugu sai tuvastatud salvestise alusel"
+msgstr[1] "Need lood said tuvastatud salvestiste alusel"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognizer_status.rs:172
+msgid "Recognized {n_successful} Out Of {total_minus_failed}"
+msgstr "Tuvastasime {n_successful} / {total_minus_failed}"
+
+#: src/window/recognizer_view.rs:149
+msgid "Listening…"
+msgstr "Tuvastan…"
+
+#: src/window/recognizer_view.rs:154
+msgid "Recognizing…"
+msgstr "Tuvastan andmebaasist…"
+
+#: src/window/song_page.rs:374
+msgid "Unknown"
+msgstr "Tundmatu"
+
+#: src/window/song_tile.rs:359
+msgid "Unselect"
+msgstr "Eemalda valik"
+
+#~ msgid "Donate (Buy Me a Coffee)"
+#~ msgstr "Toeta meid (Buy Me a Coffee)"
+
+#~ msgid "Select _None"
+#~ msgstr "_Tühista valik"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Navigation"
+#~ msgstr "Liikumine"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Go Back"
+#~ msgstr "Mine tagasi"
+
+#~ msgid "Failed to launch {}"
+#~ msgstr "{} käivitamine ebaõnnestus"
+
+#~ msgid "Removed {} song"
+#~ msgid_plural "Removed {} songs"
+#~ msgstr[0] "Lugu {} eemaldatud"
+#~ msgstr[1] "Lood {} eemaldatud"
+
+#~ msgid "Selected {} song"
+#~ msgid_plural "Selected {} songs"
+#~ msgstr[0] "Lugu {} valitud"
+#~ msgstr[1] "Lood {} valitud"
+
+#~ msgid "Shazam;Audio;Music;Song;Identify;Recognition;"
+#~ msgstr "Shazam;Audio;Music;Song;Identify;Recognition;Muusika;Laul;Tuvasta;"
+
+#~ msgid ""
+#~ "Mousai is a simple application that can identify song similar to Shazam. "
+#~ "Just click the listen button, and then wait a few seconds. It will "
+#~ "magically return the title and artist of that song!"
+#~ msgstr ""
+#~ "Mousai on lihtne rakendus, mis tuvastab laule nagu Shazam. Lihtsalt "
+#~ "vajuta tuvasta nupule ja oota paar sekundit. Ning automaatselt vastab "
+#~ "laulu pealkirjaga ja esitajaga!"
+
+#~ msgid "Start Identifying Music"
+#~ msgstr "Alusta muusika tuvastamist"
+
+#~ msgid "Open Main Menu"
+#~ msgstr "Ava menüü"
+
+#~ msgid "Search for Songs"
+#~ msgstr "Otsi lugusi"
+
+#~ msgid "Cancel Select"
+#~ msgstr "Tühista valik"
+
+#~ msgid "Enter song or artist name"
+#~ msgstr "Sisesta laulu või esitaja nimi"
+
+#~ msgid "Start Identifying Music!"
+#~ msgstr "Alusta muusika tuvastamist!"
+
+#~ msgid "Click the listen button to start."
+#~ msgstr "Vajuta tuvasta nupule, et alustada."
+
+#~ msgid "No Results Found"
+#~ msgstr "Ei leitud vastet"
+
+#~ msgid "Try a different search."
+#~ msgstr "Proovi uut otsingut."
+
+#~ msgid "Default window width"
+#~ msgstr "Vaikne akna laius"
+
+#~ msgid "Default window height"
+#~ msgstr "Vaikne akna pikkus"
+
+#~ msgid "Default window maximized behaviour"
+#~ msgstr "Vaikne akna maksimeeritud käitumine"
+
+#~ msgid "Contains recently recognized songs"
+#~ msgstr "Sisaldab hiljuti tuvastatuid lugusi"
+
+#~ msgid "🎵 Identify the title and artist of the song within seconds."
+#~ msgstr "🎵 Tuvasta laulu pealkiri ning esitaja sekunditega."
+
+#~ msgid "🎙️ Use your microphone or audio from desktop."
+#~ msgstr "🎙️ Kasuta arvuti mikrofoni või töölaua heli."
+
+#~ msgid "🎸 Store the identified song including the album art in history."
+#~ msgstr "🎸 Hoiusta tuvastatud laul ajaloos."
+
+#~ msgid "🎼 Preview the identified song with the native player."
+#~ msgstr "🎼 Kuula tuvastatud laulu eelvaadet."
+
+#~ msgid "🌐 Browse and listen the song from different providers."
+#~ msgstr "🌐 Otsi ja kuula laulu erinevatelt teenuspakkujatelt."
+
+#~ msgid "📱 Easy-to-use user interface."
+#~ msgstr "📱 Lihtne kasutada."
+
+#~ msgid "⌨️ User-friendly keyboard shortcuts."
+#~ msgstr "⌨️ Kasutajasõbralikud kiirklahvid."
+
+#~ msgid "Dave Patrick"
+#~ msgstr "Dave Patrick"
+
+#~ msgid "Return to Main Page"
+#~ msgstr "Tagasi avalehele"
+
+#~ msgid "Copyright 2022 Dave Patrick"
+#~ msgstr "Autoriõigused 2022 Dave Patrick"
+
+#~ msgid "Cancelled recording"
+#~ msgstr "Tühistatud lindistused"
+
+#~ msgid "Cancelled recognizing"
+#~ msgstr "Tühistatud tuvastus"
+
+#~ msgid ""
+#~ "Failed to convert the recording to base64. Please report this to Mousai's "
+#~ "bug tracker."
+#~ msgstr ""
+#~ "Lindistuse teisendamine base64 ebaõnnestus. Palun teavita sellest Mousai "
+#~ "veajälgijasse."
+
+#~ msgid "Failed to connect to the server."
+#~ msgstr "Serveriga ühendamine ebaõnnestus."
+
+#~ msgid "Failed to parse response. Please report this to Mousai's bug tracker"
+#~ msgstr ""
+#~ "Vastuse parsimine ebaõnnestus. Palun teavita sellest Mousai veajälgijasse"
+
+#~ msgid "Daily limit has been reached."
+#~ msgstr "Päevalimiit on täis."
+
+#~ msgid "Failed to fingerprint audio. There may be no sound heard."
+#~ msgstr "Audio tuvastamine ebaõnnestus. Heli võib-olla ei ole kuulda."
+
+#~ msgid "Got invalid status response of {}"
+#~ msgstr "Sain kehtetu vastuse: {}"
+
+#~ msgid "{} Check your internet connection."
+#~ msgstr "{} Kontrolli internetiühendust."
+
+#~ msgid "No matches found for this song."
+#~ msgstr "Ei leitud loole vasteid."
+
+#~ msgid "{} Input an API token in the preferences."
+#~ msgstr "{} Sisesta API token sätetes."
+
+#~ msgid "Please input a valid API token."
+#~ msgstr "Palun sisesta valiidne API token."
+
+#~ msgid "Copied song to clipboard"
+#~ msgstr "Lugu lõikelauale kopeeritud"
+
+#~ msgid "Click on items to select them"
+#~ msgstr "Vajuta üksustele, et valida neid"
+
+#~ msgid "Failed to load history"
+#~ msgstr "Ajalugu laadimine ebaõnnestus"

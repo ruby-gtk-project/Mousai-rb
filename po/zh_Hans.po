@@ -1,0 +1,989 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the mousai package.
+# TheInterestingSoul <wangpy01@outlook.com>, 2021, 2022.
+# Zhou Nan <zhounan@nfschina.com>, 2021, 2022.
+# Zhongrui Cao <zhongrui.cao@suse.com>, 2021.
+# WhiredPlanck <fungdaat31@outlook.com>, 2021.
+# yzqzss <yzqzss@othing.xyz>, 2022.
+# lumingzh <lumingzh@qq.com>, 2022.
+# Eric <alchemillatruth@purelymail.com>, 2022.
+# CrackTC <chenrke369@gmail.com>, 2023.
+# Carter Zhang <mcut17198@autistici.org>, 2023.
+# Jianhua Lu <lujianhua000@gmail.com>, 2024.
+# I love Frank Ocean <hohoujoeng@gmail.com>, 2024.
+# LS-Shandong <ls-shandong@outlook.com>, 2025.
+# Haoyu Qiu <timothyqiu32@gmail.com>, 2025.
+# reducedradius <137701630+flytothehighest@users.noreply.github.com>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: mousai\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-19 17:29+0800\n"
+"PO-Revision-Date: 2026-08-06 12:01+0000\n"
+"Last-Translator: reducedradius "
+"<137701630+flytothehighest@users.noreply.github.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/seadve/mousai/zh_Hans/>\n"
+"Language: zh_Hans\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.8.1.dev0\n"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:2
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:7 src/about.rs:12
+#: src/main.rs:64
+msgid "Mousai"
+msgstr "Mousai"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:3
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:8
+msgid "Identify songs in seconds"
+msgstr "几秒钟内识别歌曲"
+
+#. Translators: These are search terms to find this application. Do NOT translate or localize the semicolons. The list MUST also end with a semicolon.
+#: data/io.github.seadve.Mousai.desktop.in.in:9
+msgid "Shazam;Audio;Music;Song;Recognize;Identify;Recognition;"
+msgstr ""
+"Shazam;Audio;Music;Song;Recognize;Identify;Recognition;音频;音乐;歌曲;识别;"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:6
+msgid "Window width"
+msgstr "窗口宽度"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:11
+msgid "Window height"
+msgstr "窗口高度"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:16
+msgid "Whether the window is maximized"
+msgstr "窗口是否最大化"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:26
+msgid "Audio source type to use in recording audio"
+msgstr "录制音频时使用的音频源"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:32
+msgid "API token used by AudD recognition"
+msgstr "AudD识别所需的API令牌"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:37
+msgid "Legacy (Kept for migration)"
+msgstr "旧版（为迁移而保留）"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:10
+msgid "Discover songs you are aching to know with an easy-to-use interface."
+msgstr "用简单地方式发现你渴望知道的歌曲。"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:11
+msgid ""
+"Mousai is a simple application that can recognize songs similar to Shazam. "
+"Just click the listen button, and then wait a few seconds. It will magically "
+"return the title and artist of that song!"
+msgstr ""
+"Mousai是一个和Shazam类似的，能够识别歌曲的简单应用。只需单击“聆听”按钮，等上"
+"几秒钟，它就能神奇地返回那首歌的歌名和作曲家！"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:12
+msgid ""
+"Note: This uses the API of audd.io, so it is necessary to log in to their "
+"site to get more trials."
+msgstr "注意：此操作使用 audd.io 的 API，所以多次使用需要登录到他们的网站。"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:13
+msgid "Why you will love Mousai?"
+msgstr "Mousai 有哪些特性呢？"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:15
+msgid "🎵 Identify songs within seconds or save for later when offline"
+msgstr "🎵 在几秒钟内识别歌曲，或在离线时保存以备稍后使用"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:16
+msgid "🎙️ Recognize from desktop audio or your microphone"
+msgstr "从桌面音频或麦克风识别"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:17
+msgid "🎸 Build a repertoire of recognized songs"
+msgstr "🎸 建立一个已识别的歌曲的合集"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:18
+msgid "🎼 Quickly preview the song within the interface"
+msgstr "🎼 在界面中快速预览歌曲"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:19
+msgid "🌐 Browse and listen the song from different providers"
+msgstr "🌐 浏览和聆听来自不同提供者的歌曲"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:20
+msgid "📱 Easy-to-use user interface"
+msgstr "📱 简单易用的用户界面"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:26
+msgid "Mousai Home Page"
+msgstr "Mousai项目主页"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:30
+msgid "Detailed view of identified song"
+msgstr "已识别歌曲的详细视图"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:34
+msgid "Listening mode detecting the song"
+msgstr "听音识别曲目"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:38
+msgid "Recognized songs"
+msgstr "识别的歌曲"
+
+#: data/resources/ui/history_view.ui:6
+msgid "_Preferences"
+msgstr "设置 (_P)"
+
+#: data/resources/ui/history_view.ui:10
+msgid "_Keyboard Shortcuts"
+msgstr "快捷键(_K)"
+
+#: data/resources/ui/history_view.ui:14
+msgid "_About Mousai"
+msgstr "关于 Mousai (_A)"
+
+#: data/resources/ui/history_view.ui:22
+msgid "Select _All"
+msgstr "全选(_A)"
+
+#: data/resources/ui/history_view.ui:26
+msgid "_Unselect All"
+msgstr "取消选择所有(_U)"
+
+#: data/resources/ui/history_view.ui:42
+msgid "Home"
+msgstr "主页"
+
+#: data/resources/ui/history_view.ui:52
+msgid "Recognize Song"
+msgstr "识别歌曲"
+
+#: data/resources/ui/history_view.ui:53 data/resources/ui/song_page.ui:109
+msgid "Listen"
+msgstr "聆听"
+
+#: data/resources/ui/history_view.ui:65
+msgid "Main Menu"
+msgstr "主菜单"
+
+#: data/resources/ui/history_view.ui:73 src/window/song_tile.rs:361
+msgid "Select"
+msgstr "选择"
+
+#: data/resources/ui/history_view.ui:80 data/resources/ui/history_view.ui:103
+msgid "Search Songs"
+msgstr "搜索歌曲"
+
+#: data/resources/ui/history_view.ui:96
+msgid "Cancel Selection"
+msgstr "取消选择"
+
+#: data/resources/ui/history_view.ui:97 data/resources/ui/recognizer_view.ui:14
+msgid "Cancel"
+msgstr "取消"
+
+#: data/resources/ui/history_view.ui:117
+msgid "Search songs"
+msgstr "搜索歌曲"
+
+#: data/resources/ui/history_view.ui:140
+msgid "Start Recognizing Songs!"
+msgstr "开始识别歌曲！"
+
+#: data/resources/ui/history_view.ui:141
+msgid "Click the listen button to start"
+msgstr "点击该按钮以开始"
+
+#: data/resources/ui/history_view.ui:150
+msgid "No Results"
+msgstr "没有结果"
+
+#: data/resources/ui/lyrics_page.ui:10 data/resources/ui/song_page.ui:140
+msgid "Lyrics"
+msgstr "歌词"
+
+#: data/resources/ui/preferences_dialog.ui:8
+msgid "General"
+msgstr "通用"
+
+#: data/resources/ui/preferences_dialog.ui:11
+msgid "Audio Source"
+msgstr "音频源"
+
+#: data/resources/ui/preferences_dialog.ui:12
+msgid "Device used for listening"
+msgstr "用于监听的设备"
+
+#: data/resources/ui/preferences_dialog.ui:19
+#: src/window/external_link_tile.rs:64
+msgid "AudD"
+msgstr "AudD"
+
+#: data/resources/ui/preferences_dialog.ui:20
+msgid ""
+"You can get yourself an API token from <a href=\"https://dashboard.audd.io/"
+"\">audd.io</a>. Leaving this blank will give you a few trials per day"
+msgstr ""
+"你可以从<a href=\"https://dashboard.audd.io/\">audd.io</a>获取一个API令牌。留"
+"空时每天可以获得几次试用机会"
+
+#: data/resources/ui/preferences_dialog.ui:23
+msgid "API Token"
+msgstr "API令牌"
+
+#: data/resources/ui/recognizer_status.ui:17
+msgid "Offline Mode Enabled"
+msgstr "启用离线模式"
+
+#: data/resources/ui/recognizer_status.ui:44
+msgid "Show Offline Mode Recognition Results"
+msgstr "显示离线模式识别结果"
+
+#: data/resources/ui/recognizer_view.ui:13
+msgid "Cancel Listening"
+msgstr "取消收听"
+
+#: data/resources/ui/recognizer_view.ui:49
+msgid "Offline Mode"
+msgstr "离线模式"
+
+#: data/resources/ui/shortcuts.ui:6
+msgctxt "shortcut window"
+msgid "General"
+msgstr "通用"
+
+#: data/resources/ui/shortcuts.ui:9
+msgctxt "shortcut window"
+msgid "Open Main Menu"
+msgstr "打开主菜单"
+
+#: data/resources/ui/shortcuts.ui:15
+msgctxt "shortcut window"
+msgid "Search"
+msgstr "搜索"
+
+#: data/resources/ui/shortcuts.ui:21
+msgctxt "shortcut window"
+msgid "Show Preferences"
+msgstr "显示首选项"
+
+#: data/resources/ui/shortcuts.ui:27
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "显示快捷键"
+
+#: data/resources/ui/shortcuts.ui:33
+msgctxt "shortcut window"
+msgid "Close Window"
+msgstr "关闭窗口"
+
+#: data/resources/ui/shortcuts.ui:39
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "退出"
+
+#: data/resources/ui/shortcuts.ui:47
+msgctxt "shortcut window"
+msgid "Controls"
+msgstr "控制"
+
+#: data/resources/ui/shortcuts.ui:50
+msgctxt "shortcut window"
+msgid "Toggle Listen"
+msgstr "切换收听"
+
+#: data/resources/ui/shortcuts.ui:56
+msgctxt "shortcut window"
+msgid "Toggle Playback"
+msgstr "切换播放"
+
+#: data/resources/ui/song_bar.ui:85
+msgid "Show Song Information"
+msgstr "显示歌曲信息"
+
+#: data/resources/ui/song_bar.ui:145
+msgid "Stop"
+msgstr "停止"
+
+#: data/resources/ui/song_page.ui:13
+msgid "Remove From History"
+msgstr "从历史记录移除"
+
+#: data/resources/ui/song_page.ui:19
+msgid "Copy"
+msgstr "复制"
+
+#: data/resources/ui/song_page.ui:122
+msgid "Information"
+msgstr "信息"
+
+#: data/resources/ui/song_page.ui:125
+msgid "Last Heard"
+msgstr "上次收听"
+
+#: data/resources/ui/song_page.ui:130
+msgid "Album"
+msgstr "专辑"
+
+#: data/resources/ui/song_page.ui:135
+msgid "Release Date"
+msgstr "发布日期"
+
+#: data/resources/ui/song_tile.ui:30
+msgid "New"
+msgstr "新建"
+
+#. Translators: Replace "translator-credits" with your names. Put a comma between.
+#: src/about.rs:18
+msgid "translator-credits"
+msgstr ""
+"有趣的灵魂 (@TheInterestingSoul)\n"
+"Zhou Nan &lt;zhounan@nfschina.com&gt;\n"
+"Zhongrui Cao &lt;zhongrui.cao@suse.com&gt;\n"
+"WhiredPlanck &lt;wplanck@aosc.io&gt;\n"
+"lumingzh &lt;lumingzh@qq.com&gt;\n"
+"Haoyu Qiu &lt;timothyqiu32@gmail.com&gt;\n"
+"ReducedRadius &lt;feixiang512@outlook.com&gt;"
+
+#: src/about.rs:27
+msgid "Donate"
+msgstr "捐献"
+
+#: src/about.rs:28
+msgid "GitHub"
+msgstr "GitHub"
+
+#: src/about.rs:30
+msgid "Translate"
+msgstr "翻译"
+
+#: src/application.rs:209
+msgid "Critical Database Error"
+msgstr "严重的数据库错误"
+
+#: src/application.rs:210
+msgid ""
+"Sorry, a critical database error has occurred. This is likely caused by a "
+"tampered or corrupted database. You can try clearing application data. "
+"However, this is not recommended and will delete all your songs and saved "
+"recordings.\n"
+"\n"
+"To report this issue, please launch Mousai in the terminal to include the "
+"logs and submit the bug report to the <a href=\"https://github.com/SeaDve/"
+"Mousai/issues/\">issue page</a>"
+msgstr ""
+"对不起，数据库发生严重错误。这可能是由于数据库被篡改或损坏造成的。你可以尝试"
+"清除应用数据。但不建议这样做，因为这会删除你的所有歌曲以及保存的录音。\n"
+"\n"
+"要报告这个问题，请在终端中启动Mousai以获取日志，并将错误报告提交到<a "
+"href=\"https://github.com/SeaDve/Mousai/issues/\">issue页面</a>"
+
+#: src/application.rs:215
+msgid "Quit"
+msgstr "退出"
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:31
+msgid "today at %R"
+msgstr "今天 %R"
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:34
+msgid "yesterday at %R"
+msgstr "昨天 %R"
+
+#: src/preferences_dialog.rs:103
+msgid "Microphone"
+msgstr "麦克风"
+
+#: src/preferences_dialog.rs:104
+msgid "Desktop Audio"
+msgstr "电脑音频"
+
+#: src/recognizer/provider/error.rs:50
+msgid "No Matches Found"
+msgstr "未找到匹配的项"
+
+#: src/recognizer/provider/error.rs:51
+msgid "Cannot Create Fingerprint From Audio"
+msgstr "无法从音频创建指纹"
+
+#: src/recognizer/provider/error.rs:52
+msgid "Invalid Token Given"
+msgstr "设置的令牌无效"
+
+#: src/recognizer/provider/error.rs:53
+msgid "Token Limit Reached"
+msgstr "令牌达到限额"
+
+#: src/recognizer/provider/error.rs:54
+msgid "Cannot Connect to the Server"
+msgstr "无法连接到服务器"
+
+#: src/recognizer/provider/error.rs:55
+msgid "Received Other Permanent Error"
+msgstr "接收到其他永久性的错误"
+
+#: src/window/external_link_tile.rs:59
+msgid "Apple Music"
+msgstr "苹果音乐"
+
+#: src/window/external_link_tile.rs:60
+msgid "Browse on Apple Music"
+msgstr "浏览苹果音乐"
+
+#: src/window/external_link_tile.rs:65
+msgid "Browse on AudD"
+msgstr "浏览 AudD"
+
+#: src/window/external_link_tile.rs:69
+msgid "Spotify"
+msgstr "Spotify"
+
+#: src/window/external_link_tile.rs:70
+msgid "Listen on Spotify"
+msgstr "收听 Spotify"
+
+#: src/window/external_link_tile.rs:74
+msgid "YouTube"
+msgstr "YouTube"
+
+#: src/window/external_link_tile.rs:75
+msgid "Search on YouTube"
+msgstr "搜索 YouTube"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/external_link_tile.rs:145
+msgid "Failed to launch {key}"
+msgstr "启动 {key} 失败"
+
+#: src/window/history_view.rs:147 src/window/song_page.rs:80
+msgid "Copied to clipboard"
+msgstr "已复制到剪贴板"
+
+#: src/window/history_view.rs:160
+msgid "Failed to remove selected songs"
+msgstr "删除选定歌曲失败"
+
+#: src/window/history_view.rs:357
+msgid "Failed to remove song"
+msgstr "删除歌曲失败"
+
+#: src/window/history_view.rs:562
+msgid "Failed to show recognizer results"
+msgstr "展示识别结果失败"
+
+#: src/window/history_view.rs:669
+msgid "_Undo"
+msgstr "撤销(_U)"
+
+#: src/window/history_view.rs:681
+msgid "Failed to undo"
+msgstr "撤销失败"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:706
+msgid "Removed {n_removed} song"
+msgid_plural "Removed {n_removed} songs"
+msgstr[0] "删除了 {n_removed} 首歌曲"
+
+#: src/window/history_view.rs:829
+msgid "Select items"
+msgstr "选择条目"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:833
+msgid "Selected {selection_size} song"
+msgid_plural "Selected {selection_size} songs"
+msgstr[0] "选择了 {selection_size} 首歌曲"
+
+#: src/window/history_view.rs:843
+msgid "Copy Song"
+msgid_plural "Copy Songs"
+msgstr[0] "复制歌曲"
+
+#: src/window/history_view.rs:850
+msgid "Remove Song From History"
+msgid_plural "Remove Songs From History"
+msgstr[0] "从历史记录移除歌曲"
+
+#: src/window/mod.rs:214
+msgid "Failed to insert song to history"
+msgstr "未能将歌曲添加到历史"
+
+#: src/window/mod.rs:262
+msgid "Please open an issue on GitHub and provide the necessary information"
+msgstr "请在Github上创建一个issue并提供必要的信息"
+
+#: src/window/mod.rs:265 src/window/mod.rs:297
+msgid "No, Thanks"
+msgstr "不，谢谢"
+
+#: src/window/mod.rs:267
+msgid "Open an Issue"
+msgstr "创建一个Issue"
+
+#: src/window/mod.rs:294
+msgid ""
+"Try moving closer to the source or using a different excerpt of the song"
+msgstr "尝试靠近声音源或换用歌曲的不同片段"
+
+#: src/window/mod.rs:299
+msgid "Try Again"
+msgstr "重试"
+
+#: src/window/mod.rs:334
+msgid "Recording Saved"
+msgstr "录制已保存"
+
+#: src/window/mod.rs:342
+msgid "The result will be available when you're back online"
+msgstr "结果将在你重新联网时可用"
+
+#: src/window/mod.rs:345
+msgid "Ok, Got It"
+msgstr "好的，明白了"
+
+#: src/window/mod.rs:355
+msgid ""
+"The result will be available when your token limit is reset. Wait until the "
+"limit is reset or open preferences and try setting a different token"
+msgstr ""
+"结果将在你的API令牌限额重置后可用。请等待限额重置或打开设置尝试换用另一个令牌"
+
+#: src/window/mod.rs:358
+msgid "I'll Wait"
+msgstr "我再等等"
+
+#: src/window/mod.rs:362
+msgid ""
+"The result will be available when your token is replaced with a valid one. "
+"Open preferences and try setting a different token"
+msgstr ""
+"结果将在你重新设置一个有效的令牌后可用。打开设置，并尝试设置一个不同的令牌"
+
+#: src/window/mod.rs:365
+msgid "Later"
+msgstr "稍后"
+
+#: src/window/mod.rs:370
+msgid "Open Preferences"
+msgstr "打开设置"
+
+#: src/window/mod.rs:466
+msgid "An error occurred in the player"
+msgstr "播放器发生了一个错误"
+
+#: src/window/playback_button.rs:97
+msgid "Play"
+msgstr "播放"
+
+#: src/window/playback_button.rs:103
+msgid "Pause"
+msgstr "暂停"
+
+#: src/window/recognized_page.rs:151
+msgid "Recognized Song"
+msgid_plural "Recognized Songs"
+msgstr[0] "识别的歌曲"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognized_page.rs:157
+msgid "Recognized {n_songs} New Song"
+msgid_plural "Recognized {n_songs} New Songs"
+msgstr[0] "识别了 {n_songs} 首歌曲"
+
+#: src/window/recognized_page.rs:163
+msgid "This song was recognized from your saved recording"
+msgid_plural "These songs were recognized from your saved recordings"
+msgstr[0] "这些歌曲从已保存的录音中识别"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognizer_status.rs:172
+msgid "Recognized {n_successful} Out Of {total_minus_failed}"
+msgstr "已识别 {total_minus_failed} 首歌曲中的 {n_successful} 首"
+
+#: src/window/recognizer_view.rs:149
+msgid "Listening…"
+msgstr "正在收听…"
+
+#: src/window/recognizer_view.rs:154
+msgid "Recognizing…"
+msgstr "正在识别…"
+
+#: src/window/song_page.rs:374
+msgid "Unknown"
+msgstr "未知"
+
+#: src/window/song_tile.rs:359
+msgid "Unselect"
+msgstr "取消选择"
+
+#~ msgid "Donate (Buy Me a Coffee)"
+#~ msgstr "捐赠（买我一杯咖啡！）"
+
+#~ msgid "Select _None"
+#~ msgstr "不选(_N)"
+
+#~ msgid "Dave Patrick Caberto"
+#~ msgstr "Dave Patrick Caberto"
+
+#~ msgid "Determines the audio source to use when available"
+#~ msgstr "决定可用时要使用的音频源"
+
+#~ msgid "© 2023 Dave Patrick Caberto"
+#~ msgstr "© 2023 Dave Patrick Caberto"
+
+#~ msgid "🎵 Recognize songs within seconds or save for later when offline"
+#~ msgstr "🎵 在几秒钟内识别歌曲或保存以供离线时使用"
+
+#~ msgid "🎙️ Use microphone or desktop audio"
+#~ msgstr "🎙️ 使用麦克风或系统声音"
+
+#~ msgid "Back"
+#~ msgstr "返回"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Navigation"
+#~ msgstr "导航"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Go Back"
+#~ msgstr "返回"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Go Forward"
+#~ msgstr "前进"
+
+#~ msgid "Donate (Liberapay)"
+#~ msgstr "捐赠（Liberapay）"
+
+#~ msgid "Donate (PayPal)"
+#~ msgstr "捐赠（PayPal）"
+
+#~ msgid "Failed to launch {}"
+#~ msgstr "启动 {} 失败"
+
+#~ msgid "Removed {} song"
+#~ msgid_plural "Removed {} songs"
+#~ msgstr[0] "移除了 {} 首歌曲"
+
+#~ msgid "Selected {} song"
+#~ msgid_plural "Selected {} songs"
+#~ msgstr[0] "已选择 {} 首歌曲"
+
+#~ msgid "Shazam;Audio;Music;Song;Identify;Recognition;"
+#~ msgstr ""
+#~ "Shazam;Audio;Music;Song;Identify;Recognition;听歌识曲;音乐;识别;找歌;"
+
+#~ msgid ""
+#~ "Mousai is a simple application that can identify song similar to Shazam. "
+#~ "Just click the listen button, and then wait a few seconds. It will "
+#~ "magically return the title and artist of that song!"
+#~ msgstr ""
+#~ "Mousai 是一个与 Shazam 类似的听歌识曲软件，只需单击“聆听”按钮，然后等待几"
+#~ "秒钟。它将神奇地反馈该歌曲的标题和艺术家！"
+
+#~ msgid "Start Identifying Music"
+#~ msgstr "开始识别音乐"
+
+#~ msgid "Open Main Menu"
+#~ msgstr "打开主菜单"
+
+#~ msgid "Search for Songs"
+#~ msgstr "搜索歌曲"
+
+#~ msgid "Cancel Select"
+#~ msgstr "取消选择"
+
+#~ msgid "Enter song or artist name"
+#~ msgstr "输入歌曲或艺术家名字"
+
+#~ msgid "Start Identifying Music!"
+#~ msgstr "开始识别音乐！"
+
+#~ msgid "Click the listen button to start."
+#~ msgstr "点击聆听按钮开始。"
+
+#~ msgid "No Results Found"
+#~ msgstr "未找到结果"
+
+#~ msgid "Try a different search."
+#~ msgstr "请尝试不同搜索。"
+
+#, fuzzy
+#~ msgid "Ok"
+#~ msgstr "Ok"
+
+#~ msgid "Default window width"
+#~ msgstr "默认窗口宽度"
+
+#~ msgid "Default window height"
+#~ msgstr "默认窗口高度"
+
+#~ msgid "Default window maximized behaviour"
+#~ msgstr "默认窗口最大化行为"
+
+#~ msgid "Contains recently recognized songs"
+#~ msgstr "包含最近识别的歌曲"
+
+#~ msgid "🎵 Identify the title and artist of the song within seconds."
+#~ msgstr "🎵 在几秒内识别歌曲与作曲家。"
+
+#~ msgid "🎙️ Use your microphone or audio from desktop."
+#~ msgstr "🎙️ 使用您电脑上的麦克风或音频。"
+
+#~ msgid "🎸 Store the identified song including the album art in history."
+#~ msgstr "🎸 保存识别出的歌曲和专辑封面到历史记录中。"
+
+#~ msgid "🎼 Preview the identified song with the native player."
+#~ msgstr "🎼 使用本地播放器预览识别出的歌曲。"
+
+#~ msgid "🌐 Browse and listen the song from different providers."
+#~ msgstr "🌐 浏览并收听来自不同提供者的歌曲。"
+
+#~ msgid "📱 Easy-to-use user interface."
+#~ msgstr "📱 易于使用的用户界面。"
+
+#~ msgid "⌨️ User-friendly keyboard shortcuts."
+#~ msgstr "⌨️ 用户友好的键盘快捷键。"
+
+#~ msgid "Dave Patrick"
+#~ msgstr "Dave Patrick"
+
+#~ msgid "_Preferred Audio Source"
+#~ msgstr "首选音频源(_P)"
+
+#~ msgid "Return to Main Page"
+#~ msgstr "返回主页面"
+
+#~ msgid "Copyright 2022 Dave Patrick"
+#~ msgstr "版权所有 © 2022 Dave Patrick"
+
+#~ msgid "Cancelled recording"
+#~ msgstr "已取消录制"
+
+#~ msgid "Cancelled recognizing"
+#~ msgstr "已取消识别"
+
+#~ msgid ""
+#~ "Failed to convert the recording to base64. Please report this to Mousai's "
+#~ "bug tracker."
+#~ msgstr "将录音转换为 Base64 的过程中出错。请将该问题反馈到 Mousai 开发者。"
+
+#~ msgid "Failed to connect to the server."
+#~ msgstr "连接至服务器失败。"
+
+#~ msgid "Failed to parse response. Please report this to Mousai's bug tracker"
+#~ msgstr "无法解析响应。 请将此报告到 Mosai 的错误跟踪器"
+
+#~ msgid "Daily limit has been reached."
+#~ msgstr "已达到每日限制。"
+
+#~ msgid "Failed to fingerprint audio. There may be no sound heard."
+#~ msgstr "识别音频失败。可能没有听到声音。"
+
+#~ msgid "Got invalid status response of {}"
+#~ msgstr "获取到无效回应： {}"
+
+#~ msgid "{} Check your internet connection."
+#~ msgstr "{} 请检查您的互联网连接。"
+
+#~ msgid "No matches found for this song."
+#~ msgstr "未找到该歌曲的匹配项。"
+
+#~ msgid "{} Input an API token in the preferences."
+#~ msgstr "{} 在首选项中输入 API 令牌。"
+
+#~ msgid "Please input a valid API token."
+#~ msgstr "请输入有效的 API 令牌。"
+
+#~ msgid "Copied song to clipboard"
+#~ msgstr "复制歌曲到剪贴板"
+
+#~ msgid "Click on items to select them"
+#~ msgstr "在项目上点击来选择它们"
+
+#~ msgid "Failed to load history"
+#~ msgstr "加载历史记录失败"
+
+#~ msgid "Shazam;Music;Song;Identify;"
+#~ msgstr "Shazam;Music;Song;Identify;听歌识曲;识别;音乐;歌曲;"
+
+#~ msgid ""
+#~ "Failed to parse response. Please report this to Mousai's bug tracker."
+#~ msgstr "解析响应失败。请将此报告给 Mousai 的缺陷追踪器。"
+
+#~ msgid "Failed to convert file. Please report this to Mousai's bug tracker."
+#~ msgstr "转换文件失败。请将此报告给 Mousai 的缺陷追踪器。"
+
+#~ msgid "Remove"
+#~ msgstr "移除"
+
+#~ msgid "Identify any songs in seconds"
+#~ msgstr "一个迅速听歌识曲的软件"
+
+#~ msgid "🌐 Browse the song in the web with the link."
+#~ msgstr "🌐 通过链接在网上浏览歌曲。"
+
+#~ msgid "Open Menu"
+#~ msgstr "打开菜单"
+
+#~ msgid "Show Shortcuts"
+#~ msgstr "显示快捷键"
+
+#~ msgid "Controls"
+#~ msgstr "控制"
+
+#~ msgid "Toggle Listen"
+#~ msgstr "切换聆听"
+
+#~ msgid "Settings"
+#~ msgstr "设置"
+
+#~ msgid "Clear Song History"
+#~ msgstr "清除识别历史"
+
+#~ msgid "Reset Token Value"
+#~ msgstr "重置令牌值"
+
+#~ msgid "Welcome to Mousai"
+#~ msgstr "欢迎使用 Mousai"
+
+#~ msgid "Enter a valid token"
+#~ msgstr "输入有效的令牌值"
+
+#~ msgid "Submit"
+#~ msgstr "提交"
+
+#~ msgid ""
+#~ "Mousai uses audd.io APIs to work, so it is required to login to <a "
+#~ "href=\"https://dashboard.audd.io/\">their website</a> and get a token. "
+#~ "Leaving this blank will give you a few trials per day."
+#~ msgstr ""
+#~ "Mousai 使用 audd.io 的 API 来工作，所以需要您登录到<a href=\"https://"
+#~ "dashboard.audd.io/\">他们的网站</a>并且获取一个令牌。留空您也有一天几次的"
+#~ "试用识别次数。"
+
+#~ msgid "Do not show at startup"
+#~ msgstr "不在启动时显示"
+
+#~ msgid "Open in Browser"
+#~ msgstr "在浏览器中打开"
+
+#~ msgid "Cancel the Recording"
+#~ msgstr "取消录音"
+
+#~ msgid "Start Mousaing!"
+#~ msgstr "开始听歌识曲吧！"
+
+#~ msgid "Muted"
+#~ msgstr "没有声音"
+
+#~ msgid "_Clear Song History"
+#~ msgstr "清除歌曲历史 (_C)"
+
+#~ msgid "_Reset Token"
+#~ msgstr "重置令牌(_R)"
+
+#~ msgid "Listening"
+#~ msgstr "正在聆听"
+
+#~ msgid "No audio detected"
+#~ msgstr "未检测到音频"
+
+#~ msgid "Please check your audio device."
+#~ msgstr "请检查您的音频设备。"
+
+#~ msgid "The song was not recognized."
+#~ msgstr "无识别结果。"
+
+#~ msgid "Something went wrong."
+#~ msgstr "识别时出现了问题。"
+
+#~ msgid "Sorry!"
+#~ msgstr "抱歉！"
+
+#~ msgid "Stop Preview"
+#~ msgstr "停止预览"
+
+#~ msgid "Play Preview"
+#~ msgstr "播放预览"
+
+#~ msgid "Copyright 2021 Dave Patrick"
+#~ msgstr "版权所有: Dave Patrick"
+
+#~ msgid ""
+#~ "Note: This uses the API of audd.io, so it is necessary to login to their "
+#~ "site to get more trials."
+#~ msgstr ""
+#~ "请注意：本软件使用了 audd.io 的 API，因此你需要登录才能获取更多的使用机"
+#~ "会。"
+
+#~ msgid "Reset Token"
+#~ msgstr "重置令牌"
+
+#~ msgid "Keyboard Shortcuts"
+#~ msgstr "快捷键"
+
+#~ msgid "About Mousai"
+#~ msgstr "关于 Mousai"
+
+#~ msgid "Open menu"
+#~ msgstr "打开菜单"
+
+#~ msgid "Show keyboard shortcuts"
+#~ msgstr "显示键盘快捷键"
+
+#~ msgid "Start listening"
+#~ msgstr "开始听歌识曲"
+
+#~ msgid "Cancel listening"
+#~ msgstr "取消听歌识曲"
+
+#~ msgid "Clear song history"
+#~ msgstr "清除识别记录"
+
+#~ msgid "Reset token value"
+#~ msgstr "重置令牌值"
+
+#~ msgid "🎸 Store the identified song with the Album art in a history."
+#~ msgstr "🎸 将已识别的歌曲与专辑插图一起存储在历史记录中。"
+
+#~ msgid "🌐 Play the identified song in your browser."
+#~ msgstr "🌐 在浏览器中播放识别的歌曲。"
+
+#~ msgctxt "Do not translate the link, only 'their website'"
+#~ msgid ""
+#~ "Mousai uses audd.io APIs to work, so it is required to login to <a "
+#~ "href=\"https://dashboard.audd.io/\">their website</a> and get a token. "
+#~ "Leaving this blank will give you a few trials per day."
+#~ msgstr ""
+#~ "Mousai 使用 audd.io 的 API 以实现其功能， 因此您需要 <a href=\"https://"
+#~ "dashboard.audd.io/\">登录该网站</a>并获取一个令牌值。不填写此项将只能使用"
+#~ "免费额度（一天几次）。"
+
+#~ msgid "Simple song identifier"
+#~ msgstr "听歌识曲软件"
+
+#~ msgid "Reset token"
+#~ msgstr "重设令牌值"
+
+#~ msgid ""
+#~ "Mousai is a simple application that can identify song like Shazam. It "
+#~ "saves the artist, album, and title of the identified song in a JSON file. "
+#~ "Note: This uses the API of audd.io, so it is necessary to login to their "
+#~ "site to get more trials."
+#~ msgstr ""
+#~ "Mousai 是一个简单的应用程序，它可以像 Shazam 一样听歌识曲。Mousai 会把识别"
+#~ "到的歌手、专辑与歌曲标题保存在 JSON 文件中。请注意：本软件需要使用 "
+#~ "audd.io 的 API，因此您需要登录以获得更多的免费额度。"
+
+#~ msgid "Recording"
+#~ msgstr "录制中"

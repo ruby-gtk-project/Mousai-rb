@@ -1,0 +1,1118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the mousai package.
+# Heimen Stoffels <vistausss@outlook.com>, 2021.
+# Heimen Stoffels <vistausss@fastmail.com>, 2021, 2022.
+# Philip Goto <philip.goto@gmail.com>, 2023, 2024, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: mousai\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-19 17:29+0800\n"
+"PO-Revision-Date: 2026-04-20 10:09+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Dutch <https://hosted.weblate.org/projects/seadve/mousai/nl/>"
+"\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.17.1-dev\n"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:2
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:7 src/about.rs:12
+#: src/main.rs:64
+msgid "Mousai"
+msgstr "Mousai"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:3
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:8
+msgid "Identify songs in seconds"
+msgstr "Identificeer nummers binnen enkele seconden"
+
+#. Translators: These are search terms to find this application. Do NOT translate or localize the semicolons. The list MUST also end with a semicolon.
+#: data/io.github.seadve.Mousai.desktop.in.in:9
+msgid "Shazam;Audio;Music;Song;Recognize;Identify;Recognition;"
+msgstr "Shazam;Audio;Music;Song;Recognize;Identify;Recognition;Geluid;Muziek;Herkennen;Identificeren;Herkenning;"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:6
+msgid "Window width"
+msgstr "Vensterbreedte"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:11
+msgid "Window height"
+msgstr "Vensterhoogte"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:16
+msgid "Whether the window is maximized"
+msgstr "Of het venster is gemaximaliseerd"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:26
+msgid "Audio source type to use in recording audio"
+msgstr "Audiobron­type voor audio-opname"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:32
+msgid "API token used by AudD recognition"
+msgstr "API-token gebruikt door AudD-herkenning"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:37
+msgid "Legacy (Kept for migration)"
+msgstr "Verouderd (behouden voor migratie)"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:10
+msgid "Discover songs you are aching to know with an easy-to-use interface."
+msgstr ""
+"Ontdek namen van nummers die u niet kent via een gebruiksvriendelijke "
+"interface."
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:11
+msgid ""
+"Mousai is a simple application that can recognize songs similar to Shazam. "
+"Just click the listen button, and then wait a few seconds. It will magically "
+"return the title and artist of that song!"
+msgstr ""
+"Mousai is een eenvoudige app die nummers kan herkennen, vergelijkbaar met "
+"Shazam. Druk gewoon op de luisterknop, en wacht dan een paar seconden. Het "
+"zal op magische wijze de titel en artiest van dat nummer teruggeven!"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:12
+msgid ""
+"Note: This uses the API of audd.io, so it is necessary to log in to their "
+"site to get more trials."
+msgstr ""
+"Let op: Mousai gebruikt de API van auddi.io. Log in op hun website om meer "
+"proeftijd te krijgen."
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:13
+msgid "Why you will love Mousai?"
+msgstr "Waarom zult u van Mousai houden?"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:15
+msgid "🎵 Identify songs within seconds or save for later when offline"
+msgstr ""
+"🎵 Identificeer nummers binnen enkele seconden of sla ze op voor later "
+"wanneer u offline bent"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:16
+msgid "🎙️ Recognize from desktop audio or your microphone"
+msgstr "🎙️ Herken nummers via desktop­audio of uw microfoon"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:17
+msgid "🎸 Build a repertoire of recognized songs"
+msgstr "🎸 Bouw een repertoire van herkende nummers op"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:18
+msgid "🎼 Quickly preview the song within the interface"
+msgstr "🎼 Bekijk snel een voorbeeld van het nummer in de interface"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:19
+msgid "🌐 Browse and listen the song from different providers"
+msgstr "🌐 Blader en luister naar het nummer van verschillende aanbieders"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:20
+msgid "📱 Easy-to-use user interface"
+msgstr "📱 Gebruiksvriendelijke vormgeving"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:26
+msgid "Mousai Home Page"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:30
+msgid "Detailed view of identified song"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:34
+msgid "Listening mode detecting the song"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:38
+#, fuzzy
+#| msgid "Recognized Song"
+#| msgid_plural "Recognized Songs"
+msgid "Recognized songs"
+msgstr "Herkend nummer"
+
+#: data/resources/ui/history_view.ui:6
+msgid "_Preferences"
+msgstr "_Voorkeuren"
+
+#: data/resources/ui/history_view.ui:10
+msgid "_Keyboard Shortcuts"
+msgstr "_Snel­toetsen"
+
+#: data/resources/ui/history_view.ui:14
+msgid "_About Mousai"
+msgstr "_Over Mousai"
+
+#: data/resources/ui/history_view.ui:22
+msgid "Select _All"
+msgstr "_Alles selecteren"
+
+#: data/resources/ui/history_view.ui:26
+msgid "_Unselect All"
+msgstr "Alles _deselecteren"
+
+#: data/resources/ui/history_view.ui:42
+msgid "Home"
+msgstr "Start"
+
+#: data/resources/ui/history_view.ui:52
+msgid "Recognize Song"
+msgstr "Nummer herkennen"
+
+#: data/resources/ui/history_view.ui:53 data/resources/ui/song_page.ui:109
+msgid "Listen"
+msgstr "Luisteren"
+
+#: data/resources/ui/history_view.ui:65
+msgid "Main Menu"
+msgstr "Hoofdmenu"
+
+#: data/resources/ui/history_view.ui:73 src/window/song_tile.rs:361
+msgid "Select"
+msgstr "Selecteren"
+
+#: data/resources/ui/history_view.ui:80 data/resources/ui/history_view.ui:103
+msgid "Search Songs"
+msgstr "Nummers zoeken"
+
+#: data/resources/ui/history_view.ui:96
+msgid "Cancel Selection"
+msgstr "Selectie annuleren"
+
+#: data/resources/ui/history_view.ui:97 data/resources/ui/recognizer_view.ui:14
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: data/resources/ui/history_view.ui:117
+msgid "Search songs"
+msgstr "Nummers zoeken"
+
+#: data/resources/ui/history_view.ui:140
+msgid "Start Recognizing Songs!"
+msgstr "Begin met nummers herkennen!"
+
+#: data/resources/ui/history_view.ui:141
+msgid "Click the listen button to start"
+msgstr "Klik op 'Luisteren' om aan de slag te gaan"
+
+#: data/resources/ui/history_view.ui:150
+msgid "No Results"
+msgstr "Geen resultaten"
+
+#: data/resources/ui/lyrics_page.ui:10 data/resources/ui/song_page.ui:140
+msgid "Lyrics"
+msgstr "Songtekst"
+
+#: data/resources/ui/preferences_dialog.ui:8
+msgid "General"
+msgstr "Algemeen"
+
+#: data/resources/ui/preferences_dialog.ui:11
+msgid "Audio Source"
+msgstr "Audio­bron"
+
+#: data/resources/ui/preferences_dialog.ui:12
+msgid "Device used for listening"
+msgstr "Apparaat voor luisteren"
+
+#: data/resources/ui/preferences_dialog.ui:19
+#: src/window/external_link_tile.rs:64
+msgid "AudD"
+msgstr "AudD"
+
+#: data/resources/ui/preferences_dialog.ui:20
+msgid ""
+"You can get yourself an API token from <a href=\"https://dashboard.audd.io/"
+"\">audd.io</a>. Leaving this blank will give you a few trials per day"
+msgstr ""
+"U kunt een API-token krijgen op <a href=\"https://dashboard.audd.io/"
+"\">audd.io</a>. Indien leeggelaten krijgt u een paar pogingen per dag"
+
+#: data/resources/ui/preferences_dialog.ui:23
+msgid "API Token"
+msgstr "API-token"
+
+#: data/resources/ui/recognizer_status.ui:17
+msgid "Offline Mode Enabled"
+msgstr "Offline-modus ingeschakeld"
+
+#: data/resources/ui/recognizer_status.ui:44
+msgid "Show Offline Mode Recognition Results"
+msgstr "Herkennings­resultaten tonen in offline­modus"
+
+#: data/resources/ui/recognizer_view.ui:13
+msgid "Cancel Listening"
+msgstr "Stoppen met luisteren"
+
+#: data/resources/ui/recognizer_view.ui:49
+msgid "Offline Mode"
+msgstr "Offline-modus"
+
+#: data/resources/ui/shortcuts.ui:6
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Algemeen"
+
+#: data/resources/ui/shortcuts.ui:9
+msgctxt "shortcut window"
+msgid "Open Main Menu"
+msgstr "Hoofdmenu openen"
+
+#: data/resources/ui/shortcuts.ui:15
+msgctxt "shortcut window"
+msgid "Search"
+msgstr "Zoeken"
+
+#: data/resources/ui/shortcuts.ui:21
+msgctxt "shortcut window"
+msgid "Show Preferences"
+msgstr "Voorkeuren tonen"
+
+#: data/resources/ui/shortcuts.ui:27
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Snel­toetsen tonen"
+
+#: data/resources/ui/shortcuts.ui:33
+msgctxt "shortcut window"
+msgid "Close Window"
+msgstr "Venster sluiten"
+
+#: data/resources/ui/shortcuts.ui:39
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Afsluiten"
+
+#: data/resources/ui/shortcuts.ui:47
+msgctxt "shortcut window"
+msgid "Controls"
+msgstr "Bediening"
+
+#: data/resources/ui/shortcuts.ui:50
+msgctxt "shortcut window"
+msgid "Toggle Listen"
+msgstr "Luisteren aan/uit"
+
+#: data/resources/ui/shortcuts.ui:56
+msgctxt "shortcut window"
+msgid "Toggle Playback"
+msgstr "Afspelen/Pauzeren"
+
+#: data/resources/ui/song_bar.ui:85
+msgid "Show Song Information"
+msgstr "Nummerinformatie tonen"
+
+#: data/resources/ui/song_bar.ui:145
+msgid "Stop"
+msgstr "Stoppen"
+
+#: data/resources/ui/song_page.ui:13
+msgid "Remove From History"
+msgstr "Verwijderen uit geschiedenis"
+
+#: data/resources/ui/song_page.ui:19
+msgid "Copy"
+msgstr "Kopiëren"
+
+#: data/resources/ui/song_page.ui:122
+msgid "Information"
+msgstr "Informatie"
+
+#: data/resources/ui/song_page.ui:125
+msgid "Last Heard"
+msgstr "Laatst beluisterd"
+
+#: data/resources/ui/song_page.ui:130
+msgid "Album"
+msgstr "Album"
+
+#: data/resources/ui/song_page.ui:135
+msgid "Release Date"
+msgstr "Uitgavedatum"
+
+#: data/resources/ui/song_tile.ui:30
+msgid "New"
+msgstr "Nieuw"
+
+#. Translators: Replace "translator-credits" with your names. Put a comma between.
+#: src/about.rs:18
+msgid "translator-credits"
+msgstr "Philip Goto https://flipflop97.github.io/"
+
+#: src/about.rs:27
+#, fuzzy
+msgid "Donate"
+msgstr "Doneren"
+
+#: src/about.rs:28
+msgid "GitHub"
+msgstr "GitHub"
+
+#: src/about.rs:30
+msgid "Translate"
+msgstr "Meehelpen vertalen"
+
+#: src/application.rs:209
+msgid "Critical Database Error"
+msgstr "Kritieke databasefout"
+
+#: src/application.rs:210
+msgid ""
+"Sorry, a critical database error has occurred. This is likely caused by a "
+"tampered or corrupted database. You can try clearing application data. "
+"However, this is not recommended and will delete all your songs and saved "
+"recordings.\n"
+"\n"
+"To report this issue, please launch Mousai in the terminal to include the "
+"logs and submit the bug report to the <a href=\"https://github.com/SeaDve/"
+"Mousai/issues/\">issue page</a>"
+msgstr ""
+"Sorry, er is een kritieke databasefout opgetreden. Dit wordt waarschijnlijk "
+"veroorzaakt door een gemanipuleerde of beschadigde database. U kunt proberen "
+"de app-gegevens te wissen. Dit wordt echter niet aanbevolen en zal al uw "
+"nummers en opgeslagen opnames verwijderen.\n"
+"\n"
+"Om dit probleem te melden, start Mousai in de terminal om het logboek op te "
+"nemen en dien het fout­rapport in op de <a href=\"https://github.com/SeaDve/"
+"Mousai/issues/\">issue-pagina</a>"
+
+#: src/application.rs:215
+msgid "Quit"
+msgstr "Afsluiten"
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:31
+msgid "today at %R"
+msgstr "vandaag om %R"
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:34
+msgid "yesterday at %R"
+msgstr "gisteren om %R"
+
+#: src/preferences_dialog.rs:103
+msgid "Microphone"
+msgstr "Microfoon"
+
+#: src/preferences_dialog.rs:104
+msgid "Desktop Audio"
+msgstr "Bureaubladaudio"
+
+#: src/recognizer/provider/error.rs:50
+msgid "No Matches Found"
+msgstr "Geen overeenkomsten gevonden"
+
+#: src/recognizer/provider/error.rs:51
+msgid "Cannot Create Fingerprint From Audio"
+msgstr "Kan geen vingerafdruk maken van audio"
+
+#: src/recognizer/provider/error.rs:52
+msgid "Invalid Token Given"
+msgstr "Ongeldig token opgegeven"
+
+#: src/recognizer/provider/error.rs:53
+msgid "Token Limit Reached"
+msgstr "Tokenlimiet bereikt"
+
+#: src/recognizer/provider/error.rs:54
+msgid "Cannot Connect to the Server"
+msgstr "Kan geen verbinding maken met de server"
+
+#: src/recognizer/provider/error.rs:55
+msgid "Received Other Permanent Error"
+msgstr "Andere permanente fout ontvangen"
+
+#: src/window/external_link_tile.rs:59
+msgid "Apple Music"
+msgstr "Apple Music"
+
+#: src/window/external_link_tile.rs:60
+msgid "Browse on Apple Music"
+msgstr "Bekijken op Apple Music"
+
+#: src/window/external_link_tile.rs:65
+msgid "Browse on AudD"
+msgstr "Bekijken op AudD"
+
+#: src/window/external_link_tile.rs:69
+msgid "Spotify"
+msgstr "Spotify"
+
+#: src/window/external_link_tile.rs:70
+msgid "Listen on Spotify"
+msgstr "Beluisteren op Spotify"
+
+#: src/window/external_link_tile.rs:74
+msgid "YouTube"
+msgstr "YouTube"
+
+#: src/window/external_link_tile.rs:75
+msgid "Search on YouTube"
+msgstr "Zoeken op YouTube"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/external_link_tile.rs:145
+msgid "Failed to launch {key}"
+msgstr "{key} starten mislukt"
+
+#: src/window/history_view.rs:147 src/window/song_page.rs:80
+msgid "Copied to clipboard"
+msgstr "Gekopieerd naar klembord"
+
+#: src/window/history_view.rs:160
+msgid "Failed to remove selected songs"
+msgstr "Geselecteerde nummers verwijderen mislukt"
+
+#: src/window/history_view.rs:357
+msgid "Failed to remove song"
+msgstr "Nummer verwijderen mislukt"
+
+#: src/window/history_view.rs:562
+msgid "Failed to show recognizer results"
+msgstr "Herkenningsresultaten tonen mislukt"
+
+#: src/window/history_view.rs:669
+msgid "_Undo"
+msgstr "_Ongedaan maken"
+
+#: src/window/history_view.rs:681
+msgid "Failed to undo"
+msgstr "Ongedaan maken mislukt"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:706
+msgid "Removed {n_removed} song"
+msgid_plural "Removed {n_removed} songs"
+msgstr[0] "{n_removed} nummer verwijderd"
+msgstr[1] "{n_removed} nummers verwijderd"
+
+#: src/window/history_view.rs:829
+msgid "Select items"
+msgstr "Items selecteren"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:833
+msgid "Selected {selection_size} song"
+msgid_plural "Selected {selection_size} songs"
+msgstr[0] "{selection_size} nummer geselecteerd"
+msgstr[1] "{selection_size} nummers geselecteerd"
+
+#: src/window/history_view.rs:843
+msgid "Copy Song"
+msgid_plural "Copy Songs"
+msgstr[0] "Nummer kopiëren"
+msgstr[1] "Nummers kopiëren"
+
+#: src/window/history_view.rs:850
+msgid "Remove Song From History"
+msgid_plural "Remove Songs From History"
+msgstr[0] "Nummer verwijderen uit geschiedenis"
+msgstr[1] "Nummers verwijderen uit geschiedenis"
+
+#: src/window/mod.rs:214
+msgid "Failed to insert song to history"
+msgstr "Nummer aan geschiedenis toevoegen mislukt"
+
+#: src/window/mod.rs:262
+msgid "Please open an issue on GitHub and provide the necessary information"
+msgstr "Open een issue op GitHub en geef de benodigde informatie op"
+
+#: src/window/mod.rs:265 src/window/mod.rs:297
+msgid "No, Thanks"
+msgstr "Nee, bedankt"
+
+#: src/window/mod.rs:267
+msgid "Open an Issue"
+msgstr "Issue openen"
+
+#: src/window/mod.rs:294
+msgid ""
+"Try moving closer to the source or using a different excerpt of the song"
+msgstr ""
+"Probeer dichter bij de bron te komen of gebruik een ander fragment van het "
+"nummer"
+
+#: src/window/mod.rs:299
+msgid "Try Again"
+msgstr "Opnieuw proberen"
+
+#: src/window/mod.rs:334
+msgid "Recording Saved"
+msgstr "Opname opgeslagen"
+
+#: src/window/mod.rs:342
+msgid "The result will be available when you're back online"
+msgstr "Het resultaat zal beschikbaar zijn wanneer u weer online bent"
+
+#: src/window/mod.rs:345
+msgid "Ok, Got It"
+msgstr "Oké, begrepen"
+
+#: src/window/mod.rs:355
+msgid ""
+"The result will be available when your token limit is reset. Wait until the "
+"limit is reset or open preferences and try setting a different token"
+msgstr ""
+"Het resultaat zal beschikbaar zijn wanneer uw tokenlimiet is gereset. Wacht "
+"tot de limiet is gereset of open de voorkeuren en probeer een ander token in "
+"te stellen"
+
+#: src/window/mod.rs:358
+msgid "I'll Wait"
+msgstr "Ik zal wachten"
+
+#: src/window/mod.rs:362
+msgid ""
+"The result will be available when your token is replaced with a valid one. "
+"Open preferences and try setting a different token"
+msgstr ""
+"Het resultaat zal beschikbaar zijn wanneer uw token wordt vervangen door een "
+"geldig token. Open voorkeuren en probeer een ander token in te stellen"
+
+#: src/window/mod.rs:365
+msgid "Later"
+msgstr "Later"
+
+#: src/window/mod.rs:370
+msgid "Open Preferences"
+msgstr "Voorkeuren"
+
+#: src/window/mod.rs:466
+msgid "An error occurred in the player"
+msgstr "Er is een fout opgetreden in de speler"
+
+#: src/window/playback_button.rs:97
+msgid "Play"
+msgstr "Afspelen"
+
+#: src/window/playback_button.rs:103
+msgid "Pause"
+msgstr "Pauzeren"
+
+#: src/window/recognized_page.rs:151
+msgid "Recognized Song"
+msgid_plural "Recognized Songs"
+msgstr[0] "Herkend nummer"
+msgstr[1] "Herkende nummers"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognized_page.rs:157
+msgid "Recognized {n_songs} New Song"
+msgid_plural "Recognized {n_songs} New Songs"
+msgstr[0] "{n_songs} nieuw nummer herkend"
+msgstr[1] "{n_songs} nieuwe nummers herkend"
+
+#: src/window/recognized_page.rs:163
+msgid "This song was recognized from your saved recording"
+msgid_plural "These songs were recognized from your saved recordings"
+msgstr[0] "Dit nummer is herkend van uw opgeslagen opname"
+msgstr[1] "Deze nummers zijn herkend van uw opgeslagen opnames"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognizer_status.rs:172
+msgid "Recognized {n_successful} Out Of {total_minus_failed}"
+msgstr "{n_successful} van de {total_minus_failed} herkend"
+
+#: src/window/recognizer_view.rs:149
+msgid "Listening…"
+msgstr "Bezig met luisteren…"
+
+#: src/window/recognizer_view.rs:154
+msgid "Recognizing…"
+msgstr "Bezig met herkennen…"
+
+#: src/window/song_page.rs:374
+msgid "Unknown"
+msgstr "Onbekend"
+
+#: src/window/song_tile.rs:359
+msgid "Unselect"
+msgstr "Deselecteren"
+
+#~ msgid "Donate (Buy Me a Coffee)"
+#~ msgstr "Doneren (trakteer me op een kopje koffie)"
+
+#~ msgid "Select _None"
+#~ msgstr "_Niets selecteren"
+
+#~ msgid "Dave Patrick Caberto"
+#~ msgstr "Dave Patrick Caberto"
+
+#~ msgid "Determines the audio source to use when available"
+#~ msgstr "Bepaalt de te gebruiken audiobron indien beschikbaar"
+
+#~ msgid "© 2023 Dave Patrick Caberto"
+#~ msgstr "© 2023, Dave Patrick Caberto"
+
+#~ msgid "🎵 Recognize songs within seconds or save for later when offline"
+#~ msgstr ""
+#~ "🎵 Herken nummers binnen enkele seconden of bewaar voor later wanneer u "
+#~ "offline bent"
+
+#~ msgid "🎙️ Use microphone or desktop audio"
+#~ msgstr "🎙️ Gebruik microfoon- of desktopaudio"
+
+#~ msgid "Back"
+#~ msgstr "Terug"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Navigation"
+#~ msgstr "Navigatie"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Go Back"
+#~ msgstr "Ga terug"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Go Forward"
+#~ msgstr "Vooruit"
+
+#~ msgid "Donate (Liberapay)"
+#~ msgstr "Doneren (Liberapay)"
+
+#~ msgid "Donate (PayPal)"
+#~ msgstr "Doneren (PayPal)"
+
+#~ msgid "Failed to launch {}"
+#~ msgstr "{} kan niet worden gestart"
+
+#~ msgid "Removed {} song"
+#~ msgid_plural "Removed {} songs"
+#~ msgstr[0] "Er is {} nummer verwijderd"
+#~ msgstr[1] "Er zijn {} nummers verwijderd"
+
+#~ msgid "Selected {} song"
+#~ msgid_plural "Selected {} songs"
+#~ msgstr[0] "{} nummer geselecteerd"
+#~ msgstr[1] "{} nummers geselecteerd"
+
+#~ msgid "Recognized {} New Song"
+#~ msgid_plural "Recognized {} New Songs"
+#~ msgstr[0] "{} nieuw nummer herkend"
+#~ msgstr[1] "{} nieuwe nummers herkend"
+
+#~ msgid "Recognized {} Out Of {}"
+#~ msgid_plural "Recognized {} Out Of {} Songs"
+#~ msgstr[0] "{} van {} nummer herkend"
+#~ msgstr[1] "{} van {} nummers herkend"
+
+#~ msgid "Shazam;Audio;Music;Song;Identify;Recognition;"
+#~ msgstr "Shazam;Audio;Music;Song;Identify;Recognition;Geluid;Muziek;Nummer;Identificeren;Hekenning;"
+
+#~ msgid ""
+#~ "Mousai is a simple application that can identify song similar to Shazam. "
+#~ "Just click the listen button, and then wait a few seconds. It will "
+#~ "magically return the title and artist of that song!"
+#~ msgstr ""
+#~ "Mousai is een eenvoudige app waar u net als Shazam nummers mee kunt "
+#~ "herkennen. Klik op de luisterknop, wacht een paar seconden, en de titel "
+#~ "en artiest staan magischerwijs voor u klaar!"
+
+#~ msgid ""
+#~ "This is likely caused by a tampered or corrupted database. You can try "
+#~ "clearing application data. However, this is not recommended and will "
+#~ "delete all your songs and saved recordings.\n"
+#~ "\n"
+#~ "To report this issue, please launch Mousai in the terminal to include the "
+#~ "logs and submit the bug report to the <a href=\"https://github.com/SeaDve/"
+#~ "Mousai/issues/\">issue page</a>."
+#~ msgstr ""
+#~ "Dit wordt waarschijnlijk veroorzaakt door een gemanipuleerde of "
+#~ "beschadigde database. U kunt proberen app-gegevens te wissen. Dit wordt "
+#~ "echter niet aanbevolen en verwijdert al uw nummers en opgeslagen "
+#~ "opnames.\n"
+#~ "\n"
+#~ "Om dit probleem te melden start u Mousai in de terminal om logboeken op "
+#~ "te nemen, om vervolgens het foutrapport in te dienen via de pagina <a "
+#~ "href=\"https://github.com/SeaDve/Mousai/issues/\">issues</a>."
+
+#~ msgid "Start Identifying Music"
+#~ msgstr "Begin met muziek identificeren"
+
+#~ msgid "Open Main Menu"
+#~ msgstr "Hoofdmenu openen"
+
+#~ msgid "Search for Songs"
+#~ msgstr "Zoeken naar nummers"
+
+#~ msgid "Cancel Select"
+#~ msgstr "Selectie annuleren"
+
+#~ msgid "Enter song or artist name"
+#~ msgstr "Voer de naam in van een nummer of artiest"
+
+#~ msgid "Start Identifying Music!"
+#~ msgstr "Begin met muziek identificeren!"
+
+#~ msgid "Click the listen button to start."
+#~ msgstr "Klik op de luisterknop om te starten."
+
+#~ msgid "No Results Found"
+#~ msgstr "Er zijn geen zoekresultaten"
+
+#~ msgid "Try a different search."
+#~ msgstr "Probeer een andere zoekopdracht."
+
+#~ msgid "Determines the audio source to select when available."
+#~ msgstr "Audiobron om te selecteren als deze beschikbaar is"
+
+#~ msgid ""
+#~ "You can get yourself an API token from <a href=\"https://"
+#~ "dashboard.audd.io/\">audd.io</a>. Leaving this blank will give you a few "
+#~ "trials per day."
+#~ msgstr ""
+#~ "U kunt een API-token krijgen van <a href=\"https://dashboard.audd.io/"
+#~ "\">audd.io</a>. Als u dit leeg laat, krijgt u een paar trials per dag."
+
+#~ msgid "Go Back"
+#~ msgstr "Terug"
+
+#~ msgid "The result will be available when you're back online."
+#~ msgstr "Het resultaat zal beschikbaar zijn wanneer u weer online bent."
+
+#~ msgid "The result will be available when your connection is restored."
+#~ msgstr ""
+#~ "Het resultaat zal beschikbaar zijn wanneer uw verbinding is hersteld."
+
+#~ msgid "The result will be available when your token limit is reset."
+#~ msgstr ""
+#~ "Het resultaat zal beschikbaar zijn wanneer uw token-limiet wordt gereset."
+
+#~ msgid ""
+#~ "The result will be available when your token is replaced with a valid one."
+#~ msgstr ""
+#~ "Het resultaat zal beschikbaar zijn wanneer uw token wordt vervangen door "
+#~ "een geldig token."
+
+#~ msgid "Recording saved"
+#~ msgstr "Opname opgeslagen"
+
+#~ msgid "Ok, got it"
+#~ msgstr "OK, begrepen"
+
+#~ msgid "Open preferences and try setting a different token."
+#~ msgstr "Open voorkeuren en probeer een ander token in te stellen."
+
+#~ msgid ""
+#~ "Wait until the limit is reset or open preferences and try setting a "
+#~ "different token."
+#~ msgstr ""
+#~ "Wacht tot de limiet opnieuw is ingesteld of open voorkeuren en probeer "
+#~ "een ander token in te stellen."
+
+#~ msgid ""
+#~ "Please open an issue on GitHub and provide the necessary information."
+#~ msgstr "Open een issue op GitHub en geef de benodigde informatie op."
+
+#~ msgid "Please check your internet connection."
+#~ msgstr "Controleer uw internetverbinding."
+
+#~ msgid "Ok"
+#~ msgstr "OK"
+
+#~ msgid "Recognized {} new song"
+#~ msgid_plural "Recognized {} new songs"
+#~ msgstr[0] "{} nieuw nummer herkend"
+#~ msgstr[1] "{} nieuwe nummers herkend"
+
+#~ msgid "This song was heard while you're offline"
+#~ msgid_plural "These songs were heard while you're offline"
+#~ msgstr[0] "Dit nummer werd gehoord terwijl u offline was"
+#~ msgstr[1] "Deze nummers zijn gehoord terwijl u offline was"
+
+#~ msgid "Default window width"
+#~ msgstr "Standaardvensterbreedte"
+
+#~ msgid "Default window height"
+#~ msgstr "Standaardvensterhoogte"
+
+#~ msgid "Default window maximized behaviour"
+#~ msgstr "Standaardmaximalisatiegedrag"
+
+#~ msgid "Contains recently recognized songs"
+#~ msgstr "Bevat onlangs herkende nummers"
+
+#~ msgid "🎵 Identify the title and artist of the song within seconds."
+#~ msgstr "🎵 Vind de naam van een nummer en artiest in een mum van tijd."
+
+#~ msgid "🎙️ Use your microphone or audio from desktop."
+#~ msgstr "🎙️ Neem audio op met je microfoon of van je computer."
+
+#~ msgid "🎸 Store the identified song including the album art in history."
+#~ msgstr ""
+#~ "🎸 Bewaar het herkende nummer, inclusief albumhoes, in de geschiedenis."
+
+#~ msgid "🎼 Preview the identified song with the native player."
+#~ msgstr "🎼 Beluister het herkende nummer met de muziekspeler."
+
+#~ msgid "🌐 Browse and listen the song from different providers."
+#~ msgstr ""
+#~ "🌐 Vind informatie over en beluister het nummer bij verschillende "
+#~ "diensten."
+
+#~ msgid "📱 Easy-to-use user interface."
+#~ msgstr "📱 Eenvoudige vormgeving."
+
+#~ msgid "⌨️ User-friendly keyboard shortcuts."
+#~ msgstr "⌨️ Gebruiksvriendelijke sneltoetsen."
+
+#~ msgid "Dave Patrick"
+#~ msgstr "Dave Patrick"
+
+#~ msgid "_Preferred Audio Source"
+#~ msgstr "_Voorkeursaudiobron"
+
+#~ msgid "Return to Main Page"
+#~ msgstr "Terug naar hoofdscherm"
+
+#~ msgid "Copyright 2022 Dave Patrick"
+#~ msgstr "Copyright 2022, Dave Patrick"
+
+#~ msgid "Cancelled recording"
+#~ msgstr "De opname is afgebroken"
+
+#~ msgid "Cancelled recognizing"
+#~ msgstr "De herkenning is afgebroken"
+
+#~ msgid ""
+#~ "Failed to convert the recording to base64. Please report this to Mousai's "
+#~ "bug tracker."
+#~ msgstr ""
+#~ "Het converteren naar base64 is mislukt. Meld dit voorval op Mousais "
+#~ "bugtracker."
+
+#~ msgid "Failed to connect to the server."
+#~ msgstr "Verbinden met de server mislukt."
+
+#~ msgid "Failed to parse response. Please report this to Mousai's bug tracker"
+#~ msgstr ""
+#~ "Antwoord verwerken mislukt. Meld dit alstublieft op de bugtracker van "
+#~ "Mousai."
+
+#~ msgid "Daily limit has been reached."
+#~ msgstr "Het daglimiet is bereikt."
+
+#~ msgid "Failed to fingerprint audio. There may be no sound heard."
+#~ msgstr ""
+#~ "De audio kan niet worden geverifeerd; er wordt mogelijk niks afgespeeld."
+
+#~ msgid "Got invalid status response of {}"
+#~ msgstr "Ongeldig statusantwoord van {}"
+
+#~ msgid "{} Check your internet connection."
+#~ msgstr "{} Controleer uw internetverbinding."
+
+#~ msgid "No matches found for this song."
+#~ msgstr "Er zijn geen overeenkomstige nummers gevonden."
+
+#~ msgid "{} Input an API token in the preferences."
+#~ msgstr "{} Voer een API-sleutel in onder voorkeuren."
+
+#~ msgid "Please input a valid API token."
+#~ msgstr "Voer een geldige api-sleutel in."
+
+#~ msgid "Copied song to clipboard"
+#~ msgstr "Nummer gekopieerd naar klembord"
+
+#~ msgid "Click on items to select them"
+#~ msgstr "Klik op items om ze te selecteren"
+
+#~ msgid "Failed to load history"
+#~ msgstr "Geschiedenis laden mislukt"
+
+#~ msgid "Shazam;Music;Song;Identify;"
+#~ msgstr "Shazam;Muziek;Song;Nummer;Identificeren;Herkennen;"
+
+#~ msgid ""
+#~ "Failed to parse response. Please report this to Mousai's bug tracker."
+#~ msgstr ""
+#~ "Het antwoord kan niet worden verwerkt. Meld deze bug op Mousai's "
+#~ "bugtracker."
+
+#~ msgid "Failed to convert file. Please report this to Mousai's bug tracker."
+#~ msgstr ""
+#~ "Het bestand kan niet worden geconverteerd. Meld deze bug op Mousai's "
+#~ "bugtracker."
+
+#~ msgid "Remove"
+#~ msgstr "Verwijderen"
+
+#~ msgid "Identify any songs in seconds"
+#~ msgstr "Vind elk nummer in een mum van tijd"
+
+#~ msgid "🌐 Browse the song in the web with the link."
+#~ msgstr "🌐 Zoek het nummer op op internet middels de link."
+
+#~ msgid "Open Menu"
+#~ msgstr "Menu openen"
+
+#~ msgid "Show Shortcuts"
+#~ msgstr "Sneltoetsen tonen"
+
+#~ msgid "Controls"
+#~ msgstr "Bediening"
+
+#~ msgid "Toggle Listen"
+#~ msgstr "Luisteren aan/uit"
+
+#~ msgid "Settings"
+#~ msgstr "Instellingen"
+
+#~ msgid "Clear Song History"
+#~ msgstr "Geschiedenis wissen"
+
+#~ msgid "Reset Token Value"
+#~ msgstr "Standaardwaarde herstellen"
+
+#~ msgid "Welcome to Mousai"
+#~ msgstr "Welkom bij Mousai"
+
+#~ msgid "Enter a valid token"
+#~ msgstr "Voer een geldige sleutel in"
+
+#~ msgid "Submit"
+#~ msgstr "Indienen"
+
+#~ msgid ""
+#~ "Mousai uses audd.io APIs to work, so it is required to login to <a "
+#~ "href=\"https://dashboard.audd.io/\">their website</a> and get a token. "
+#~ "Leaving this blank will give you a few trials per day."
+#~ msgstr ""
+#~ "Mousai gebruikt api's van audd.io, waarvoor je dient in te loggen op <a "
+#~ "href=\"https://dashboard.audd.io/\">hun website</a> en een "
+#~ "toegangssleutel moet ophalen. Als je hier niks invult, dan kun je de "
+#~ "dienst slechts een paar keer per dag gebruiken."
+
+#~ msgid "Do not show at startup"
+#~ msgstr "Niet tonen na opstarten"
+
+#~ msgid "Open in Browser"
+#~ msgstr "Openen in webbrowser"
+
+#~ msgid "Cancel the Recording"
+#~ msgstr "Opname afbreken"
+
+#~ msgid "Start Mousaing!"
+#~ msgstr "Beginnen met Mousaïng!"
+
+#~ msgid "Muted"
+#~ msgstr "Gedempt"
+
+#~ msgid "_Clear Song History"
+#~ msgstr "Ges_chiedenis wissen"
+
+#~ msgid "_Reset Token"
+#~ msgstr "Standaard toegangssleutel he_rstellen"
+
+#~ msgid "Listening"
+#~ msgstr "Bezig met luisteren"
+
+#~ msgid "No audio detected"
+#~ msgstr "Geen audio gedetecteerd"
+
+#~ msgid "Please check your audio device."
+#~ msgstr "Controleer je audio-apparaat."
+
+#~ msgid "The song was not recognized."
+#~ msgstr "Het nummer werd niet herkend."
+
+#~ msgid "Something went wrong."
+#~ msgstr "Er is iets misgegaan."
+
+#~ msgid "Sorry!"
+#~ msgstr "Sorry!"
+
+#~ msgid "Stop Preview"
+#~ msgstr "Voorvertoning stoppen"
+
+#~ msgid "Play Preview"
+#~ msgstr "Voorvertonen"
+
+#~ msgid "Copyright 2021 Dave Patrick"
+#~ msgstr "Copyright 2021, Dave Patrick"
+
+#~ msgid "Play preview"
+#~ msgstr "Beluisteren"
+
+#~ msgid ""
+#~ "Note: This uses the API of audd.io, so it is necessary to login to their "
+#~ "site to get more trials."
+#~ msgstr ""
+#~ "Let op: hiervoor wordt de api van audd.io gebruikt -log in op hun site om "
+#~ "meer proefperioden aan te vragen."
+
+#~ msgid "Show Keyboard Shortcuts"
+#~ msgstr "Sneltoetsen tonen"
+
+#~ msgid "Reset Token"
+#~ msgstr "Toegangssleutel herstellen"
+
+#~ msgid "Keyboard Shortcuts"
+#~ msgstr "Sneltoetsen"
+
+#~ msgid "About Mousai"
+#~ msgstr "Over Mousai"
+
+#~ msgid "Sorry"
+#~ msgstr "Sorry"
+
+#~ msgid "Open menu"
+#~ msgstr "Menu openen"
+
+#~ msgid "Show keyboard shortcuts"
+#~ msgstr "Sneltoetsen tonen"
+
+#~ msgid "Start listening"
+#~ msgstr "Luisteren"
+
+#~ msgid "Cancel listening"
+#~ msgstr "Stoppen met luisteren"
+
+#~ msgid "Clear song history"
+#~ msgstr "Geschiedenis wissen"
+
+#~ msgid "Reset token value"
+#~ msgstr "Toegangssleutel herstellen"
+
+#~ msgid "🎸 Store the identified song with the Album art in a history."
+#~ msgstr "🎸 Bewaar het nummer met albumhoes en al in de geschiedenis."
+
+#~ msgid "🌐 Play the identified song in your browser."
+#~ msgstr "🌐 Speel het nummer af in je webbrowser."
+
+#~ msgctxt "Do not translate the link, only 'their website'"
+#~ msgid ""
+#~ "Mousai uses audd.io APIs to work, so it is required to login to <a "
+#~ "href=\"https://dashboard.audd.io/\">their website</a> and get a token. "
+#~ "Leaving this blank will give you a few trials per day."
+#~ msgstr ""
+#~ "Mousai gebruikt de audd.io-api's, welke vereisen dat je inlogt op hun <a "
+#~ "href=\"https://dashboard.audd.io/\">website</a> en een toegangssleutel "
+#~ "aanvraagt. Als je dit leeg laat, kun je slechts een paar keer per dag "
+#~ "muziek herkennen."
+
+#~ msgid "Simple song identifier"
+#~ msgstr "Eenvoudige muziekherkenningstoepassing"
+
+#~ msgid ""
+#~ "Mousai is a simple application that can identify song like Shazam. It can "
+#~ "identify both its title and artist."
+#~ msgstr ""
+#~ "Mousai is een eenvoudige toepassing die muziek kan herkennen, net als "
+#~ "Shazam. Zowel de naam als artiest van het nummer wordt herkend."
+
+#~ msgid "Reset token"
+#~ msgstr "Toegangssleutel herstellen"
+
+#~ msgid ""
+#~ "Mousai is a simple application that can identify song like Shazam. It "
+#~ "saves the artist, album, and title of the identified song in a JSON file. "
+#~ "Note: This uses the API of audd.io, so it is necessary to login to their "
+#~ "site to get more trials."
+#~ msgstr ""
+#~ "Mousai is een eenvoudige toepassing om muziek te herkennen, net als "
+#~ "Shazam. De artiest, naam van het nummer en albumnaam worden opgeslagen in "
+#~ "een json-bestand. Let op: deze toepassing gebruikt de api van audd.io. "
+#~ "Log daar in om meer proefperiodes aan te vragen."

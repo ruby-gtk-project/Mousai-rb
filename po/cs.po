@@ -1,0 +1,952 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the mousai package.
+# Jan Novák <novak@silen.org>, 2021.
+# Vojtěch Perník <translations@pervoj.cz>, 2021, 2022.
+# Petr Šimáček <petr.simacek@gmail.com>, 2021.
+# multiflexi <multi.flexi@seznam.cz>, 2022.
+# Fjuro <ifjuro@proton.me>, 2023.
+# Fjuro <fjuro@alius.cz>, 2024, 2025.
+# Pavel Borecki <pavel.borecki@gmail.com>, 2026.
+# Fjuro <fjuro@users.noreply.hosted.weblate.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: mousai\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-19 17:29+0800\n"
+"PO-Revision-Date: 2026-04-20 10:10+0000\n"
+"Last-Translator: Fjuro <fjuro@users.noreply.hosted.weblate.org>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/seadve/mousai/cs/>"
+"\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
+"X-Generator: Weblate 5.17.1-dev\n"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:2
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:7 src/about.rs:12
+#: src/main.rs:64
+msgid "Mousai"
+msgstr "Mousai"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:3
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:8
+msgid "Identify songs in seconds"
+msgstr "Identifikujte skladby během sekund"
+
+#. Translators: These are search terms to find this application. Do NOT translate or localize the semicolons. The list MUST also end with a semicolon.
+#: data/io.github.seadve.Mousai.desktop.in.in:9
+msgid "Shazam;Audio;Music;Song;Recognize;Identify;Recognition;"
+msgstr "Shazam;Zvuk;Hudba;Skladba;Rozpoznat;Identifikace;Rozpoznávání;"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:6
+msgid "Window width"
+msgstr "Šířka okna"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:11
+msgid "Window height"
+msgstr "Výška okna"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:16
+msgid "Whether the window is maximized"
+msgstr "Zda je okno maximalizováno"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:26
+msgid "Audio source type to use in recording audio"
+msgstr "Typ zdroje zvuku pro nahrávání"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:32
+msgid "API token used by AudD recognition"
+msgstr "Token API používaný rozpoznáváním AudD"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:37
+msgid "Legacy (Kept for migration)"
+msgstr "Původní (ponecháno pro migraci)"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:10
+msgid "Discover songs you are aching to know with an easy-to-use interface."
+msgstr "Objevte skladby, které se vám líbí, díky snadno použitelnému rozhraní."
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:11
+msgid ""
+"Mousai is a simple application that can recognize songs similar to Shazam. "
+"Just click the listen button, and then wait a few seconds. It will magically "
+"return the title and artist of that song!"
+msgstr ""
+"Mousai je jednoduchá aplikace, která umí rozeznávat skladby, podobně jako "
+"Shazam. Stačí kliknout na tlačítko Poslouchat a počkat pár vteřin. Poté vám "
+"ukáže název a autora dané skladby!"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:12
+msgid ""
+"Note: This uses the API of audd.io, so it is necessary to log in to their "
+"site to get more trials."
+msgstr ""
+"Poznámka: Aplikace používá API audd.io, takže je nutné přihlásit se na "
+"jejich web, abyste získali vyšší počet použití."
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:13
+msgid "Why you will love Mousai?"
+msgstr "Proč budete milovat Mousai?"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:15
+msgid "🎵 Identify songs within seconds or save for later when offline"
+msgstr ""
+"🎵 Identifikace skladeb během vteřin nebo uložení na později, když jste "
+"offline"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:16
+msgid "🎙️ Recognize from desktop audio or your microphone"
+msgstr "🎙️ Rozpoznávání zvuku z plochy nebo z vašeho mikrofonu"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:17
+msgid "🎸 Build a repertoire of recognized songs"
+msgstr "🎸 Sestavte si knihovnu rozpoznaných skladeb"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:18
+msgid "🎼 Quickly preview the song within the interface"
+msgstr "🎼 Jednoduchý náhled skladby uvnitř rozhraní"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:19
+msgid "🌐 Browse and listen the song from different providers"
+msgstr "🌐 Procházejte a poslouchejte skladbu z různých zdrojů"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:20
+msgid "📱 Easy-to-use user interface"
+msgstr "📱 Jednoduché rozhraní"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:26
+msgid "Mousai Home Page"
+msgstr "Domovská stránka Mousai"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:30
+msgid "Detailed view of identified song"
+msgstr "Podrobný pohled na identifikovanou skladbu"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:34
+msgid "Listening mode detecting the song"
+msgstr "Režim poslechu detekující skladbu"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:38
+msgid "Recognized songs"
+msgstr "Rozpoznané skladby"
+
+#: data/resources/ui/history_view.ui:6
+msgid "_Preferences"
+msgstr "_Předvolby"
+
+#: data/resources/ui/history_view.ui:10
+msgid "_Keyboard Shortcuts"
+msgstr "_Klávesové zkratky"
+
+#: data/resources/ui/history_view.ui:14
+msgid "_About Mousai"
+msgstr "_O aplikaci Mousai"
+
+#: data/resources/ui/history_view.ui:22
+msgid "Select _All"
+msgstr "_Vybrat vše"
+
+#: data/resources/ui/history_view.ui:26
+msgid "_Unselect All"
+msgstr "_Zrušit výběr"
+
+#: data/resources/ui/history_view.ui:42
+msgid "Home"
+msgstr "Domů"
+
+#: data/resources/ui/history_view.ui:52
+msgid "Recognize Song"
+msgstr "Rozpoznat skladbu"
+
+#: data/resources/ui/history_view.ui:53 data/resources/ui/song_page.ui:109
+msgid "Listen"
+msgstr "Poslouchat"
+
+#: data/resources/ui/history_view.ui:65
+msgid "Main Menu"
+msgstr "Hlavní nabídka"
+
+#: data/resources/ui/history_view.ui:73 src/window/song_tile.rs:361
+msgid "Select"
+msgstr "Vybrat"
+
+#: data/resources/ui/history_view.ui:80 data/resources/ui/history_view.ui:103
+msgid "Search Songs"
+msgstr "Hledat skladby"
+
+#: data/resources/ui/history_view.ui:96
+msgid "Cancel Selection"
+msgstr "Zrušit výběr"
+
+#: data/resources/ui/history_view.ui:97 data/resources/ui/recognizer_view.ui:14
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: data/resources/ui/history_view.ui:117
+msgid "Search songs"
+msgstr "Hledat skladby"
+
+#: data/resources/ui/history_view.ui:140
+msgid "Start Recognizing Songs!"
+msgstr "Začněte rozpoznávat skladby!"
+
+#: data/resources/ui/history_view.ui:141
+msgid "Click the listen button to start"
+msgstr "Začněte kliknutím na tlačítko Poslouchat"
+
+#: data/resources/ui/history_view.ui:150
+msgid "No Results"
+msgstr "Žádné výsledky"
+
+#: data/resources/ui/lyrics_page.ui:10 data/resources/ui/song_page.ui:140
+msgid "Lyrics"
+msgstr "Text skladby"
+
+#: data/resources/ui/preferences_dialog.ui:8
+msgid "General"
+msgstr "Obecné"
+
+#: data/resources/ui/preferences_dialog.ui:11
+msgid "Audio Source"
+msgstr "Zdroj zvuku"
+
+#: data/resources/ui/preferences_dialog.ui:12
+msgid "Device used for listening"
+msgstr "Zařízení používané pro poslech"
+
+#: data/resources/ui/preferences_dialog.ui:19
+#: src/window/external_link_tile.rs:64
+msgid "AudD"
+msgstr "AudD"
+
+#: data/resources/ui/preferences_dialog.ui:20
+msgid ""
+"You can get yourself an API token from <a href=\"https://dashboard.audd.io/"
+"\">audd.io</a>. Leaving this blank will give you a few trials per day"
+msgstr ""
+"Token API můžete získat na webu <a href=\"https://dashboard.audd.io/"
+"\">audd.io</a>. Pokud tento údaj necháte prázdný, získáte několik pokusů "
+"denně"
+
+#: data/resources/ui/preferences_dialog.ui:23
+msgid "API Token"
+msgstr "Token API"
+
+#: data/resources/ui/recognizer_status.ui:17
+msgid "Offline Mode Enabled"
+msgstr "Režim offline zapnut"
+
+#: data/resources/ui/recognizer_status.ui:44
+msgid "Show Offline Mode Recognition Results"
+msgstr "Zobrazit výsledky rozpoznávání z režimu offline"
+
+#: data/resources/ui/recognizer_view.ui:13
+msgid "Cancel Listening"
+msgstr "Zrušit poslech"
+
+#: data/resources/ui/recognizer_view.ui:49
+msgid "Offline Mode"
+msgstr "Režim offline"
+
+#: data/resources/ui/shortcuts.ui:6
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Obecné"
+
+#: data/resources/ui/shortcuts.ui:9
+msgctxt "shortcut window"
+msgid "Open Main Menu"
+msgstr "Otevřít hlavní menu"
+
+#: data/resources/ui/shortcuts.ui:15
+msgctxt "shortcut window"
+msgid "Search"
+msgstr "Vyhledat"
+
+#: data/resources/ui/shortcuts.ui:21
+msgctxt "shortcut window"
+msgid "Show Preferences"
+msgstr "Zobrazit předvolby"
+
+#: data/resources/ui/shortcuts.ui:27
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Zobrazit zkratky"
+
+#: data/resources/ui/shortcuts.ui:33
+msgctxt "shortcut window"
+msgid "Close Window"
+msgstr "Zavřít okno"
+
+#: data/resources/ui/shortcuts.ui:39
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Ukončit"
+
+#: data/resources/ui/shortcuts.ui:47
+msgctxt "shortcut window"
+msgid "Controls"
+msgstr "Ovládání"
+
+#: data/resources/ui/shortcuts.ui:50
+msgctxt "shortcut window"
+msgid "Toggle Listen"
+msgstr "Poslouchat / zrušit poslech"
+
+#: data/resources/ui/shortcuts.ui:56
+msgctxt "shortcut window"
+msgid "Toggle Playback"
+msgstr "Přehrát / zrušit přehrávání"
+
+#: data/resources/ui/song_bar.ui:85
+msgid "Show Song Information"
+msgstr "Zobrazit informace o skladbě"
+
+#: data/resources/ui/song_bar.ui:145
+msgid "Stop"
+msgstr "Zastavit"
+
+#: data/resources/ui/song_page.ui:13
+msgid "Remove From History"
+msgstr "Odstranit z historie"
+
+#: data/resources/ui/song_page.ui:19
+msgid "Copy"
+msgstr "Kopírovat"
+
+#: data/resources/ui/song_page.ui:122
+msgid "Information"
+msgstr "Informace"
+
+#: data/resources/ui/song_page.ui:125
+msgid "Last Heard"
+msgstr "Naposledy posloucháno"
+
+#: data/resources/ui/song_page.ui:130
+msgid "Album"
+msgstr "Album"
+
+#: data/resources/ui/song_page.ui:135
+msgid "Release Date"
+msgstr "Datum vydání"
+
+#: data/resources/ui/song_tile.ui:30
+msgid "New"
+msgstr "Nový"
+
+#. Translators: Replace "translator-credits" with your names. Put a comma between.
+#: src/about.rs:18
+msgid "translator-credits"
+msgstr ""
+"Jan Novák\n"
+"Vojtěch Perník\n"
+"Jaroslav Svoboda\n"
+"Jonáš Loskot"
+
+#: src/about.rs:27
+msgid "Donate"
+msgstr "Přispět"
+
+#: src/about.rs:28
+msgid "GitHub"
+msgstr "GitHub"
+
+#: src/about.rs:30
+msgid "Translate"
+msgstr "Překládat do mého jazyka"
+
+#: src/application.rs:209
+msgid "Critical Database Error"
+msgstr "Kritická chyba databáze"
+
+#: src/application.rs:210
+msgid ""
+"Sorry, a critical database error has occurred. This is likely caused by a "
+"tampered or corrupted database. You can try clearing application data. "
+"However, this is not recommended and will delete all your songs and saved "
+"recordings.\n"
+"\n"
+"To report this issue, please launch Mousai in the terminal to include the "
+"logs and submit the bug report to the <a href=\"https://github.com/SeaDve/"
+"Mousai/issues/\">issue page</a>"
+msgstr ""
+"Omlouváme se, vyskytla se kritická chyba databáze. Příčinou je pravděpodobně "
+"narušená nebo poškozená databáze. Můžete zkusit vymazat data aplikace. To se "
+"však nedoporučuje a dojde k odstranění všech skladeb a uložených nahrávek.\n"
+"\n"
+"Chcete-li tento problém nahlásit, spusťte Mousai v terminálu, abyste "
+"zahrnuli protokoly, a odešlete hlášení o chybě na <a href=\"https://"
+"github.com/SeaDve/Mousai/issues/\">stránku problémů</a>"
+
+#: src/application.rs:215
+msgid "Quit"
+msgstr "Ukončit"
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:31
+msgid "today at %R"
+msgstr "dnes v %R"
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:34
+msgid "yesterday at %R"
+msgstr "včera v %R"
+
+#: src/preferences_dialog.rs:103
+msgid "Microphone"
+msgstr "Mikrofon"
+
+#: src/preferences_dialog.rs:104
+msgid "Desktop Audio"
+msgstr "Zvuk z plochy"
+
+#: src/recognizer/provider/error.rs:50
+msgid "No Matches Found"
+msgstr "Nenalezeny žádné shody"
+
+#: src/recognizer/provider/error.rs:51
+msgid "Cannot Create Fingerprint From Audio"
+msgstr "Nepodařilo se vytvořit otisk ze zvuku"
+
+#: src/recognizer/provider/error.rs:52
+msgid "Invalid Token Given"
+msgstr "Zadán neplatný token"
+
+#: src/recognizer/provider/error.rs:53
+msgid "Token Limit Reached"
+msgstr "Dosažen limit tokenu"
+
+#: src/recognizer/provider/error.rs:54
+msgid "Cannot Connect to the Server"
+msgstr "Nepodařilo se spojit se serverem"
+
+#: src/recognizer/provider/error.rs:55
+msgid "Received Other Permanent Error"
+msgstr "Obdržena jiná permanentní chyba"
+
+#: src/window/external_link_tile.rs:59
+msgid "Apple Music"
+msgstr "Apple Music"
+
+#: src/window/external_link_tile.rs:60
+msgid "Browse on Apple Music"
+msgstr "Procházet s Apple Music"
+
+#: src/window/external_link_tile.rs:65
+msgid "Browse on AudD"
+msgstr "Procházet na AudD"
+
+#: src/window/external_link_tile.rs:69
+msgid "Spotify"
+msgstr "Spotify"
+
+#: src/window/external_link_tile.rs:70
+msgid "Listen on Spotify"
+msgstr "Poslouchat na Spotify"
+
+#: src/window/external_link_tile.rs:74
+msgid "YouTube"
+msgstr "YouTube"
+
+#: src/window/external_link_tile.rs:75
+msgid "Search on YouTube"
+msgstr "Vyhledat na YouTube"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/external_link_tile.rs:145
+msgid "Failed to launch {key}"
+msgstr "Nepodařilo se spustit {key}"
+
+#: src/window/history_view.rs:147 src/window/song_page.rs:80
+msgid "Copied to clipboard"
+msgstr "Zkopírováno do schránky"
+
+#: src/window/history_view.rs:160
+msgid "Failed to remove selected songs"
+msgstr "Nepodařilo se odebrat vybrané skladby"
+
+#: src/window/history_view.rs:357
+msgid "Failed to remove song"
+msgstr "Nepodařilo se odebrat skladbu"
+
+#: src/window/history_view.rs:562
+msgid "Failed to show recognizer results"
+msgstr "Nepodařilo se zobrazit výsledky rozpoznání"
+
+#: src/window/history_view.rs:669
+msgid "_Undo"
+msgstr "_Zpět"
+
+#: src/window/history_view.rs:681
+msgid "Failed to undo"
+msgstr "Nepodařilo se vrátit akci"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:706
+msgid "Removed {n_removed} song"
+msgid_plural "Removed {n_removed} songs"
+msgstr[0] "Odebrána {n_removed} skladba"
+msgstr[1] "Odebrány {n_removed} skladby"
+msgstr[2] "Odebráno {n_removed} skladeb"
+
+#: src/window/history_view.rs:829
+msgid "Select items"
+msgstr "Vybrat položky"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:833
+msgid "Selected {selection_size} song"
+msgid_plural "Selected {selection_size} songs"
+msgstr[0] "Vybrána {selection_size} skladba"
+msgstr[1] "Vybrány {selection_size} skladby"
+msgstr[2] "Vybráno {selection_size} skladeb"
+
+#: src/window/history_view.rs:843
+msgid "Copy Song"
+msgid_plural "Copy Songs"
+msgstr[0] "Kopírovat skladbu"
+msgstr[1] "Kopírovat skladby"
+msgstr[2] "Kopírovat skladby"
+
+#: src/window/history_view.rs:850
+msgid "Remove Song From History"
+msgid_plural "Remove Songs From History"
+msgstr[0] "Odebrat skladbu z historie"
+msgstr[1] "Odebrat skladby z historie"
+msgstr[2] "Odebrat skladby z historie"
+
+#: src/window/mod.rs:214
+msgid "Failed to insert song to history"
+msgstr "Nepodařilo se vložit skladbu do historie"
+
+#: src/window/mod.rs:262
+msgid "Please open an issue on GitHub and provide the necessary information"
+msgstr ""
+"Otevřete si prosím problém na GitHubu a poskytněte všechny potřebné informace"
+
+#: src/window/mod.rs:265 src/window/mod.rs:297
+msgid "No, Thanks"
+msgstr "Ne, díky"
+
+#: src/window/mod.rs:267
+msgid "Open an Issue"
+msgstr "Otevřít problém"
+
+#: src/window/mod.rs:294
+msgid ""
+"Try moving closer to the source or using a different excerpt of the song"
+msgstr "Zkuste jít blíže ke zdroji nebo použít jiný úryvek skladby"
+
+#: src/window/mod.rs:299
+msgid "Try Again"
+msgstr "Zkusit znovu"
+
+#: src/window/mod.rs:334
+msgid "Recording Saved"
+msgstr "Nahrávka uložena"
+
+#: src/window/mod.rs:342
+msgid "The result will be available when you're back online"
+msgstr "Výsledek bude dostupný, až budete znovu online"
+
+#: src/window/mod.rs:345
+msgid "Ok, Got It"
+msgstr "Dobrá, pochopeno"
+
+#: src/window/mod.rs:355
+msgid ""
+"The result will be available when your token limit is reset. Wait until the "
+"limit is reset or open preferences and try setting a different token"
+msgstr ""
+"Výsledek bude dostupný, až bude obnoven limit vašeho tokenu. Počkejte, než "
+"bude limit obnoven nebo zkuste v předvolbách nastavit jiný token"
+
+#: src/window/mod.rs:358
+msgid "I'll Wait"
+msgstr "Počkám"
+
+#: src/window/mod.rs:362
+msgid ""
+"The result will be available when your token is replaced with a valid one. "
+"Open preferences and try setting a different token"
+msgstr ""
+"Výsledek bude dostupný, až bude váš token nahrazen platným. Otevřete "
+"předvolby a zkuste nastavit jiný token"
+
+#: src/window/mod.rs:365
+msgid "Later"
+msgstr "Později"
+
+#: src/window/mod.rs:370
+msgid "Open Preferences"
+msgstr "Otevřít předvolby"
+
+#: src/window/mod.rs:466
+msgid "An error occurred in the player"
+msgstr "V přehrávači se vyskytla chyba"
+
+#: src/window/playback_button.rs:97
+msgid "Play"
+msgstr "Přehrát"
+
+#: src/window/playback_button.rs:103
+msgid "Pause"
+msgstr "Pozastavit"
+
+#: src/window/recognized_page.rs:151
+msgid "Recognized Song"
+msgid_plural "Recognized Songs"
+msgstr[0] "Rozpoznána skladba"
+msgstr[1] "Rozpoznány skladby"
+msgstr[2] "Rozpoznány skladby"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognized_page.rs:157
+msgid "Recognized {n_songs} New Song"
+msgid_plural "Recognized {n_songs} New Songs"
+msgstr[0] "Rozpoznána {n_songs} nová skladba"
+msgstr[1] "Rozpoznány {n_songs} nové skladby"
+msgstr[2] "Rozpoznáno {n_songs} nových skladeb"
+
+#: src/window/recognized_page.rs:163
+msgid "This song was recognized from your saved recording"
+msgid_plural "These songs were recognized from your saved recordings"
+msgstr[0] "Tato skladba byla rozpoznána z vaší uložené nahrávky"
+msgstr[1] "Tyto skladby byly rozpoznány z vašich uložených nahrávek"
+msgstr[2] "Tyto skladby byly rozpoznány z vašich uložených nahrávek"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognizer_status.rs:172
+msgid "Recognized {n_successful} Out Of {total_minus_failed}"
+msgstr "Rozpoznáno {n_successful} z {total_minus_failed}"
+
+#: src/window/recognizer_view.rs:149
+msgid "Listening…"
+msgstr "Poslouchám…"
+
+#: src/window/recognizer_view.rs:154
+msgid "Recognizing…"
+msgstr "Rozpoznávám…"
+
+#: src/window/song_page.rs:374
+msgid "Unknown"
+msgstr "Neznámý"
+
+#: src/window/song_tile.rs:359
+msgid "Unselect"
+msgstr "Zrušit výběr"
+
+#~ msgid "Donate (Buy Me a Coffee)"
+#~ msgstr "Podpořit vývoj darem (přes službu Buy Me a Coffee)"
+
+#~ msgid "Select _None"
+#~ msgstr "Z_rušit výběr"
+
+#~ msgid "Dave Patrick Caberto"
+#~ msgstr "Dave Patrick Caberto"
+
+#~ msgid "Determines the audio source to use when available"
+#~ msgstr "Rozhodne o zdroji zvuku, pokud je dostupný"
+
+#~ msgid "© 2023 Dave Patrick Caberto"
+#~ msgstr "© 2023 Dave Patrick Caberto"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Navigation"
+#~ msgstr "Navigace"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Go Back"
+#~ msgstr "Zpět"
+
+#, fuzzy
+#~ msgid "Donate (Liberapay)"
+#~ msgstr "Podpořit (Liberapay)"
+
+#, fuzzy
+#~ msgid "Donate (PayPal)"
+#~ msgstr "Podpořit (PayPal)"
+
+#~ msgid "Failed to launch {}"
+#~ msgstr "Nepodařilo se spustit {}"
+
+#~ msgid "Removed {} song"
+#~ msgid_plural "Removed {} songs"
+#~ msgstr[0] "Odstraněna {} skladba"
+#~ msgstr[1] "Odstraněny {} skladby"
+#~ msgstr[2] "Odstraněno {} skladeb"
+
+#~ msgid "Selected {} song"
+#~ msgid_plural "Selected {} songs"
+#~ msgstr[0] "Vybrána {} skladba"
+#~ msgstr[1] "Vybrány {} skladby"
+#~ msgstr[2] "Vybráno {} skladeb"
+
+#~ msgid "Shazam;Audio;Music;Song;Identify;Recognition;"
+#~ msgstr "Shazam;Audio;Hudba;Song;Skladba;Písnička;Píseň;Identifikovat;Rozpoznání;"
+
+#~ msgid ""
+#~ "Mousai is a simple application that can identify song similar to Shazam. "
+#~ "Just click the listen button, and then wait a few seconds. It will "
+#~ "magically return the title and artist of that song!"
+#~ msgstr ""
+#~ "Mousai je jednoduchá aplikace, která dokáže identifikovat skladbu podobně "
+#~ "jako Shazam nebo SoundHound. Klikněte na tlačítko poslechu a počkejte "
+#~ "několik sekund. Magicky vrátí název a interpreta písně!"
+
+#~ msgid "Start Identifying Music"
+#~ msgstr "Začněte identifikovat hudbu"
+
+#~ msgid "Open Main Menu"
+#~ msgstr "Otevřít hlavní menu"
+
+#~ msgid "Search for Songs"
+#~ msgstr "Hledat skladby"
+
+#~ msgid "Cancel Select"
+#~ msgstr "Zrušit výběr"
+
+#~ msgid "Enter song or artist name"
+#~ msgstr "Zadejte jméno skladby nebo interpreta"
+
+#~ msgid "Start Identifying Music!"
+#~ msgstr "Začít identifikovávat hudbu!"
+
+#~ msgid "Click the listen button to start."
+#~ msgstr "Začněte kliknutím na tlačítko poslouchat."
+
+#~ msgid "No Results Found"
+#~ msgstr "Nebyly nalezeny žádné výsledky"
+
+#~ msgid "Try a different search."
+#~ msgstr "Zkuste jiné vyhledávání."
+
+#, fuzzy
+#~ msgid "Ok"
+#~ msgstr "Ok"
+
+#~ msgid "Default window width"
+#~ msgstr "Výchozí šířka okna"
+
+#~ msgid "Default window height"
+#~ msgstr "Výchozí výška okna"
+
+#~ msgid "Default window maximized behaviour"
+#~ msgstr "Výchozí chování okna při maximalizaci"
+
+#~ msgid "Contains recently recognized songs"
+#~ msgstr "Obsahuje nedávno vyhledávané skladby"
+
+#~ msgid "🎵 Identify the title and artist of the song within seconds."
+#~ msgstr "🎵 Během několika sekund identifikujte název a interpreta skladby."
+
+#~ msgid "🎙️ Use your microphone or audio from desktop."
+#~ msgstr "Použít mikrofon nebo zvuk z počítače."
+
+#~ msgid "🎸 Store the identified song including the album art in history."
+#~ msgstr "🎸 Uložte identifikovanou skladbu včetně obalu alba do historie."
+
+#~ msgid "🎼 Preview the identified song with the native player."
+#~ msgstr "🎼 Přehrajte si identifikovanou skladbu s nativním přehrávačem."
+
+#~ msgid "🌐 Browse and listen the song from different providers."
+#~ msgstr "🌐 Procházejte a poslouchejte skladby z různých zdrojů."
+
+#~ msgid "📱 Easy-to-use user interface."
+#~ msgstr "📱 Snadno použitelné uživatelské rozhraní."
+
+#~ msgid "⌨️ User-friendly keyboard shortcuts."
+#~ msgstr "⌨️ Uživatelsky přívětivé klávesové zkratky."
+
+#~ msgid "Dave Patrick"
+#~ msgstr "Dave Patrick"
+
+#~ msgid "_Preferred Audio Source"
+#~ msgstr "_Preferovaný zdroj zvuku"
+
+#~ msgid "Return to Main Page"
+#~ msgstr "Zpět na hlavní stránku"
+
+#~ msgid "Copyright 2022 Dave Patrick"
+#~ msgstr "Copyright 2022 Dave Patrick"
+
+#~ msgid "Cancelled recording"
+#~ msgstr "Zrušené nahrávání"
+
+#~ msgid "Cancelled recognizing"
+#~ msgstr "Zrušené rozpoznávání"
+
+#~ msgid ""
+#~ "Failed to convert the recording to base64. Please report this to Mousai's "
+#~ "bug tracker."
+#~ msgstr ""
+#~ "Nepodařilo se převést nahrávku na base64. Nahlaste to prosím v systému "
+#~ "sledování chyb aplikace Mousai."
+
+#~ msgid "Failed to connect to the server."
+#~ msgstr "Nepodařilo se připojit k serveru."
+
+#~ msgid "Failed to parse response. Please report this to Mousai's bug tracker"
+#~ msgstr ""
+#~ "Načítání odpovědi se nezdařilo. Nahlaste to prosím v systému sledování "
+#~ "chyb aplikace Mousai"
+
+#~ msgid "Daily limit has been reached."
+#~ msgstr "Dosažen denní limit."
+
+#~ msgid "Failed to fingerprint audio. There may be no sound heard."
+#~ msgstr ""
+#~ "Audio se nepodařilo identifikovat. Je možné, že nebyl zaznamenán žádný "
+#~ "zvuk."
+
+#~ msgid "Got invalid status response of {}"
+#~ msgstr "Neplatná odpověď o stavu {}"
+
+#~ msgid "{} Check your internet connection."
+#~ msgstr "{} Zkontrolujte své připojení."
+
+#~ msgid "No matches found for this song."
+#~ msgstr "Pro tuto skladbu nebyla nalezena žádná shoda."
+
+#~ msgid "{} Input an API token in the preferences."
+#~ msgstr "{} Zadejte token API v předvolbách."
+
+#~ msgid "Please input a valid API token."
+#~ msgstr "Prosím, zadejte platný token API."
+
+#~ msgid "Copied song to clipboard"
+#~ msgstr "Skladba zkopírována do schránky"
+
+#~ msgid "Click on items to select them"
+#~ msgstr "Chcete-li vybrat položku, klikněte na ni"
+
+#~ msgid "Failed to load history"
+#~ msgstr "Nepodařilo se načíst historii"
+
+#~ msgid "Shazam;Music;Song;Identify;"
+#~ msgstr "Shazam;SoundHound;Hudba;Píseň;Identifikovat;"
+
+#~ msgid ""
+#~ "Failed to parse response. Please report this to Mousai's bug tracker."
+#~ msgstr ""
+#~ "Nepodařilo se načíst odpověď. Prosím, nahlaste to v záznamu chyb aplikace "
+#~ "Mousai."
+
+#~ msgid "Failed to convert file. Please report this to Mousai's bug tracker."
+#~ msgstr ""
+#~ "Nepodařilo se převést soubor. Prosím, nahlaste to v záznamu chyb aplikace "
+#~ "Mousai."
+
+#~ msgid "Remove"
+#~ msgstr "Odebrat"
+
+#~ msgid "Identify any songs in seconds"
+#~ msgstr "Identifikujte jakoukoli skladbu během několika sekund"
+
+#~ msgid "🌐 Browse the song in the web with the link."
+#~ msgstr "🌐 Vyhledejte skladbu na internetu pomocí odkazu."
+
+#~ msgid "Open Menu"
+#~ msgstr "Otevřít menu"
+
+#~ msgid "Show Shortcuts"
+#~ msgstr "Zobrazit zkratky"
+
+#~ msgid "Controls"
+#~ msgstr "Ovládání"
+
+#~ msgid "Toggle Listen"
+#~ msgstr "Zapnout/vypnout poslouchání"
+
+#~ msgid "Settings"
+#~ msgstr "Nastavení"
+
+#~ msgid "Clear Song History"
+#~ msgstr "Vymazat historii skladeb"
+
+#~ msgid "Reset Token Value"
+#~ msgstr "Resetovat hodnotu tokenu"
+
+#~ msgid "Welcome to Mousai"
+#~ msgstr "Vítejte v Mousai"
+
+#~ msgid "Enter a valid token"
+#~ msgstr "Zadejte platný token"
+
+#~ msgid "Submit"
+#~ msgstr "Odeslat"
+
+#~ msgid ""
+#~ "Mousai uses audd.io APIs to work, so it is required to login to <a "
+#~ "href=\"https://dashboard.audd.io/\">their website</a> and get a token. "
+#~ "Leaving this blank will give you a few trials per day."
+#~ msgstr ""
+#~ "Mousai ke své práci používá API audd.io, takže je nutné se přihlásit na "
+#~ "<a href=\"https://dashboard.audd.io/\">jejich web</a> a získat token. "
+#~ "Ponecháte-li toto pole prázdné, můžete službu využít jen párkrát denně."
+
+#~ msgid "Do not show at startup"
+#~ msgstr "Nezobrazovat při spuštění"
+
+#~ msgid "Open in Browser"
+#~ msgstr "Otevřít v prohlížeči"
+
+#~ msgid "Cancel the Recording"
+#~ msgstr "Zrušit nahrávání"
+
+#~ msgid "Start Mousaing!"
+#~ msgstr "Začít Mousaiovat!"
+
+#~ msgid "Muted"
+#~ msgstr "Ztlumeno"
+
+#~ msgid "_Clear Song History"
+#~ msgstr "_Vynazat historii skladeb"
+
+#~ msgid "_Reset Token"
+#~ msgstr "_Resetovat token"
+
+#~ msgid "Listening"
+#~ msgstr "Poslouchání"
+
+#~ msgid "No audio detected"
+#~ msgstr "Nebylo detekováno žádné audio"
+
+#~ msgid "Please check your audio device."
+#~ msgstr "Zkontrolujte prosím své zvukové zařízení."
+
+#~ msgid "The song was not recognized."
+#~ msgstr "Píseň nebyla rozpoznána."
+
+#~ msgid "Something went wrong."
+#~ msgstr "Něco se pokazilo."
+
+#~ msgid "Sorry!"
+#~ msgstr "Omlouváme se!"
+
+#~ msgid "Stop Preview"
+#~ msgstr "Zastavit náhled"
+
+#~ msgid "Play Preview"
+#~ msgstr "Přehrát náhled"
+
+#~ msgid "Copyright 2021 Dave Patrick"
+#~ msgstr "Copyright 2021 Dave Patrick"
+
+#~ msgid "Play preview"
+#~ msgstr "Přehrát ukázku"
+
+#~ msgid "Keyboard Shortcuts"
+#~ msgstr "Klávesové zkratky"
+
+#~ msgid "Open menu"
+#~ msgstr "Otevřít nabídku"
+
+#~ msgid "Show keyboard shortcuts"
+#~ msgstr "Zobrazit klávesové zkratky"
+
+#~ msgid "Recording"
+#~ msgstr "Nahrávání"

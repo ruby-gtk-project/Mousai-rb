@@ -1,0 +1,926 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the mousai package.
+# Milo Ivir <mail@milotype.de>, 2021, 2022, 2023, 2024, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: mousai\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-19 17:29+0800\n"
+"PO-Revision-Date: 2026-04-20 10:10+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Croatian <https://hosted.weblate.org/projects/seadve/mousai/"
+"hr/>\n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.17.1-dev\n"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:2
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:7 src/about.rs:12
+#: src/main.rs:64
+msgid "Mousai"
+msgstr "Mousai"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:3
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:8
+msgid "Identify songs in seconds"
+msgstr "Prepoznaj pjesme u trenu"
+
+#. Translators: These are search terms to find this application. Do NOT translate or localize the semicolons. The list MUST also end with a semicolon.
+#: data/io.github.seadve.Mousai.desktop.in.in:9
+msgid "Shazam;Audio;Music;Song;Recognize;Identify;Recognition;"
+msgstr "Shazam;Audio;Zvuk;Glazba;Pjesma;Prepoznaj;Identificiraj;Preoznavanje;"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:6
+msgid "Window width"
+msgstr "Širina prozora"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:11
+msgid "Window height"
+msgstr "Visina prozora"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:16
+msgid "Whether the window is maximized"
+msgstr "Je li je prozor maksimiran"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:26
+msgid "Audio source type to use in recording audio"
+msgstr "Korištena vrsta izvora zvuka za snimanje zvuka"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:32
+msgid "API token used by AudD recognition"
+msgstr "API token koji koristi AudD prepoznavanje"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:37
+msgid "Legacy (Kept for migration)"
+msgstr "Zastarjelo (sačuvano za migraciju)"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:10
+msgid "Discover songs you are aching to know with an easy-to-use interface."
+msgstr "Otkrij pjesme koje želiš poznati pomoću jednostavnog sučelja."
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:11
+msgid ""
+"Mousai is a simple application that can recognize songs similar to Shazam. "
+"Just click the listen button, and then wait a few seconds. It will magically "
+"return the title and artist of that song!"
+msgstr ""
+"Mousai je jednostavna aplikacija koja prepoznaje pjesme, slično aplikaciji "
+"Shazam. Pritisni gumb za slušanje, pričekaj par sekundi i aplikacija će "
+"prikazati naslov i izvođača te pjesme!"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:12
+msgid ""
+"Note: This uses the API of audd.io, so it is necessary to log in to their "
+"site to get more trials."
+msgstr ""
+"Napomena: Aplikacija koristi API od audd.io, stoga se moraš prijaviti na "
+"njihovoj web-stranici za dobivanje više pokušaja."
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:13
+msgid "Why you will love Mousai?"
+msgstr "Zašto ćeš voljeti Mousai?"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:15
+msgid "🎵 Identify songs within seconds or save for later when offline"
+msgstr ""
+"🎵 Prepoznaj pjesme u roku od par sekundi ili ih spremi za kasnije kada "
+"nemaš mrežu"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:16
+msgid "🎙️ Recognize from desktop audio or your microphone"
+msgstr "🎙️ Prepoznaj iz zvukova računala ili mikrofona"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:17
+msgid "🎸 Build a repertoire of recognized songs"
+msgstr "🎸 Izgradi repertoar iz prepoznatih pjesama"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:18
+msgid "🎼 Quickly preview the song within the interface"
+msgstr "🎼 Pregledaj pjesmu unutar sučelja"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:19
+msgid "🌐 Browse and listen the song from different providers"
+msgstr "🌐 Pregledaj i slušaj pjesmu od različitih providera"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:20
+msgid "📱 Easy-to-use user interface"
+msgstr "📱 Jednostavno korisničko sučelje"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:26
+msgid "Mousai Home Page"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:30
+msgid "Detailed view of identified song"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:34
+msgid "Listening mode detecting the song"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:38
+#, fuzzy
+#| msgid "Recognized Song"
+#| msgid_plural "Recognized Songs"
+msgid "Recognized songs"
+msgstr "Prepoznata pjesma"
+
+#: data/resources/ui/history_view.ui:6
+msgid "_Preferences"
+msgstr "_Postavke"
+
+#: data/resources/ui/history_view.ui:10
+msgid "_Keyboard Shortcuts"
+msgstr "_Tipkovni prečaci"
+
+#: data/resources/ui/history_view.ui:14
+msgid "_About Mousai"
+msgstr "_O aplikaciji Mousai"
+
+#: data/resources/ui/history_view.ui:22
+msgid "Select _All"
+msgstr "Odaberi _sve"
+
+#: data/resources/ui/history_view.ui:26
+msgid "_Unselect All"
+msgstr "P_oništi odabir"
+
+#: data/resources/ui/history_view.ui:42
+msgid "Home"
+msgstr "Početna"
+
+#: data/resources/ui/history_view.ui:52
+msgid "Recognize Song"
+msgstr "Prepoznaj pjesmu"
+
+#: data/resources/ui/history_view.ui:53 data/resources/ui/song_page.ui:109
+msgid "Listen"
+msgstr "Slušaj"
+
+#: data/resources/ui/history_view.ui:65
+msgid "Main Menu"
+msgstr "Glavni izbornik"
+
+#: data/resources/ui/history_view.ui:73 src/window/song_tile.rs:361
+msgid "Select"
+msgstr "Odaberi"
+
+#: data/resources/ui/history_view.ui:80 data/resources/ui/history_view.ui:103
+msgid "Search Songs"
+msgstr "Traži pjesme"
+
+#: data/resources/ui/history_view.ui:96
+msgid "Cancel Selection"
+msgstr "Otkaži odabir"
+
+#: data/resources/ui/history_view.ui:97 data/resources/ui/recognizer_view.ui:14
+msgid "Cancel"
+msgstr "Odustani"
+
+#: data/resources/ui/history_view.ui:117
+msgid "Search songs"
+msgstr "Traži pjesme"
+
+#: data/resources/ui/history_view.ui:140
+msgid "Start Recognizing Songs!"
+msgstr "Počni prepoznavati pjesme!"
+
+#: data/resources/ui/history_view.ui:141
+msgid "Click the listen button to start"
+msgstr "Za pokretanje pritisni gumb „Slušaj”"
+
+#: data/resources/ui/history_view.ui:150
+msgid "No Results"
+msgstr "Nema rezultata"
+
+#: data/resources/ui/lyrics_page.ui:10 data/resources/ui/song_page.ui:140
+msgid "Lyrics"
+msgstr "Tekst"
+
+#: data/resources/ui/preferences_dialog.ui:8
+msgid "General"
+msgstr "Općenito"
+
+#: data/resources/ui/preferences_dialog.ui:11
+msgid "Audio Source"
+msgstr "Izvor zvuka"
+
+#: data/resources/ui/preferences_dialog.ui:12
+msgid "Device used for listening"
+msgstr "Uređaj koji se koristi za slušanje"
+
+#: data/resources/ui/preferences_dialog.ui:19
+#: src/window/external_link_tile.rs:64
+msgid "AudD"
+msgstr "AudD"
+
+#: data/resources/ui/preferences_dialog.ui:20
+msgid ""
+"You can get yourself an API token from <a href=\"https://dashboard.audd.io/"
+"\">audd.io</a>. Leaving this blank will give you a few trials per day"
+msgstr ""
+"API token možeš nabaviti na <a href=\"https://dashboard.audd.io/\">audd.io</"
+"a>. Ako ovo polje ostaviš praznim imat ćeš samo nekoliko pokušaja dnevno"
+
+#: data/resources/ui/preferences_dialog.ui:23
+msgid "API Token"
+msgstr "API token"
+
+#: data/resources/ui/recognizer_status.ui:17
+msgid "Offline Mode Enabled"
+msgstr "Izvanmrežni način rada je uključen"
+
+#: data/resources/ui/recognizer_status.ui:44
+msgid "Show Offline Mode Recognition Results"
+msgstr "Prikaži rezultate prepoznavanja izvanmrežnog načina rada"
+
+#: data/resources/ui/recognizer_view.ui:13
+msgid "Cancel Listening"
+msgstr "Prekini slušanje"
+
+#: data/resources/ui/recognizer_view.ui:49
+msgid "Offline Mode"
+msgstr "Izvanmrežni način rada"
+
+#: data/resources/ui/shortcuts.ui:6
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Općenito"
+
+#: data/resources/ui/shortcuts.ui:9
+msgctxt "shortcut window"
+msgid "Open Main Menu"
+msgstr "Otvori glavni izbornik"
+
+#: data/resources/ui/shortcuts.ui:15
+msgctxt "shortcut window"
+msgid "Search"
+msgstr "Pretraga"
+
+#: data/resources/ui/shortcuts.ui:21
+msgctxt "shortcut window"
+msgid "Show Preferences"
+msgstr "Prikaži postavke"
+
+#: data/resources/ui/shortcuts.ui:27
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Prikaži prečace"
+
+#: data/resources/ui/shortcuts.ui:33
+msgctxt "shortcut window"
+msgid "Close Window"
+msgstr "Zatvori prozor"
+
+#: data/resources/ui/shortcuts.ui:39
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Zatvori aplikaciju"
+
+#: data/resources/ui/shortcuts.ui:47
+msgctxt "shortcut window"
+msgid "Controls"
+msgstr "Upravljački elementi"
+
+#: data/resources/ui/shortcuts.ui:50
+msgctxt "shortcut window"
+msgid "Toggle Listen"
+msgstr "Uključi/Isključi slušanje"
+
+#: data/resources/ui/shortcuts.ui:56
+msgctxt "shortcut window"
+msgid "Toggle Playback"
+msgstr "Uključi/Isključi reprodukciju"
+
+#: data/resources/ui/song_bar.ui:85
+msgid "Show Song Information"
+msgstr "Pokaži informacije pjesme"
+
+#: data/resources/ui/song_bar.ui:145
+msgid "Stop"
+msgstr "Prekini"
+
+#: data/resources/ui/song_page.ui:13
+msgid "Remove From History"
+msgstr "Ukloni iz povijesti"
+
+#: data/resources/ui/song_page.ui:19
+msgid "Copy"
+msgstr "Kopiraj"
+
+#: data/resources/ui/song_page.ui:122
+msgid "Information"
+msgstr "Informacije"
+
+#: data/resources/ui/song_page.ui:125
+msgid "Last Heard"
+msgstr "Zadnji put slušano"
+
+#: data/resources/ui/song_page.ui:130
+msgid "Album"
+msgstr "Album"
+
+#: data/resources/ui/song_page.ui:135
+msgid "Release Date"
+msgstr "Datum izdanja"
+
+#: data/resources/ui/song_tile.ui:30
+msgid "New"
+msgstr "Novo"
+
+#. Translators: Replace "translator-credits" with your names. Put a comma between.
+#: src/about.rs:18
+msgid "translator-credits"
+msgstr "Milo Ivir"
+
+#: src/about.rs:27
+#, fuzzy
+msgid "Donate"
+msgstr "Doniraj"
+
+#: src/about.rs:28
+msgid "GitHub"
+msgstr "GitHub"
+
+#: src/about.rs:30
+msgid "Translate"
+msgstr "Prevedi"
+
+#: src/application.rs:209
+msgid "Critical Database Error"
+msgstr "Kritična greška u bazi podataka"
+
+#: src/application.rs:210
+msgid ""
+"Sorry, a critical database error has occurred. This is likely caused by a "
+"tampered or corrupted database. You can try clearing application data. "
+"However, this is not recommended and will delete all your songs and saved "
+"recordings.\n"
+"\n"
+"To report this issue, please launch Mousai in the terminal to include the "
+"logs and submit the bug report to the <a href=\"https://github.com/SeaDve/"
+"Mousai/issues/\">issue page</a>"
+msgstr ""
+"Dogodila kritična greška u bazi podataka. Uzrok tome je vjerojatno "
+"neovlaštena promjena ili oštećena baza podataka. Možeš pokušati izbrisati "
+"podatke aplikacije. Međutim, to će izbrisati sve tvoje pjesme i spremljene "
+"snimke.\n"
+"\n"
+"Za prijavljivanje ovog problema, pokreni Mousai na terminalu za uključivanje "
+"zapisa i pošalji izvještaj o grešci na <a href=\"https://github.com/SeaDve/"
+"Mousai/issues/\">stranici problema</a>"
+
+#: src/application.rs:215
+msgid "Quit"
+msgstr "Zatvori aplikaciju"
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:31
+msgid "today at %R"
+msgstr "danas u %R"
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:34
+msgid "yesterday at %R"
+msgstr "jučer u %R"
+
+#: src/preferences_dialog.rs:103
+msgid "Microphone"
+msgstr "Mikrofon"
+
+#: src/preferences_dialog.rs:104
+msgid "Desktop Audio"
+msgstr "Zvukovi računala"
+
+#: src/recognizer/provider/error.rs:50
+msgid "No Matches Found"
+msgstr "Nema podudaranja"
+
+#: src/recognizer/provider/error.rs:51
+msgid "Cannot Create Fingerprint From Audio"
+msgstr "Neuspjelo stvaranje digitalnog otiska iz audiosnimke"
+
+#: src/recognizer/provider/error.rs:52
+msgid "Invalid Token Given"
+msgstr "Zadan je nevažeći token"
+
+#: src/recognizer/provider/error.rs:53
+msgid "Token Limit Reached"
+msgstr "Dosegnuto je ograničenje tokena"
+
+#: src/recognizer/provider/error.rs:54
+msgid "Cannot Connect to the Server"
+msgstr "Neuspjelo povezivanje na server"
+
+#: src/recognizer/provider/error.rs:55
+msgid "Received Other Permanent Error"
+msgstr "Primljena je druga stalna greška"
+
+#: src/window/external_link_tile.rs:59
+msgid "Apple Music"
+msgstr "Apple glazba"
+
+#: src/window/external_link_tile.rs:60
+msgid "Browse on Apple Music"
+msgstr "Pretraži „Apple glazba”"
+
+#: src/window/external_link_tile.rs:65
+msgid "Browse on AudD"
+msgstr "Pretraži AudD"
+
+#: src/window/external_link_tile.rs:69
+msgid "Spotify"
+msgstr "Spotify"
+
+#: src/window/external_link_tile.rs:70
+msgid "Listen on Spotify"
+msgstr "Slušaj na Spotify"
+
+#: src/window/external_link_tile.rs:74
+msgid "YouTube"
+msgstr "YouTube"
+
+#: src/window/external_link_tile.rs:75
+msgid "Search on YouTube"
+msgstr "Pretraži YouTube"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/external_link_tile.rs:145
+msgid "Failed to launch {key}"
+msgstr "Pokretanje ključa {key} nije uspjelo"
+
+#: src/window/history_view.rs:147 src/window/song_page.rs:80
+msgid "Copied to clipboard"
+msgstr "Kopirano u međuspremnik"
+
+#: src/window/history_view.rs:160
+msgid "Failed to remove selected songs"
+msgstr "Uklanjanje odabranih pjesama nije uspjelo"
+
+#: src/window/history_view.rs:357
+msgid "Failed to remove song"
+msgstr "Uklanjanje pjesme nije uspjelo"
+
+#: src/window/history_view.rs:562
+msgid "Failed to show recognizer results"
+msgstr "Prikazivanje rezultata prepoznavača nije uspjelo"
+
+#: src/window/history_view.rs:669
+msgid "_Undo"
+msgstr "_Poništi"
+
+#: src/window/history_view.rs:681
+msgid "Failed to undo"
+msgstr "Poništavanje nije uspjelo"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:706
+msgid "Removed {n_removed} song"
+msgid_plural "Removed {n_removed} songs"
+msgstr[0] "Uklonjena je {n_removed} pjesma"
+msgstr[1] "Uklonjene su {n_removed} pjesme"
+msgstr[2] "Uklonjeno je {n_removed} pjesama"
+
+#: src/window/history_view.rs:829
+msgid "Select items"
+msgstr "Odaberi stavke"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:833
+msgid "Selected {selection_size} song"
+msgid_plural "Selected {selection_size} songs"
+msgstr[0] "Odabrana je {selection_size} pjesma"
+msgstr[1] "Odabrane su {selection_size} pjesme"
+msgstr[2] "Odabrano je {selection_size} pjesama"
+
+#: src/window/history_view.rs:843
+msgid "Copy Song"
+msgid_plural "Copy Songs"
+msgstr[0] "Kopiraj pjesmu"
+msgstr[1] "Kopiraj pjesme"
+msgstr[2] "Kopiraj pjesme"
+
+#: src/window/history_view.rs:850
+msgid "Remove Song From History"
+msgid_plural "Remove Songs From History"
+msgstr[0] "Ukloni pjesmu iz povijesti"
+msgstr[1] "Ukloni pjesme iz povijesti"
+msgstr[2] "Ukloni pjesme iz povijesti"
+
+#: src/window/mod.rs:214
+msgid "Failed to insert song to history"
+msgstr "Umetanje pjesme u povijest nije uspjelo"
+
+#: src/window/mod.rs:262
+msgid "Please open an issue on GitHub and provide the necessary information"
+msgstr "Otvori problem na GitHubu i navedi potrebne informacije"
+
+#: src/window/mod.rs:265 src/window/mod.rs:297
+msgid "No, Thanks"
+msgstr "Ne, hvala"
+
+#: src/window/mod.rs:267
+msgid "Open an Issue"
+msgstr "Otvori problem"
+
+#: src/window/mod.rs:294
+msgid ""
+"Try moving closer to the source or using a different excerpt of the song"
+msgstr "Pokušaj se približiti izvoru ili koristi jedan drugi isječak pjesme"
+
+#: src/window/mod.rs:299
+msgid "Try Again"
+msgstr "Pokušaj ponovo"
+
+#: src/window/mod.rs:334
+msgid "Recording Saved"
+msgstr "Snimanje je spremljeno"
+
+#: src/window/mod.rs:342
+msgid "The result will be available when you're back online"
+msgstr "Rezultat će biti dostupan kada ponovo imaš internetsku vezu"
+
+#: src/window/mod.rs:345
+msgid "Ok, Got It"
+msgstr "U redu, razumijem"
+
+#: src/window/mod.rs:355
+msgid ""
+"The result will be available when your token limit is reset. Wait until the "
+"limit is reset or open preferences and try setting a different token"
+msgstr ""
+"Rezultat će biti dostupan kada se ograničenje tvog tokena resetira. Pričekaj "
+"resetiranje ograničenja ili otvori postavke i pokušaj postaviti jedan drugi "
+"token"
+
+#: src/window/mod.rs:358
+msgid "I'll Wait"
+msgstr "Pričekat ću"
+
+#: src/window/mod.rs:362
+msgid ""
+"The result will be available when your token is replaced with a valid one. "
+"Open preferences and try setting a different token"
+msgstr ""
+"Rezultat će biti dostupan kada se tvoj token zamijeni s ispravnim tokenom. "
+"Otvori postavke i pokušaj postaviti jedan drugi token"
+
+#: src/window/mod.rs:365
+msgid "Later"
+msgstr "Kasnije"
+
+#: src/window/mod.rs:370
+msgid "Open Preferences"
+msgstr "Otvori postavke"
+
+#: src/window/mod.rs:466
+msgid "An error occurred in the player"
+msgstr "Dogodila se greška u playeru"
+
+#: src/window/playback_button.rs:97
+msgid "Play"
+msgstr "Sviraj"
+
+#: src/window/playback_button.rs:103
+msgid "Pause"
+msgstr "Zaustavi"
+
+#: src/window/recognized_page.rs:151
+msgid "Recognized Song"
+msgid_plural "Recognized Songs"
+msgstr[0] "Prepoznata pjesma"
+msgstr[1] "Prepoznate pjesme"
+msgstr[2] "Prepoznate pjesme"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognized_page.rs:157
+msgid "Recognized {n_songs} New Song"
+msgid_plural "Recognized {n_songs} New Songs"
+msgstr[0] "Prepoznata je {n_songs} nova pjesma"
+msgstr[1] "Prepoznate su {n_songs} nove pjesme"
+msgstr[2] "Prepoznato je {n_songs} novih pjesama"
+
+#: src/window/recognized_page.rs:163
+msgid "This song was recognized from your saved recording"
+msgid_plural "These songs were recognized from your saved recordings"
+msgstr[0] "Ova je pjesma prepoznata iz tvoje spremljene snimke"
+msgstr[1] "Ove su pjesme prepoznate iz tvojih spremljenih snimaka"
+msgstr[2] "Ove su pjesme prepoznate iz tvojih spremljenih snimaka"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognizer_status.rs:172
+msgid "Recognized {n_successful} Out Of {total_minus_failed}"
+msgstr "{n_successful} od {total_minus_failed} prepoznato"
+
+#: src/window/recognizer_view.rs:149
+msgid "Listening…"
+msgstr "Slušanje …"
+
+#: src/window/recognizer_view.rs:154
+msgid "Recognizing…"
+msgstr "Prepoznavanje …"
+
+#: src/window/song_page.rs:374
+msgid "Unknown"
+msgstr "Nepoznato"
+
+#: src/window/song_tile.rs:359
+msgid "Unselect"
+msgstr "Poništi odabir"
+
+#~ msgid "Donate (Buy Me a Coffee)"
+#~ msgstr "Doniraj (kupi mi kavu)"
+
+#~ msgid "Select _None"
+#~ msgstr "Odaberi _ništa"
+
+#~ msgid "Dave Patrick Caberto"
+#~ msgstr "Dave Patrick Caberto"
+
+#~ msgid "Determines the audio source to use when available"
+#~ msgstr "Određuje izvor zvuka koji će se koristiti kada je dostupan"
+
+#~ msgid "© 2023 Dave Patrick Caberto"
+#~ msgstr "© 2023. Dave Patrick Caberto"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Navigation"
+#~ msgstr "Navigacija"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Go Back"
+#~ msgstr "Idi natrag"
+
+#, fuzzy
+#~ msgid "Donate (Liberapay)"
+#~ msgstr "Doniraj (Liberapay)"
+
+#, fuzzy
+#~ msgid "Donate (PayPal)"
+#~ msgstr "Doniraj (PayPal)"
+
+#~ msgid "Failed to launch {}"
+#~ msgstr "Neuspjelo pokretanje {}"
+
+#~ msgid "Removed {} song"
+#~ msgid_plural "Removed {} songs"
+#~ msgstr[0] "Uklonjena je {} pjesma"
+#~ msgstr[1] "Uklonjene su {} pjesme"
+#~ msgstr[2] "Uklonjeno je {} pjesama"
+
+#~ msgid "Selected {} song"
+#~ msgid_plural "Selected {} songs"
+#~ msgstr[0] "Odabrana je {} pjesma"
+#~ msgstr[1] "Odabrane se {} pjesme"
+#~ msgstr[2] "Odabrano je {} pjesama"
+
+#~ msgid "Shazam;Audio;Music;Song;Identify;Recognition;"
+#~ msgstr "Shazam;Audio;Glazba;Pjesma;Identificiraj;Prepoznavanje;"
+
+#~ msgid ""
+#~ "Mousai is a simple application that can identify song similar to Shazam. "
+#~ "Just click the listen button, and then wait a few seconds. It will "
+#~ "magically return the title and artist of that song!"
+#~ msgstr ""
+#~ "Mousai je jednostavan program za prepoznavanje pjesama, sličan Shazamu. "
+#~ "Jednostavno pritisni gumb za slušanje, a zatim pričekaj par sekundi. Na "
+#~ "magičan način prikazuje se naslov i izvođač te pjesme!"
+
+#~ msgid "Start Identifying Music"
+#~ msgstr "Počni prepoznavati glazbu"
+
+#~ msgid "Open Main Menu"
+#~ msgstr "Otvori glavni izbornik"
+
+#~ msgid "Search for Songs"
+#~ msgstr "Traži pjesme"
+
+#~ msgid "Cancel Select"
+#~ msgstr "Prekini odabir"
+
+#~ msgid "Enter song or artist name"
+#~ msgstr "Upiši pjesmu ili ime izvođača"
+
+#~ msgid "Start Identifying Music!"
+#~ msgstr "Pokreni prepoznavanje glazbe!"
+
+#~ msgid "Click the listen button to start."
+#~ msgstr "Počni pritiskom gumba za slušanje."
+
+#~ msgid "No Results Found"
+#~ msgstr "Nema rezultata"
+
+#~ msgid "Try a different search."
+#~ msgstr "Pokušaj s jednom drugom pretragom."
+
+#, fuzzy
+#~ msgid "Ok"
+#~ msgstr "U redu"
+
+#~ msgid "Default window width"
+#~ msgstr "Standardna širina prozora"
+
+#~ msgid "Default window height"
+#~ msgstr "Standardna visina prozora"
+
+#~ msgid "Default window maximized behaviour"
+#~ msgstr "Standardno ponašanje potpuno rastvorenog prozora"
+
+#~ msgid "Contains recently recognized songs"
+#~ msgstr "Sadrži nedavno prepoznate pjesme"
+
+#~ msgid "🎵 Identify the title and artist of the song within seconds."
+#~ msgstr "🎵 Prepoznaj naslov i izvođača pjesme u roku od par sekundi."
+
+#~ msgid "🎙️ Use your microphone or audio from desktop."
+#~ msgstr "🎙️ Koristi mikrofon ili zvuk s radne površine."
+
+#~ msgid "🎸 Store the identified song including the album art in history."
+#~ msgstr "🎸 Spremi prepoznatu pjesmu, uključujući omot albuma u povijest."
+
+#~ msgid "🎼 Preview the identified song with the native player."
+#~ msgstr "🎼 Pregledaj prepoznatu pjesmu s izvornim playerom."
+
+#~ msgid "🌐 Browse and listen the song from different providers."
+#~ msgstr "🌐 Pregledaj i slušaj pjesmu od različitih davatelja usluga."
+
+#~ msgid "📱 Easy-to-use user interface."
+#~ msgstr "📱 Jednostavno korisničko sučelje."
+
+#~ msgid "⌨️ User-friendly keyboard shortcuts."
+#~ msgstr "⌨️ Praktčni tipkovni prečaci."
+
+#~ msgid "Dave Patrick"
+#~ msgstr "Dave Patrick"
+
+#~ msgid "_Preferred Audio Source"
+#~ msgstr "_Preferirani izvor zvuka"
+
+#~ msgid "Return to Main Page"
+#~ msgstr "Vrati se na glavnu stranicu"
+
+#~ msgid "Copyright 2022 Dave Patrick"
+#~ msgstr "Autorska prava 2022. Dave Patrick"
+
+#~ msgid "Cancelled recording"
+#~ msgstr "Snimanje je prekinuto"
+
+#~ msgid "Cancelled recognizing"
+#~ msgstr "Prepoznavanje je prekinuto"
+
+#~ msgid ""
+#~ "Failed to convert the recording to base64. Please report this to Mousai's "
+#~ "bug tracker."
+#~ msgstr ""
+#~ "Neuspjelo konvertiranje snimke u base64. Prijavi ovaj problem Mousai "
+#~ "sustavu za praćenje grešaka."
+
+#~ msgid "Failed to connect to the server."
+#~ msgstr "Neuspjelo povezivanje s poslužiteljem."
+
+#~ msgid "Failed to parse response. Please report this to Mousai's bug tracker"
+#~ msgstr ""
+#~ "Neuspjela obrada odgovora. Prijavi ovaj problem Mousai sustavu za "
+#~ "praćenje grešaka"
+
+#~ msgid "Daily limit has been reached."
+#~ msgstr "Dnevno ograničenje je dosegnuto."
+
+#~ msgid "Failed to fingerprint audio. There may be no sound heard."
+#~ msgstr "Neuspjelo prepoznavanje zvuka. Možda se ne čuje nikakav zvuk."
+
+#~ msgid "Got invalid status response of {}"
+#~ msgstr "Dobiven je neispravan odgovor stanja od {}"
+
+#~ msgid "{} Check your internet connection."
+#~ msgstr "{} Provjeri vezu s internetom."
+
+#~ msgid "No matches found for this song."
+#~ msgstr "Nema poklapanja za ovu pjesmu."
+
+#~ msgid "{} Input an API token in the preferences."
+#~ msgstr "{} Unesi API token u postavkama."
+
+#~ msgid "Please input a valid API token."
+#~ msgstr "Unesi ispravni API token."
+
+#~ msgid "Copied song to clipboard"
+#~ msgstr "Pjesma je kopirana u međuspremnik"
+
+#~ msgid "Click on items to select them"
+#~ msgstr "Za biranje elemenata pritisni ih"
+
+#~ msgid "Failed to load history"
+#~ msgstr "Neuspjelo učitavanje povijesti"
+
+#~ msgid "Shazam;Music;Song;Identify;"
+#~ msgstr "Shazam;glazba;pjesma;prepoznaj;identificiraj;"
+
+#~ msgid ""
+#~ "Failed to parse response. Please report this to Mousai's bug tracker."
+#~ msgstr ""
+#~ "Neuspjela obrada odgovora. Prijevi problem Mousai sustavu za praćenje "
+#~ "grešaka."
+
+#~ msgid "Failed to convert file. Please report this to Mousai's bug tracker."
+#~ msgstr ""
+#~ "Neuspjelo konvertiranje datoteke. Prijevi problem Mousai sustavu za "
+#~ "praćenje grešaka."
+
+#~ msgid "Identify any songs in seconds"
+#~ msgstr "Prepoznaj pjesme u trenu"
+
+#~ msgid "🌐 Browse the song in the web with the link."
+#~ msgstr "🌐 Pregledaj pjesmu na webu pomoću poveznice."
+
+#~ msgid "Open Menu"
+#~ msgstr "Otvori izbornik"
+
+#~ msgid "Show Shortcuts"
+#~ msgstr "Pokaži prečace"
+
+#~ msgid "Controls"
+#~ msgstr "Kontrole"
+
+#~ msgid "Toggle Listen"
+#~ msgstr "Uključi/isključi slušanje"
+
+#~ msgid "Settings"
+#~ msgstr "Postavke"
+
+#~ msgid "Clear Song History"
+#~ msgstr "Izbriši povijest pjesama"
+
+#~ msgid "Reset Token Value"
+#~ msgstr "Resetiraj vrijednost tokena"
+
+#~ msgid "Welcome to Mousai"
+#~ msgstr "Dobro došao, dobro došla u Mousai"
+
+#~ msgid "Enter a valid token"
+#~ msgstr "Upiši valjani token"
+
+#~ msgid "Submit"
+#~ msgstr "Pošalji"
+
+#~ msgid ""
+#~ "Mousai uses audd.io APIs to work, so it is required to login to <a "
+#~ "href=\"https://dashboard.audd.io/\">their website</a> and get a token. "
+#~ "Leaving this blank will give you a few trials per day."
+#~ msgstr ""
+#~ "Mousai koristi API-e od audd.io, stoga se moraš prijaviti na <a "
+#~ "href=\"https://dashboard.audd.io/\">njihovu web-stranicu</a> i dobiti "
+#~ "token. Ako ovo polje ostaviš prazno, imat ćeš nekoliko pokušaja dnevno."
+
+#~ msgid "Do not show at startup"
+#~ msgstr "Ne prikazuj prilikom pokretanja"
+
+#~ msgid "Open in Browser"
+#~ msgstr "Otvori u pregledniku"
+
+#~ msgid "Cancel the Recording"
+#~ msgstr "Prekini snimanje"
+
+#~ msgid "Start Mousaing!"
+#~ msgstr "Počni Mousaicirati!"
+
+#~ msgid "Muted"
+#~ msgstr "Isključen zvuk"
+
+#~ msgid "_Clear Song History"
+#~ msgstr "_Izbriši povijest pjesama"
+
+#~ msgid "_Reset Token"
+#~ msgstr "_Resetiraj token"
+
+#~ msgid "Listening"
+#~ msgstr "Slušanje"
+
+#~ msgid "No audio detected"
+#~ msgstr "Nije otkriven zvuk"
+
+#~ msgid "Please check your audio device."
+#~ msgstr "Provjeri svoj audio uređaj."
+
+#~ msgid "The song was not recognized."
+#~ msgstr "Pjesma nije prepoznata."
+
+#~ msgid "Something went wrong."
+#~ msgstr "Došlo je do neke greške."
+
+#~ msgid "Sorry!"
+#~ msgstr "Oprosti!"
+
+#~ msgid "Stop Preview"
+#~ msgstr "Prekini pregled"
+
+#~ msgid "Play Preview"
+#~ msgstr "Pokreni pregled"
+
+#~ msgid "Copyright 2021 Dave Patrick"
+#~ msgstr "Autorska prava 2021. Dave Patrick"

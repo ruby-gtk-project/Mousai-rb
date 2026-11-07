@@ -1,0 +1,1072 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the mousai package.
+# Allan Nordhøy <epost@anotheragency.no>, 2021, 2022, 2023.
+# Syver Stensholt <sssandum@gmail.com>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: mousai\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-19 17:29+0800\n"
+"PO-Revision-Date: 2026-04-20 10:10+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/seadve/"
+"mousai/nb_NO/>\n"
+"Language: nb_NO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.17.1-dev\n"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:2
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:7 src/about.rs:12
+#: src/main.rs:64
+msgid "Mousai"
+msgstr "Mousai"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:3
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:8
+msgid "Identify songs in seconds"
+msgstr "Identifiser sanger i løpet av sekunder"
+
+#. Translators: These are search terms to find this application. Do NOT translate or localize the semicolons. The list MUST also end with a semicolon.
+#: data/io.github.seadve.Mousai.desktop.in.in:9
+msgid "Shazam;Audio;Music;Song;Recognize;Identify;Recognition;"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:6
+msgid "Window width"
+msgstr "Vindusbredde"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:11
+msgid "Window height"
+msgstr "Vindushøyde"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:16
+msgid "Whether the window is maximized"
+msgstr "Hvorvidt vinduet maksimeres"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:26
+#, fuzzy
+msgid "Audio source type to use in recording audio"
+msgstr "Foretrukket lydkilde å bruke for lydopptak"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:32
+#, fuzzy
+msgid "API token used by AudD recognition"
+msgstr "API-symbol brukt av AudD-gjenkjennelse"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:37
+#, fuzzy
+msgid "Legacy (Kept for migration)"
+msgstr "Gammeldags (beholdt for overgang)"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:10
+msgid "Discover songs you are aching to know with an easy-to-use interface."
+msgstr ""
+"Oppdag sanger du knitrer etter å gjenkjenne med et enkelt brukergrensesnitt."
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:11
+msgid ""
+"Mousai is a simple application that can recognize songs similar to Shazam. "
+"Just click the listen button, and then wait a few seconds. It will magically "
+"return the title and artist of that song!"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:12
+msgid ""
+"Note: This uses the API of audd.io, so it is necessary to log in to their "
+"site to get more trials."
+msgstr ""
+"Merk dette bruker API-et til audd.io, så du må logge inn på siden deres for "
+"å få flere prøveperioder."
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:13
+msgid "Why you will love Mousai?"
+msgstr "Hvorfor du vil elske Mousai?"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:15
+msgid "🎵 Identify songs within seconds or save for later when offline"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:16
+msgid "🎙️ Recognize from desktop audio or your microphone"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:17
+msgid "🎸 Build a repertoire of recognized songs"
+msgstr "🎸 Bygg et repertoar av gjenkjente sanger"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:18
+msgid "🎼 Quickly preview the song within the interface"
+msgstr "🎼 Forhåndsvis sangen i grensesnittet"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:19
+msgid "🌐 Browse and listen the song from different providers"
+msgstr "🌐 Utforsk og lytt til sanger fra forskjellige tilbydere"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:20
+msgid "📱 Easy-to-use user interface"
+msgstr "📱 Lettfattelig brukergrensesnitt"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:26
+msgid "Mousai Home Page"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:30
+msgid "Detailed view of identified song"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:34
+msgid "Listening mode detecting the song"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:38
+#, fuzzy
+#| msgid "Recognized {} new song"
+#| msgid_plural "Recognized {} new songs"
+msgid "Recognized songs"
+msgstr "Gjenkjente {} ny sang"
+
+#: data/resources/ui/history_view.ui:6
+#, fuzzy
+msgid "_Preferences"
+msgstr "_Innstillinger"
+
+#: data/resources/ui/history_view.ui:10
+msgid "_Keyboard Shortcuts"
+msgstr "_Tastatursnarveier"
+
+#: data/resources/ui/history_view.ui:14
+msgid "_About Mousai"
+msgstr "_Om Mousai"
+
+#: data/resources/ui/history_view.ui:22
+msgid "Select _All"
+msgstr "Velg _alle"
+
+#: data/resources/ui/history_view.ui:26
+#, fuzzy
+#| msgid "Unselect"
+msgid "_Unselect All"
+msgstr "Fravelg"
+
+#: data/resources/ui/history_view.ui:42
+msgid "Home"
+msgstr ""
+
+#: data/resources/ui/history_view.ui:52
+msgid "Recognize Song"
+msgstr ""
+
+#: data/resources/ui/history_view.ui:53 data/resources/ui/song_page.ui:109
+msgid "Listen"
+msgstr "Lytt"
+
+#: data/resources/ui/history_view.ui:65
+msgid "Main Menu"
+msgstr "Hovedmeny"
+
+#: data/resources/ui/history_view.ui:73 src/window/song_tile.rs:361
+msgid "Select"
+msgstr "Velg"
+
+#: data/resources/ui/history_view.ui:80 data/resources/ui/history_view.ui:103
+msgid "Search Songs"
+msgstr ""
+
+#: data/resources/ui/history_view.ui:96
+msgid "Cancel Selection"
+msgstr ""
+
+#: data/resources/ui/history_view.ui:97 data/resources/ui/recognizer_view.ui:14
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: data/resources/ui/history_view.ui:117
+msgid "Search songs"
+msgstr ""
+
+#: data/resources/ui/history_view.ui:140
+msgid "Start Recognizing Songs!"
+msgstr ""
+
+#: data/resources/ui/history_view.ui:141
+msgid "Click the listen button to start"
+msgstr "Klikk på lytteknappen for å starte"
+
+#: data/resources/ui/history_view.ui:150
+msgid "No Results"
+msgstr ""
+
+#: data/resources/ui/lyrics_page.ui:10 data/resources/ui/song_page.ui:140
+msgid "Lyrics"
+msgstr "Sangtekster"
+
+#: data/resources/ui/preferences_dialog.ui:8
+msgid "General"
+msgstr "Generelt"
+
+#: data/resources/ui/preferences_dialog.ui:11
+#, fuzzy
+#| msgid "Preferred Audio Source"
+msgid "Audio Source"
+msgstr "Foretrukket lydkilde"
+
+#: data/resources/ui/preferences_dialog.ui:12
+msgid "Device used for listening"
+msgstr ""
+
+#: data/resources/ui/preferences_dialog.ui:19
+#: src/window/external_link_tile.rs:64
+msgid "AudD"
+msgstr "AudD"
+
+#: data/resources/ui/preferences_dialog.ui:20
+msgid ""
+"You can get yourself an API token from <a href=\"https://dashboard.audd.io/"
+"\">audd.io</a>. Leaving this blank will give you a few trials per day"
+msgstr ""
+
+#: data/resources/ui/preferences_dialog.ui:23
+msgid "API Token"
+msgstr "API-symbol"
+
+#: data/resources/ui/recognizer_status.ui:17
+msgid "Offline Mode Enabled"
+msgstr "Frakoblet modus påslått"
+
+#: data/resources/ui/recognizer_status.ui:44
+msgid "Show Offline Mode Recognition Results"
+msgstr ""
+
+#: data/resources/ui/recognizer_view.ui:13
+msgid "Cancel Listening"
+msgstr "Avbryt lytting"
+
+#: data/resources/ui/recognizer_view.ui:49
+msgid "Offline Mode"
+msgstr "Frakoblet modus"
+
+#: data/resources/ui/shortcuts.ui:6
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Generelt"
+
+#: data/resources/ui/shortcuts.ui:9
+msgctxt "shortcut window"
+msgid "Open Main Menu"
+msgstr "Åpne hovedmenyen"
+
+#: data/resources/ui/shortcuts.ui:15
+msgctxt "shortcut window"
+msgid "Search"
+msgstr "Søk"
+
+#: data/resources/ui/shortcuts.ui:21
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Show Preferences"
+msgstr "Vis innstillinger"
+
+#: data/resources/ui/shortcuts.ui:27
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Vis snarveier"
+
+#: data/resources/ui/shortcuts.ui:33
+msgctxt "shortcut window"
+msgid "Close Window"
+msgstr ""
+
+#: data/resources/ui/shortcuts.ui:39
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Avslutt"
+
+#: data/resources/ui/shortcuts.ui:47
+msgctxt "shortcut window"
+msgid "Controls"
+msgstr "Kontroller"
+
+#: data/resources/ui/shortcuts.ui:50
+msgctxt "shortcut window"
+msgid "Toggle Listen"
+msgstr "Veksle lytting"
+
+#: data/resources/ui/shortcuts.ui:56
+msgctxt "shortcut window"
+msgid "Toggle Playback"
+msgstr "Veksle avspilling"
+
+#: data/resources/ui/song_bar.ui:85
+msgid "Show Song Information"
+msgstr "Vis sang-info"
+
+#: data/resources/ui/song_bar.ui:145
+msgid "Stop"
+msgstr "Stopp"
+
+#: data/resources/ui/song_page.ui:13
+msgid "Remove From History"
+msgstr "Fjern fra historikk"
+
+#: data/resources/ui/song_page.ui:19
+msgid "Copy"
+msgstr "Kopier"
+
+#: data/resources/ui/song_page.ui:122
+msgid "Information"
+msgstr "Info"
+
+#: data/resources/ui/song_page.ui:125
+msgid "Last Heard"
+msgstr "Sist hørt"
+
+#: data/resources/ui/song_page.ui:130
+msgid "Album"
+msgstr "Album"
+
+#: data/resources/ui/song_page.ui:135
+msgid "Release Date"
+msgstr "Utgivelsesdato"
+
+#: data/resources/ui/song_tile.ui:30
+msgid "New"
+msgstr "Ny"
+
+#. Translators: Replace "translator-credits" with your names. Put a comma between.
+#: src/about.rs:18
+msgid "translator-credits"
+msgstr "Allan Nordhøy"
+
+#: src/about.rs:27
+msgid "Donate"
+msgstr ""
+
+#: src/about.rs:28
+msgid "GitHub"
+msgstr "GitHub"
+
+#: src/about.rs:30
+#, fuzzy
+msgid "Translate"
+msgstr "Oversett"
+
+#: src/application.rs:209
+msgid "Critical Database Error"
+msgstr "Database over kritiske feil"
+
+#: src/application.rs:210
+#, fuzzy
+#| msgid ""
+#| "This is likely caused by a tampered or corrupted database. You can try "
+#| "clearing application data. However, this is not recommended and will "
+#| "delete all your songs and saved recordings.\n"
+#| "\n"
+#| "To report this issue, please launch Mousai in the terminal to include the "
+#| "logs and submit the bug report to the <a href=\"https://github.com/SeaDve/"
+#| "Mousai/issues/\">issue page</a>."
+msgid ""
+"Sorry, a critical database error has occurred. This is likely caused by a "
+"tampered or corrupted database. You can try clearing application data. "
+"However, this is not recommended and will delete all your songs and saved "
+"recordings.\n"
+"\n"
+"To report this issue, please launch Mousai in the terminal to include the "
+"logs and submit the bug report to the <a href=\"https://github.com/SeaDve/"
+"Mousai/issues/\">issue page</a>"
+msgstr ""
+"Dette forårsakes sannsynlig av en endret eller skadet database. Du kan prøve "
+"å tømme programdata. Dog er dette ikke anbefalt, og det sletter alle dine "
+"spor og lagrede opptak.\n"
+"\n"
+"For å rapportere dette problemet kan du starte Mousai i terminalen for å "
+"inkludere loggfilene og sende inn en feilrapport til <a href=\"https://"
+"github.com/SeaDve/Mousai/issues/\">feilsporeren</a>."
+
+#: src/application.rs:215
+msgid "Quit"
+msgstr "Avslutt"
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:31
+msgid "today at %R"
+msgstr "i dag %R"
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:34
+msgid "yesterday at %R"
+msgstr "i går %R"
+
+#: src/preferences_dialog.rs:103
+msgid "Microphone"
+msgstr "Mikrofon"
+
+#: src/preferences_dialog.rs:104
+msgid "Desktop Audio"
+msgstr "Skrivebordslyd"
+
+#: src/recognizer/provider/error.rs:50
+msgid "No Matches Found"
+msgstr "Ingen treff"
+
+#: src/recognizer/provider/error.rs:51
+msgid "Cannot Create Fingerprint From Audio"
+msgstr "Kan ikke gjenkjenne fingeravtrykk fra lyd"
+
+#: src/recognizer/provider/error.rs:52
+msgid "Invalid Token Given"
+msgstr "Ugyldig symbol angitt"
+
+#: src/recognizer/provider/error.rs:53
+msgid "Token Limit Reached"
+msgstr "Symbolgrense nådd"
+
+#: src/recognizer/provider/error.rs:54
+#, fuzzy
+msgid "Cannot Connect to the Server"
+msgstr "Kan ikke koble til tjeneren"
+
+#: src/recognizer/provider/error.rs:55
+#, fuzzy
+msgid "Received Other Permanent Error"
+msgstr "Mottok annen vedvarende feil"
+
+#: src/window/external_link_tile.rs:59
+msgid "Apple Music"
+msgstr "Apple Music"
+
+#: src/window/external_link_tile.rs:60
+msgid "Browse on Apple Music"
+msgstr "Utforsk på Apple Music"
+
+#: src/window/external_link_tile.rs:65
+msgid "Browse on AudD"
+msgstr "Utforsk på AudD"
+
+#: src/window/external_link_tile.rs:69
+msgid "Spotify"
+msgstr "Spotify"
+
+#: src/window/external_link_tile.rs:70
+msgid "Listen on Spotify"
+msgstr "Lytt på Spotify"
+
+#: src/window/external_link_tile.rs:74
+msgid "YouTube"
+msgstr "YouTube"
+
+#: src/window/external_link_tile.rs:75
+msgid "Search on YouTube"
+msgstr "Søk på YouTube"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/external_link_tile.rs:145
+msgid "Failed to launch {key}"
+msgstr ""
+
+#: src/window/history_view.rs:147 src/window/song_page.rs:80
+#, fuzzy
+msgid "Copied to clipboard"
+msgstr "Kopiert til utklippstavlen"
+
+#: src/window/history_view.rs:160
+#, fuzzy
+msgid "Failed to remove selected songs"
+msgstr "Klarte ikke å fjerne valgte sanger"
+
+#: src/window/history_view.rs:357
+#, fuzzy
+msgid "Failed to remove song"
+msgstr "Klarte ikke å fjerne sang"
+
+#: src/window/history_view.rs:562
+#, fuzzy
+msgid "Failed to show recognizer results"
+msgstr "Kunne ikke vise resultater fra gjenkjenneren"
+
+#: src/window/history_view.rs:669
+msgid "_Undo"
+msgstr "_Angre"
+
+#: src/window/history_view.rs:681
+#, fuzzy
+msgid "Failed to undo"
+msgstr "Klarte ikke å angre"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:706
+msgid "Removed {n_removed} song"
+msgid_plural "Removed {n_removed} songs"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/window/history_view.rs:829
+msgid "Select items"
+msgstr "Velg elementer"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:833
+msgid "Selected {selection_size} song"
+msgid_plural "Selected {selection_size} songs"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/window/history_view.rs:843
+#, fuzzy
+msgid "Copy Song"
+msgid_plural "Copy Songs"
+msgstr[0] "Kopier sang"
+msgstr[1] "Kopier sang"
+
+#: src/window/history_view.rs:850
+msgid "Remove Song From History"
+msgid_plural "Remove Songs From History"
+msgstr[0] "Fjern sang fra historikk"
+msgstr[1] "Fjern sanger fra historikk"
+
+#: src/window/mod.rs:214
+#, fuzzy
+msgid "Failed to insert song to history"
+msgstr "Klarte ikke å legge sang i historikk"
+
+#: src/window/mod.rs:262
+msgid "Please open an issue on GitHub and provide the necessary information"
+msgstr ""
+
+#: src/window/mod.rs:265 src/window/mod.rs:297
+msgid "No, Thanks"
+msgstr "Nei takk"
+
+#: src/window/mod.rs:267
+msgid "Open an Issue"
+msgstr "Åpne feilrapport"
+
+#: src/window/mod.rs:294
+msgid ""
+"Try moving closer to the source or using a different excerpt of the song"
+msgstr ""
+
+#: src/window/mod.rs:299
+msgid "Try Again"
+msgstr "Prøv igjen"
+
+#: src/window/mod.rs:334
+msgid "Recording Saved"
+msgstr ""
+
+#: src/window/mod.rs:342
+msgid "The result will be available when you're back online"
+msgstr ""
+
+#: src/window/mod.rs:345
+msgid "Ok, Got It"
+msgstr ""
+
+#: src/window/mod.rs:355
+msgid ""
+"The result will be available when your token limit is reset. Wait until the "
+"limit is reset or open preferences and try setting a different token"
+msgstr ""
+
+#: src/window/mod.rs:358
+msgid "I'll Wait"
+msgstr ""
+
+#: src/window/mod.rs:362
+msgid ""
+"The result will be available when your token is replaced with a valid one. "
+"Open preferences and try setting a different token"
+msgstr ""
+
+#: src/window/mod.rs:365
+#, fuzzy
+msgid "Later"
+msgstr "Senere"
+
+#: src/window/mod.rs:370
+msgid "Open Preferences"
+msgstr "Åpne innstillinger"
+
+#: src/window/mod.rs:466
+msgid "An error occurred in the player"
+msgstr "En feil oppstod i avspilleren"
+
+#: src/window/playback_button.rs:97
+msgid "Play"
+msgstr "Spill"
+
+#: src/window/playback_button.rs:103
+msgid "Pause"
+msgstr "Pause"
+
+#: src/window/recognized_page.rs:151
+msgid "Recognized Song"
+msgid_plural "Recognized Songs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognized_page.rs:157
+msgid "Recognized {n_songs} New Song"
+msgid_plural "Recognized {n_songs} New Songs"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/window/recognized_page.rs:163
+msgid "This song was recognized from your saved recording"
+msgid_plural "These songs were recognized from your saved recordings"
+msgstr[0] ""
+msgstr[1] ""
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognizer_status.rs:172
+msgid "Recognized {n_successful} Out Of {total_minus_failed}"
+msgstr ""
+
+#: src/window/recognizer_view.rs:149
+msgid "Listening…"
+msgstr "Lytter …"
+
+#: src/window/recognizer_view.rs:154
+msgid "Recognizing…"
+msgstr "Gjenkjenner …"
+
+#: src/window/song_page.rs:374
+msgid "Unknown"
+msgstr "Ukjent"
+
+#: src/window/song_tile.rs:359
+msgid "Unselect"
+msgstr "Fravelg"
+
+#~ msgid "Select _None"
+#~ msgstr "_Fravelg alle"
+
+#, fuzzy
+#~ msgid "Dave Patrick Caberto"
+#~ msgstr "Dave Patrick Caberto"
+
+#~ msgid "© 2023 Dave Patrick Caberto"
+#~ msgstr "© 2023 Dave Patrick Caberto"
+
+#, fuzzy
+#~ msgid "🎵 Recognize songs within seconds or save for later when offline"
+#~ msgstr ""
+#~ "🎵 Gjenkjenn sanger i løpet av sekunder, eller lagre dem for frakoblet "
+#~ "bruk"
+
+#, fuzzy
+#~ msgid "🎙️ Use microphone or desktop audio"
+#~ msgstr "🎙️ Bruk mikrofon eller skrivebordslyd"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Navigation"
+#~ msgstr "Navigasjon"
+
+#, fuzzy
+#~ msgctxt "shortcut window"
+#~ msgid "Go Back"
+#~ msgstr "Tilbake"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Go Forward"
+#~ msgstr "Forover"
+
+#, fuzzy
+#~ msgid "Donate (Liberapay)"
+#~ msgstr "Doner (Liberapay)"
+
+#, fuzzy
+#~ msgid "Donate (PayPal)"
+#~ msgstr "Doner (PayPal)"
+
+#~ msgid "Failed to launch {}"
+#~ msgstr "Klarte ikke å starte {}"
+
+#~ msgid "Removed {} song"
+#~ msgid_plural "Removed {} songs"
+#~ msgstr[0] "Fjernet {} sang"
+#~ msgstr[1] "Fjernet {} sanger"
+
+#~ msgid "Selected {} song"
+#~ msgid_plural "Selected {} songs"
+#~ msgstr[0] "Valgte {} sang"
+#~ msgstr[1] "Valgte {} sanger"
+
+#~ msgid "Recognized {} Out Of {}"
+#~ msgid_plural "Recognized {} Out Of {} Songs"
+#~ msgstr[0] "Gjenkjente {} av {}"
+#~ msgstr[1] "Gjenkjente {} av {} sanger"
+
+#~ msgid "Shazam;Audio;Music;Song;Identify;Recognition;"
+#~ msgstr "Shazam;Lyd;Musikk;Sang;Identifisering;Gjenkjenning"
+
+#~ msgid ""
+#~ "Mousai is a simple application that can identify song similar to Shazam. "
+#~ "Just click the listen button, and then wait a few seconds. It will "
+#~ "magically return the title and artist of that song!"
+#~ msgstr ""
+#~ "Mousai er et enkelt program som kan gjenkjenne sanger, som Shazam. Klikk "
+#~ "på lytteknappen og vent noen sekunder. Det vil magisk vise deg både "
+#~ "tittel og artist for sangen."
+
+#~ msgid "Start Identifying Music"
+#~ msgstr "Start identifisering av musikk"
+
+#~ msgid "Open Main Menu"
+#~ msgstr "Åpne hovedmenyen"
+
+#~ msgid "Search for Songs"
+#~ msgstr "Søk etter sanger"
+
+#~ msgid "Cancel Select"
+#~ msgstr "Avbryt utvalg"
+
+#~ msgid "Enter song or artist name"
+#~ msgstr "Skriv inn sang- eller artistnavn"
+
+#, fuzzy
+#~ msgid "Start Identifying Music!"
+#~ msgstr "Begynn å identifisere musikk."
+
+#~ msgid "Click the listen button to start."
+#~ msgstr "Klikk på lytteknappen for å starte."
+
+#~ msgid "No Results Found"
+#~ msgstr "Resultatløst"
+
+#, fuzzy
+#~ msgid "Try a different search."
+#~ msgstr "Prøv å søke etter noe annet."
+
+#, fuzzy
+#~ msgid "Determines the audio source to select when available."
+#~ msgstr "Avgjør valgt lydkilde når tilgjengelig."
+
+#~ msgid ""
+#~ "You can get yourself an API token from <a href=\"https://"
+#~ "dashboard.audd.io/\">audd.io</a>. Leaving this blank will give you a few "
+#~ "trials per day."
+#~ msgstr ""
+#~ "Du kan hente deg et API-symbol fra <a href=\"https://dashboard.audd.io/"
+#~ "\">audd.io</a>. Å la dette stå tomt gir deg et par forsøk per dag."
+
+#~ msgid "Go Back"
+#~ msgstr "Tilbake"
+
+#~ msgid "The result will be available when you're back online."
+#~ msgstr "Resultatet vil være tilgjengelig når du er på nett igjen."
+
+#~ msgid "Recording saved"
+#~ msgstr "Opptak lagret"
+
+#, fuzzy
+#~ msgid "Ok, got it"
+#~ msgstr "OK, skjønner."
+
+#~ msgid "Open preferences and try setting a different token."
+#~ msgstr "Åpne innstillingene og prøv å sette et annet symbol."
+
+#, fuzzy
+#~ msgid ""
+#~ "Wait until the limit is reset or open preferences and try setting a "
+#~ "different token."
+#~ msgstr ""
+#~ "Vent til grensen er tilbakestilt eller åpne innstillingene og prøv å "
+#~ "sette et annet symbol."
+
+#~ msgid ""
+#~ "Please open an issue on GitHub and provide the necessary information."
+#~ msgstr "Åpne feilrapport på GitHub og legg til nødvendig info."
+
+#~ msgid "Please check your internet connection."
+#~ msgstr "Sjekk at du er tilkoblet Internett."
+
+#, fuzzy
+#~ msgid "Ok"
+#~ msgstr "OK"
+
+#, fuzzy
+#~ msgid "This song was heard while you're offline"
+#~ msgid_plural "These songs were heard while you're offline"
+#~ msgstr[0] "Denne sangen ble hørt mens du var frakoblet"
+#~ msgstr[1] "Disse sangene ble hørt mens du var frakoblet"
+
+#~ msgid "Default window width"
+#~ msgstr "Forvalgt vindusbredde"
+
+#~ msgid "Default window height"
+#~ msgstr "Forvalgt vindushøyde"
+
+#, fuzzy
+#~ msgid "Default window maximized behaviour"
+#~ msgstr "Forvalgt oppførsel for maksimert vindu"
+
+#~ msgid "Contains recently recognized songs"
+#~ msgstr "Inneholder nylig gjenkjente sanger"
+
+#~ msgid "🎵 Identify the title and artist of the song within seconds."
+#~ msgstr "🎵 Identifiser tittel og artist for en sang på sekunder."
+
+#, fuzzy
+#~ msgid "🎙️ Use your microphone or audio from desktop."
+#~ msgstr "🎙️ bruk mikrofonen din eller lyd fra skrivebordet."
+
+#~ msgid "🎸 Store the identified song including the album art in history."
+#~ msgstr "🎸 Lagre identifisert sang (inkludert omslag) i historikk."
+
+#~ msgid "🎼 Preview the identified song with the native player."
+#~ msgstr "🎼 Forhåndsvis identifisert sang med innebygd avspiller."
+
+#~ msgid "🌐 Browse and listen the song from different providers."
+#~ msgstr "🌐 Utforsk og lytt til sanger fra forskjellige tilbydere."
+
+#~ msgid "📱 Easy-to-use user interface."
+#~ msgstr "📱 Enkelt brukergrensesnitt"
+
+#~ msgid "⌨️ User-friendly keyboard shortcuts."
+#~ msgstr "⌨️ Brukervennlige tastatursnarveier"
+
+#~ msgid "Dave Patrick"
+#~ msgstr "Dave Patrick"
+
+#~ msgid "_Preferred Audio Source"
+#~ msgstr "_Foretrukket lydstyrke"
+
+#~ msgid "Return to Main Page"
+#~ msgstr "Tilbake til hovedsiden"
+
+#, fuzzy
+#~ msgid "Copyright 2022 Dave Patrick"
+#~ msgstr "Opphavsrett © 2022 Dave Patrick"
+
+#, fuzzy
+#~ msgid "Cancelled recording"
+#~ msgstr "Opptak avbrutt"
+
+#, fuzzy
+#~ msgid "Cancelled recognizing"
+#~ msgstr "Gjenkjennelse avbrutt"
+
+#, fuzzy
+#~ msgid ""
+#~ "Failed to convert the recording to base64. Please report this to Mousai's "
+#~ "bug tracker."
+#~ msgstr ""
+#~ "Klarte ikke å konvertere opptaket til Base64. Rapporter dette til Mousai "
+#~ "sin feilsporer."
+
+#, fuzzy
+#~ msgid "Failed to connect to the server."
+#~ msgstr "Klarte ikke å koble til tjeneren."
+
+#~ msgid "Failed to parse response. Please report this to Mousai's bug tracker"
+#~ msgstr ""
+#~ "Klarte ikke å tolke svar. Rapporter dette til Mousai sin feilsporer."
+
+#, fuzzy
+#~ msgid "Daily limit has been reached."
+#~ msgstr "Den daglige grensen er nådd."
+
+#~ msgid "Failed to fingerprint audio. There may be no sound heard."
+#~ msgstr ""
+#~ "Klarte ikke å utføre fingeravtrykk av lyd. Det kan være ingen hørbar lyd."
+
+#~ msgid "Got invalid status response of {}"
+#~ msgstr "Fikk ugyldig statussvar «{}»"
+
+#, fuzzy
+#~ msgid "{} Check your internet connection."
+#~ msgstr "{} Sjekk at du er tilkoblet Internett."
+
+#, fuzzy
+#~ msgid "No matches found for this song."
+#~ msgstr "Fant ikke denne sangen."
+
+#~ msgid "{} Input an API token in the preferences."
+#~ msgstr "{} Skriv inn et API-symbol i innstillingene."
+
+#~ msgid "Please input a valid API token."
+#~ msgstr "Skriv inn et gyldig API-symbol."
+
+#, fuzzy
+#~ msgid "Copied song to clipboard"
+#~ msgstr "Sang kopiert til utklippstavlen"
+
+#~ msgid "Click on items to select them"
+#~ msgstr "Klikk på elementer for å velge dem"
+
+#, fuzzy
+#~ msgid "Failed to load history"
+#~ msgstr "Klarte ikke å laste inn historikk"
+
+#~ msgid "Shazam;Music;Song;Identify;"
+#~ msgstr "Shazam;Musikk;Sang;Identifisering;"
+
+#~ msgid "Identify any songs in seconds"
+#~ msgstr "Identifiser sanger på sekunder"
+
+#~ msgid "🌐 Browse the song in the web with the link."
+#~ msgstr "🌐 Utforsk sporet på nettet med lenken."
+
+#~ msgid "Open Menu"
+#~ msgstr "Åpne menyen"
+
+#~ msgid "Show Shortcuts"
+#~ msgstr "Vis snarveier"
+
+#~ msgid "Controls"
+#~ msgstr "Kontroller"
+
+#~ msgid "Toggle Listen"
+#~ msgstr "Veksle lytting"
+
+#~ msgid "Settings"
+#~ msgstr "Innstillinger"
+
+#~ msgid "Clear Song History"
+#~ msgstr "Tøm sanghistorikk"
+
+#~ msgid "Reset Token Value"
+#~ msgstr "Tilbakestill symbol-verdi"
+
+#~ msgid "Welcome to Mousai"
+#~ msgstr "Velkommen til Mousai"
+
+#~ msgid "Enter a valid token"
+#~ msgstr "Skriv inn et gyldig symbol"
+
+#~ msgid "Submit"
+#~ msgstr "Send inn"
+
+#, fuzzy
+#~ msgid ""
+#~ "Mousai uses audd.io APIs to work, so it is required to login to <a "
+#~ "href=\"https://dashboard.audd.io/\">their website</a> and get a token. "
+#~ "Leaving this blank will give you a few trials per day."
+#~ msgstr ""
+#~ "Mousai bruker audd.io-API-et, så du må logge inn på <a href=\"https://"
+#~ "dashboard.audd.io/\">nettsiden deres</a> for å hente et symbol. Å la "
+#~ "dette stå tomt gir deg et par forsøk per dag."
+
+#, fuzzy
+#~ msgid "Do not show at startup"
+#~ msgstr "Ikke vis ved oppstart"
+
+#, fuzzy
+#~ msgid "Open in Browser"
+#~ msgstr "Åpne i nettleser"
+
+#~ msgid "Cancel the Recording"
+#~ msgstr "Avbryt opptaket"
+
+#~ msgid "Start Mousaing!"
+#~ msgstr "Start Mousaing."
+
+#~ msgid "Muted"
+#~ msgstr "Forstummet"
+
+#~ msgid "_Clear Song History"
+#~ msgstr "_Tøm sporhistorikk"
+
+#~ msgid "_Reset Token"
+#~ msgstr "_Tilbakestill symbol"
+
+#, fuzzy
+#~ msgid "Listening"
+#~ msgstr "Lytting"
+
+#~ msgid "No audio detected"
+#~ msgstr "Ingen lyd oppdaget"
+
+#~ msgid "Please check your audio device."
+#~ msgstr "Sjekk din lydenhet."
+
+#~ msgid "The song was not recognized."
+#~ msgstr "Gjenkjenner ikke sangen."
+
+#~ msgid "Something went wrong."
+#~ msgstr "Noe gikk galt."
+
+#~ msgid "Sorry!"
+#~ msgstr "Beklager"
+
+#~ msgid "Copyright 2021 Dave Patrick"
+#~ msgstr "Opphavsrett © 2021 Dave Patrick"
+
+#, fuzzy
+#~ msgid "Play preview"
+#~ msgstr "Avspillingsforhåndsvising"
+
+#~ msgid ""
+#~ "Note: This uses the API of audd.io, so it is necessary to login to their "
+#~ "site to get more trials."
+#~ msgstr ""
+#~ "Merk: Dette bruker API-et til audd.io, så du må logge inn på deres side "
+#~ "for å få flere forsøk."
+
+#~ msgid "Reset Token"
+#~ msgstr "Tilbakestill symbol"
+
+#~ msgid "Keyboard Shortcuts"
+#~ msgstr "Tastatursnarveier"
+
+#~ msgid "About Mousai"
+#~ msgstr "Om Mousai"
+
+#~ msgid "Sorry"
+#~ msgstr "Beklager"
+
+#~ msgid "Open menu"
+#~ msgstr "Åpne meny"
+
+#~ msgid "Show keyboard shortcuts"
+#~ msgstr "Vis tastatursnarveier"
+
+#~ msgid "Start listening"
+#~ msgstr "Begynn lyttingen"
+
+#~ msgid "Cancel listening"
+#~ msgstr "Avbryt lytting"
+
+#~ msgid "Clear song history"
+#~ msgstr "Tøm sanghistorikk"
+
+#~ msgid "Reset token value"
+#~ msgstr "Tilbakestill symbolverdi"
+
+#~ msgid "🎸 Store the identified song with the Album art in a history."
+#~ msgstr "🎸 Lagre identifisert sang med omslag i historikken."
+
+#~ msgid "🌐 Play the identified song in your browser."
+#~ msgstr "🌐 Spill identifisert sang i din nettleser."
+
+#~ msgctxt "Do not translate the link, only 'their website'"
+#~ msgid ""
+#~ "Mousai uses audd.io APIs to work, so it is required to login to <a "
+#~ "href=\"https://dashboard.audd.io/\">their website</a> and get a token. "
+#~ "Leaving this blank will give you a few trials per day."
+#~ msgstr ""
+#~ "Mousai bruker API-et til audd.io. Man må logge inn på <a href=\"https://"
+#~ "dashboard.audd.io/\">nettsiden deres</a> og hente et symbol. Å la dette "
+#~ "stå tomt gir deg noen forsøk per dag."
+
+#~ msgid "Simple song identifier"
+#~ msgstr "Enkel sanggjenkjenner"
+
+#~ msgid "Reset token"
+#~ msgstr "Tilbakestill symbol"
+
+#~ msgid ""
+#~ "Mousai is a simple application that can identify song like Shazam. It "
+#~ "saves the artist, album, and title of the identified song in a JSON file. "
+#~ "Note: This uses the API of audd.io, so it is necessary to login to their "
+#~ "site to get more trials."
+#~ msgstr ""
+#~ "Mousai er et enkelt program som kan identifisere sanger, slik Shazam gjør "
+#~ "det. Det lagrer artist, album, og tittel for identifiserte sanger i en "
+#~ "JSON-fil. Merk: Dette bruker API-et til audd.io, så man må logge inn på "
+#~ "siden deres for å utvide prøveperioden."

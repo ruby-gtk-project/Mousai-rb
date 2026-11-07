@@ -1,0 +1,662 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the mousai package.
+# Flynn <cirilla@tuta.io>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: mousai\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-19 17:29+0800\n"
+"PO-Revision-Date: 2026-01-28 10:54+0000\n"
+"Last-Translator: Flynn <cirilla@tuta.io>\n"
+"Language-Team: Cornish <https://hosted.weblate.org/projects/seadve/mousai/kw/"
+">\n"
+"Language: kw\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n == 0) ? 0 : ((n == 1) ? 1 : (((n % 100 "
+"== 2 || n % 100 == 22 || n % 100 == 42 || n % 100 == 62 || n % 100 == 82) || "
+"n % 1000 == 0 && (n % 100000 >= 1000 && n % 100000 <= 20000 || n % 100000 == "
+"40000 || n % 100000 == 60000 || n % 100000 == 80000) || n != 0 && n % "
+"1000000 == 100000) ? 2 : ((n % 100 == 3 || n % 100 == 23 || n % 100 == 43 || "
+"n % 100 == 63 || n % 100 == 83) ? 3 : ((n != 1 && (n % 100 == 1 || n % 100 "
+"== 21 || n % 100 == 41 || n % 100 == 61 || n % 100 == 81)) ? 4 : 5))));\n"
+"X-Generator: Weblate 5.16-dev\n"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:2
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:7 src/about.rs:12
+#: src/main.rs:64
+msgid "Mousai"
+msgstr "Mousai"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:3
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:8
+msgid "Identify songs in seconds"
+msgstr "Aswon kanow yn eylennow"
+
+#. Translators: These are search terms to find this application. Do NOT translate or localize the semicolons. The list MUST also end with a semicolon.
+#: data/io.github.seadve.Mousai.desktop.in.in:9
+msgid "Shazam;Audio;Music;Song;Recognize;Identify;Recognition;"
+msgstr "Shazam;Son;Musik;Kan;Aswon;"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:6
+msgid "Window width"
+msgstr "Lester fenester"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:11
+msgid "Window height"
+msgstr "Ughelder fenester"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:16
+msgid "Whether the window is maximized"
+msgstr "Mars an fenester yw kowlvoghhys"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:26
+msgid "Audio source type to use in recording audio"
+msgstr "Eghen devedhyans son rag devnydh yn ow sonskrifa son"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:32
+msgid "API token used by AudD recognition"
+msgstr "Tokyn API devnydhys gans aswon AudD"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:37
+msgid "Legacy (Kept for migration)"
+msgstr "Anterrus (Gwithys rag divroans)"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:10
+msgid "Discover songs you are aching to know with an easy-to-use interface."
+msgstr "Trovya kanow ty ow mynnes aswon gans unn ynterfas es."
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:11
+msgid ""
+"Mousai is a simple application that can recognize songs similar to Shazam. "
+"Just click the listen button, and then wait a few seconds. It will magically "
+"return the title and artist of that song!"
+msgstr ""
+"Mousai yw ynn app sempel rag aswon kanow haval dhe Shazam. Yn sempel klyckya "
+"an boton goslowes, ha gortos nebes eylennow. Y'n a wra dehweles yn pystri an "
+"titel hag awtour a'n kan na!"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:12
+msgid ""
+"Note: This uses the API of audd.io, so it is necessary to log in to their "
+"site to get more trials."
+msgstr ""
+"Noten: Ma devnydhya an API a audd.io, ytho a res omgelmi dhe aga gwiasva i "
+"rag kavos moy trials."
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:13
+msgid "Why you will love Mousai?"
+msgstr "Prag ty kara Mousai?"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:15
+msgid "🎵 Identify songs within seconds or save for later when offline"
+msgstr ""
+"🎵 Aswon kanow kyns penn eylyennow po sawya rag diwettha pan dhywarlinen"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:16
+msgid "🎙️ Recognize from desktop audio or your microphone"
+msgstr "🎙️ Aswon dhyworth son desktop po dha korrgewsell"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:17
+msgid "🎸 Build a repertoire of recognized songs"
+msgstr "🎸 Gul unn lyverva a kanow aswonys"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:18
+msgid "🎼 Quickly preview the song within the interface"
+msgstr "🎼 Goslowes skon an kon a-berth an ynterfas"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:19
+msgid "🌐 Browse and listen the song from different providers"
+msgstr "🌐 Peuri ha goslowes an kan dhyworth provioryon dyffrans"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:20
+msgid "📱 Easy-to-use user interface"
+msgstr "📱Interfas es"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:26
+msgid "Mousai Home Page"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:30
+msgid "Detailed view of identified song"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:34
+msgid "Listening mode detecting the song"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:38
+#, fuzzy
+#| msgid "Recognized Song"
+#| msgid_plural "Recognized Songs"
+msgid "Recognized songs"
+msgstr "Kanow Aswonys"
+
+#: data/resources/ui/history_view.ui:6
+msgid "_Preferences"
+msgstr "_Settyansow"
+
+#: data/resources/ui/history_view.ui:10
+msgid "_Keyboard Shortcuts"
+msgstr "_Kesunyansow Bysowek"
+
+#: data/resources/ui/history_view.ui:14
+msgid "_About Mousai"
+msgstr "_A-dro Mousai"
+
+#: data/resources/ui/history_view.ui:22
+msgid "Select _All"
+msgstr "Dewis _Oll"
+
+#: data/resources/ui/history_view.ui:26
+msgid "_Unselect All"
+msgstr "_Undewis Oll"
+
+#: data/resources/ui/history_view.ui:42
+msgid "Home"
+msgstr "Tre"
+
+#: data/resources/ui/history_view.ui:52
+msgid "Recognize Song"
+msgstr "Aswon Kan"
+
+#: data/resources/ui/history_view.ui:53 data/resources/ui/song_page.ui:109
+msgid "Listen"
+msgstr "Goslowes"
+
+#: data/resources/ui/history_view.ui:65
+msgid "Main Menu"
+msgstr "Rol Chif"
+
+#: data/resources/ui/history_view.ui:73 src/window/song_tile.rs:361
+msgid "Select"
+msgstr "Dewis"
+
+#: data/resources/ui/history_view.ui:80 data/resources/ui/history_view.ui:103
+msgid "Search Songs"
+msgstr "Hwilas Kanow"
+
+#: data/resources/ui/history_view.ui:96
+msgid "Cancel Selection"
+msgstr "Hedhi Dewis"
+
+#: data/resources/ui/history_view.ui:97 data/resources/ui/recognizer_view.ui:14
+msgid "Cancel"
+msgstr "Hedhi"
+
+#: data/resources/ui/history_view.ui:117
+msgid "Search songs"
+msgstr "Hwilas kanow"
+
+#: data/resources/ui/history_view.ui:140
+msgid "Start Recognizing Songs!"
+msgstr "Dalleth Ow Aswon Kanow!"
+
+#: data/resources/ui/history_view.ui:141
+msgid "Click the listen button to start"
+msgstr "Klyckya an boton goslowes rag dalleth"
+
+#: data/resources/ui/history_view.ui:150
+msgid "No Results"
+msgstr "Sewyansow Vyth"
+
+#: data/resources/ui/lyrics_page.ui:10 data/resources/ui/song_page.ui:140
+msgid "Lyrics"
+msgstr "Geryow"
+
+#: data/resources/ui/preferences_dialog.ui:8
+msgid "General"
+msgstr "Ollgemmyn"
+
+#: data/resources/ui/preferences_dialog.ui:11
+msgid "Audio Source"
+msgstr "Devedhyans Son"
+
+#: data/resources/ui/preferences_dialog.ui:12
+msgid "Device used for listening"
+msgstr "Devis devnydhya dhe goslowyans"
+
+#: data/resources/ui/preferences_dialog.ui:19
+#: src/window/external_link_tile.rs:64
+msgid "AudD"
+msgstr "AudD"
+
+#: data/resources/ui/preferences_dialog.ui:20
+msgid ""
+"You can get yourself an API token from <a href=\"https://dashboard.audd.io/"
+"\">audd.io</a>. Leaving this blank will give you a few trials per day"
+msgstr ""
+"Ty kavos dha honan unn tokyn API dhyworth <a href=\"https://"
+"dashboard.audd.io/\">audd.io</a>. Ow gwitha ma gwag kavos ty nebes trials "
+"dre dydh"
+
+#: data/resources/ui/preferences_dialog.ui:23
+msgid "API Token"
+msgstr "Tokyn API"
+
+#: data/resources/ui/recognizer_status.ui:17
+msgid "Offline Mode Enabled"
+msgstr "Fordh Dhywarlinen Gallosegys"
+
+#: data/resources/ui/recognizer_status.ui:44
+msgid "Show Offline Mode Recognition Results"
+msgstr "Diskwedhes Sewyansow Aswon Fordh Dhywarlinen"
+
+#: data/resources/ui/recognizer_view.ui:13
+msgid "Cancel Listening"
+msgstr "Hedhi Goslowyans"
+
+#: data/resources/ui/recognizer_view.ui:49
+msgid "Offline Mode"
+msgstr "Fordh Dhywarlinen"
+
+#: data/resources/ui/shortcuts.ui:6
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Ollgemmyn"
+
+#: data/resources/ui/shortcuts.ui:9
+msgctxt "shortcut window"
+msgid "Open Main Menu"
+msgstr "Ygeri Rol Chif"
+
+#: data/resources/ui/shortcuts.ui:15
+msgctxt "shortcut window"
+msgid "Search"
+msgstr "Hwilas"
+
+#: data/resources/ui/shortcuts.ui:21
+msgctxt "shortcut window"
+msgid "Show Preferences"
+msgstr "Diskwedhes Settyansow"
+
+#: data/resources/ui/shortcuts.ui:27
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Diskwedhes Kesunyansow Bysowek"
+
+#: data/resources/ui/shortcuts.ui:33
+msgctxt "shortcut window"
+msgid "Close Window"
+msgstr "Degea Fenester"
+
+#: data/resources/ui/shortcuts.ui:39
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Kwytya"
+
+#: data/resources/ui/shortcuts.ui:47
+msgctxt "shortcut window"
+msgid "Controls"
+msgstr "Kontrolys"
+
+#: data/resources/ui/shortcuts.ui:50
+msgctxt "shortcut window"
+msgid "Toggle Listen"
+msgstr "Dewis Goslowes"
+
+#: data/resources/ui/shortcuts.ui:56
+msgctxt "shortcut window"
+msgid "Toggle Playback"
+msgstr "Dewis Senyans"
+
+#: data/resources/ui/song_bar.ui:85
+msgid "Show Song Information"
+msgstr "Diskwedhes Kedhlow Kan"
+
+#: data/resources/ui/song_bar.ui:145
+msgid "Stop"
+msgstr "Astel"
+
+#: data/resources/ui/song_page.ui:13
+msgid "Remove From History"
+msgstr "Remova Dhyworth Istori"
+
+#: data/resources/ui/song_page.ui:19
+msgid "Copy"
+msgstr "Kopia"
+
+#: data/resources/ui/song_page.ui:122
+msgid "Information"
+msgstr "Kedhlow"
+
+#: data/resources/ui/song_page.ui:125
+msgid "Last Heard"
+msgstr "Klewys Diwettha"
+
+#: data/resources/ui/song_page.ui:130
+msgid "Album"
+msgstr "Kuntilow"
+
+#: data/resources/ui/song_page.ui:135
+msgid "Release Date"
+msgstr "Dedhyas Dyllans"
+
+#: data/resources/ui/song_tile.ui:30
+msgid "New"
+msgstr "Nowydh"
+
+#. Translators: Replace "translator-credits" with your names. Put a comma between.
+#: src/about.rs:18
+msgid "translator-credits"
+msgstr "Flynn"
+
+#: src/about.rs:27
+msgid "Donate"
+msgstr ""
+
+#: src/about.rs:28
+msgid "GitHub"
+msgstr "GitHub"
+
+#: src/about.rs:30
+msgid "Translate"
+msgstr "Treylya"
+
+#: src/application.rs:209
+msgid "Critical Database Error"
+msgstr "Error Kritikel Sel Dherivadow"
+
+#: src/application.rs:210
+msgid ""
+"Sorry, a critical database error has occurred. This is likely caused by a "
+"tampered or corrupted database. You can try clearing application data. "
+"However, this is not recommended and will delete all your songs and saved "
+"recordings.\n"
+"\n"
+"To report this issue, please launch Mousai in the terminal to include the "
+"logs and submit the bug report to the <a href=\"https://github.com/SeaDve/"
+"Mousai/issues/\">issue page</a>"
+msgstr ""
+"Drog yw genev, unn error kritikel sel dherivadow happys. Ma yw kawsys "
+"gwirhaval gans unn sel dherivadow vandalisys po legrys. Ty gallos assaya ow "
+"dilea data app. Byttegyns, ma na komendys hag a wra dilea oll dha kanow ha "
+"sonskrifow sawys.\n"
+"\n"
+"Rag derivas an kudyn ma, mar pleg lonya Mousai y'n termynal rag komprehendya "
+"an kovadhow ha danvon an derivas kudyn dhe'n <a href=\"https://github.com/"
+"SeaDve/Mousai/issues/\">folen kudynnow</a>"
+
+#: src/application.rs:215
+msgid "Quit"
+msgstr "Kwytya"
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:31
+msgid "today at %R"
+msgstr "hedhyw dhe %R"
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:34
+msgid "yesterday at %R"
+msgstr "de dhe %R"
+
+#: src/preferences_dialog.rs:103
+msgid "Microphone"
+msgstr "Korrgewsell"
+
+#: src/preferences_dialog.rs:104
+msgid "Desktop Audio"
+msgstr "Son Desktop"
+
+#: src/recognizer/provider/error.rs:50
+msgid "No Matches Found"
+msgstr "Parow Kavosys Vyth"
+
+#: src/recognizer/provider/error.rs:51
+msgid "Cannot Create Fingerprint From Audio"
+msgstr "Y Fyllis dhe Gul gans Son"
+
+#: src/recognizer/provider/error.rs:52
+msgid "Invalid Token Given"
+msgstr "Tokyn Anewn Resys"
+
+#: src/recognizer/provider/error.rs:53
+msgid "Token Limit Reached"
+msgstr "Finweth Tokyn Hedhys"
+
+#: src/recognizer/provider/error.rs:54
+msgid "Cannot Connect to the Server"
+msgstr "Y Fyllis dhe Junya dhe'n Servell"
+
+#: src/recognizer/provider/error.rs:55
+msgid "Received Other Permanent Error"
+msgstr "Recevys Error Aral Fast"
+
+#: src/window/external_link_tile.rs:59
+msgid "Apple Music"
+msgstr "Apple Musik"
+
+#: src/window/external_link_tile.rs:60
+msgid "Browse on Apple Music"
+msgstr "Peuri war Apple Musik"
+
+#: src/window/external_link_tile.rs:65
+msgid "Browse on AudD"
+msgstr "Peuri war AudD"
+
+#: src/window/external_link_tile.rs:69
+msgid "Spotify"
+msgstr "Spotify"
+
+#: src/window/external_link_tile.rs:70
+msgid "Listen on Spotify"
+msgstr "Goslowes war Spotify"
+
+#: src/window/external_link_tile.rs:74
+msgid "YouTube"
+msgstr "YouTube"
+
+#: src/window/external_link_tile.rs:75
+msgid "Search on YouTube"
+msgstr "Hwilas war YouTube"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/external_link_tile.rs:145
+msgid "Failed to launch {key}"
+msgstr "Y fyllis dhe lonchya {key}"
+
+#: src/window/history_view.rs:147 src/window/song_page.rs:80
+msgid "Copied to clipboard"
+msgstr "Kopys war astel glypp"
+
+#: src/window/history_view.rs:160
+msgid "Failed to remove selected songs"
+msgstr "Y fyllis dhe remova kanow dewisys"
+
+#: src/window/history_view.rs:357
+msgid "Failed to remove song"
+msgstr "Y fyllis dhe remova kan"
+
+#: src/window/history_view.rs:562
+msgid "Failed to show recognizer results"
+msgstr "Y fyllis dhe diskwedhes sewyansow aswoner"
+
+#: src/window/history_view.rs:669
+msgid "_Undo"
+msgstr "_Digelmi"
+
+#: src/window/history_view.rs:681
+msgid "Failed to undo"
+msgstr "Y fyllis dhe digelmi"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:706
+msgid "Removed {n_removed} song"
+msgid_plural "Removed {n_removed} songs"
+msgstr[0] "Removys {n_removed} kanow"
+msgstr[1] "Removys {n_removed} kan"
+msgstr[2] "Removys {n_removed} kanow"
+msgstr[3] "Removys {n_removed} kanow"
+msgstr[4] "Removys {n_removed} kanow"
+msgstr[5] "Removys {n_removed} kanow"
+
+#: src/window/history_view.rs:829
+msgid "Select items"
+msgstr "Dewis taklow"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:833
+msgid "Selected {selection_size} song"
+msgid_plural "Selected {selection_size} songs"
+msgstr[0] "Dewisys {selection_size} kanow"
+msgstr[1] "Dewisys {selection_size} kan"
+msgstr[2] "Dewisys {selection_size} kanow"
+msgstr[3] "Dewisys {selection_size} kanow"
+msgstr[4] "Dewisys {selection_size} kanow"
+msgstr[5] "Dewisys {selection_size} kanow"
+
+#: src/window/history_view.rs:843
+msgid "Copy Song"
+msgid_plural "Copy Songs"
+msgstr[0] "Kopia Kanow"
+msgstr[1] "Kopia Kan"
+msgstr[2] "Kopia Kanow"
+msgstr[3] "Kopia Kanow"
+msgstr[4] "Kopia Kanow"
+msgstr[5] "Kopia Kanow"
+
+#: src/window/history_view.rs:850
+msgid "Remove Song From History"
+msgid_plural "Remove Songs From History"
+msgstr[0] "Remova Kanow Dhyworth Istori"
+msgstr[1] "Remova Kan Dhyworth Istori"
+msgstr[2] "Remova Kanow Dhyworth Istori"
+msgstr[3] "Remova Kanow Dhyworth Istori"
+msgstr[4] "Remova Kanow Dhyworth Istori"
+msgstr[5] "Remova Kanow Dhyworth Istori"
+
+#: src/window/mod.rs:214
+msgid "Failed to insert song to history"
+msgstr "Y fyllis dhe ynworra kan dhe istori"
+
+#: src/window/mod.rs:262
+msgid "Please open an issue on GitHub and provide the necessary information"
+msgstr "Mar pleg, ygeri unn kudyn war GitHub ha provia an kedhlow res"
+
+#: src/window/mod.rs:265 src/window/mod.rs:297
+msgid "No, Thanks"
+msgstr "Na, Meur Ras"
+
+#: src/window/mod.rs:267
+msgid "Open an Issue"
+msgstr "Ygeri unn Kudyn"
+
+#: src/window/mod.rs:294
+msgid ""
+"Try moving closer to the source or using a different excerpt of the song"
+msgstr ""
+"Assaya ow gwaya yn-nes dhe'n devedhyans po ow devnydhya unn devyn ken a'n kan"
+
+#: src/window/mod.rs:299
+msgid "Try Again"
+msgstr "Assaya Arta"
+
+#: src/window/mod.rs:334
+msgid "Recording Saved"
+msgstr "Sonskrif Sawys"
+
+#: src/window/mod.rs:342
+msgid "The result will be available when you're back online"
+msgstr "An sewyans a wra kavadow pan os tre warlinen"
+
+#: src/window/mod.rs:345
+msgid "Ok, Got It"
+msgstr "Da lowr, My Onderstondya"
+
+#: src/window/mod.rs:355
+msgid ""
+"The result will be available when your token limit is reset. Wait until the "
+"limit is reset or open preferences and try setting a different token"
+msgstr ""
+"An sewyans a wra kavadow pan dha finweth tokyn yw dasgorra. Gortos bys dhe'n "
+"finweth yw dasgorra po ygeri settyansow hag assaya ow gorra unn tokyn ken"
+
+#: src/window/mod.rs:358
+msgid "I'll Wait"
+msgstr "My a wra Gortos"
+
+#: src/window/mod.rs:362
+msgid ""
+"The result will be available when your token is replaced with a valid one. "
+"Open preferences and try setting a different token"
+msgstr ""
+"An sewyans a wra kavadow pan dha tokyn yw asleys gans unn tokyn ewn. Ygeri "
+"settyansow hag assaya ow gorra unn tokyn ken"
+
+#: src/window/mod.rs:365
+msgid "Later"
+msgstr "Diwettha"
+
+#: src/window/mod.rs:370
+msgid "Open Preferences"
+msgstr "Ygeri Settyansow"
+
+#: src/window/mod.rs:466
+msgid "An error occurred in the player"
+msgstr "Unn error happys y'n gwarier"
+
+#: src/window/playback_button.rs:97
+msgid "Play"
+msgstr "Gwari"
+
+#: src/window/playback_button.rs:103
+msgid "Pause"
+msgstr "Powes"
+
+#: src/window/recognized_page.rs:151
+msgid "Recognized Song"
+msgid_plural "Recognized Songs"
+msgstr[0] "Kanow Aswonys"
+msgstr[1] "Kan Aswonys"
+msgstr[2] "Kanow Aswonys"
+msgstr[3] "Kanow Aswonys"
+msgstr[4] "Kanow Aswonys"
+msgstr[5] "Kanow Aswonys"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognized_page.rs:157
+msgid "Recognized {n_songs} New Song"
+msgid_plural "Recognized {n_songs} New Songs"
+msgstr[0] "Aswonys {n_songs} Kanow Nowydh"
+msgstr[1] "Aswonys {n_songs} Kan Nowydh"
+msgstr[2] "Aswonys {n_songs} Kanow Nowydh"
+msgstr[3] "Aswonys {n_songs} Kanow Nowydh"
+msgstr[4] "Aswonys {n_songs} Kanow Nowydh"
+msgstr[5] "Aswonys {n_songs} Kanow Nowydh"
+
+#: src/window/recognized_page.rs:163
+msgid "This song was recognized from your saved recording"
+msgid_plural "These songs were recognized from your saved recordings"
+msgstr[0] "An kanow ma yw aswonys dhyworth dha sonskrifow sawys"
+msgstr[1] "An kan ma yw aswonys dhyworth dha sonskrif sawys"
+msgstr[2] "An kanow ma yw aswonys dhyworth dha sonskrifow sawys"
+msgstr[3] "An kanow ma yw aswonys dhyworth dha sonskrifow sawys"
+msgstr[4] "An kanow ma yw aswonys dhyworth dha sonskrifow sawys"
+msgstr[5] "An kanow ma yw aswonys dhyworth dha sonskrifow sawys"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognizer_status.rs:172
+msgid "Recognized {n_successful} Out Of {total_minus_failed}"
+msgstr "Aswonys {n_successful} Yn-mes A {total_minus_failed}"
+
+#: src/window/recognizer_view.rs:149
+msgid "Listening…"
+msgstr "Ow gowlowes…"
+
+#: src/window/recognizer_view.rs:154
+msgid "Recognizing…"
+msgstr "Ow aswon…"
+
+#: src/window/song_page.rs:374
+msgid "Unknown"
+msgstr "Ankoth"
+
+#: src/window/song_tile.rs:359
+msgid "Unselect"
+msgstr "Disdewis"
+
+#~ msgid "Donate (Buy Me a Coffee)"
+#~ msgstr "Argevri (Prena unn Koffi rag Vy)"

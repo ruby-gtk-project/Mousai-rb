@@ -1,0 +1,690 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the mousai package.
+# MartinIIOT <max_m@centrum.sk>, 2021.
+# Marek Ľach <graweeld@googlemail.com>, 2022.
+# LvargaDS <lvarga@digitalsystems.eu>, 2024.
+# Marek Červeň <marekcerven@proton.me>, 2025.
+# Peter Vančo <petervanco347@gmail.com>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: mousai\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-19 17:29+0800\n"
+"PO-Revision-Date: 2026-05-16 17:11+0000\n"
+"Last-Translator: Peter Vančo <petervanco347@gmail.com>\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/seadve/mousai/sk/>"
+"\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
+"X-Generator: Weblate 2026.6.dev0\n"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:2
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:7 src/about.rs:12
+#: src/main.rs:64
+msgid "Mousai"
+msgstr "Mousai"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:3
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:8
+msgid "Identify songs in seconds"
+msgstr "Identifikácia piesní za niekoľko sekúnd"
+
+#. Translators: These are search terms to find this application. Do NOT translate or localize the semicolons. The list MUST also end with a semicolon.
+#: data/io.github.seadve.Mousai.desktop.in.in:9
+msgid "Shazam;Audio;Music;Song;Recognize;Identify;Recognition;"
+msgstr "Shazam;Audio;Hudba;Pieseň;Rozpoznať;Identifikovať;Rozpoznávanie;"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:6
+msgid "Window width"
+msgstr "Šírka okna"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:11
+msgid "Window height"
+msgstr "Výška okna"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:16
+msgid "Whether the window is maximized"
+msgstr "Či je okno maximalizované"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:26
+msgid "Audio source type to use in recording audio"
+msgstr "Typ audio zdroja na použitie pri nahrávaní zvuku"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:32
+msgid "API token used by AudD recognition"
+msgstr "API token používaný rozpoznávaním AudD"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:37
+msgid "Legacy (Kept for migration)"
+msgstr "Zdedené (Uchované pre migráciu)"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:10
+msgid "Discover songs you are aching to know with an easy-to-use interface."
+msgstr "Objavujte piesne, ktoré chcete poznať, pomocou jednoduchého rozhrania."
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:11
+msgid ""
+"Mousai is a simple application that can recognize songs similar to Shazam. "
+"Just click the listen button, and then wait a few seconds. It will magically "
+"return the title and artist of that song!"
+msgstr ""
+"Aplikácia Mousai je jednoduchá aplikácia, ktorá dokáže rozpoznať piesne "
+"podobne ako Shazam. Stačí kliknúť na tlačidlo počúvania a potom počakať "
+"niekoľko sekúnd. Ona magicky vráti názov a interpreta tejto piesne!"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:12
+msgid ""
+"Note: This uses the API of audd.io, so it is necessary to log in to their "
+"site to get more trials."
+msgstr ""
+"Poznámka: Toto používa API služby audd.io, takže je potrebné sa prihlásiť na "
+"ich stránke, aby ste získali viac pokusov."
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:13
+msgid "Why you will love Mousai?"
+msgstr "Prečo budete obľubovať Mousai?"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:15
+msgid "🎵 Identify songs within seconds or save for later when offline"
+msgstr ""
+"🎵 Identifikujte piesne do niekoľkých sekúnd alebo ich uložte na neskôr, keď "
+"ste offline"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:16
+msgid "🎙️ Recognize from desktop audio or your microphone"
+msgstr "🎙️ Rozpoznávajte z desktopového zvuku alebo z vášho mikrofónu"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:17
+msgid "🎸 Build a repertoire of recognized songs"
+msgstr "🎸 Budujte repertoár rozpoznaných piesní"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:18
+msgid "🎼 Quickly preview the song within the interface"
+msgstr "🎼 Rýchlo si prezrite náhľad piesne v rozhraní"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:19
+msgid "🌐 Browse and listen the song from different providers"
+msgstr "🌐 Prezerajte a počúvajte piesne od rôznych poskytovateľov"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:20
+msgid "📱 Easy-to-use user interface"
+msgstr "📱 Jednoduché používateľské rozhranie"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:26
+msgid "Mousai Home Page"
+msgstr "Domovská stránka Mousai"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:30
+msgid "Detailed view of identified song"
+msgstr "Podrobný pohľad na identifikovanú pieseň"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:34
+msgid "Listening mode detecting the song"
+msgstr "Režim počúvania detekujúci pieseň"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:38
+msgid "Recognized songs"
+msgstr "Rozpoznané piesne"
+
+#: data/resources/ui/history_view.ui:6
+msgid "_Preferences"
+msgstr "_Nastavenia"
+
+#: data/resources/ui/history_view.ui:10
+msgid "_Keyboard Shortcuts"
+msgstr "_Klávesové skratky"
+
+#: data/resources/ui/history_view.ui:14
+msgid "_About Mousai"
+msgstr "_O aplikácii Mousai"
+
+#: data/resources/ui/history_view.ui:22
+msgid "Select _All"
+msgstr "Vybrať _všetko"
+
+#: data/resources/ui/history_view.ui:26
+msgid "_Unselect All"
+msgstr "_Zrušiť výber všetkého"
+
+#: data/resources/ui/history_view.ui:42
+msgid "Home"
+msgstr "Domov"
+
+#: data/resources/ui/history_view.ui:52
+msgid "Recognize Song"
+msgstr "Rozpoznať pieseň"
+
+#: data/resources/ui/history_view.ui:53 data/resources/ui/song_page.ui:109
+msgid "Listen"
+msgstr "Počúvať"
+
+#: data/resources/ui/history_view.ui:65
+msgid "Main Menu"
+msgstr "Hlavná ponuka"
+
+#: data/resources/ui/history_view.ui:73 src/window/song_tile.rs:361
+msgid "Select"
+msgstr "Vybrať"
+
+#: data/resources/ui/history_view.ui:80 data/resources/ui/history_view.ui:103
+msgid "Search Songs"
+msgstr "Hľadať piesne"
+
+#: data/resources/ui/history_view.ui:96
+msgid "Cancel Selection"
+msgstr "Zrušiť výber"
+
+#: data/resources/ui/history_view.ui:97 data/resources/ui/recognizer_view.ui:14
+msgid "Cancel"
+msgstr "Zrušiť"
+
+#: data/resources/ui/history_view.ui:117
+msgid "Search songs"
+msgstr "Hľadať piesne"
+
+#: data/resources/ui/history_view.ui:140
+msgid "Start Recognizing Songs!"
+msgstr "Začať rozpoznávať piesne!"
+
+#: data/resources/ui/history_view.ui:141
+msgid "Click the listen button to start"
+msgstr "Kliknite na tlačidlo počúvania pre začatie"
+
+#: data/resources/ui/history_view.ui:150
+msgid "No Results"
+msgstr "Žiadne výsledky"
+
+#: data/resources/ui/lyrics_page.ui:10 data/resources/ui/song_page.ui:140
+msgid "Lyrics"
+msgstr "Texty"
+
+#: data/resources/ui/preferences_dialog.ui:8
+msgid "General"
+msgstr "Všeobecné"
+
+#: data/resources/ui/preferences_dialog.ui:11
+msgid "Audio Source"
+msgstr "Zdroj zvuku"
+
+#: data/resources/ui/preferences_dialog.ui:12
+msgid "Device used for listening"
+msgstr "Zariadenie používané na počúvanie"
+
+#: data/resources/ui/preferences_dialog.ui:19
+#: src/window/external_link_tile.rs:64
+msgid "AudD"
+msgstr "AudD"
+
+#: data/resources/ui/preferences_dialog.ui:20
+msgid ""
+"You can get yourself an API token from <a href=\"https://dashboard.audd.io/"
+"\">audd.io</a>. Leaving this blank will give you a few trials per day"
+msgstr ""
+"Môžete si získať API token na <a href=\"https://dashboard.audd.io/\">"
+"audd.io</a>. Nechanie tohto poľa prázdneho vám poskytne niekoľko pokusov "
+"denne"
+
+#: data/resources/ui/preferences_dialog.ui:23
+msgid "API Token"
+msgstr "API token"
+
+#: data/resources/ui/recognizer_status.ui:17
+msgid "Offline Mode Enabled"
+msgstr "Režim offline je povolený"
+
+#: data/resources/ui/recognizer_status.ui:44
+msgid "Show Offline Mode Recognition Results"
+msgstr "Zobraziť výsledky rozpoznávania v režime offline"
+
+#: data/resources/ui/recognizer_view.ui:13
+msgid "Cancel Listening"
+msgstr "Zrušiť počúvanie"
+
+#: data/resources/ui/recognizer_view.ui:49
+msgid "Offline Mode"
+msgstr "Režim offline"
+
+#: data/resources/ui/shortcuts.ui:6
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Všeobecné"
+
+#: data/resources/ui/shortcuts.ui:9
+msgctxt "shortcut window"
+msgid "Open Main Menu"
+msgstr "Otvoriť hlavnú ponuku"
+
+#: data/resources/ui/shortcuts.ui:15
+msgctxt "shortcut window"
+msgid "Search"
+msgstr "Hľadať"
+
+#: data/resources/ui/shortcuts.ui:21
+msgctxt "shortcut window"
+msgid "Show Preferences"
+msgstr "Zobraziť nastavenia"
+
+#: data/resources/ui/shortcuts.ui:27
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Zobraziť skratky"
+
+#: data/resources/ui/shortcuts.ui:33
+msgctxt "shortcut window"
+msgid "Close Window"
+msgstr "Zavrieť okno"
+
+#: data/resources/ui/shortcuts.ui:39
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Ukončiť"
+
+#: data/resources/ui/shortcuts.ui:47
+msgctxt "shortcut window"
+msgid "Controls"
+msgstr "Ovládanie"
+
+#: data/resources/ui/shortcuts.ui:50
+msgctxt "shortcut window"
+msgid "Toggle Listen"
+msgstr "Prepnúť počúvanie"
+
+#: data/resources/ui/shortcuts.ui:56
+msgctxt "shortcut window"
+msgid "Toggle Playback"
+msgstr "Prepnúť prehrávanie"
+
+#: data/resources/ui/song_bar.ui:85
+msgid "Show Song Information"
+msgstr "Zobraziť informácie o piesni"
+
+#: data/resources/ui/song_bar.ui:145
+msgid "Stop"
+msgstr "Zastaviť"
+
+#: data/resources/ui/song_page.ui:13
+msgid "Remove From History"
+msgstr "Odstrániť z histórie"
+
+#: data/resources/ui/song_page.ui:19
+msgid "Copy"
+msgstr "Kopírovať"
+
+#: data/resources/ui/song_page.ui:122
+msgid "Information"
+msgstr "Informácie"
+
+#: data/resources/ui/song_page.ui:125
+msgid "Last Heard"
+msgstr "Naposledy počuté"
+
+#: data/resources/ui/song_page.ui:130
+msgid "Album"
+msgstr "Album"
+
+#: data/resources/ui/song_page.ui:135
+msgid "Release Date"
+msgstr "Dátum vydania"
+
+#: data/resources/ui/song_tile.ui:30
+msgid "New"
+msgstr "Nové"
+
+#. Translators: Replace "translator-credits" with your names. Put a comma between.
+#: src/about.rs:18
+msgid "translator-credits"
+msgstr "Peter Vančo"
+
+#: src/about.rs:27
+msgid "Donate"
+msgstr "Darovať"
+
+#: src/about.rs:28
+msgid "GitHub"
+msgstr "GitHub"
+
+#: src/about.rs:30
+msgid "Translate"
+msgstr "Preložiť"
+
+#: src/application.rs:209
+msgid "Critical Database Error"
+msgstr "Kritická chyba databázy"
+
+#: src/application.rs:210
+msgid ""
+"Sorry, a critical database error has occurred. This is likely caused by a "
+"tampered or corrupted database. You can try clearing application data. "
+"However, this is not recommended and will delete all your songs and saved "
+"recordings.\n"
+"\n"
+"To report this issue, please launch Mousai in the terminal to include the "
+"logs and submit the bug report to the <a href=\"https://github.com/SeaDve/"
+"Mousai/issues/\">issue page</a>"
+msgstr ""
+"Ľutujeme, došlo k kritickej chybe databázy. Pravdepodobne je spôsobená "
+"poškodenou alebo nefunkčnou databázou. Môžete skúsiť vymazať údaje "
+"aplikácie. Avšak, toto sa neodporúča a vymaže všetky vaše piesne a uložené "
+"nahrávky.\n"
+"\n"
+"Aby ste nahlásili tento problém, spustite prosím Mousai v termináli, aby ste "
+"zahŕňali logy a odoslali hlásenie chyby na <a href=\"https://github.com/"
+"SeaDve/Mousai/issues/\">stránku problémov</a>"
+
+#: src/application.rs:215
+msgid "Quit"
+msgstr "Ukončiť"
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:31
+msgid "today at %R"
+msgstr "dnes o %R"
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:34
+msgid "yesterday at %R"
+msgstr "včera o %R"
+
+#: src/preferences_dialog.rs:103
+msgid "Microphone"
+msgstr "Mikrofón"
+
+#: src/preferences_dialog.rs:104
+msgid "Desktop Audio"
+msgstr "Desktopový zvuk"
+
+#: src/recognizer/provider/error.rs:50
+msgid "No Matches Found"
+msgstr "Nenašli sa žiadne zhody"
+
+#: src/recognizer/provider/error.rs:51
+msgid "Cannot Create Fingerprint From Audio"
+msgstr "Nepodarilo sa vytvoriť odtlačok zo zvuku"
+
+#: src/recognizer/provider/error.rs:52
+msgid "Invalid Token Given"
+msgstr "Neplatný token zadaný"
+
+#: src/recognizer/provider/error.rs:53
+msgid "Token Limit Reached"
+msgstr "Dosiahnutý limit tokenu"
+
+#: src/recognizer/provider/error.rs:54
+msgid "Cannot Connect to the Server"
+msgstr "Nepodarilo sa pripojiť k serveru"
+
+#: src/recognizer/provider/error.rs:55
+msgid "Received Other Permanent Error"
+msgstr "Prijatá iná trvalá chyba"
+
+#: src/window/external_link_tile.rs:59
+msgid "Apple Music"
+msgstr "Apple Music"
+
+#: src/window/external_link_tile.rs:60
+msgid "Browse on Apple Music"
+msgstr "Prehľadávať na Apple Music"
+
+#: src/window/external_link_tile.rs:65
+msgid "Browse on AudD"
+msgstr "Prehľadávať na AudD"
+
+#: src/window/external_link_tile.rs:69
+msgid "Spotify"
+msgstr "Spotify"
+
+#: src/window/external_link_tile.rs:70
+msgid "Listen on Spotify"
+msgstr "Počúvať na Spotify"
+
+#: src/window/external_link_tile.rs:74
+msgid "YouTube"
+msgstr "YouTube"
+
+#: src/window/external_link_tile.rs:75
+msgid "Search on YouTube"
+msgstr "Hľadať na YouTube"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/external_link_tile.rs:145
+msgid "Failed to launch {key}"
+msgstr "Zlyhalo spustenie {key}"
+
+#: src/window/history_view.rs:147 src/window/song_page.rs:80
+msgid "Copied to clipboard"
+msgstr "Skopírované do schránky"
+
+#: src/window/history_view.rs:160
+msgid "Failed to remove selected songs"
+msgstr "Zlyhalo odstránenie vybraných piesní"
+
+#: src/window/history_view.rs:357
+msgid "Failed to remove song"
+msgstr "Zlyhalo odstránenie piesne"
+
+#: src/window/history_view.rs:562
+msgid "Failed to show recognizer results"
+msgstr "Zlyhalo zobrazenie výsledkov rozpoznávania"
+
+#: src/window/history_view.rs:669
+msgid "_Undo"
+msgstr "_Späť"
+
+#: src/window/history_view.rs:681
+msgid "Failed to undo"
+msgstr "Zlyhalo vrátenie späť"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:706
+msgid "Removed {n_removed} song"
+msgid_plural "Removed {n_removed} songs"
+msgstr[0] "Odstránená {n_removed} pieseň"
+msgstr[1] "Odstránené {n_removed} piesne"
+msgstr[2] "Odstránených {n_removed} piesní"
+
+#: src/window/history_view.rs:829
+msgid "Select items"
+msgstr "Vybrať položky"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:833
+msgid "Selected {selection_size} song"
+msgid_plural "Selected {selection_size} songs"
+msgstr[0] "Vybraná {selection_size} pieseň"
+msgstr[1] "Vybrané {selection_size} piesne"
+msgstr[2] "Vybraných {selection_size} piesní"
+
+#: src/window/history_view.rs:843
+msgid "Copy Song"
+msgid_plural "Copy Songs"
+msgstr[0] "Kopírovať pieseň"
+msgstr[1] "Kopírovať piesne"
+msgstr[2] "Kopírovať piesne"
+
+#: src/window/history_view.rs:850
+msgid "Remove Song From History"
+msgid_plural "Remove Songs From History"
+msgstr[0] "Odstrániť pieseň z histórie"
+msgstr[1] "Odstrániť piesne z histórie"
+msgstr[2] "Odstrániť piesne z histórie"
+
+#: src/window/mod.rs:214
+msgid "Failed to insert song to history"
+msgstr "Zlyhalo vloženie piesne do histórie"
+
+#: src/window/mod.rs:262
+msgid "Please open an issue on GitHub and provide the necessary information"
+msgstr "Prosím, otvorte problém na GitHub-e a poskytnite potrebné informácie"
+
+#: src/window/mod.rs:265 src/window/mod.rs:297
+msgid "No, Thanks"
+msgstr "Nie, ďakujem"
+
+#: src/window/mod.rs:267
+msgid "Open an Issue"
+msgstr "Otvoriť problém"
+
+#: src/window/mod.rs:294
+msgid ""
+"Try moving closer to the source or using a different excerpt of the song"
+msgstr "Skúste sa priblížiť k zdroju alebo použiť inú časť piesne"
+
+#: src/window/mod.rs:299
+msgid "Try Again"
+msgstr "Skúsiť znova"
+
+#: src/window/mod.rs:334
+msgid "Recording Saved"
+msgstr "Nahrávka uložená"
+
+#: src/window/mod.rs:342
+msgid "The result will be available when you're back online"
+msgstr "Výsledok bude dostupný, keď ste späť online"
+
+#: src/window/mod.rs:345
+msgid "Ok, Got It"
+msgstr "Dobre, rozumiem"
+
+#: src/window/mod.rs:355
+msgid ""
+"The result will be available when your token limit is reset. Wait until the "
+"limit is reset or open preferences and try setting a different token"
+msgstr ""
+"Výsledok bude dostupný, keď sa váš limit tokenu resetuje. Počkajte, kým sa "
+"limit resetuje, alebo otvorte predvoľby a skúste nastaviť iný token"
+
+#: src/window/mod.rs:358
+msgid "I'll Wait"
+msgstr "Počkám"
+
+#: src/window/mod.rs:362
+msgid ""
+"The result will be available when your token is replaced with a valid one. "
+"Open preferences and try setting a different token"
+msgstr ""
+"Výsledok bude dostupný, keď sa váš token nahradí platným. Otvorte predvoľby "
+"a skúste nastaviť iný token"
+
+#: src/window/mod.rs:365
+msgid "Later"
+msgstr "Neskôr"
+
+#: src/window/mod.rs:370
+msgid "Open Preferences"
+msgstr "Otvoriť predvoľby"
+
+#: src/window/mod.rs:466
+msgid "An error occurred in the player"
+msgstr "V prehrávači došlo k chybe"
+
+#: src/window/playback_button.rs:97
+msgid "Play"
+msgstr "Prehrať"
+
+#: src/window/playback_button.rs:103
+msgid "Pause"
+msgstr "Pozastaviť"
+
+#: src/window/recognized_page.rs:151
+msgid "Recognized Song"
+msgid_plural "Recognized Songs"
+msgstr[0] "Rozpoznaná pieseň"
+msgstr[1] "Rozpoznané piesne"
+msgstr[2] "Rozpoznaných piesní"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognized_page.rs:157
+msgid "Recognized {n_songs} New Song"
+msgid_plural "Recognized {n_songs} New Songs"
+msgstr[0] "Rozpoznaná {n_songs} nová pieseň"
+msgstr[1] "Rozpoznané {n_songs} nové piesne"
+msgstr[2] "Rozpoznaných {n_songs} nových piesní"
+
+#: src/window/recognized_page.rs:163
+msgid "This song was recognized from your saved recording"
+msgid_plural "These songs were recognized from your saved recordings"
+msgstr[0] "Táto pieseň bola rozpoznaná z vašej uloženej nahrávky"
+msgstr[1] "Tieto piesne boli rozpoznané z vašich uložených nahrávok"
+msgstr[2] "Tieto piesne boli rozpoznané z vašich uložených nahrávok"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognizer_status.rs:172
+msgid "Recognized {n_successful} Out Of {total_minus_failed}"
+msgstr "Rozpoznaných {n_successful} z {total_minus_failed}"
+
+#: src/window/recognizer_view.rs:149
+msgid "Listening…"
+msgstr "Počúvanie…"
+
+#: src/window/recognizer_view.rs:154
+msgid "Recognizing…"
+msgstr "Rozpoznávanie…"
+
+#: src/window/song_page.rs:374
+msgid "Unknown"
+msgstr "Neznáme"
+
+#: src/window/song_tile.rs:359
+msgid "Unselect"
+msgstr "Zrušiť výber"
+
+#~ msgid "Donate (Buy Me a Coffee)"
+#~ msgstr "Prispieť (Kúp mi kávu)"
+
+#, fuzzy
+#~ msgid "Dave Patrick Caberto"
+#~ msgstr "Dave Patrick Caberto"
+
+#, fuzzy
+#~ msgid "Donate (Liberapay)"
+#~ msgstr "Prispieť (Liberapay)"
+
+#, fuzzy
+#~ msgid "Donate (PayPal)"
+#~ msgstr "Prispieť (PayPal)"
+
+#~ msgid "Default window width"
+#~ msgstr "Východzia šírka okna"
+
+#~ msgid "Default window height"
+#~ msgstr "Východzia výška okna"
+
+#~ msgid "Contains recently recognized songs"
+#~ msgstr "Obsahuje nedávno rozpoznané skladby"
+
+#~ msgid "🎸 Store the identified song including the album art in history."
+#~ msgstr "🎸 Uložte rozpoznanú skladbu, vrátane albumového obalu v histórii."
+
+#~ msgid "📱 Easy-to-use user interface."
+#~ msgstr "📱 Ľahko použiteľné užívateľské rozhranie."
+
+#~ msgid "⌨️ User-friendly keyboard shortcuts."
+#~ msgstr "⌨️ Užívateľsky prívetivé klávesové skratky."
+
+#~ msgid "Dave Patrick"
+#~ msgstr "Dave Patrick"
+
+#~ msgid "Open Menu"
+#~ msgstr "Otvorenie ponuky"
+
+#~ msgid "Show Shortcuts"
+#~ msgstr "Zobrazenie klávesových skratiek"
+
+#~ msgid "Settings"
+#~ msgstr "Nastavenia"
+
+#~ msgid "Copyright 2021 Dave Patrick"
+#~ msgstr "Copyright 2021 Dave Patrick"
+
+#~ msgid "Keyboard Shortcuts"
+#~ msgstr "Klávesové skratky"
+
+#~ msgid "Open menu"
+#~ msgstr "Otvoriť menu"
+
+#~ msgid "Show keyboard shortcuts"
+#~ msgstr "Zobraziť klávesové skratky"

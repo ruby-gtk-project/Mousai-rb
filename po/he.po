@@ -1,0 +1,637 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the mousai package.
+# "Omer I.S." <omeritzicschwartz@gmail.com>, 2025, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: mousai\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-19 17:29+0800\n"
+"PO-Revision-Date: 2026-05-02 08:09+0000\n"
+"Last-Translator: \"Omer I.S.\" <omeritzicschwartz@gmail.com>\n"
+"Language-Team: Hebrew <https://hosted.weblate.org/projects/seadve/mousai/he/>"
+"\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
+"n % 10 == 0) ? 2 : 3));\n"
+"X-Generator: Weblate 5.17.1\n"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:2
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:7 src/about.rs:12
+#: src/main.rs:64
+msgid "Mousai"
+msgstr "Mousai"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:3
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:8
+msgid "Identify songs in seconds"
+msgstr "זיהוי שירים בשניות"
+
+#. Translators: These are search terms to find this application. Do NOT translate or localize the semicolons. The list MUST also end with a semicolon.
+#: data/io.github.seadve.Mousai.desktop.in.in:9
+msgid "Shazam;Audio;Music;Song;Recognize;Identify;Recognition;"
+msgstr "Shazam;Audio;Music;Song;Recognize;Identify;Recognition;שזאם;שאזאם;שמע;מוזיקה;מוסיקה;שיר;זיהוי;ניחוש;"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:6
+msgid "Window width"
+msgstr "רוחב חלון"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:11
+msgid "Window height"
+msgstr "גובה חלון"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:16
+msgid "Whether the window is maximized"
+msgstr "האם החלון מוגדל או לא"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:26
+msgid "Audio source type to use in recording audio"
+msgstr "מקור השמע לשימוש בהקלטות השמע"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:32
+msgid "API token used by AudD recognition"
+msgstr "אסימון ה־API שמשמש לזיהוי דרך AudD"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:37
+msgid "Legacy (Kept for migration)"
+msgstr "מיושן (נשאר לצורך ההסבה)"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:10
+msgid "Discover songs you are aching to know with an easy-to-use interface."
+msgstr "לגלות שירים שכמהים לדעת מהם בעזרת ממשק קל לשימוש."
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:11
+msgid ""
+"Mousai is a simple application that can recognize songs similar to Shazam. "
+"Just click the listen button, and then wait a few seconds. It will magically "
+"return the title and artist of that song!"
+msgstr ""
+"‏Mousai הוא יישום פשוט שיכול לזהות שירים בדומה ל־Shazam. פשוט לוחצים על "
+"הכפתור „האזנה” ומחכים כמה שניות. לאחר מכן, הכותרת והאומן של אותו השיר יופיעו "
+"באורח פלא!"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:12
+msgid ""
+"Note: This uses the API of audd.io, so it is necessary to log in to their "
+"site to get more trials."
+msgstr ""
+"הערה: תכונה זו משתמשת ב־API של audd.io, ולכן חובה להתחבר לאתר שלהם בשביל "
+"להשיג עוד ניסיונות."
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:13
+msgid "Why you will love Mousai?"
+msgstr "למה יהיה לך כיף להשתמש ב־Mousai?"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:15
+msgid "🎵 Identify songs within seconds or save for later when offline"
+msgstr ""
+"🎵 אפשר לזהות שירים בשניות או לשמור למועד מאוחר יותר כאשר אין חיבור לרשת"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:16
+msgid "🎙️ Recognize from desktop audio or your microphone"
+msgstr "🎙️ אפשר לזהות שירים דרך השמע שבשולחן העבודה או בעזרת המיקרופון"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:17
+msgid "🎸 Build a repertoire of recognized songs"
+msgstr "🎸 אפשר לבנות רפרטואר של שירים מזוהים"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:18
+msgid "🎼 Quickly preview the song within the interface"
+msgstr "🎼 אפשר להשמיע נגינה מקדימה של השיר במהירות מתוך הממשק"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:19
+msgid "🌐 Browse and listen the song from different providers"
+msgstr "🌐 אפשר לעיין ולהאזין לשיר דרך ספקים שונים"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:20
+msgid "📱 Easy-to-use user interface"
+msgstr "📱 ממשק משתמש קל לשימוש"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:26
+msgid "Mousai Home Page"
+msgstr "עמוד הבית של Mousai"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:30
+msgid "Detailed view of identified song"
+msgstr "תצוגה מפורטת של השיר שזוהה"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:34
+msgid "Listening mode detecting the song"
+msgstr "מצב ההאזנה מזהה את השיר"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:38
+msgid "Recognized songs"
+msgstr "שירים שזוהו"
+
+#: data/resources/ui/history_view.ui:6
+msgid "_Preferences"
+msgstr "ה_עדפות"
+
+#: data/resources/ui/history_view.ui:10
+msgid "_Keyboard Shortcuts"
+msgstr "_קיצורי מקשים"
+
+#: data/resources/ui/history_view.ui:14
+msgid "_About Mousai"
+msgstr "על _אודות Mousai"
+
+#: data/resources/ui/history_view.ui:22
+msgid "Select _All"
+msgstr "לבחור ה_כול"
+
+#: data/resources/ui/history_view.ui:26
+msgid "_Unselect All"
+msgstr "בי_טול הבחירה של הכול"
+
+#: data/resources/ui/history_view.ui:42
+msgid "Home"
+msgstr "בית"
+
+#: data/resources/ui/history_view.ui:52
+msgid "Recognize Song"
+msgstr "זיהוי שיר"
+
+#: data/resources/ui/history_view.ui:53 data/resources/ui/song_page.ui:109
+msgid "Listen"
+msgstr "האזנה לשיר"
+
+#: data/resources/ui/history_view.ui:65
+msgid "Main Menu"
+msgstr "תפריט ראשי"
+
+#: data/resources/ui/history_view.ui:73 src/window/song_tile.rs:361
+msgid "Select"
+msgstr "בחירה"
+
+#: data/resources/ui/history_view.ui:80 data/resources/ui/history_view.ui:103
+msgid "Search Songs"
+msgstr "חיפוש שירים"
+
+#: data/resources/ui/history_view.ui:96
+msgid "Cancel Selection"
+msgstr "ביטול הבחירה"
+
+#: data/resources/ui/history_view.ui:97 data/resources/ui/recognizer_view.ui:14
+msgid "Cancel"
+msgstr "ביטול"
+
+#: data/resources/ui/history_view.ui:117
+msgid "Search songs"
+msgstr "חיפוש שירים"
+
+#: data/resources/ui/history_view.ui:140
+msgid "Start Recognizing Songs!"
+msgstr "מתחילים לזהות שירים!"
+
+#: data/resources/ui/history_view.ui:141
+msgid "Click the listen button to start"
+msgstr "יש ללחוץ על הכפתור „האזנה” בשביל להתחיל"
+
+#: data/resources/ui/history_view.ui:150
+msgid "No Results"
+msgstr "אין תוצאות"
+
+#: data/resources/ui/lyrics_page.ui:10 data/resources/ui/song_page.ui:140
+msgid "Lyrics"
+msgstr "מילות שיר"
+
+#: data/resources/ui/preferences_dialog.ui:8
+msgid "General"
+msgstr "כללי"
+
+#: data/resources/ui/preferences_dialog.ui:11
+msgid "Audio Source"
+msgstr "מקור שמע"
+
+#: data/resources/ui/preferences_dialog.ui:12
+msgid "Device used for listening"
+msgstr "ההתקן שדרכו מתבצעת ההאזנה"
+
+#: data/resources/ui/preferences_dialog.ui:19
+#: src/window/external_link_tile.rs:64
+msgid "AudD"
+msgstr "AudD"
+
+#: data/resources/ui/preferences_dialog.ui:20
+msgid ""
+"You can get yourself an API token from <a href=\"https://dashboard.audd.io/"
+"\">audd.io</a>. Leaving this blank will give you a few trials per day"
+msgstr ""
+"אפשר להשיג API משלך בכתובת <a href=\"https://dashboard.audd.io/\">audd.io</"
+"a>. עם השארת שדה זה ריק, יהיו לך מעט ניסיונות ליום"
+
+#: data/resources/ui/preferences_dialog.ui:23
+msgid "API Token"
+msgstr "אסימון API"
+
+#: data/resources/ui/recognizer_status.ui:17
+msgid "Offline Mode Enabled"
+msgstr "הופעל מצב לא מקוון"
+
+#: data/resources/ui/recognizer_status.ui:44
+msgid "Show Offline Mode Recognition Results"
+msgstr "הצגת תוצאות הזיהוי ממצב לא מקוון"
+
+#: data/resources/ui/recognizer_view.ui:13
+msgid "Cancel Listening"
+msgstr "ביטול האזנה"
+
+#: data/resources/ui/recognizer_view.ui:49
+msgid "Offline Mode"
+msgstr "מצב לא מקוון"
+
+#: data/resources/ui/shortcuts.ui:6
+msgctxt "shortcut window"
+msgid "General"
+msgstr "כללי"
+
+#: data/resources/ui/shortcuts.ui:9
+msgctxt "shortcut window"
+msgid "Open Main Menu"
+msgstr "פתיחת התפריט הראשי"
+
+#: data/resources/ui/shortcuts.ui:15
+msgctxt "shortcut window"
+msgid "Search"
+msgstr "חיפוש"
+
+#: data/resources/ui/shortcuts.ui:21
+msgctxt "shortcut window"
+msgid "Show Preferences"
+msgstr "הצגת ההעדפות"
+
+#: data/resources/ui/shortcuts.ui:27
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "הצגת קיצורי המקשים"
+
+#: data/resources/ui/shortcuts.ui:33
+msgctxt "shortcut window"
+msgid "Close Window"
+msgstr "סגירת החלון"
+
+#: data/resources/ui/shortcuts.ui:39
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "יציאה"
+
+#: data/resources/ui/shortcuts.ui:47
+msgctxt "shortcut window"
+msgid "Controls"
+msgstr "פקדים"
+
+#: data/resources/ui/shortcuts.ui:50
+msgctxt "shortcut window"
+msgid "Toggle Listen"
+msgstr "הפעלת/כיבוי האזנה"
+
+#: data/resources/ui/shortcuts.ui:56
+msgctxt "shortcut window"
+msgid "Toggle Playback"
+msgstr "הפעלת/הפסקת נגינה"
+
+#: data/resources/ui/song_bar.ui:85
+msgid "Show Song Information"
+msgstr "הצגת מידע על השיר"
+
+#: data/resources/ui/song_bar.ui:145
+msgid "Stop"
+msgstr "עצירה"
+
+#: data/resources/ui/song_page.ui:13
+msgid "Remove From History"
+msgstr "הסרה מההיסטוריה"
+
+#: data/resources/ui/song_page.ui:19
+msgid "Copy"
+msgstr "העתקה"
+
+#: data/resources/ui/song_page.ui:122
+msgid "Information"
+msgstr "מידע"
+
+#: data/resources/ui/song_page.ui:125
+msgid "Last Heard"
+msgstr "נשמעו לאחרונה"
+
+#: data/resources/ui/song_page.ui:130
+msgid "Album"
+msgstr "אלבום"
+
+#: data/resources/ui/song_page.ui:135
+msgid "Release Date"
+msgstr "תאריך שחרור"
+
+#: data/resources/ui/song_tile.ui:30
+msgid "New"
+msgstr "חדש"
+
+#. Translators: Replace "translator-credits" with your names. Put a comma between.
+#: src/about.rs:18
+msgid "translator-credits"
+msgstr "עומר א״ש(@omeritzics)"
+
+#: src/about.rs:27
+msgid "Donate"
+msgstr "תרומה"
+
+#: src/about.rs:28
+msgid "GitHub"
+msgstr "GitHub"
+
+#: src/about.rs:30
+msgid "Translate"
+msgstr "תרגום"
+
+#: src/application.rs:209
+msgid "Critical Database Error"
+msgstr "שגיאה חמורה במסד הנתונים"
+
+#: src/application.rs:210
+msgid ""
+"Sorry, a critical database error has occurred. This is likely caused by a "
+"tampered or corrupted database. You can try clearing application data. "
+"However, this is not recommended and will delete all your songs and saved "
+"recordings.\n"
+"\n"
+"To report this issue, please launch Mousai in the terminal to include the "
+"logs and submit the bug report to the <a href=\"https://github.com/SeaDve/"
+"Mousai/issues/\">issue page</a>"
+msgstr ""
+"אירעה שגיאה חמורה במסד הנתונים, עמך הסליחה. נראה ששגיאה זו נגרמה בגלל מסד "
+"נתונים שהושחת או נפגם. אפשר לנסות לנקות את נתוני היישום. בכל מקרה, דבר זה "
+"אינו מומלץ ויגרום למחיקה של כל השירים וההקלטות השמורות שלך.\n"
+"\n"
+"לצורך דיווח על בעיה זו, נא להפעיל את Mousai מהמסוף בשביל לצרף את פלט היומן "
+"שלו, ולשלוח את דו״ח התקלה (בשפה האנגלית) ל<a href=\"https://github.com/"
+"SeaDve/Mousai/issues/\">עמוד הבעיות</a>"
+
+#: src/application.rs:215
+msgid "Quit"
+msgstr "יציאה"
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:31
+msgid "today at %R"
+msgstr "היום בשעה %R"
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:34
+msgid "yesterday at %R"
+msgstr "אתמול בשעה %R"
+
+#: src/preferences_dialog.rs:103
+msgid "Microphone"
+msgstr "מיקרופון"
+
+#: src/preferences_dialog.rs:104
+msgid "Desktop Audio"
+msgstr "שמע בשולחן העבודה"
+
+#: src/recognizer/provider/error.rs:50
+msgid "No Matches Found"
+msgstr "לא נמצאו התאמות"
+
+#: src/recognizer/provider/error.rs:51
+msgid "Cannot Create Fingerprint From Audio"
+msgstr "אין אפשרות ליצור טביעת אצבע מהשמע"
+
+#: src/recognizer/provider/error.rs:52
+msgid "Invalid Token Given"
+msgstr "ניתן אסימון לא תקני"
+
+#: src/recognizer/provider/error.rs:53
+msgid "Token Limit Reached"
+msgstr "הגעת למכסה של האסימון"
+
+#: src/recognizer/provider/error.rs:54
+msgid "Cannot Connect to the Server"
+msgstr "לא ניתן להתחבר לשרת"
+
+#: src/recognizer/provider/error.rs:55
+msgid "Received Other Permanent Error"
+msgstr "התקבלה עוד שגיאה קבועה"
+
+#: src/window/external_link_tile.rs:59
+msgid "Apple Music"
+msgstr "Apple Music"
+
+#: src/window/external_link_tile.rs:60
+msgid "Browse on Apple Music"
+msgstr "עיון ב־Apple Music"
+
+#: src/window/external_link_tile.rs:65
+msgid "Browse on AudD"
+msgstr "עיון ב־AudD"
+
+#: src/window/external_link_tile.rs:69
+msgid "Spotify"
+msgstr "Spotify"
+
+#: src/window/external_link_tile.rs:70
+msgid "Listen on Spotify"
+msgstr "האזנה ב־Spotify"
+
+#: src/window/external_link_tile.rs:74
+msgid "YouTube"
+msgstr "YouTube"
+
+#: src/window/external_link_tile.rs:75
+msgid "Search on YouTube"
+msgstr "חיפוש ב־YouTube"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/external_link_tile.rs:145
+msgid "Failed to launch {key}"
+msgstr "נכשלה הפעלת {key}"
+
+#: src/window/history_view.rs:147 src/window/song_page.rs:80
+msgid "Copied to clipboard"
+msgstr "הועתק ללוח"
+
+#: src/window/history_view.rs:160
+msgid "Failed to remove selected songs"
+msgstr "נכשלה הסרת השירים שנבחרו"
+
+#: src/window/history_view.rs:357
+msgid "Failed to remove song"
+msgstr "הסרת השיר נכשלה"
+
+#: src/window/history_view.rs:562
+msgid "Failed to show recognizer results"
+msgstr "הצגת תוצאות הזיהוי נכשלה"
+
+#: src/window/history_view.rs:669
+msgid "_Undo"
+msgstr "בי_טול פעולה"
+
+#: src/window/history_view.rs:681
+msgid "Failed to undo"
+msgstr "ביטול הפעולה נכשל"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:706
+msgid "Removed {n_removed} song"
+msgid_plural "Removed {n_removed} songs"
+msgstr[0] "הוסר שיר אחד"
+msgstr[1] "הוסרו {n_removed} שירים"
+msgstr[2] "הוסרו {n_removed} שירים"
+msgstr[3] "הוסרו {n_removed} שירים"
+
+#: src/window/history_view.rs:829
+msgid "Select items"
+msgstr "בחירת פריטים"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:833
+msgid "Selected {selection_size} song"
+msgid_plural "Selected {selection_size} songs"
+msgstr[0] "נבחר שיר אחד"
+msgstr[1] "נבחרו {n_removed} שירים"
+msgstr[2] "נבחרו {n_removed} שירים"
+msgstr[3] "נבחרו {n_removed} שירים"
+
+#: src/window/history_view.rs:843
+msgid "Copy Song"
+msgid_plural "Copy Songs"
+msgstr[0] "העתקת שיר"
+msgstr[1] "העתקת שירים"
+msgstr[2] "העתקת שירים"
+msgstr[3] "העתקת שירים"
+
+#: src/window/history_view.rs:850
+msgid "Remove Song From History"
+msgid_plural "Remove Songs From History"
+msgstr[0] "הסרת השיר מההיסטוריה"
+msgstr[1] "הסרת השירים מההיסטוריה"
+msgstr[2] "הסרת השירים מההיסטוריה"
+msgstr[3] "הסרת השירים מההיסטוריה"
+
+#: src/window/mod.rs:214
+msgid "Failed to insert song to history"
+msgstr "הכנסת השיר להיסטוריה נכשלה"
+
+#: src/window/mod.rs:262
+msgid "Please open an issue on GitHub and provide the necessary information"
+msgstr "נא לפתוח בעיה ב־GitHub ולספק את המידע הנחוץ"
+
+#: src/window/mod.rs:265 src/window/mod.rs:297
+msgid "No, Thanks"
+msgstr "לא, תודה"
+
+#: src/window/mod.rs:267
+msgid "Open an Issue"
+msgstr "פתיחת בעיה"
+
+#: src/window/mod.rs:294
+msgid ""
+"Try moving closer to the source or using a different excerpt of the song"
+msgstr "כדאי לנסות להתקרב למקור או להשתמש בקטע אחר של השיר"
+
+#: src/window/mod.rs:299
+msgid "Try Again"
+msgstr "ניסיון חוזר"
+
+#: src/window/mod.rs:334
+msgid "Recording Saved"
+msgstr "ההקלטה נשמרה"
+
+#: src/window/mod.rs:342
+msgid "The result will be available when you're back online"
+msgstr "התוצאה תהיה זמינה כאשר יחזור החיבור לרשת"
+
+#: src/window/mod.rs:345
+msgid "Ok, Got It"
+msgstr "בסדר, הבנתי"
+
+#: src/window/mod.rs:355
+msgid ""
+"The result will be available when your token limit is reset. Wait until the "
+"limit is reset or open preferences and try setting a different token"
+msgstr ""
+"התוצאות יהיו זמינות כאשר מכסת האסימון שלך תתאפס. נא להמתין עד שהמכסה תתאפס "
+"או לנסות להגדיר אסימון אחר בהעדפות"
+
+#: src/window/mod.rs:358
+msgid "I'll Wait"
+msgstr "אני אחכה"
+
+#: src/window/mod.rs:362
+msgid ""
+"The result will be available when your token is replaced with a valid one. "
+"Open preferences and try setting a different token"
+msgstr ""
+"התוצאות יהיו זמינות כאשר האסימון הנוכחי יוחלף באחד תקני. נא לנסות להגדיר "
+"אסימון אחר בהעדפות"
+
+#: src/window/mod.rs:365
+msgid "Later"
+msgstr "מאוחר יותר"
+
+#: src/window/mod.rs:370
+msgid "Open Preferences"
+msgstr "פתיחת ההעדפות"
+
+#: src/window/mod.rs:466
+msgid "An error occurred in the player"
+msgstr "אירעה שגיאה בנגן"
+
+#: src/window/playback_button.rs:97
+msgid "Play"
+msgstr "ניגון"
+
+#: src/window/playback_button.rs:103
+msgid "Pause"
+msgstr "השהיה"
+
+#: src/window/recognized_page.rs:151
+msgid "Recognized Song"
+msgid_plural "Recognized Songs"
+msgstr[0] "שיר שזוהה"
+msgstr[1] "שירים שזוהו"
+msgstr[2] "שירים שזוהו"
+msgstr[3] "שירים שזוהו"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognized_page.rs:157
+msgid "Recognized {n_songs} New Song"
+msgid_plural "Recognized {n_songs} New Songs"
+msgstr[0] "זוהה שיר חדש אחד"
+msgstr[1] "זוהו {n_songs} שירים חדשים"
+msgstr[2] "זוהו {n_songs} שירים חדשים"
+msgstr[3] "זוהו {n_songs} שירים חדשים"
+
+#: src/window/recognized_page.rs:163
+msgid "This song was recognized from your saved recording"
+msgid_plural "These songs were recognized from your saved recordings"
+msgstr[0] "השיר הזה זוהה מתוך ההקלטה השמורה שלך"
+msgstr[1] "השירים האלה זוהו מתוך ההקלטות השמורות שלך"
+msgstr[2] "השירים האלה זוהו מתוך ההקלטות השמורות שלך"
+msgstr[3] "השירים האלה זוהו מתוך ההקלטות השמורות שלך"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognizer_status.rs:172
+msgid "Recognized {n_successful} Out Of {total_minus_failed}"
+msgstr "זוהו {n_successful} מתוך {total_minus_failed}"
+
+#: src/window/recognizer_view.rs:149
+msgid "Listening…"
+msgstr "מתבצעת האזנה…"
+
+#: src/window/recognizer_view.rs:154
+msgid "Recognizing…"
+msgstr "מתבצע זיהוי…"
+
+#: src/window/song_page.rs:374
+msgid "Unknown"
+msgstr "לא ידוע"
+
+#: src/window/song_tile.rs:359
+msgid "Unselect"
+msgstr "ביטול בחירה"
+
+#~ msgid "Donate (Buy Me a Coffee)"
+#~ msgstr "תרומה (Buy Me a Coffee)"

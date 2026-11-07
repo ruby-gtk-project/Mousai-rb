@@ -1,0 +1,832 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the mousai package.
+# Diggaj Upadhyay <dcozupadhyay@duck.com>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: mousai\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-19 17:29+0800\n"
+"PO-Revision-Date: 2026-04-20 10:10+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Nepali <https://hosted.weblate.org/projects/seadve/mousai/ne/>"
+"\n"
+"Language: ne\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.17.1-dev\n"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:2
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:7 src/about.rs:12
+#: src/main.rs:64
+#, fuzzy
+msgid "Mousai"
+msgstr "मौसै"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:3
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:8
+msgid "Identify songs in seconds"
+msgstr "सेकेन्डमा गीतहरू पहिचान गर्नुहोस्"
+
+#. Translators: These are search terms to find this application. Do NOT translate or localize the semicolons. The list MUST also end with a semicolon.
+#: data/io.github.seadve.Mousai.desktop.in.in:9
+msgid "Shazam;Audio;Music;Song;Recognize;Identify;Recognition;"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:6
+msgid "Window width"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:11
+msgid "Window height"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:16
+msgid "Whether the window is maximized"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:26
+#, fuzzy
+msgid "Audio source type to use in recording audio"
+msgstr "अडियो रेकर्डिङमा प्रयोग गर्न रुचाइएको अडियो स्रोत"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:32
+msgid "API token used by AudD recognition"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:37
+msgid "Legacy (Kept for migration)"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:10
+#, fuzzy
+msgid "Discover songs you are aching to know with an easy-to-use interface."
+msgstr ""
+"प्रयोग गर्न-सजिलो इन्टरफेसको साथ जान्नको लागि तपाईलाई मन लाग्ने गीतहरू पत्ता लगाउनुहोस्।"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:11
+msgid ""
+"Mousai is a simple application that can recognize songs similar to Shazam. "
+"Just click the listen button, and then wait a few seconds. It will magically "
+"return the title and artist of that song!"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:12
+#, fuzzy
+msgid ""
+"Note: This uses the API of audd.io, so it is necessary to log in to their "
+"site to get more trials."
+msgstr ""
+"नोट: यसले audd.io को API प्रयोग गर्दछ, त्यसैले थप परीक्षणहरू प्राप्त गर्न तिनीहरूको "
+"साइटमा लग इन गर्न आवश्यक छ।"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:13
+#, fuzzy
+msgid "Why you will love Mousai?"
+msgstr "मौसैलाई किन माया गर्ने ?"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:15
+msgid "🎵 Identify songs within seconds or save for later when offline"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:16
+msgid "🎙️ Recognize from desktop audio or your microphone"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:17
+msgid "🎸 Build a repertoire of recognized songs"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:18
+msgid "🎼 Quickly preview the song within the interface"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:19
+msgid "🌐 Browse and listen the song from different providers"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:20
+msgid "📱 Easy-to-use user interface"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:26
+msgid "Mousai Home Page"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:30
+msgid "Detailed view of identified song"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:34
+msgid "Listening mode detecting the song"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:38
+#, fuzzy
+msgid "Recognized songs"
+msgstr "पहिचान गर्दै…"
+
+#: data/resources/ui/history_view.ui:6
+msgid "_Preferences"
+msgstr ""
+
+#: data/resources/ui/history_view.ui:10
+msgid "_Keyboard Shortcuts"
+msgstr "_कीबोर्ड सर्टकटहरू"
+
+#: data/resources/ui/history_view.ui:14
+msgid "_About Mousai"
+msgstr "_ मौसै को बारेमा"
+
+#: data/resources/ui/history_view.ui:22
+#, fuzzy
+msgid "Select _All"
+msgstr "सबै छान्नु"
+
+#: data/resources/ui/history_view.ui:26
+#, fuzzy
+msgid "_Unselect All"
+msgstr "सबै छान्नु"
+
+#: data/resources/ui/history_view.ui:42
+msgid "Home"
+msgstr ""
+
+#: data/resources/ui/history_view.ui:52
+msgid "Recognize Song"
+msgstr ""
+
+#: data/resources/ui/history_view.ui:53 data/resources/ui/song_page.ui:109
+msgid "Listen"
+msgstr "सुन्नुहोस्"
+
+#: data/resources/ui/history_view.ui:65
+#, fuzzy
+msgid "Main Menu"
+msgstr "मुख्य मेनु"
+
+#: data/resources/ui/history_view.ui:73 src/window/song_tile.rs:361
+#, fuzzy
+msgid "Select"
+msgstr "चयन गर्नुहोस्"
+
+#: data/resources/ui/history_view.ui:80 data/resources/ui/history_view.ui:103
+msgid "Search Songs"
+msgstr ""
+
+#: data/resources/ui/history_view.ui:96
+msgid "Cancel Selection"
+msgstr ""
+
+#: data/resources/ui/history_view.ui:97 data/resources/ui/recognizer_view.ui:14
+#, fuzzy
+msgid "Cancel"
+msgstr "रद्द गर्नुहोस्"
+
+#: data/resources/ui/history_view.ui:117
+msgid "Search songs"
+msgstr ""
+
+#: data/resources/ui/history_view.ui:140
+msgid "Start Recognizing Songs!"
+msgstr ""
+
+#: data/resources/ui/history_view.ui:141
+msgid "Click the listen button to start"
+msgstr ""
+
+#: data/resources/ui/history_view.ui:150
+msgid "No Results"
+msgstr ""
+
+#: data/resources/ui/lyrics_page.ui:10 data/resources/ui/song_page.ui:140
+msgid "Lyrics"
+msgstr ""
+
+#: data/resources/ui/preferences_dialog.ui:8
+#, fuzzy
+msgid "General"
+msgstr "सामान्य"
+
+#: data/resources/ui/preferences_dialog.ui:11
+#, fuzzy
+msgid "Audio Source"
+msgstr "_ रुचाइएको अडियो स्रोत"
+
+#: data/resources/ui/preferences_dialog.ui:12
+msgid "Device used for listening"
+msgstr ""
+
+#: data/resources/ui/preferences_dialog.ui:19
+#: src/window/external_link_tile.rs:64
+#, fuzzy
+msgid "AudD"
+msgstr "AudD"
+
+#: data/resources/ui/preferences_dialog.ui:20
+msgid ""
+"You can get yourself an API token from <a href=\"https://dashboard.audd.io/"
+"\">audd.io</a>. Leaving this blank will give you a few trials per day"
+msgstr ""
+
+#: data/resources/ui/preferences_dialog.ui:23
+msgid "API Token"
+msgstr ""
+
+#: data/resources/ui/recognizer_status.ui:17
+msgid "Offline Mode Enabled"
+msgstr ""
+
+#: data/resources/ui/recognizer_status.ui:44
+msgid "Show Offline Mode Recognition Results"
+msgstr ""
+
+#: data/resources/ui/recognizer_view.ui:13
+#, fuzzy
+msgid "Cancel Listening"
+msgstr "सुन्न रद्द गर्नुहोस्"
+
+#: data/resources/ui/recognizer_view.ui:49
+msgid "Offline Mode"
+msgstr ""
+
+#: data/resources/ui/shortcuts.ui:6
+msgctxt "shortcut window"
+msgid "General"
+msgstr "सामान्य"
+
+#: data/resources/ui/shortcuts.ui:9
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Open Main Menu"
+msgstr "मुख्य मेनु खोल्नुहोस्"
+
+#: data/resources/ui/shortcuts.ui:15
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Search"
+msgstr "खोज्नुहोस्"
+
+#: data/resources/ui/shortcuts.ui:21
+msgctxt "shortcut window"
+msgid "Show Preferences"
+msgstr ""
+
+#: data/resources/ui/shortcuts.ui:27
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "सर्टकटहरू देखाउनुहोस्"
+
+#: data/resources/ui/shortcuts.ui:33
+msgctxt "shortcut window"
+msgid "Close Window"
+msgstr ""
+
+#: data/resources/ui/shortcuts.ui:39
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "बाहिर निस्कनुहोस्"
+
+#: data/resources/ui/shortcuts.ui:47
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Controls"
+msgstr "नियन्त्रणहरू"
+
+#: data/resources/ui/shortcuts.ui:50
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Toggle Listen"
+msgstr "सुन्नुहोस् टगल गर्नुहोस्"
+
+#: data/resources/ui/shortcuts.ui:56
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Toggle Playback"
+msgstr "प्लेब्याक टगल गर्नुहोस्"
+
+#: data/resources/ui/song_bar.ui:85
+#, fuzzy
+msgid "Show Song Information"
+msgstr "गीत जानकारी देखाउनुहोस्"
+
+#: data/resources/ui/song_bar.ui:145
+msgid "Stop"
+msgstr "रोक्नुहोस्"
+
+#: data/resources/ui/song_page.ui:13
+#, fuzzy
+msgid "Remove From History"
+msgstr "इतिहासबाट हटाउनुहोस्"
+
+#: data/resources/ui/song_page.ui:19
+#, fuzzy
+msgid "Copy"
+msgstr "कपि"
+
+#: data/resources/ui/song_page.ui:122
+msgid "Information"
+msgstr "जानकारी"
+
+#: data/resources/ui/song_page.ui:125
+#, fuzzy
+msgid "Last Heard"
+msgstr "पहिले सुनेको"
+
+#: data/resources/ui/song_page.ui:130
+#, fuzzy
+msgid "Album"
+msgstr "एल्बम"
+
+#: data/resources/ui/song_page.ui:135
+#, fuzzy
+msgid "Release Date"
+msgstr "रिलीज मिति"
+
+#: data/resources/ui/song_tile.ui:30
+msgid "New"
+msgstr ""
+
+#. Translators: Replace "translator-credits" with your names. Put a comma between.
+#: src/about.rs:18
+msgid "translator-credits"
+msgstr "अनुवादक-क्रेडिट"
+
+#: src/about.rs:27
+msgid "Donate"
+msgstr ""
+
+#: src/about.rs:28
+msgid "GitHub"
+msgstr "GitHub"
+
+#: src/about.rs:30
+msgid "Translate"
+msgstr ""
+
+#: src/application.rs:209
+msgid "Critical Database Error"
+msgstr ""
+
+#: src/application.rs:210
+msgid ""
+"Sorry, a critical database error has occurred. This is likely caused by a "
+"tampered or corrupted database. You can try clearing application data. "
+"However, this is not recommended and will delete all your songs and saved "
+"recordings.\n"
+"\n"
+"To report this issue, please launch Mousai in the terminal to include the "
+"logs and submit the bug report to the <a href=\"https://github.com/SeaDve/"
+"Mousai/issues/\">issue page</a>"
+msgstr ""
+
+#: src/application.rs:215
+#, fuzzy
+msgid "Quit"
+msgstr "बाहिर निस्कनुहोस्"
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:31
+msgid "today at %R"
+msgstr ""
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:34
+msgid "yesterday at %R"
+msgstr ""
+
+#: src/preferences_dialog.rs:103
+#, fuzzy
+msgid "Microphone"
+msgstr "माइक्रोफोन"
+
+#: src/preferences_dialog.rs:104
+#, fuzzy
+msgid "Desktop Audio"
+msgstr "डेस्कटप अडियो"
+
+#: src/recognizer/provider/error.rs:50
+msgid "No Matches Found"
+msgstr ""
+
+#: src/recognizer/provider/error.rs:51
+msgid "Cannot Create Fingerprint From Audio"
+msgstr ""
+
+#: src/recognizer/provider/error.rs:52
+msgid "Invalid Token Given"
+msgstr ""
+
+#: src/recognizer/provider/error.rs:53
+msgid "Token Limit Reached"
+msgstr ""
+
+#: src/recognizer/provider/error.rs:54
+msgid "Cannot Connect to the Server"
+msgstr ""
+
+#: src/recognizer/provider/error.rs:55
+msgid "Received Other Permanent Error"
+msgstr ""
+
+#: src/window/external_link_tile.rs:59
+#, fuzzy
+msgid "Apple Music"
+msgstr "एप्पल संगीत"
+
+#: src/window/external_link_tile.rs:60
+#, fuzzy
+msgid "Browse on Apple Music"
+msgstr "एप्पल संगीत मा ब्राउज गर्नुहोस्"
+
+#: src/window/external_link_tile.rs:65
+#, fuzzy
+msgid "Browse on AudD"
+msgstr "AudD मा ब्राउज गर्नुहोस्"
+
+#: src/window/external_link_tile.rs:69
+#, fuzzy
+msgid "Spotify"
+msgstr "Spotify"
+
+#: src/window/external_link_tile.rs:70
+#, fuzzy
+msgid "Listen on Spotify"
+msgstr "Spotify मा सुन्नुहोस्"
+
+#: src/window/external_link_tile.rs:74
+#, fuzzy
+msgid "YouTube"
+msgstr "YouTube"
+
+#: src/window/external_link_tile.rs:75
+#, fuzzy
+msgid "Search on YouTube"
+msgstr "YouTube मा खोज्नुहोस्"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/external_link_tile.rs:145
+msgid "Failed to launch {key}"
+msgstr ""
+
+#: src/window/history_view.rs:147 src/window/song_page.rs:80
+msgid "Copied to clipboard"
+msgstr ""
+
+#: src/window/history_view.rs:160
+msgid "Failed to remove selected songs"
+msgstr ""
+
+#: src/window/history_view.rs:357
+msgid "Failed to remove song"
+msgstr ""
+
+#: src/window/history_view.rs:562
+msgid "Failed to show recognizer results"
+msgstr ""
+
+#: src/window/history_view.rs:669
+#, fuzzy
+msgid "_Undo"
+msgstr "_अनडु गर्नुहोस्"
+
+#: src/window/history_view.rs:681
+msgid "Failed to undo"
+msgstr ""
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:706
+msgid "Removed {n_removed} song"
+msgid_plural "Removed {n_removed} songs"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/window/history_view.rs:829
+msgid "Select items"
+msgstr ""
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:833
+msgid "Selected {selection_size} song"
+msgid_plural "Selected {selection_size} songs"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/window/history_view.rs:843
+#, fuzzy
+msgid "Copy Song"
+msgid_plural "Copy Songs"
+msgstr[0] "गीत प्रतिलिपि गर्नुहोस्"
+msgstr[1] "गीत प्रतिलिपि गर्नुहोस्"
+
+#: src/window/history_view.rs:850
+#, fuzzy
+msgid "Remove Song From History"
+msgid_plural "Remove Songs From History"
+msgstr[0] "इतिहासबाट गीत हटाउनुहोस्"
+msgstr[1] "इतिहासबाट गीतहरू हटाउनुहोस्"
+
+#: src/window/mod.rs:214
+msgid "Failed to insert song to history"
+msgstr ""
+
+#: src/window/mod.rs:262
+msgid "Please open an issue on GitHub and provide the necessary information"
+msgstr ""
+
+#: src/window/mod.rs:265 src/window/mod.rs:297
+msgid "No, Thanks"
+msgstr ""
+
+#: src/window/mod.rs:267
+msgid "Open an Issue"
+msgstr ""
+
+#: src/window/mod.rs:294
+msgid ""
+"Try moving closer to the source or using a different excerpt of the song"
+msgstr ""
+
+#: src/window/mod.rs:299
+msgid "Try Again"
+msgstr ""
+
+#: src/window/mod.rs:334
+msgid "Recording Saved"
+msgstr ""
+
+#: src/window/mod.rs:342
+msgid "The result will be available when you're back online"
+msgstr ""
+
+#: src/window/mod.rs:345
+msgid "Ok, Got It"
+msgstr ""
+
+#: src/window/mod.rs:355
+msgid ""
+"The result will be available when your token limit is reset. Wait until the "
+"limit is reset or open preferences and try setting a different token"
+msgstr ""
+
+#: src/window/mod.rs:358
+msgid "I'll Wait"
+msgstr ""
+
+#: src/window/mod.rs:362
+msgid ""
+"The result will be available when your token is replaced with a valid one. "
+"Open preferences and try setting a different token"
+msgstr ""
+
+#: src/window/mod.rs:365
+msgid "Later"
+msgstr ""
+
+#: src/window/mod.rs:370
+msgid "Open Preferences"
+msgstr ""
+
+#: src/window/mod.rs:466
+msgid "An error occurred in the player"
+msgstr ""
+
+#: src/window/playback_button.rs:97
+#, fuzzy
+msgid "Play"
+msgstr "बजाउनुहोस्"
+
+#: src/window/playback_button.rs:103
+#, fuzzy
+msgid "Pause"
+msgstr "रोक्नुहोस्"
+
+#: src/window/recognized_page.rs:151
+msgid "Recognized Song"
+msgid_plural "Recognized Songs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognized_page.rs:157
+msgid "Recognized {n_songs} New Song"
+msgid_plural "Recognized {n_songs} New Songs"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/window/recognized_page.rs:163
+msgid "This song was recognized from your saved recording"
+msgid_plural "These songs were recognized from your saved recordings"
+msgstr[0] ""
+msgstr[1] ""
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognizer_status.rs:172
+msgid "Recognized {n_successful} Out Of {total_minus_failed}"
+msgstr ""
+
+#: src/window/recognizer_view.rs:149
+#, fuzzy
+msgid "Listening…"
+msgstr "सुन्दै…"
+
+#: src/window/recognizer_view.rs:154
+#, fuzzy
+msgid "Recognizing…"
+msgstr "पहिचान गर्दै…"
+
+#: src/window/song_page.rs:374
+msgid "Unknown"
+msgstr ""
+
+#: src/window/song_tile.rs:359
+msgid "Unselect"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Select _None"
+#~ msgstr "चयन गर्नुहोस् _कुनै छैन"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Navigation"
+#~ msgstr "नेभिगेसन"
+
+#, fuzzy
+#~ msgctxt "shortcut window"
+#~ msgid "Go Back"
+#~ msgstr "फिर्ता जानुहोस्"
+
+#, fuzzy
+#~ msgid "Failed to launch {}"
+#~ msgstr "सुरुवात गर्न असफल भयो {}"
+
+#, fuzzy
+#~ msgid "Removed {} song"
+#~ msgid_plural "Removed {} songs"
+#~ msgstr[0] "गीत {} हटाइयो"
+#~ msgstr[1] "गीतहरू {} हटाइयो"
+
+#, fuzzy
+#~ msgid "Selected {} song"
+#~ msgid_plural "Selected {} songs"
+#~ msgstr[0] "चयन गरिएको {} गीत"
+#~ msgstr[1] "चयन गरिएका {} गीतहरू"
+
+#, fuzzy
+#~ msgid ""
+#~ "Mousai is a simple application that can identify song similar to Shazam. "
+#~ "Just click the listen button, and then wait a few seconds. It will "
+#~ "magically return the title and artist of that song!"
+#~ msgstr ""
+#~ "मौसै Shazam जस्तै गीत पहिचान गर्न सक्ने एक साधारण अनुप्रयोग हो। केवल सुन्न बटन क्लिक "
+#~ "गर्नुहोस्, र त्यसपछि केही सेकेन्ड पर्खनुहोस्। यसले जादुई रूपमा त्यो गीतको शीर्षक र कलाकार "
+#~ "फिर्ता गर्नेछ!"
+
+#~ msgid "Start Identifying Music"
+#~ msgstr "संगीत पहिचान गर्न सुरु गर्नुहोस्"
+
+#, fuzzy
+#~ msgid "Open Main Menu"
+#~ msgstr "मुख्य मेनु खोल्नुहोस्"
+
+#~ msgid "Search for Songs"
+#~ msgstr "गीतहरू खोज्नुहोस्"
+
+#, fuzzy
+#~ msgid "Cancel Select"
+#~ msgstr "चयन रद्द गर्नुहोस्"
+
+#, fuzzy
+#~ msgid "Enter song or artist name"
+#~ msgstr "गीत वा कलाकारको नाम प्रविष्ट गर्नुहोस्"
+
+#~ msgid "Start Identifying Music!"
+#~ msgstr "संगीत पहिचान गर्न सुरु गर्नुहोस्!"
+
+#, fuzzy
+#~ msgid "Click the listen button to start."
+#~ msgstr "सुरु गर्न सुन्न बटन क्लिक गर्नुहोस्।"
+
+#, fuzzy
+#~ msgid "No Results Found"
+#~ msgstr "कुनै परिणाम फेला परेन"
+
+#, fuzzy
+#~ msgid "Try a different search."
+#~ msgstr "फरक खोज प्रयास गर्नुहोस्।"
+
+#, fuzzy
+#~ msgid "Default window width"
+#~ msgstr "पूर्वनिर्धारित विन्डो चौडाइ"
+
+#, fuzzy
+#~ msgid "Default window height"
+#~ msgstr "पूर्वनिर्धारित विन्डो उचाइ"
+
+#, fuzzy
+#~ msgid "Default window maximized behaviour"
+#~ msgstr "पूर्वनिर्धारित सञ्झ्याल अधिकतम व्यवहार"
+
+#, fuzzy
+#~ msgid "Contains recently recognized songs"
+#~ msgstr "भर्खरै मान्यता प्राप्त गीतहरू समावेश छन्"
+
+#, fuzzy
+#~ msgid "🎵 Identify the title and artist of the song within seconds."
+#~ msgstr "🎵 गीतको शीर्षक र कलाकारलाई सेकेन्डमै पहिचान गर्नुहोस्।"
+
+#, fuzzy
+#~ msgid "🎙️ Use your microphone or audio from desktop."
+#~ msgstr "🎙️ डेस्कटपबाट आफ्नो माइक्रोफोन वा अडियो प्रयोग गर्नुहोस्।"
+
+#, fuzzy
+#~ msgid "🎸 Store the identified song including the album art in history."
+#~ msgstr "🎸 इतिहासमा एल्बम कला सहित पहिचान गरिएको गीत भण्डार गर्नुहोस्।"
+
+#, fuzzy
+#~ msgid "🎼 Preview the identified song with the native player."
+#~ msgstr "🎼 नेटिभ प्लेयरसँग पहिचान गरिएको गीतको पूर्वावलोकन गर्नुहोस्।"
+
+#, fuzzy
+#~ msgid "🌐 Browse and listen the song from different providers."
+#~ msgstr "🌐 ब्राउज गर्नुहोस् र विभिन्न प्रदायकहरूबाट गीत सुन्नुहोस्।"
+
+#, fuzzy
+#~ msgid "📱 Easy-to-use user interface."
+#~ msgstr "📱 प्रयोग गर्न सजिलो प्रयोगकर्ता इन्टरफेस।"
+
+#, fuzzy
+#~ msgid "⌨️ User-friendly keyboard shortcuts."
+#~ msgstr "⌨️ प्रयोगकर्ता-अनुकूल किबोर्ड सर्टकटहरू।"
+
+#~ msgid "Dave Patrick"
+#~ msgstr "डेभ प्याट्रिक"
+
+#, fuzzy
+#~ msgid "Return to Main Page"
+#~ msgstr "मुख्य पृष्ठमा फर्कनुहोस्"
+
+#, fuzzy
+#~ msgid "Copyright 2022 Dave Patrick"
+#~ msgstr "प्रतिलिपि अधिकार 2022 डेभ प्याट्रिक"
+
+#, fuzzy
+#~ msgid "Cancelled recording"
+#~ msgstr "रेकर्डिङ रद्द गरियो"
+
+#, fuzzy
+#~ msgid "Cancelled recognizing"
+#~ msgstr "मान्यता रद्द गरियो"
+
+#, fuzzy
+#~ msgid "Failed to connect to the server."
+#~ msgstr "सर्भरमा जडान गर्न असफल भयो।"
+
+#, fuzzy
+#~ msgid "Daily limit has been reached."
+#~ msgstr "दैनिक सीमा पुग्यो।"
+
+#, fuzzy
+#~ msgid "Failed to fingerprint audio. There may be no sound heard."
+#~ msgstr "फिंगरप्रिन्ट अडियो गर्न असफल भयो। कुनै आवाज नसुन्न सक्छ।"
+
+#, fuzzy
+#~ msgid "{} Check your internet connection."
+#~ msgstr "{} आफ्नो इन्टरनेट जडान जाँच गर्नुहोस्।"
+
+#~ msgid "No matches found for this song."
+#~ msgstr "यस गीतको लागि कुनै मेल फेला परेन।"
+
+#, fuzzy
+#~ msgid "{} Input an API token in the preferences."
+#~ msgstr "{} प्राथमिकताहरूमा API टोकन इनपुट गर्नुहोस्।"
+
+#, fuzzy
+#~ msgid "Please input a valid API token."
+#~ msgstr "कृपया एक मान्य API टोकन इनपुट गर्नुहोस्।"
+
+#, fuzzy
+#~ msgid "Copied song to clipboard"
+#~ msgstr "क्लिपबोर्डमा गीत प्रतिलिपि गरियो"
+
+#, fuzzy
+#~ msgid "Click on items to select them"
+#~ msgstr "तिनीहरूलाई चयन गर्न वस्तुहरूमा क्लिक गर्नुहोस्"
+
+#, fuzzy
+#~ msgid "Failed to load history"
+#~ msgstr "इतिहास लोड गर्न असफल भयो"
+
+#~ msgid "Shazam;Music;Song;Identify;"
+#~ msgstr "Shazam;संगीत;गीत;पहिचान"
+
+#~ msgid ""
+#~ "Failed to parse response. Please report this to Mousai's bug tracker."
+#~ msgstr ""
+#~ "प्रतिक्रिया पार्स गर्न असफल भयो। कृपया यो मौसै को बग ट्रयाकरमा रिपोर्ट गर्नुहोस्।"
+
+#~ msgid "Failed to convert file. Please report this to Mousai's bug tracker."
+#~ msgstr ""
+#~ "फाइल रूपान्तरण गर्न असफल भयो। कृपया यो मौसै को बग ट्रयाकरमा रिपोर्ट गर्नुहोस्।"

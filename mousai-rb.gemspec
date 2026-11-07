@@ -105,6 +105,9 @@ Gem::Specification.new do |spec|
   spec.add_dependency("gstreamer_play", "~> 1.1")
   spec.add_dependency("gstreamer", "~> 4.4")
   spec.add_dependency("soup3", "~> 1.0")
+  # Translation catalogue: binds po/*.po (reused byte-for-byte from upstream)
+  # at runtime. See lib/i18n.rb and po/POTFILES.in.
+  spec.add_dependency("gettext", "~> 3.4")
 
   # NOTE: It is preferable to list development dependencies in the gemspec due to increased
   #       visibility and discoverability.

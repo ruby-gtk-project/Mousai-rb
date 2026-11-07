@@ -1,0 +1,1002 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the mousai package.
+# Dave Patrick <davecruz48@gmail.com>, 2021, 2022, 2023.
+# IverCoder <ivercoder+github@proton.me>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: mousai\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-19 17:29+0800\n"
+"PO-Revision-Date: 2025-02-21 13:02+0000\n"
+"Last-Translator: IverCoder <ivercoder+github@proton.me>\n"
+"Language-Team: Filipino <https://hosted.weblate.org/projects/seadve/mousai/"
+"fil/>\n"
+"Language: fil\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1 && n != 2 && n != 3 && (n % 10 == 4 "
+"|| n % 10 == 6 || n % 10 == 9);\n"
+"X-Generator: Weblate 5.10.1-dev\n"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:2
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:7 src/about.rs:12
+#: src/main.rs:64
+msgid "Mousai"
+msgstr "Mousai"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:3
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:8
+msgid "Identify songs in seconds"
+msgstr "Kumilala ng kanta sa loob ng ilang segundo"
+
+#. Translators: These are search terms to find this application. Do NOT translate or localize the semicolons. The list MUST also end with a semicolon.
+#: data/io.github.seadve.Mousai.desktop.in.in:9
+msgid "Shazam;Audio;Music;Song;Recognize;Identify;Recognition;"
+msgstr "Shazam;Audio;Musika;Kanta;Recognize;Identify;Recognition;"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:6
+msgid "Window width"
+msgstr "Lapad ng window"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:11
+msgid "Window height"
+msgstr "Taas ng window"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:16
+msgid "Whether the window is maximized"
+msgstr "Kung naka-maximize ang window"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:26
+msgid "Audio source type to use in recording audio"
+msgstr "Uri ng audio source na gagamitin sa pagrerekord ng audio"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:32
+msgid "API token used by AudD recognition"
+msgstr "API token para sa AudD recognition"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:37
+msgid "Legacy (Kept for migration)"
+msgstr "Legado (Itinira para sa migrasyon)"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:10
+msgid "Discover songs you are aching to know with an easy-to-use interface."
+msgstr "Dumiskubre ng mga kanta gamit ang napakadaling gamiting interface."
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:11
+msgid ""
+"Mousai is a simple application that can recognize songs similar to Shazam. "
+"Just click the listen button, and then wait a few seconds. It will magically "
+"return the title and artist of that song!"
+msgstr ""
+"Isang simpleng aplikasyon ang Mousai na nakakakilala ng mga kanta, parang "
+"Shazam. Pindutin lang ang buton at maghintay ng ilang segundo. Tutugon ito "
+"ng pangalan at artista ng kantang iyon!"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:12
+msgid ""
+"Note: This uses the API of audd.io, so it is necessary to log in to their "
+"site to get more trials."
+msgstr ""
+"Paalala: Gumagamit ito ng API ng audd.io, kaya kinakailangang mag-log in sa "
+"kanilang site para makatanggap ng mas maraming trial."
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:13
+msgid "Why you will love Mousai?"
+msgstr "Bakit mo magugustuhan ang Mousai?"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:15
+msgid "🎵 Identify songs within seconds or save for later when offline"
+msgstr ""
+"🎵 Kumilala ng mga kanta sa loob ng ilang segundo o i-save para mamaya "
+"habang offline"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:16
+msgid "🎙️ Recognize from desktop audio or your microphone"
+msgstr "🎙️ Kumilala mula sa audio ng desktop o sa mikropono mo"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:17
+msgid "🎸 Build a repertoire of recognized songs"
+msgstr "🎸 Mag-ipon ng mga na-recognize na mga kanta"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:18
+msgid "🎼 Quickly preview the song within the interface"
+msgstr "🎼 Mabilisang i-preview ang kanta sa interface"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:19
+msgid "🌐 Browse and listen the song from different providers"
+msgstr "🌐 I-browse at pakinggan ang kanta gamit ang iba't-ibang provider"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:20
+msgid "📱 Easy-to-use user interface"
+msgstr "📱 Madaling gamitin na interface"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:26
+msgid "Mousai Home Page"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:30
+msgid "Detailed view of identified song"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:34
+msgid "Listening mode detecting the song"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:38
+#, fuzzy
+#| msgid "Recognize Song"
+msgid "Recognized songs"
+msgstr "Kumilala ng Kanta"
+
+#: data/resources/ui/history_view.ui:6
+msgid "_Preferences"
+msgstr "Mga _Preference"
+
+#: data/resources/ui/history_view.ui:10
+msgid "_Keyboard Shortcuts"
+msgstr "_Mga Shortcut sa Keyboard"
+
+#: data/resources/ui/history_view.ui:14
+msgid "_About Mousai"
+msgstr "_Tungkol sa Mousai"
+
+#: data/resources/ui/history_view.ui:22
+msgid "Select _All"
+msgstr "Piliin _Lahat"
+
+#: data/resources/ui/history_view.ui:26
+msgid "_Unselect All"
+msgstr "I-_unselect Lahat"
+
+#: data/resources/ui/history_view.ui:42
+msgid "Home"
+msgstr "Home"
+
+#: data/resources/ui/history_view.ui:52
+msgid "Recognize Song"
+msgstr "Kumilala ng Kanta"
+
+#: data/resources/ui/history_view.ui:53 data/resources/ui/song_page.ui:109
+msgid "Listen"
+msgstr "Makinig"
+
+#: data/resources/ui/history_view.ui:65
+msgid "Main Menu"
+msgstr "Pangunahing Menu"
+
+#: data/resources/ui/history_view.ui:73 src/window/song_tile.rs:361
+msgid "Select"
+msgstr "Piliin"
+
+#: data/resources/ui/history_view.ui:80 data/resources/ui/history_view.ui:103
+msgid "Search Songs"
+msgstr "Maghanap ng mga Kanta"
+
+#: data/resources/ui/history_view.ui:96
+msgid "Cancel Selection"
+msgstr ""
+
+#: data/resources/ui/history_view.ui:97 data/resources/ui/recognizer_view.ui:14
+msgid "Cancel"
+msgstr "Ikansela"
+
+#: data/resources/ui/history_view.ui:117
+msgid "Search songs"
+msgstr ""
+
+#: data/resources/ui/history_view.ui:140
+msgid "Start Recognizing Songs!"
+msgstr ""
+
+#: data/resources/ui/history_view.ui:141
+msgid "Click the listen button to start"
+msgstr "Pindutin ang button sa pagkinig upang magsimula"
+
+#: data/resources/ui/history_view.ui:150
+msgid "No Results"
+msgstr ""
+
+#: data/resources/ui/lyrics_page.ui:10 data/resources/ui/song_page.ui:140
+msgid "Lyrics"
+msgstr "Mga Liriko"
+
+#: data/resources/ui/preferences_dialog.ui:8
+msgid "General"
+msgstr "Pangkalahatan"
+
+#: data/resources/ui/preferences_dialog.ui:11
+#, fuzzy
+#| msgid "Preferred Audio Source"
+msgid "Audio Source"
+msgstr "Preferred na Audio Source"
+
+#: data/resources/ui/preferences_dialog.ui:12
+msgid "Device used for listening"
+msgstr ""
+
+#: data/resources/ui/preferences_dialog.ui:19
+#: src/window/external_link_tile.rs:64
+msgid "AudD"
+msgstr "AudD"
+
+#: data/resources/ui/preferences_dialog.ui:20
+msgid ""
+"You can get yourself an API token from <a href=\"https://dashboard.audd.io/"
+"\">audd.io</a>. Leaving this blank will give you a few trials per day"
+msgstr ""
+
+#: data/resources/ui/preferences_dialog.ui:23
+msgid "API Token"
+msgstr "Token ng API"
+
+#: data/resources/ui/recognizer_status.ui:17
+msgid "Offline Mode Enabled"
+msgstr "Naka-enable ang Offline Mode"
+
+#: data/resources/ui/recognizer_status.ui:44
+msgid "Show Offline Mode Recognition Results"
+msgstr ""
+
+#: data/resources/ui/recognizer_view.ui:13
+msgid "Cancel Listening"
+msgstr "I-kansela ang Pakikinig"
+
+#: data/resources/ui/recognizer_view.ui:49
+msgid "Offline Mode"
+msgstr "Offline Mode"
+
+#: data/resources/ui/shortcuts.ui:6
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Pangkalahatan"
+
+#: data/resources/ui/shortcuts.ui:9
+msgctxt "shortcut window"
+msgid "Open Main Menu"
+msgstr "I-open ang Pangunahing Menu"
+
+#: data/resources/ui/shortcuts.ui:15
+msgctxt "shortcut window"
+msgid "Search"
+msgstr "Mag-search"
+
+#: data/resources/ui/shortcuts.ui:21
+msgctxt "shortcut window"
+msgid "Show Preferences"
+msgstr "I-pakita ang Preferences"
+
+#: data/resources/ui/shortcuts.ui:27
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Ipakita ang mga Shortcuts"
+
+#: data/resources/ui/shortcuts.ui:33
+msgctxt "shortcut window"
+msgid "Close Window"
+msgstr ""
+
+#: data/resources/ui/shortcuts.ui:39
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Isara"
+
+#: data/resources/ui/shortcuts.ui:47
+msgctxt "shortcut window"
+msgid "Controls"
+msgstr "Mga Kontrol"
+
+#: data/resources/ui/shortcuts.ui:50
+msgctxt "shortcut window"
+msgid "Toggle Listen"
+msgstr "I-toggle ang Pakikinig"
+
+#: data/resources/ui/shortcuts.ui:56
+msgctxt "shortcut window"
+msgid "Toggle Playback"
+msgstr "I-toggle ang Pag-playback"
+
+#: data/resources/ui/song_bar.ui:85
+msgid "Show Song Information"
+msgstr "Ipakita ang Impormasyon ng Kanta"
+
+#: data/resources/ui/song_bar.ui:145
+msgid "Stop"
+msgstr "Huminto"
+
+#: data/resources/ui/song_page.ui:13
+msgid "Remove From History"
+msgstr "Tanggalin Mula sa History"
+
+#: data/resources/ui/song_page.ui:19
+msgid "Copy"
+msgstr "I-copy"
+
+#: data/resources/ui/song_page.ui:122
+msgid "Information"
+msgstr "Impormasyon"
+
+#: data/resources/ui/song_page.ui:125
+msgid "Last Heard"
+msgstr "Huling Pinakinggan"
+
+#: data/resources/ui/song_page.ui:130
+msgid "Album"
+msgstr "Album"
+
+#: data/resources/ui/song_page.ui:135
+msgid "Release Date"
+msgstr "Petsa ng Pag-release"
+
+#: data/resources/ui/song_tile.ui:30
+msgid "New"
+msgstr "Bago"
+
+#. Translators: Replace "translator-credits" with your names. Put a comma between.
+#: src/about.rs:18
+msgid "translator-credits"
+msgstr "Dave Patrick Caberto"
+
+#: src/about.rs:27
+msgid "Donate"
+msgstr ""
+
+#: src/about.rs:28
+msgid "GitHub"
+msgstr "GitHub"
+
+#: src/about.rs:30
+msgid "Translate"
+msgstr "I-translate"
+
+#: src/application.rs:209
+msgid "Critical Database Error"
+msgstr "Kritikal na Error sa Database"
+
+#: src/application.rs:210
+#, fuzzy
+#| msgid ""
+#| "This is likely caused by a tampered or corrupted database. You can try "
+#| "clearing application data. However, this is not recommended and will "
+#| "delete all your songs and saved recordings.\n"
+#| "\n"
+#| "To report this issue, please launch Mousai in the terminal to include the "
+#| "logs and submit the bug report to the <a href=\"https://github.com/SeaDve/"
+#| "Mousai/issues/\">issue page</a>."
+msgid ""
+"Sorry, a critical database error has occurred. This is likely caused by a "
+"tampered or corrupted database. You can try clearing application data. "
+"However, this is not recommended and will delete all your songs and saved "
+"recordings.\n"
+"\n"
+"To report this issue, please launch Mousai in the terminal to include the "
+"logs and submit the bug report to the <a href=\"https://github.com/SeaDve/"
+"Mousai/issues/\">issue page</a>"
+msgstr ""
+"Malamang ay idinulot ito ng na-corrupt o na-tampered na database. Maaari "
+"mong i-clear ang data ng aplikasyon. Subalit, hindi ito recommended at i-"
+"dedelete nito ang lahat ng iyong kanta at naka-save na recordings.\n"
+"\n"
+"Para mai-report ang issue na ito, i-launch ang Mousai sa terminal para isama "
+"ang mga logs at isumite ang report ng bug sa <a href=\"https://github.com/"
+"SeaDve/Mousai/issues/\">issue page</a>."
+
+#: src/application.rs:215
+msgid "Quit"
+msgstr "Isara"
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:31
+msgid "today at %R"
+msgstr "ngayon nang %R"
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:34
+msgid "yesterday at %R"
+msgstr "kahapon nang %R"
+
+#: src/preferences_dialog.rs:103
+msgid "Microphone"
+msgstr "Mikropono"
+
+#: src/preferences_dialog.rs:104
+msgid "Desktop Audio"
+msgstr "Tunog ng Desktop"
+
+#: src/recognizer/provider/error.rs:50
+msgid "No Matches Found"
+msgstr "Walang Nahanap na Nag-match"
+
+#: src/recognizer/provider/error.rs:51
+msgid "Cannot Create Fingerprint From Audio"
+msgstr "Hindi Makagawa ng Fingerprint Mula sa Audio"
+
+#: src/recognizer/provider/error.rs:52
+msgid "Invalid Token Given"
+msgstr "Hindi Wasto ang Ibinigay na Token"
+
+#: src/recognizer/provider/error.rs:53
+msgid "Token Limit Reached"
+msgstr "Nakamit ang Limitasyon ng Token"
+
+#: src/recognizer/provider/error.rs:54
+msgid "Cannot Connect to the Server"
+msgstr "Hindi Maka-konek sa Server"
+
+#: src/recognizer/provider/error.rs:55
+msgid "Received Other Permanent Error"
+msgstr "Naka-tanggap ng Ibang Permanenteng Error"
+
+#: src/window/external_link_tile.rs:59
+msgid "Apple Music"
+msgstr "Apple Music"
+
+#: src/window/external_link_tile.rs:60
+msgid "Browse on Apple Music"
+msgstr "I-browse sa Apple Music"
+
+#: src/window/external_link_tile.rs:65
+msgid "Browse on AudD"
+msgstr "I-browse sa AudD"
+
+#: src/window/external_link_tile.rs:69
+msgid "Spotify"
+msgstr "Spotify"
+
+#: src/window/external_link_tile.rs:70
+msgid "Listen on Spotify"
+msgstr "Pakinggan sa Spotify"
+
+#: src/window/external_link_tile.rs:74
+msgid "YouTube"
+msgstr "YouTube"
+
+#: src/window/external_link_tile.rs:75
+msgid "Search on YouTube"
+msgstr "I-search sa YouTube"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/external_link_tile.rs:145
+msgid "Failed to launch {key}"
+msgstr ""
+
+#: src/window/history_view.rs:147 src/window/song_page.rs:80
+msgid "Copied to clipboard"
+msgstr "Na-copy na sa clipboard"
+
+#: src/window/history_view.rs:160
+msgid "Failed to remove selected songs"
+msgstr "Hindi matanggal ang mga naka-selektang kanta"
+
+#: src/window/history_view.rs:357
+msgid "Failed to remove song"
+msgstr "Hindi matanggal ang kanta"
+
+#: src/window/history_view.rs:562
+msgid "Failed to show recognizer results"
+msgstr "Hindi maipakita ang resulta ng recognizer"
+
+#: src/window/history_view.rs:669
+msgid "_Undo"
+msgstr "I_undo"
+
+#: src/window/history_view.rs:681
+msgid "Failed to undo"
+msgstr "Hindi mai-undo"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:706
+msgid "Removed {n_removed} song"
+msgid_plural "Removed {n_removed} songs"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/window/history_view.rs:829
+msgid "Select items"
+msgstr "I-select ang mga items"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:833
+msgid "Selected {selection_size} song"
+msgid_plural "Selected {selection_size} songs"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/window/history_view.rs:843
+#, fuzzy
+msgid "Copy Song"
+msgid_plural "Copy Songs"
+msgstr[0] "I-copy ang Kanta"
+msgstr[1] "I-copy ang Kanta"
+
+#: src/window/history_view.rs:850
+msgid "Remove Song From History"
+msgid_plural "Remove Songs From History"
+msgstr[0] "Tanggalin ang Kanta sa History"
+msgstr[1] "Tanggalin ang mga Kanta sa History"
+
+#: src/window/mod.rs:214
+msgid "Failed to insert song to history"
+msgstr "Hindi mailagay ang kanta sa history"
+
+#: src/window/mod.rs:262
+msgid "Please open an issue on GitHub and provide the necessary information"
+msgstr ""
+
+#: src/window/mod.rs:265 src/window/mod.rs:297
+msgid "No, Thanks"
+msgstr "Salamat Nalang"
+
+#: src/window/mod.rs:267
+msgid "Open an Issue"
+msgstr "Mag-open ng Issue"
+
+#: src/window/mod.rs:294
+msgid ""
+"Try moving closer to the source or using a different excerpt of the song"
+msgstr ""
+
+#: src/window/mod.rs:299
+msgid "Try Again"
+msgstr "Subukang Muli"
+
+#: src/window/mod.rs:334
+msgid "Recording Saved"
+msgstr ""
+
+#: src/window/mod.rs:342
+msgid "The result will be available when you're back online"
+msgstr ""
+
+#: src/window/mod.rs:345
+msgid "Ok, Got It"
+msgstr ""
+
+#: src/window/mod.rs:355
+msgid ""
+"The result will be available when your token limit is reset. Wait until the "
+"limit is reset or open preferences and try setting a different token"
+msgstr ""
+
+#: src/window/mod.rs:358
+msgid "I'll Wait"
+msgstr ""
+
+#: src/window/mod.rs:362
+msgid ""
+"The result will be available when your token is replaced with a valid one. "
+"Open preferences and try setting a different token"
+msgstr ""
+
+#: src/window/mod.rs:365
+msgid "Later"
+msgstr ""
+
+#: src/window/mod.rs:370
+msgid "Open Preferences"
+msgstr "I-open ang Preferences"
+
+#: src/window/mod.rs:466
+msgid "An error occurred in the player"
+msgstr "Nagkaroon ng error sa player"
+
+#: src/window/playback_button.rs:97
+msgid "Play"
+msgstr "I-play"
+
+#: src/window/playback_button.rs:103
+msgid "Pause"
+msgstr "I-pause"
+
+#: src/window/recognized_page.rs:151
+msgid "Recognized Song"
+msgid_plural "Recognized Songs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognized_page.rs:157
+msgid "Recognized {n_songs} New Song"
+msgid_plural "Recognized {n_songs} New Songs"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/window/recognized_page.rs:163
+msgid "This song was recognized from your saved recording"
+msgid_plural "These songs were recognized from your saved recordings"
+msgstr[0] ""
+msgstr[1] ""
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognizer_status.rs:172
+msgid "Recognized {n_successful} Out Of {total_minus_failed}"
+msgstr ""
+
+#: src/window/recognizer_view.rs:149
+msgid "Listening…"
+msgstr "Nakikinig…"
+
+#: src/window/recognizer_view.rs:154
+msgid "Recognizing…"
+msgstr "Rine-recognize…"
+
+#: src/window/song_page.rs:374
+msgid "Unknown"
+msgstr "Hindi Alam"
+
+#: src/window/song_tile.rs:359
+msgid "Unselect"
+msgstr "I-unselect"
+
+#~ msgid "Select _None"
+#~ msgstr "Piliin ang _Wala"
+
+#~ msgid "Dave Patrick Caberto"
+#~ msgstr "Dave Patrick Caberto"
+
+#~ msgid "© 2023 Dave Patrick Caberto"
+#~ msgstr "© 2023 Dave Patrick Caberto"
+
+#~ msgid "🎵 Recognize songs within seconds or save for later when offline"
+#~ msgstr ""
+#~ "🎵 Mag-recognize ng kanta sa loob ng ilang segundo o i-save para mamaya "
+#~ "kung offline"
+
+#~ msgid "🎙️ Use microphone or desktop audio"
+#~ msgstr "🎙️ Gumamit ng mikropono o audio ng desktop"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Navigation"
+#~ msgstr "Nabigasyon"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Go Back"
+#~ msgstr "Bumalik"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Go Forward"
+#~ msgstr "Sumulong"
+
+#~ msgid "Donate (Liberapay)"
+#~ msgstr "Mag-donate (Liberapay)"
+
+#~ msgid "Donate (PayPal)"
+#~ msgstr "Mag-donate (PayPal)"
+
+#~ msgid "Failed to launch {}"
+#~ msgstr "Hindi mai-launch ang {}"
+
+#~ msgid "Removed {} song"
+#~ msgid_plural "Removed {} songs"
+#~ msgstr[0] "Nagtanggal ng {} na kanta"
+#~ msgstr[1] "Nagtanggal ng {} na mga kanta"
+
+#~ msgid "Selected {} song"
+#~ msgid_plural "Selected {} songs"
+#~ msgstr[0] "Pumili ng {} na kanta"
+#~ msgstr[1] "Pumili ng {} na mga kanta"
+
+#~ msgid "Recognized {} Out Of {}"
+#~ msgid_plural "Recognized {} Out Of {} Songs"
+#~ msgstr[0] "Naka-recognize ng {} Mula sa {} na Kanta"
+#~ msgstr[1] "Naka-recognize ng {} Mula sa {} na Kanta"
+
+#~ msgid "Shazam;Audio;Music;Song;Identify;Recognition;"
+#~ msgstr "Shazam;Audio;Music;Song;Identify;Recognition;Kanta;"
+
+#~ msgid ""
+#~ "Mousai is a simple application that can identify song similar to Shazam. "
+#~ "Just click the listen button, and then wait a few seconds. It will "
+#~ "magically return the title and artist of that song!"
+#~ msgstr ""
+#~ "Ang Mousai ay isang simpleng aplikasyon na kayang maka-identify ng kanta "
+#~ "tulad ng Shazam. Pinduting mo lang ang listen button, maghintay sandali. "
+#~ "Ibibigay niya na ang pamagat at kumanta ng kanta!"
+
+#~ msgid "Start Identifying Music"
+#~ msgstr "Magsimula"
+
+#~ msgid "Open Main Menu"
+#~ msgstr "Buksan ang Pangunahing Menu"
+
+#~ msgid "Search for Songs"
+#~ msgstr "Maghanap ng Kanta"
+
+#~ msgid "Cancel Select"
+#~ msgstr "I-kansela ang Pagselekta"
+
+#~ msgid "Enter song or artist name"
+#~ msgstr "Itala ang kanta o pangalan ng may-akda"
+
+#~ msgid "Start Identifying Music!"
+#~ msgstr "Magsimula Mag-identify ng Kanta!"
+
+#~ msgid "Click the listen button to start."
+#~ msgstr "Pindutin ang listen button upang magsimula."
+
+#~ msgid "No Results Found"
+#~ msgstr "Walang Nahanap na Resulta"
+
+#~ msgid "Try a different search."
+#~ msgstr "Subukang gumamit ng ibang termino."
+
+#~ msgid "Determines the audio source to select when available."
+#~ msgstr ""
+#~ "Dine-determine kung anong audio source ang gagamitin kung available."
+
+#~ msgid ""
+#~ "You can get yourself an API token from <a href=\"https://"
+#~ "dashboard.audd.io/\">audd.io</a>. Leaving this blank will give you a few "
+#~ "trials per day."
+#~ msgstr ""
+#~ "Maaari kang kumuha ng API token sa <a href=\"https://dashboard.audd.io/"
+#~ "\">audd.io</a>. Makapagbibigay lamang ng unting trials kung iiwanan itong "
+#~ "blanko."
+
+#~ msgid "Go Back"
+#~ msgstr "Bumalik"
+
+#~ msgid "The result will be available when you're back online."
+#~ msgstr "Ang resulta ay magiging available kapag online ka na."
+
+#~ msgid "Recording saved"
+#~ msgstr "Nai-save na ang recording"
+
+#~ msgid "Ok, got it"
+#~ msgstr "Ok, nakuha ko"
+
+#~ msgid "Open preferences and try setting a different token."
+#~ msgstr "I-open ang preferences at i-try palitan ng ibang token."
+
+#~ msgid ""
+#~ "Wait until the limit is reset or open preferences and try setting a "
+#~ "different token."
+#~ msgstr ""
+#~ "Hintayin na mai-reset ang limit o i-open ang preferences at i-try palitan "
+#~ "ng ibang token."
+
+#~ msgid ""
+#~ "Please open an issue on GitHub and provide the necessary information."
+#~ msgstr ""
+#~ "Pakiusap na magopen ng issue sa GitHub at i-provide ang mga hinihinging "
+#~ "impormasyon."
+
+#~ msgid "Please check your internet connection."
+#~ msgstr "Paki-check ang iyong internet connection."
+
+#~ msgid "Ok"
+#~ msgstr "Ok"
+
+#~ msgid "Recognized {} new song"
+#~ msgid_plural "Recognized {} new songs"
+#~ msgstr[0] "Naka-recognize ng {} na bagong kanta"
+#~ msgstr[1] "Naka-recognize ng {} na mga bagong kanta"
+
+#~ msgid "This song was heard while you're offline"
+#~ msgid_plural "These songs were heard while you're offline"
+#~ msgstr[0] "Napakinggan ang kantang ito noong ikaw ay offline"
+#~ msgstr[1] "Napakinggan ang mga kantang ito noong ikaw ay offline"
+
+#~ msgid "🎵 Identify the title and artist of the song within seconds."
+#~ msgstr "🎵 Kaya niya i-identify and pamagat at kumanta ng kanta."
+
+#~ msgid "🎙️ Use your microphone or audio from desktop."
+#~ msgstr "🎙️Gamitin ang mikropono o tunog mula sa iyong desktop."
+
+#~ msgid "🎸 Store the identified song including the album art in history."
+#~ msgstr "🎸 I-store ang na-identify na kanta kasama ang album art."
+
+#~ msgid "🎼 Preview the identified song with the native player."
+#~ msgstr "🎼 I-preview ang kanta gamit ang built-in na player."
+
+#~ msgid "📱 Easy-to-use user interface."
+#~ msgstr "📱 Simpleng gamiting user interface."
+
+#~ msgid "⌨️ User-friendly keyboard shortcuts."
+#~ msgstr "⌨️ Madaling gamiting mga keyboard shortcuts."
+
+#~ msgid "Dave Patrick"
+#~ msgstr "Dave Patrick"
+
+#~ msgid "_Preferred Audio Source"
+#~ msgstr "_Gustong Source ng Tunog"
+
+#~ msgid "Shazam;Music;Song;Identify;"
+#~ msgstr "Shazam;Music;Song;Identify;Tunog;Kanta;"
+
+#~ msgid "Identify any songs in seconds"
+#~ msgstr "Alamin ang kanta sa kaunting sandali"
+
+#~ msgid "🌐 Browse the song in the web with the link."
+#~ msgstr "🌐 I-browse ang kanta sa internet gamit ang link."
+
+#~ msgid "Open Menu"
+#~ msgstr "Buksan ang Menu"
+
+#~ msgid "Show Shortcuts"
+#~ msgstr "Ipakita ang mga Shortcuts"
+
+#~ msgid "Controls"
+#~ msgstr "Mga controls"
+
+#~ msgid "Toggle Listen"
+#~ msgstr "I-toggle ang Pakikinig"
+
+#~ msgid "Settings"
+#~ msgstr "Mga Opsyon"
+
+#~ msgid "Clear Song History"
+#~ msgstr "Burahin Ang History"
+
+#~ msgid "Reset Token Value"
+#~ msgstr "I-reset ang Token"
+
+#~ msgid "Welcome to Mousai"
+#~ msgstr "Maligayang Pagdating sa Mousai"
+
+#~ msgid "Enter a valid token"
+#~ msgstr "Maglagay ng tamang token"
+
+#~ msgid "Submit"
+#~ msgstr "Isumite"
+
+#~ msgid ""
+#~ "Mousai uses audd.io APIs to work, so it is required to login to <a "
+#~ "href=\"https://dashboard.audd.io/\">their website</a> and get a token. "
+#~ "Leaving this blank will give you a few trials per day."
+#~ msgstr ""
+#~ "Ang Mousai ay gumagamit ng API ng audd.io upang gumana, kaya kailangang "
+#~ "maglogin sa <a href=\"https://dashboard.audd.io/\">kanilang website</a> "
+#~ "at kumuha ng token. Kapag wala kang linagay, magkakaroon ka lamang ng "
+#~ "iilang trials kada araw."
+
+#~ msgid "Do not show at startup"
+#~ msgstr "Huwag ipakitang muli"
+
+#~ msgid "Open in Browser"
+#~ msgstr "Buksan sa Browser"
+
+#~ msgid "Cancel the Recording"
+#~ msgstr "I-kansela ang pag-record"
+
+#~ msgid "Start Mousaing!"
+#~ msgstr "Magsimulang magmousai!"
+
+#~ msgid "Muted"
+#~ msgstr "Naka-mute"
+
+#~ msgid "_Clear Song History"
+#~ msgstr "_Burahin ang History"
+
+#~ msgid "_Reset Token"
+#~ msgstr "_I-reset ang Token"
+
+#~ msgid "Listening"
+#~ msgstr "Nakikinig"
+
+#~ msgid "No audio detected"
+#~ msgstr "Hindi ma-detect ang audio"
+
+#~ msgid "Please check your audio device."
+#~ msgstr "Paki-check ang iyong audio-device."
+
+#~ msgid "The song was not recognized."
+#~ msgstr "Ang kanta ay hindi makilala."
+
+#~ msgid "Something went wrong."
+#~ msgstr "Parang may mali."
+
+#~ msgid "Sorry!"
+#~ msgstr "Paumanhin!"
+
+#~ msgid "Stop Preview"
+#~ msgstr "Itigil ang Pag-preview"
+
+#~ msgid "Play Preview"
+#~ msgstr "I-preview"
+
+#~ msgid "Copyright 2021 Dave Patrick"
+#~ msgstr "Kopirayt 2021 Dave Patrick"
+
+#~ msgid "Play preview"
+#~ msgstr "I-play ang preview"
+
+#~ msgid ""
+#~ "Note: This uses the API of audd.io, so it is necessary to login to their "
+#~ "site to get more trials."
+#~ msgstr ""
+#~ "Paalala: Gumagamit ito ng API ng audd.io, kaya kinakailangan na maglogin "
+#~ "sa kanilang site upang makatanggap ng mas maraming trials."
+
+#~ msgid "Your microphone may be disconnected."
+#~ msgstr "Baka nakadiskonekta ang iyong mikropono."
+
+#~ msgid "Show Keyboard Shortcuts"
+#~ msgstr "Ipakita ang mga Shortcuts"
+
+#~ msgid "Reset Token"
+#~ msgstr "I-reset Ang Token"
+
+#~ msgid "Keyboard Shortcuts"
+#~ msgstr "Mga keyboard shortcut"
+
+#~ msgid "About Mousai"
+#~ msgstr "Tungkol sa Mousai"
+
+#~ msgid "Sorry"
+#~ msgstr "Paumanhin"
+
+#~ msgid "Open menu"
+#~ msgstr "Buksan ang menu"
+
+#~ msgid "Show keyboard shortcuts"
+#~ msgstr "Ipakita ang mga keyboard shortcut"
+
+#~ msgid "Start listening"
+#~ msgstr "Magsimulang makinig"
+
+#~ msgid "Cancel listening"
+#~ msgstr "Ikansela ang pagkinig"
+
+#~ msgid "Clear song history"
+#~ msgstr "Burahin ang history"
+
+#~ msgid "Reset token value"
+#~ msgstr "I-reset ang token"
+
+#~ msgid "🎸 Store the identified song including the album art in history"
+#~ msgstr "🎸 I-store and na-identify na kanta kasama ang album art"
+
+#~ msgid "🎸 Store the identified song with the Album art in a history."
+#~ msgstr "🎸 Ilagay sa isang history and nadiskubreng kanta."
+
+#~ msgid "🌐 Play the identified song in your browser."
+#~ msgstr "🌐 I-play ang nadiskubreng kanta sa iyong browser."
+
+#~ msgctxt "Do not translate the link, only 'their website'"
+#~ msgid ""
+#~ "Mousai uses audd.io APIs to work, so it is required to login to <a "
+#~ "href=\"https://dashboard.audd.io/\">their website</a> and get a token. "
+#~ "Leaving this blank will give you a few trials per day."
+#~ msgstr ""
+#~ "Ang Mousai ay gumagamit ng API ng audd.io upang gumana, kaya kailangang "
+#~ "maglogin sa <a href=\"https://dashboard.audd.io/\">kanilang website</a> "
+#~ "at kumuha ng token. Kapag wala kang linagay, magkakaroon ka lamang ng "
+#~ "iilang trials kada araw."
+
+#~ msgid "Simple song identifier"
+#~ msgstr "Simpleng pangkilala ng kanta"
+
+#~ msgid ""
+#~ "Mousai is a simple application that can identify song like Shazam. It can "
+#~ "identify both its title and artist."
+#~ msgstr ""
+#~ "Ang Mousai ay isang simpleng aplikasyon kung saan maaari kang makapag-"
+#~ "identify ng mga kanta kagaya ng Shazam. Maaari niyang maidentify ang "
+#~ "parehong pamagat at singer."
+
+#~ msgid "Reset token"
+#~ msgstr "I-reset ang token"
+
+#~ msgid ""
+#~ "Mousai is a simple application that can identify song like Shazam. It "
+#~ "saves the artist, album, and title of the identified song in a JSON file. "
+#~ "Note: This uses the API of audd.io, so it is necessary to login to their "
+#~ "site to get more trials."
+#~ msgstr ""
+#~ "Ang Mousai ay isang simpleng apikasyon na may kakayahang makakilala ng "
+#~ "kanta tulad ng Shazam. Puwede siyang magsave ng kumanta, album, at "
+#~ "pamagat ng kanta sa isang JSON file. Paaalala: Ito ay gumagamit ng API ng "
+#~ "audd.io, kaya kinakailangang mag-login sa kanilang site upang makakuha pa "
+#~ "ng mas madaming trials."
+
+#~ msgctxt "Mousaing is not a real word"
+#~ msgid "Start Mousaing!"
+#~ msgstr "Magsimulang magmousai!"
+
+#~ msgid "Simple song indentifier"
+#~ msgstr "Simpleng pangkilala ng kanta"
+
+#~ msgid "Recording"
+#~ msgstr "Nagrerekord"

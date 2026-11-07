@@ -1,28 +1,31 @@
 # frozen_string_literal: true
 
+require "gettext"
+
 module Mousai
   # Translation helpers.
   #
   # Ported from upstream's src/i18n.rs (itself copied from Fractal), which
   # wraps `gettext`/`ngettext` with named-variable replacement.
   #
-  # The port has no message catalogues of its own — `po/` is not ported — so
-  # `gettext` returns the msgid and `ngettext` picks singular or plural by
-  # count, which is exactly what gettext does for an untranslated locale. The
-  # `{name}` replacement, which is the part the rest of the port depends on, is
-  # ported in full.
+  # The port reuses upstream's `po/` catalogue byte for byte — same domain
+  # ("mousai", from upstream's `meson.project_name()`), same msgids — via the
+  # pure-Ruby `gettext` gem (see po/POTFILES.in and TRANSLATION_PARITY.md).
+  # `rake gettext:mo:update` compiles `po/*.po` into
+  # `locale/<lang>/LC_MESSAGES/mousai.mo`, which `bindtextdomain` below binds
+  # against at runtime.
   module I18n
+    DOMAIN = "mousai"
+    LOCALE_DIR = File.expand_path("../locale", __dir__)
+
+    extend GetText
+    bindtextdomain(DOMAIN, path: LOCALE_DIR)
+
     module_function
 
-    def gettext(msgid) = msgid
+    def gettext(msgid) = _(msgid)
 
-    def ngettext(msgid, msgid_plural, count)
-      if count == 1
-        msgid
-      else
-        msgid_plural
-      end
-    end
+    def ngettext(msgid, msgid_plural, count) = n_(msgid, msgid_plural, count)
 
     # Like `gettext`, but replaces `{name}` with the value given for `name`.
     def gettext_f(msgid, args)

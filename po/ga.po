@@ -1,0 +1,657 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the mousai package.
+# Aindriú Mac Giolla Eoin <aindriu80@gmail.com>, 2024, 2025, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: mousai\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-19 17:29+0800\n"
+"PO-Revision-Date: 2026-04-20 10:09+0000\n"
+"Last-Translator: Aindriú Mac Giolla Eoin <aindriu80@gmail.com>\n"
+"Language-Team: Irish <https://hosted.weblate.org/projects/seadve/mousai/ga/>"
+"\n"
+"Language: ga\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :(n>"
+"6 && n<11) ? 3 : 4;\n"
+"X-Generator: Weblate 5.17.1-dev\n"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:2
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:7 src/about.rs:12
+#: src/main.rs:64
+msgid "Mousai"
+msgstr "Mousai"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:3
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:8
+msgid "Identify songs in seconds"
+msgstr "Amhráin a aithint i soicindí"
+
+#. Translators: These are search terms to find this application. Do NOT translate or localize the semicolons. The list MUST also end with a semicolon.
+#: data/io.github.seadve.Mousai.desktop.in.in:9
+msgid "Shazam;Audio;Music;Song;Recognize;Identify;Recognition;"
+msgstr "Shazam;Fuaim;Ceol;Amhrán;Aithin;Aithnigh;Aithint;"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:6
+msgid "Window width"
+msgstr "Leithead na fuinneoige"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:11
+msgid "Window height"
+msgstr "Airde fuinneoige"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:16
+msgid "Whether the window is maximized"
+msgstr "Cibé an bhfuil an fhuinneog uasmhéadú"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:26
+msgid "Audio source type to use in recording audio"
+msgstr "Cineál foinse fuaime le húsáid chun an fhuaim a thaifeadadh"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:32
+msgid "API token used by AudD recognition"
+msgstr "Comhartha API a úsáideann aitheantas AudD"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:37
+msgid "Legacy (Kept for migration)"
+msgstr "Oidhreacht (Coimeádta le haghaidh imirce)"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:10
+msgid "Discover songs you are aching to know with an easy-to-use interface."
+msgstr ""
+"Faigh amach amhráin a bhfuil tú ag iarraidh a bheith ar an eolas le "
+"comhéadan atá éasca le húsáid."
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:11
+msgid ""
+"Mousai is a simple application that can recognize songs similar to Shazam. "
+"Just click the listen button, and then wait a few seconds. It will magically "
+"return the title and artist of that song!"
+msgstr ""
+"Feidhmchlár simplí é Mousai ar féidir amhráin cosúil le Shazam a aithint. "
+"Cliceáil ar an gcnaipe éisteacht, agus ansin fan cúpla soicind. Tabharfaidh "
+"sé ar ais go draíochta teideal agus ealaíontóir an amhráin sin!"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:12
+msgid ""
+"Note: This uses the API of audd.io, so it is necessary to log in to their "
+"site to get more trials."
+msgstr ""
+"Nóta: Úsáideann sé seo an API de audd.io, mar sin ní mór logáil isteach ar a "
+"suíomh chun níos mó trialacha a fháil."
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:13
+msgid "Why you will love Mousai?"
+msgstr "Cén fáth a mbeidh grá agat do Mousai?"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:15
+msgid "🎵 Identify songs within seconds or save for later when offline"
+msgstr ""
+"🎵 Sainaithin amhráin laistigh de soicind nó sábháil le haghaidh níos déanaí "
+"agus tú as líne"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:16
+msgid "🎙️ Recognize from desktop audio or your microphone"
+msgstr "🎙️ Aithnigh ó fhuaim deisce nó ó do mhicreafón"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:17
+msgid "🎸 Build a repertoire of recognized songs"
+msgstr "🎸 Tóg stór amhrán aitheanta"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:18
+msgid "🎼 Quickly preview the song within the interface"
+msgstr "🎼 Réamhamharc go tapa ar an amhrán laistigh den chomhéadan"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:19
+msgid "🌐 Browse and listen the song from different providers"
+msgstr "🌐 Brabhsáil agus éist leis an amhrán ó sholáthraithe éagsúla"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:20
+msgid "📱 Easy-to-use user interface"
+msgstr "📱 Comhéadan úsáideora atá éasca le húsáid"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:26
+msgid "Mousai Home Page"
+msgstr "Leathanach Baile Mousai"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:30
+msgid "Detailed view of identified song"
+msgstr "Radharc mionsonraithe ar amhrán aitheanta"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:34
+msgid "Listening mode detecting the song"
+msgstr "Mód éisteachta ag braith an amhráin"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:38
+msgid "Recognized songs"
+msgstr "Amhráin aitheanta"
+
+#: data/resources/ui/history_view.ui:6
+msgid "_Preferences"
+msgstr "_Roghanna"
+
+#: data/resources/ui/history_view.ui:10
+msgid "_Keyboard Shortcuts"
+msgstr "_Aicearraí méarchláir"
+
+#: data/resources/ui/history_view.ui:14
+msgid "_About Mousai"
+msgstr "_ Maidir le Mousai"
+
+#: data/resources/ui/history_view.ui:22
+msgid "Select _All"
+msgstr "Roghnaigh _Gach"
+
+#: data/resources/ui/history_view.ui:26
+msgid "_Unselect All"
+msgstr "_Díroghnaigh Uile"
+
+#: data/resources/ui/history_view.ui:42
+msgid "Home"
+msgstr "Baile"
+
+#: data/resources/ui/history_view.ui:52
+msgid "Recognize Song"
+msgstr "Amhrán a aithint"
+
+#: data/resources/ui/history_view.ui:53 data/resources/ui/song_page.ui:109
+msgid "Listen"
+msgstr "Éist"
+
+#: data/resources/ui/history_view.ui:65
+msgid "Main Menu"
+msgstr "Príomh-Roghchlár"
+
+#: data/resources/ui/history_view.ui:73 src/window/song_tile.rs:361
+msgid "Select"
+msgstr "Roghnaigh"
+
+#: data/resources/ui/history_view.ui:80 data/resources/ui/history_view.ui:103
+msgid "Search Songs"
+msgstr "Amhráin cuardaigh"
+
+#: data/resources/ui/history_view.ui:96
+msgid "Cancel Selection"
+msgstr "Cealaigh Roghnú"
+
+#: data/resources/ui/history_view.ui:97 data/resources/ui/recognizer_view.ui:14
+msgid "Cancel"
+msgstr "Cealaigh"
+
+#: data/resources/ui/history_view.ui:117
+msgid "Search songs"
+msgstr "Amhráin cuardaigh"
+
+#: data/resources/ui/history_view.ui:140
+msgid "Start Recognizing Songs!"
+msgstr "Tosaigh ag Aithint Amhráin!"
+
+#: data/resources/ui/history_view.ui:141
+msgid "Click the listen button to start"
+msgstr "Cliceáil ar an gcnaipe éisteacht le tosú"
+
+#: data/resources/ui/history_view.ui:150
+msgid "No Results"
+msgstr "Uimh Torthaí"
+
+#: data/resources/ui/lyrics_page.ui:10 data/resources/ui/song_page.ui:140
+msgid "Lyrics"
+msgstr "Liricí"
+
+#: data/resources/ui/preferences_dialog.ui:8
+msgid "General"
+msgstr "Ginearálta"
+
+#: data/resources/ui/preferences_dialog.ui:11
+msgid "Audio Source"
+msgstr "Foinse Fuaime"
+
+#: data/resources/ui/preferences_dialog.ui:12
+msgid "Device used for listening"
+msgstr "Gléas a úsáidtear le haghaidh éisteachta"
+
+#: data/resources/ui/preferences_dialog.ui:19
+#: src/window/external_link_tile.rs:64
+msgid "AudD"
+msgstr "AudD"
+
+#: data/resources/ui/preferences_dialog.ui:20
+msgid ""
+"You can get yourself an API token from <a href=\"https://dashboard.audd.io/"
+"\">audd.io</a>. Leaving this blank will give you a few trials per day"
+msgstr ""
+"Is féidir leat comhartha API a fháil duit féin ó <a href=\"https://"
+"dashboard.audd.io/\">audd.io</a>. Má fhágtar an bán seo gheobhaidh tú cúpla "
+"triail in aghaidh an lae"
+
+#: data/resources/ui/preferences_dialog.ui:23
+msgid "API Token"
+msgstr "Comhartha API"
+
+#: data/resources/ui/recognizer_status.ui:17
+msgid "Offline Mode Enabled"
+msgstr "Mód As Líne Cumasaithe"
+
+#: data/resources/ui/recognizer_status.ui:44
+msgid "Show Offline Mode Recognition Results"
+msgstr "Taispeáin Torthaí Aitheanta Mód As Líne"
+
+#: data/resources/ui/recognizer_view.ui:13
+msgid "Cancel Listening"
+msgstr "Cealaigh Éisteacht"
+
+#: data/resources/ui/recognizer_view.ui:49
+msgid "Offline Mode"
+msgstr "Mód As Líne"
+
+#: data/resources/ui/shortcuts.ui:6
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Ginearálta"
+
+#: data/resources/ui/shortcuts.ui:9
+msgctxt "shortcut window"
+msgid "Open Main Menu"
+msgstr "Oscail Príomh-Roghchlár"
+
+#: data/resources/ui/shortcuts.ui:15
+msgctxt "shortcut window"
+msgid "Search"
+msgstr "Cuardach"
+
+#: data/resources/ui/shortcuts.ui:21
+msgctxt "shortcut window"
+msgid "Show Preferences"
+msgstr "Taispeáin Roghanna"
+
+#: data/resources/ui/shortcuts.ui:27
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Taispeáin Aicearraí"
+
+#: data/resources/ui/shortcuts.ui:33
+msgctxt "shortcut window"
+msgid "Close Window"
+msgstr "Dún an Fhuinneog"
+
+#: data/resources/ui/shortcuts.ui:39
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Scoir"
+
+#: data/resources/ui/shortcuts.ui:47
+msgctxt "shortcut window"
+msgid "Controls"
+msgstr "Rialuithe"
+
+#: data/resources/ui/shortcuts.ui:50
+msgctxt "shortcut window"
+msgid "Toggle Listen"
+msgstr "Scoránaigh Éist"
+
+#: data/resources/ui/shortcuts.ui:56
+msgctxt "shortcut window"
+msgid "Toggle Playback"
+msgstr "Scoránaigh Athsheinm"
+
+#: data/resources/ui/song_bar.ui:85
+msgid "Show Song Information"
+msgstr "Taispeáin Eolas Amhrán"
+
+#: data/resources/ui/song_bar.ui:145
+msgid "Stop"
+msgstr "Stad"
+
+#: data/resources/ui/song_page.ui:13
+msgid "Remove From History"
+msgstr "Bain Ó Stair"
+
+#: data/resources/ui/song_page.ui:19
+msgid "Copy"
+msgstr "Cóip"
+
+#: data/resources/ui/song_page.ui:122
+msgid "Information"
+msgstr "Eolas"
+
+#: data/resources/ui/song_page.ui:125
+msgid "Last Heard"
+msgstr "Cloistear go deireanach"
+
+#: data/resources/ui/song_page.ui:130
+msgid "Album"
+msgstr "Albam"
+
+#: data/resources/ui/song_page.ui:135
+msgid "Release Date"
+msgstr "Dáta Eisiúna"
+
+#: data/resources/ui/song_tile.ui:30
+msgid "New"
+msgstr "Nua"
+
+#. Translators: Replace "translator-credits" with your names. Put a comma between.
+#: src/about.rs:18
+msgid "translator-credits"
+msgstr "aistritheoir-creidmheasa"
+
+#: src/about.rs:27
+msgid "Donate"
+msgstr "Tabhair Síntiús"
+
+#: src/about.rs:28
+msgid "GitHub"
+msgstr "GitHub"
+
+#: src/about.rs:30
+msgid "Translate"
+msgstr "Aistrigh"
+
+#: src/application.rs:209
+msgid "Critical Database Error"
+msgstr "Earráid Chriticiúil Bunachar Sonraí"
+
+#: src/application.rs:210
+msgid ""
+"Sorry, a critical database error has occurred. This is likely caused by a "
+"tampered or corrupted database. You can try clearing application data. "
+"However, this is not recommended and will delete all your songs and saved "
+"recordings.\n"
+"\n"
+"To report this issue, please launch Mousai in the terminal to include the "
+"logs and submit the bug report to the <a href=\"https://github.com/SeaDve/"
+"Mousai/issues/\">issue page</a>"
+msgstr ""
+"Ár leithscéal, tharla earráid chriticiúil sa bhunachar sonraí. Is dócha gur "
+"bunachar sonraí truaillithe nó curtha isteach ba chúis leis seo. Is féidir "
+"leat triail a bhaint as sonraí feidhmchláir a ghlanadh. Mar sin féin, ní "
+"mholtar é seo agus scriosfaidh sé do chuid amhrán agus taifeadtaí sábháilte "
+"go léir.\n"
+"\n"
+"Chun an tsaincheist seo a thuairisciú, seol Mousai sa teirminéal chun na "
+"logaí a chur san áireamh agus cuir an tuairisc fabht chuig an <a "
+"href=\"https://github.com/SeaDve/Mousai/issues/\">leathanach eisiúna</a>"
+
+#: src/application.rs:215
+msgid "Quit"
+msgstr "Scoir"
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:31
+msgid "today at %R"
+msgstr "inniu ag %R"
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:34
+msgid "yesterday at %R"
+msgstr "inné ag %R"
+
+#: src/preferences_dialog.rs:103
+msgid "Microphone"
+msgstr "Micreafón"
+
+#: src/preferences_dialog.rs:104
+msgid "Desktop Audio"
+msgstr "Fuaime Deasc"
+
+#: src/recognizer/provider/error.rs:50
+msgid "No Matches Found"
+msgstr "Níor aimsíodh aon mheaitseáil"
+
+#: src/recognizer/provider/error.rs:51
+msgid "Cannot Create Fingerprint From Audio"
+msgstr "Ní Féidir Méarlorg a Chruthú ó Fhuaim Amach"
+
+#: src/recognizer/provider/error.rs:52
+msgid "Invalid Token Given"
+msgstr "Comhartha Neamhbhailí tugtha"
+
+#: src/recognizer/provider/error.rs:53
+msgid "Token Limit Reached"
+msgstr "Baineadh Teorainn Chomhartha amach"
+
+#: src/recognizer/provider/error.rs:54
+msgid "Cannot Connect to the Server"
+msgstr "Ní féidir Ceangal leis an bhFreastalaí"
+
+#: src/recognizer/provider/error.rs:55
+msgid "Received Other Permanent Error"
+msgstr "Fuarthas Earráid Bhuan Eile"
+
+#: src/window/external_link_tile.rs:59
+msgid "Apple Music"
+msgstr "Ceol Apple"
+
+#: src/window/external_link_tile.rs:60
+msgid "Browse on Apple Music"
+msgstr "Brabhsáil ar Apple Music"
+
+#: src/window/external_link_tile.rs:65
+msgid "Browse on AudD"
+msgstr "Brabhsáil ar AudD"
+
+#: src/window/external_link_tile.rs:69
+msgid "Spotify"
+msgstr "Spotify"
+
+#: src/window/external_link_tile.rs:70
+msgid "Listen on Spotify"
+msgstr "Éist ar Spotify"
+
+#: src/window/external_link_tile.rs:74
+msgid "YouTube"
+msgstr "YouTube"
+
+#: src/window/external_link_tile.rs:75
+msgid "Search on YouTube"
+msgstr "Cuardaigh ar YouTube"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/external_link_tile.rs:145
+msgid "Failed to launch {key}"
+msgstr "Theip ar sheoladh {key}"
+
+#: src/window/history_view.rs:147 src/window/song_page.rs:80
+msgid "Copied to clipboard"
+msgstr "Cóipeáladh chuig an ngearrthaisce"
+
+#: src/window/history_view.rs:160
+msgid "Failed to remove selected songs"
+msgstr "Theip ar bhaint na n-amhrán roghnaithe"
+
+#: src/window/history_view.rs:357
+msgid "Failed to remove song"
+msgstr "Theip ar an amhrán a bhaint"
+
+#: src/window/history_view.rs:562
+msgid "Failed to show recognizer results"
+msgstr "Theip ar thorthaí an aitheantais a thaispeáint"
+
+#: src/window/history_view.rs:669
+msgid "_Undo"
+msgstr "_ Cealaigh"
+
+#: src/window/history_view.rs:681
+msgid "Failed to undo"
+msgstr "Theip ar chealú"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:706
+msgid "Removed {n_removed} song"
+msgid_plural "Removed {n_removed} songs"
+msgstr[0] "Baineadh {n_removed} amhrán"
+msgstr[1] "Baineadh {n_removed} amhrán"
+msgstr[2] "Baineadh {n_removed} amhrán"
+msgstr[3] "Baineadh {n_removed} amhrán"
+msgstr[4] "Baineadh {n_removed} amhrán"
+
+#: src/window/history_view.rs:829
+msgid "Select items"
+msgstr "Roghnaigh míreanna"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:833
+msgid "Selected {selection_size} song"
+msgid_plural "Selected {selection_size} songs"
+msgstr[0] "Amhrán {selection_size} roghnaithe"
+msgstr[1] "Amhráin {selection_size} roghnaithe"
+msgstr[2] "Amhráin {selection_size} roghnaithe"
+msgstr[3] "Amhráin {selection_size} roghnaithe"
+msgstr[4] "Amhráin {selection_size} roghnaithe"
+
+#: src/window/history_view.rs:843
+msgid "Copy Song"
+msgid_plural "Copy Songs"
+msgstr[0] "Cóipeáil Amhrán"
+msgstr[1] "Amhráin a chóipeáil"
+msgstr[2] "Amhráin a chóipeáil"
+msgstr[3] "Amhráin a chóipeáil"
+msgstr[4] "Amhráin a chóipeáil"
+
+#: src/window/history_view.rs:850
+msgid "Remove Song From History"
+msgid_plural "Remove Songs From History"
+msgstr[0] "Íoslódáil an t-amhrán as an stair"
+msgstr[1] "Amhráin a íoslódáil ón stair"
+msgstr[2] "Amhráin a íoslódáil ón stair"
+msgstr[3] "Amhráin a íoslódáil ón stair"
+msgstr[4] "Amhráin a íoslódáil ón stair"
+
+#: src/window/mod.rs:214
+msgid "Failed to insert song to history"
+msgstr "Theip ar amhrán a chur isteach sa stair"
+
+#: src/window/mod.rs:262
+msgid "Please open an issue on GitHub and provide the necessary information"
+msgstr ""
+"Oscail ceist le do thoil ar GitHub agus cuir an fhaisnéis riachtanach ar fáil"
+
+#: src/window/mod.rs:265 src/window/mod.rs:297
+msgid "No, Thanks"
+msgstr "Níl, Go raibh maith agat"
+
+#: src/window/mod.rs:267
+msgid "Open an Issue"
+msgstr "Oscail Eagrán"
+
+#: src/window/mod.rs:294
+msgid ""
+"Try moving closer to the source or using a different excerpt of the song"
+msgstr ""
+"Bain triail as bogadh níos gaire don fhoinse nó úsáid a bhaint as sliocht "
+"eile den amhrán"
+
+#: src/window/mod.rs:299
+msgid "Try Again"
+msgstr "Bain triail eile as"
+
+#: src/window/mod.rs:334
+msgid "Recording Saved"
+msgstr "Taifeadadh Sábháilte"
+
+#: src/window/mod.rs:342
+msgid "The result will be available when you're back online"
+msgstr "Beidh an toradh ar fáil nuair a bheidh tú ar ais ar líne"
+
+#: src/window/mod.rs:345
+msgid "Ok, Got It"
+msgstr "Ceart go leor, Fuair mé"
+
+#: src/window/mod.rs:355
+msgid ""
+"The result will be available when your token limit is reset. Wait until the "
+"limit is reset or open preferences and try setting a different token"
+msgstr ""
+"Beidh an toradh ar fáil nuair a athshocrófar do theorainn chomharthaí. Fan "
+"go dtí go n-athshocraítear an teorainn nó go n-osclaítear sainroghanna agus "
+"bain triail as comhartha eile a shocrú"
+
+#: src/window/mod.rs:358
+msgid "I'll Wait"
+msgstr "Fanfaidh mé"
+
+#: src/window/mod.rs:362
+msgid ""
+"The result will be available when your token is replaced with a valid one. "
+"Open preferences and try setting a different token"
+msgstr ""
+"Beidh an toradh ar fáil nuair a chuirfear ceann bailí in ionad do "
+"chomhartha. Oscail sainroghanna agus bain triail as comhartha eile a shocrú"
+
+#: src/window/mod.rs:365
+msgid "Later"
+msgstr "Níos déanaí"
+
+#: src/window/mod.rs:370
+msgid "Open Preferences"
+msgstr "Roghanna Oscailte"
+
+#: src/window/mod.rs:466
+msgid "An error occurred in the player"
+msgstr "Tharla earráid san imreoir"
+
+#: src/window/playback_button.rs:97
+msgid "Play"
+msgstr "Imirt"
+
+#: src/window/playback_button.rs:103
+msgid "Pause"
+msgstr "Sos"
+
+#: src/window/recognized_page.rs:151
+msgid "Recognized Song"
+msgid_plural "Recognized Songs"
+msgstr[0] "Amhrán Aitheanta"
+msgstr[1] "Amhráin Aitheanta"
+msgstr[2] "Amhráin Aitheanta"
+msgstr[3] "Amhráin Aitheanta"
+msgstr[4] "Amhráin Aitheanta"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognized_page.rs:157
+msgid "Recognized {n_songs} New Song"
+msgid_plural "Recognized {n_songs} New Songs"
+msgstr[0] "Aitheanta {n_songs} Amhrán Nua"
+msgstr[1] "Aitheanta {n_songs} Amhráin Nua"
+msgstr[2] "Aitheanta {n_songs} Amhráin Nua"
+msgstr[3] "Aitheanta {n_songs} Amhráin Nua"
+msgstr[4] "Aitheanta {n_songs} Amhráin Nua"
+
+#: src/window/recognized_page.rs:163
+msgid "This song was recognized from your saved recording"
+msgid_plural "These songs were recognized from your saved recordings"
+msgstr[0] "Aithníodh an t-amhrán seo ó do thaifeadadh sábháilte"
+msgstr[1] "Aithníodh na hamhráin seo ó do thaifeadtaí sábháilte"
+msgstr[2] "Aithníodh na hamhráin seo ó do thaifeadtaí sábháilte"
+msgstr[3] "Aithníodh na hamhráin seo ó do thaifeadtaí sábháilte"
+msgstr[4] "Aithníodh na hamhráin seo ó do thaifeadtaí sábháilte"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognizer_status.rs:172
+msgid "Recognized {n_successful} Out Of {total_minus_failed}"
+msgstr "Aitheanta {n_successful} As {total_minus_failed}"
+
+#: src/window/recognizer_view.rs:149
+msgid "Listening…"
+msgstr "Ag éisteacht…"
+
+#: src/window/recognizer_view.rs:154
+msgid "Recognizing…"
+msgstr "Á aithint…"
+
+#: src/window/song_page.rs:374
+msgid "Unknown"
+msgstr "Anaithnid"
+
+#: src/window/song_tile.rs:359
+msgid "Unselect"
+msgstr "Díroghnaigh"
+
+#~ msgid "Donate (Buy Me a Coffee)"
+#~ msgstr "Deonaigh (Ceannaigh caife dom)"
+
+#~ msgid "Select _None"
+#~ msgstr "Roghnaigh _Níl"

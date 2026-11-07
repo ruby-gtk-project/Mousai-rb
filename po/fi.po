@@ -1,0 +1,977 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the mousai package.
+# Jiri Grönroos <jiri.gronroos@iki.fi>, 2021, 2022, 2023, 2024, 2025, 2026.
+# Jiri Nakola <github@nakola.fi>, 2022, 2023.
+# Ricky Tigg <ricky.tigg@gmail.com>, 2025.
+# Linus Virtanen <linus.virtanen@protonmail.com>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: mousai\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-19 17:29+0800\n"
+"PO-Revision-Date: 2026-06-05 06:45+0000\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
+"Language-Team: Finnish <https://hosted.weblate.org/projects/seadve/mousai/"
+"fi/>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2026.6\n"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:2
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:7 src/about.rs:12
+#: src/main.rs:64
+msgid "Mousai"
+msgstr "Mousai"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:3
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:8
+msgid "Identify songs in seconds"
+msgstr "Tunnista kappaleet sekunneissa"
+
+#. Translators: These are search terms to find this application. Do NOT translate or localize the semicolons. The list MUST also end with a semicolon.
+#: data/io.github.seadve.Mousai.desktop.in.in:9
+msgid "Shazam;Audio;Music;Song;Recognize;Identify;Recognition;"
+msgstr "Shazam;Audio;Music;Song;Recognize;Identify;Recognition;tunnista;tunnistus;musiikki;kappale;"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:6
+msgid "Window width"
+msgstr "Ikkunan leveys"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:11
+msgid "Window height"
+msgstr "Ikkunan korkeus"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:16
+msgid "Whether the window is maximized"
+msgstr "Onko ikkuna suurennettu"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:26
+msgid "Audio source type to use in recording audio"
+msgstr "Äänilähteen tyyppi ääntä tallentaessa"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:32
+msgid "API token used by AudD recognition"
+msgstr "AudD-tunnistuksen käyttämä API-poletti"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:37
+msgid "Legacy (Kept for migration)"
+msgstr "Legacy (säilytetty siirtoa varten)"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:10
+msgid "Discover songs you are aching to know with an easy-to-use interface."
+msgstr ""
+"Tunnista kappaleet, joiden tietoja kovasti kaipaat, helppokäyttöisen "
+"käyttöliittymän avulla."
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:11
+msgid ""
+"Mousai is a simple application that can recognize songs similar to Shazam. "
+"Just click the listen button, and then wait a few seconds. It will magically "
+"return the title and artist of that song!"
+msgstr ""
+"Mousai on yksinkertainen sovellus, joka voi tunnistaa kappaleita Shazamin "
+"tapaan. Napsauta Kuuntele-painiketta ja odota muutama sekunti. Saat "
+"kappaleen ja esittäjän nimen tietoosi!"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:12
+msgid ""
+"Note: This uses the API of audd.io, so it is necessary to log in to their "
+"site to get more trials."
+msgstr ""
+"Huomio: Sovellus käyttää audd.io:n rajapintaa, joten kirjautuminen kyseiseen "
+"palveluun on tarpeen, jotta tunnistuskertoja on mahdollista saada lisää."
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:13
+msgid "Why you will love Mousai?"
+msgstr "Miksi tulet pitämään Mousaista?"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:15
+msgid "🎵 Identify songs within seconds or save for later when offline"
+msgstr ""
+"🎵 Tunnista kappaleet sekunneissa tai ilman verkkoyhteyttä tallenna "
+"myöhempää käyttöä varten"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:16
+msgid "🎙️ Recognize from desktop audio or your microphone"
+msgstr "🎙️ Tunnista tietokoneen äänilähteestä tai mikrofonista"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:17
+msgid "🎸 Build a repertoire of recognized songs"
+msgstr "🎸 Rakenna luettelo tunnistetuista kappaleista"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:18
+msgid "🎼 Quickly preview the song within the interface"
+msgstr "🎼 Tutustu pikaisesti kappaleeseen käyttöliittymässä"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:19
+msgid "🌐 Browse and listen the song from different providers"
+msgstr "🌐 Selaa ja kuuntele kappaleita useilta eri palveluntarjoajilta"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:20
+msgid "📱 Easy-to-use user interface"
+msgstr "📱 Helppokäyttöinen käyttöliittymä"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:26
+msgid "Mousai Home Page"
+msgstr "Mousain päänäkymä"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:30
+msgid "Detailed view of identified song"
+msgstr "Tunnistetun kappaleen näkymä"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:34
+msgid "Listening mode detecting the song"
+msgstr "Kuuntelutila havaitsee kappaletta"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:38
+msgid "Recognized songs"
+msgstr "Tunnistetut kappaleet"
+
+#: data/resources/ui/history_view.ui:6
+msgid "_Preferences"
+msgstr "_Asetukset"
+
+#: data/resources/ui/history_view.ui:10
+msgid "_Keyboard Shortcuts"
+msgstr "_Pikanäppäimet"
+
+#: data/resources/ui/history_view.ui:14
+msgid "_About Mousai"
+msgstr "_Tietoja - Mousai"
+
+#: data/resources/ui/history_view.ui:22
+msgid "Select _All"
+msgstr "Valitse _kaikki"
+
+#: data/resources/ui/history_view.ui:26
+msgid "_Unselect All"
+msgstr "_Älä valitse mitään"
+
+#: data/resources/ui/history_view.ui:42
+msgid "Home"
+msgstr "Koti"
+
+#: data/resources/ui/history_view.ui:52
+msgid "Recognize Song"
+msgstr "Tunnista kappale"
+
+#: data/resources/ui/history_view.ui:53 data/resources/ui/song_page.ui:109
+msgid "Listen"
+msgstr "Kuuntele"
+
+#: data/resources/ui/history_view.ui:65
+msgid "Main Menu"
+msgstr "Päävalikko"
+
+#: data/resources/ui/history_view.ui:73 src/window/song_tile.rs:361
+msgid "Select"
+msgstr "Valitse"
+
+#: data/resources/ui/history_view.ui:80 data/resources/ui/history_view.ui:103
+msgid "Search Songs"
+msgstr "Etsi kappaleita"
+
+#: data/resources/ui/history_view.ui:96
+msgid "Cancel Selection"
+msgstr "Peru valinta"
+
+#: data/resources/ui/history_view.ui:97 data/resources/ui/recognizer_view.ui:14
+msgid "Cancel"
+msgstr "Peru"
+
+#: data/resources/ui/history_view.ui:117
+msgid "Search songs"
+msgstr "Etsi kappaleita"
+
+#: data/resources/ui/history_view.ui:140
+msgid "Start Recognizing Songs!"
+msgstr "Aloita kappaleiden tunnistaminen!"
+
+#: data/resources/ui/history_view.ui:141
+msgid "Click the listen button to start"
+msgstr "Napsauta Kuuntele-painiketta aloittaaksesi"
+
+#: data/resources/ui/history_view.ui:150
+msgid "No Results"
+msgstr "Ei tuloksia"
+
+#: data/resources/ui/lyrics_page.ui:10 data/resources/ui/song_page.ui:140
+msgid "Lyrics"
+msgstr "Sanoitukset"
+
+#: data/resources/ui/preferences_dialog.ui:8
+msgid "General"
+msgstr "Yleiset"
+
+#: data/resources/ui/preferences_dialog.ui:11
+msgid "Audio Source"
+msgstr "Äänilähde"
+
+#: data/resources/ui/preferences_dialog.ui:12
+msgid "Device used for listening"
+msgstr "Kuunteluun käytettävä laite"
+
+#: data/resources/ui/preferences_dialog.ui:19
+#: src/window/external_link_tile.rs:64
+msgid "AudD"
+msgstr "AudD"
+
+#: data/resources/ui/preferences_dialog.ui:20
+msgid ""
+"You can get yourself an API token from <a href=\"https://dashboard.audd.io/"
+"\">audd.io</a>. Leaving this blank will give you a few trials per day"
+msgstr ""
+"Saat API-poletin osoitteesta <a href=\"https://dashboard.audd.io/\">audd.io</"
+"a>. Jos jätät tämän tyhjäksi, voit tunnistaa vain muutaman kappaleen "
+"päivittäin"
+
+#: data/resources/ui/preferences_dialog.ui:23
+msgid "API Token"
+msgstr "API-poletti"
+
+#: data/resources/ui/recognizer_status.ui:17
+msgid "Offline Mode Enabled"
+msgstr "Yhteydetön tila käytössä"
+
+#: data/resources/ui/recognizer_status.ui:44
+msgid "Show Offline Mode Recognition Results"
+msgstr "Näytä yhteydettömän tilan tunnistuksen tulokset"
+
+#: data/resources/ui/recognizer_view.ui:13
+msgid "Cancel Listening"
+msgstr "Peru kuuntelu"
+
+#: data/resources/ui/recognizer_view.ui:49
+msgid "Offline Mode"
+msgstr "Yhteydetön tila"
+
+#: data/resources/ui/shortcuts.ui:6
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Yleiset"
+
+#: data/resources/ui/shortcuts.ui:9
+msgctxt "shortcut window"
+msgid "Open Main Menu"
+msgstr "Avaa päävalikko"
+
+#: data/resources/ui/shortcuts.ui:15
+msgctxt "shortcut window"
+msgid "Search"
+msgstr "Etsi"
+
+#: data/resources/ui/shortcuts.ui:21
+msgctxt "shortcut window"
+msgid "Show Preferences"
+msgstr "Näytä asetukset"
+
+#: data/resources/ui/shortcuts.ui:27
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Näytä pikavalinnat"
+
+#: data/resources/ui/shortcuts.ui:33
+msgctxt "shortcut window"
+msgid "Close Window"
+msgstr "Sulje ikkuna"
+
+#: data/resources/ui/shortcuts.ui:39
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Lopeta"
+
+#: data/resources/ui/shortcuts.ui:47
+msgctxt "shortcut window"
+msgid "Controls"
+msgstr "Ohjaimet"
+
+#: data/resources/ui/shortcuts.ui:50
+msgctxt "shortcut window"
+msgid "Toggle Listen"
+msgstr "Kuuntelu päällä/pois"
+
+#: data/resources/ui/shortcuts.ui:56
+msgctxt "shortcut window"
+msgid "Toggle Playback"
+msgstr "Toisto päällä/pois"
+
+#: data/resources/ui/song_bar.ui:85
+msgid "Show Song Information"
+msgstr "Näytä kappaleen tiedot"
+
+#: data/resources/ui/song_bar.ui:145
+msgid "Stop"
+msgstr "Pysäytä"
+
+#: data/resources/ui/song_page.ui:13
+msgid "Remove From History"
+msgstr "Poista historiasta"
+
+#: data/resources/ui/song_page.ui:19
+msgid "Copy"
+msgstr "Kopioi"
+
+#: data/resources/ui/song_page.ui:122
+msgid "Information"
+msgstr "Tiedot"
+
+#: data/resources/ui/song_page.ui:125
+msgid "Last Heard"
+msgstr "Viimeksi kuultu"
+
+#: data/resources/ui/song_page.ui:130
+msgid "Album"
+msgstr "Albumi"
+
+#: data/resources/ui/song_page.ui:135
+msgid "Release Date"
+msgstr "Julkaisupäivä"
+
+#: data/resources/ui/song_tile.ui:30
+msgid "New"
+msgstr "Uusi"
+
+#. Translators: Replace "translator-credits" with your names. Put a comma between.
+#: src/about.rs:18
+msgid "translator-credits"
+msgstr "Jiri Grönroos"
+
+#: src/about.rs:27
+msgid "Donate"
+msgstr "Lahjoita"
+
+#: src/about.rs:28
+msgid "GitHub"
+msgstr "GitHub"
+
+#: src/about.rs:30
+msgid "Translate"
+msgstr "Käännä"
+
+#: src/application.rs:209
+msgid "Critical Database Error"
+msgstr "Kriittinen tietokantavirhe"
+
+#: src/application.rs:210
+msgid ""
+"Sorry, a critical database error has occurred. This is likely caused by a "
+"tampered or corrupted database. You can try clearing application data. "
+"However, this is not recommended and will delete all your songs and saved "
+"recordings.\n"
+"\n"
+"To report this issue, please launch Mousai in the terminal to include the "
+"logs and submit the bug report to the <a href=\"https://github.com/SeaDve/"
+"Mousai/issues/\">issue page</a>"
+msgstr ""
+"Tapahtui kriittinen tietokantavihe. Tämä johtuu todennäköisesti "
+"peukaloidusta tai vioittuneesta tietokannasta. Voit yrittää tyhjentää "
+"sovellustiedot. Tätä ei kuitenkaan suositella, ja se poistaa kaikki "
+"kappaleesi ja tallennetut tallenteet.\n"
+"\n"
+"Jos haluat ilmoittaa tästä ongelmasta, käynnistä Mousai päätteessä "
+"sisällyttääksesi lokit ja lähetä vikaraportti <a href=\"https://github.com/"
+"SeaDve/Mousai/issues/\">ongelmasivulle</a>"
+
+#: src/application.rs:215
+msgid "Quit"
+msgstr "Lopeta"
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:31
+msgid "today at %R"
+msgstr "tänään %R"
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:34
+msgid "yesterday at %R"
+msgstr "eilen %R"
+
+#: src/preferences_dialog.rs:103
+msgid "Microphone"
+msgstr "Mikrofoni"
+
+#: src/preferences_dialog.rs:104
+msgid "Desktop Audio"
+msgstr "Tietokoneen ääni"
+
+#: src/recognizer/provider/error.rs:50
+msgid "No Matches Found"
+msgstr "Tuloksia ei löytynyt"
+
+#: src/recognizer/provider/error.rs:51
+msgid "Cannot Create Fingerprint From Audio"
+msgstr "Äänestä ei voi luoda sormenjälkeä"
+
+#: src/recognizer/provider/error.rs:52
+msgid "Invalid Token Given"
+msgstr "Virheellinen poletti"
+
+#: src/recognizer/provider/error.rs:53
+msgid "Token Limit Reached"
+msgstr "Polettiraja tuli vastaan"
+
+#: src/recognizer/provider/error.rs:54
+msgid "Cannot Connect to the Server"
+msgstr "Palvelimeen ei voi yhdistää"
+
+#: src/recognizer/provider/error.rs:55
+msgid "Received Other Permanent Error"
+msgstr "Vastaanotettiin muu pysyvä virhe"
+
+#: src/window/external_link_tile.rs:59
+msgid "Apple Music"
+msgstr "Apple Music"
+
+#: src/window/external_link_tile.rs:60
+msgid "Browse on Apple Music"
+msgstr "Selaa Apple Musicissa"
+
+#: src/window/external_link_tile.rs:65
+msgid "Browse on AudD"
+msgstr "Selaa AudD:ssä"
+
+#: src/window/external_link_tile.rs:69
+msgid "Spotify"
+msgstr "Spotify"
+
+#: src/window/external_link_tile.rs:70
+msgid "Listen on Spotify"
+msgstr "Kuuntele Spotifyssa"
+
+#: src/window/external_link_tile.rs:74
+msgid "YouTube"
+msgstr "YouTube"
+
+#: src/window/external_link_tile.rs:75
+msgid "Search on YouTube"
+msgstr "Etsi YouTubesta"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/external_link_tile.rs:145
+msgid "Failed to launch {key}"
+msgstr "{key}:n käynnistäminen epäonnistui"
+
+#: src/window/history_view.rs:147 src/window/song_page.rs:80
+msgid "Copied to clipboard"
+msgstr "Kopioitu leikepöydälle"
+
+#: src/window/history_view.rs:160
+msgid "Failed to remove selected songs"
+msgstr "Valittujen kappaleiden poistaminen epäonnistui"
+
+#: src/window/history_view.rs:357
+msgid "Failed to remove song"
+msgstr "Kappaleen poistaminen epäonnistui"
+
+#: src/window/history_view.rs:562
+msgid "Failed to show recognizer results"
+msgstr "Tunnistimen tulosten näyttäminen epäonnistui"
+
+#: src/window/history_view.rs:669
+msgid "_Undo"
+msgstr "_Kumoa"
+
+#: src/window/history_view.rs:681
+msgid "Failed to undo"
+msgstr "Kumoaminen epäonnistui"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:706
+msgid "Removed {n_removed} song"
+msgid_plural "Removed {n_removed} songs"
+msgstr[0] "Poistettu {n_removed} kappale"
+msgstr[1] "Poistettu {n_removed} kappaletta"
+
+#: src/window/history_view.rs:829
+msgid "Select items"
+msgstr "Valitse kohteet"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:833
+msgid "Selected {selection_size} song"
+msgid_plural "Selected {selection_size} songs"
+msgstr[0] "Valittu {selection_size} kappale"
+msgstr[1] "Valittu {selection_size} kappaletta"
+
+#: src/window/history_view.rs:843
+msgid "Copy Song"
+msgid_plural "Copy Songs"
+msgstr[0] "Kopioi kappale"
+msgstr[1] "Kopioi kappaleet"
+
+#: src/window/history_view.rs:850
+msgid "Remove Song From History"
+msgid_plural "Remove Songs From History"
+msgstr[0] "Poista kappale historiasta"
+msgstr[1] "Poista kappaleet historiasta"
+
+#: src/window/mod.rs:214
+msgid "Failed to insert song to history"
+msgstr "Kappaleen asettaminen historiaan epäonnistui"
+
+#: src/window/mod.rs:262
+msgid "Please open an issue on GitHub and provide the necessary information"
+msgstr "Avaa issue GitHubiin ja anna tarvittavat tiedot"
+
+#: src/window/mod.rs:265 src/window/mod.rs:297
+msgid "No, Thanks"
+msgstr "Ei"
+
+#: src/window/mod.rs:267
+msgid "Open an Issue"
+msgstr "Avaa issue"
+
+#: src/window/mod.rs:294
+msgid ""
+"Try moving closer to the source or using a different excerpt of the song"
+msgstr "Yritä siirtyä lähemmäksi lähdettä tai tunnistaa eri kohta kappaleesta"
+
+#: src/window/mod.rs:299
+msgid "Try Again"
+msgstr "Yritä uudelleen"
+
+#: src/window/mod.rs:334
+msgid "Recording Saved"
+msgstr "Nauhoitus tallennettu"
+
+#: src/window/mod.rs:342
+msgid "The result will be available when you're back online"
+msgstr "Tulos näytetään, kun olet taas yhteydessä verkkoon"
+
+#: src/window/mod.rs:345
+msgid "Ok, Got It"
+msgstr "Selvä"
+
+#: src/window/mod.rs:355
+msgid ""
+"The result will be available when your token limit is reset. Wait until the "
+"limit is reset or open preferences and try setting a different token"
+msgstr ""
+"Tulos näytetään, kun polettiraja nollautuu. Odota kunnes raja nollautuu tai "
+"avaa asetukset ja aseta eri poletti"
+
+#: src/window/mod.rs:358
+msgid "I'll Wait"
+msgstr "Odotan"
+
+#: src/window/mod.rs:362
+msgid ""
+"The result will be available when your token is replaced with a valid one. "
+"Open preferences and try setting a different token"
+msgstr ""
+"Tulos näytetään, kun poletti korvataan kelvollisella. Avaa asetukset ja "
+"aseta eri poletti"
+
+#: src/window/mod.rs:365
+msgid "Later"
+msgstr "Myöhemmin"
+
+#: src/window/mod.rs:370
+msgid "Open Preferences"
+msgstr "Avaa asetukset"
+
+#: src/window/mod.rs:466
+msgid "An error occurred in the player"
+msgstr "Soittimessa tapahtui virhe"
+
+#: src/window/playback_button.rs:97
+msgid "Play"
+msgstr "Toista"
+
+#: src/window/playback_button.rs:103
+msgid "Pause"
+msgstr "Keskeytä"
+
+#: src/window/recognized_page.rs:151
+msgid "Recognized Song"
+msgid_plural "Recognized Songs"
+msgstr[0] "Tunnistettu kappale"
+msgstr[1] "Tunnistetut kappaleet"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognized_page.rs:157
+msgid "Recognized {n_songs} New Song"
+msgid_plural "Recognized {n_songs} New Songs"
+msgstr[0] "Tunnistettu {n_songs} uusi kappale"
+msgstr[1] "Tunnistettu {n_songs} uutta kappaletta"
+
+#: src/window/recognized_page.rs:163
+msgid "This song was recognized from your saved recording"
+msgid_plural "These songs were recognized from your saved recordings"
+msgstr[0] "Tämä kappale tunnistettiin tallennetusta nauhoitteesta"
+msgstr[1] "Nämä kappaleet tunnistettiin tallennetuista nauhotteista"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognizer_status.rs:172
+msgid "Recognized {n_successful} Out Of {total_minus_failed}"
+msgstr "Tunnistettu {n_successful}/{total_minus_failed}"
+
+#: src/window/recognizer_view.rs:149
+msgid "Listening…"
+msgstr "Kuunnellaan…"
+
+#: src/window/recognizer_view.rs:154
+msgid "Recognizing…"
+msgstr "Tunnistetaan…"
+
+#: src/window/song_page.rs:374
+msgid "Unknown"
+msgstr "Tuntematon"
+
+#: src/window/song_tile.rs:359
+msgid "Unselect"
+msgstr "Peru valinta"
+
+#~ msgid "Donate (Buy Me a Coffee)"
+#~ msgstr "Lahjoita (Buy Me a Coffee)"
+
+#~ msgid "Select _None"
+#~ msgstr "Älä valitse _mitään"
+
+#~ msgid "Dave Patrick Caberto"
+#~ msgstr "Dave Patrick Caberto"
+
+#~ msgid "Determines the audio source to use when available"
+#~ msgstr "Määrittää käytettävän äänilähteen"
+
+#~ msgid "© 2023 Dave Patrick Caberto"
+#~ msgstr "© 2023 Dave Patrick Caberto"
+
+#~ msgid "🎵 Recognize songs within seconds or save for later when offline"
+#~ msgstr ""
+#~ "🎵 Tunnista kappaleet hetkessä tai tallenna myöhemmäksi, jos ei "
+#~ "verkkoyhteyttä"
+
+#~ msgid "🎙️ Use microphone or desktop audio"
+#~ msgstr "🎙️ Käytä mikrofonia tai työpöydän äänilähdettä"
+
+#~ msgid "Back"
+#~ msgstr "Takaisin"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Navigation"
+#~ msgstr "Liikkuminen"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Go Back"
+#~ msgstr "Siirry takaisin"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Go Forward"
+#~ msgstr "Eteenpäin"
+
+#~ msgid "Donate (Liberapay)"
+#~ msgstr "Lahjoita (Liberapay)"
+
+#~ msgid "Donate (PayPal)"
+#~ msgstr "Lahjoita (PayPal)"
+
+#~ msgid "Failed to launch {}"
+#~ msgstr "Ei voitu käynnistää {}"
+
+#~ msgid "Removed {} song"
+#~ msgid_plural "Removed {} songs"
+#~ msgstr[0] "Poistettu {} kappale"
+#~ msgstr[1] "Poistettu {} kappaletta"
+
+#~ msgid "Selected {} song"
+#~ msgid_plural "Selected {} songs"
+#~ msgstr[0] "Valittu {} kappale"
+#~ msgstr[1] "Valittu {} kappaletta"
+
+#~ msgid "Shazam;Audio;Music;Song;Identify;Recognition;"
+#~ msgstr "Shazam;Audio;Music;Song;Identify;Recognition;kappale;musiikki;tunnistus;"
+
+#~ msgid ""
+#~ "Mousai is a simple application that can identify song similar to Shazam. "
+#~ "Just click the listen button, and then wait a few seconds. It will "
+#~ "magically return the title and artist of that song!"
+#~ msgstr ""
+#~ "Mousai on sovellus, joka tunnistaa kappaleita kuten Shazam. Napsauta "
+#~ "kuuntelupainiketta ja odota muutama sekunti. Saat tietoosi kappaleen "
+#~ "nimen ja esittäjän!"
+
+#~ msgid "Start Identifying Music"
+#~ msgstr "Aloita musiikin tunnistaminen"
+
+#~ msgid "Open Main Menu"
+#~ msgstr "Avaa päävalikko"
+
+#~ msgid "Search for Songs"
+#~ msgstr "Etsi kappaleita"
+
+#~ msgid "Cancel Select"
+#~ msgstr "Peru valinta"
+
+#~ msgid "Enter song or artist name"
+#~ msgstr "Kirjoita kappaleen tai esittäjän nimi"
+
+#~ msgid "Start Identifying Music!"
+#~ msgstr "Aloita musiikin tunnistaminen!"
+
+#~ msgid "Click the listen button to start."
+#~ msgstr "Napsauta kuuntelupainiketta aloittaaksesi."
+
+#~ msgid "No Results Found"
+#~ msgstr "Tuloksia ei löytynyt"
+
+#~ msgid "Try a different search."
+#~ msgstr "Kokeile eri hakuehtoja."
+
+#~ msgid "Determines the audio source to select when available."
+#~ msgstr "Määrittää valittavan äänilähteen."
+
+#~ msgid ""
+#~ "You can get yourself an API token from <a href=\"https://"
+#~ "dashboard.audd.io/\">audd.io</a>. Leaving this blank will give you a few "
+#~ "trials per day."
+#~ msgstr ""
+#~ "Saat API-poletin osoitteesta <a href=\"https://dashboard.audd.io/"
+#~ "\">audd.io</a>. Jos jätät tämän tyhjäksi, sinun on mahdollista tunnistaa "
+#~ "muutama kappale päivässä."
+
+#~ msgid "Go Back"
+#~ msgstr "Takaisin"
+
+#~ msgid "The result will be available when you're back online."
+#~ msgstr "Tulos on saatavilla, kun olet taas yhteydessä verkkoon."
+
+#~ msgid "Recording saved"
+#~ msgstr "Nauhoite tallennettu"
+
+#~ msgid "Ok, got it"
+#~ msgstr "Selvä"
+
+#~ msgid "Open preferences and try setting a different token."
+#~ msgstr "Avaa asetukset ja aseta eri poletti."
+
+#~ msgid ""
+#~ "Please open an issue on GitHub and provide the necessary information."
+#~ msgstr "Avaa issue GitHubiin ja toimita tarvittavat tiedot."
+
+#~ msgid "Please check your internet connection."
+#~ msgstr "Tarkista internetyhteytesi."
+
+#~ msgid "Ok"
+#~ msgstr "OK"
+
+#~ msgid "This song was heard while you're offline"
+#~ msgid_plural "These songs were heard while you're offline"
+#~ msgstr[0] "Tämä kappale kuultiin, kun olit yhteydettömässä tilassa"
+#~ msgstr[1] "Nämä kappaleet kuultiin, kun olit yhteydettömässä tilassa"
+
+#~ msgid "AudD Provider"
+#~ msgstr "AudD-palveluntarjoaja"
+
+#~ msgid "Default window width"
+#~ msgstr "Ikkunan oletusleveys"
+
+#~ msgid "Default window height"
+#~ msgstr "Ikkunan oletuskorkeus"
+
+#~ msgid "Default window maximized behaviour"
+#~ msgstr "Oletusikkunan maksimoitu toiminta"
+
+#~ msgid "Contains recently recognized songs"
+#~ msgstr "Sisältää äskettäin tunnistettuja kappaleita"
+
+#~ msgid "🎵 Identify the title and artist of the song within seconds."
+#~ msgstr "🎵 Tunnista kappale ja sen esittäjä sekunneissa."
+
+#~ msgid "🎙️ Use your microphone or audio from desktop."
+#~ msgstr "🎙️ Käytä mikrofonia tai tietokoneelta toistettavaa ääntä."
+
+#~ msgid "🎸 Store the identified song including the album art in history."
+#~ msgstr "🎸 Tallenna tunnistetun kappaleen tiedot mukaan lukien kuvitus."
+
+#~ msgid "🎼 Preview the identified song with the native player."
+#~ msgstr "🎼 Kuuntele esimakua tunnistetusta kappaleesta."
+
+#~ msgid "🌐 Browse and listen the song from different providers."
+#~ msgstr "🌐 Selaa ja kuuntele kappaleita eri palveluntarjoajilta."
+
+#~ msgid "📱 Easy-to-use user interface."
+#~ msgstr "📱 Helppokäyttöinen käyttöliittymä."
+
+#~ msgid "⌨️ User-friendly keyboard shortcuts."
+#~ msgstr "⌨️ Hyödylliset pikanäppäimet."
+
+#~ msgid "Dave Patrick"
+#~ msgstr "Dave Patrick"
+
+#~ msgid "_Preferred Audio Source"
+#~ msgstr "_Ensisijainen äänen lähde"
+
+#~ msgid "Return to Main Page"
+#~ msgstr "Palaa pääsivulle"
+
+#~ msgid "Copyright 2022 Dave Patrick"
+#~ msgstr "Tekijänoikeus 2022 Dave Patrick"
+
+#~ msgid "Cancelled recording"
+#~ msgstr "Peru nauhoitus"
+
+#~ msgid "Cancelled recognizing"
+#~ msgstr "Peru tunnistaminen"
+
+#~ msgid ""
+#~ "Failed to convert the recording to base64. Please report this to Mousai's "
+#~ "bug tracker."
+#~ msgstr ""
+#~ "Tallenteen muuntaminen base64-muotoon epäonnistui. Ilmoita ongelmasta "
+#~ "Mousain vianseurantajärjestelmään."
+
+#~ msgid "Failed to connect to the server."
+#~ msgstr "Palvelimeen yhdistäminen epäonnistui."
+
+#~ msgid "Failed to parse response. Please report this to Mousai's bug tracker"
+#~ msgstr ""
+#~ "Vastauksen jäsentäminen epäonnistui. Ilmoita ongelmasta Mousain "
+#~ "vianseurantajärjestelmään"
+
+#~ msgid "Daily limit has been reached."
+#~ msgstr "Päivittäinen raja tuli täyteen."
+
+#~ msgid "Failed to fingerprint audio. There may be no sound heard."
+#~ msgstr ""
+#~ "Äänen sormenjäljittäminen epäonnistui. Kenties ääntä ei kuulunut lainkaan."
+
+#~ msgid "Got invalid status response of {}"
+#~ msgstr "Vastaanotettiin viallinen vastaus {}"
+
+#~ msgid "{} Check your internet connection."
+#~ msgstr "{} Tarkista internetyhteyden toimivuus."
+
+#~ msgid "No matches found for this song."
+#~ msgstr "Tälle kappaleelle ei löytynyt vastaavuuksia."
+
+#~ msgid "{} Input an API token in the preferences."
+#~ msgstr "{} Syötä rajapintapoletti asetuksissa."
+
+#~ msgid "Please input a valid API token."
+#~ msgstr "Anna kelvollinen rajapintapoletti."
+
+#~ msgid "Copied song to clipboard"
+#~ msgstr "Kopioitu kappale leikepöydälle"
+
+#~ msgid "Click on items to select them"
+#~ msgstr "Napsauta kohteita valitaksesi ne"
+
+#~ msgid "Failed to load history"
+#~ msgstr "Historian lataaminen epäonnistui"
+
+#~ msgid "Shazam;Music;Song;Identify;"
+#~ msgstr ""
+#~ "Shazam;Music;Song;Identify;tunnistus;tunnista;mikä kappale;mikä "
+#~ "biisi;mikä laulu;kappale;raita;laulu;"
+
+#~ msgid ""
+#~ "Failed to parse response. Please report this to Mousai's bug tracker."
+#~ msgstr ""
+#~ "Vastauksen jäsentäminen epäonnistui. Ilmoita asiasta Mousain "
+#~ "vikaseurantaan."
+
+#~ msgid "Failed to convert file. Please report this to Mousai's bug tracker."
+#~ msgstr ""
+#~ "Tiedoston muuntaminen epäonnistui. Ilmoita asiasta Mousain vikaseurantaan."
+
+#~ msgid "Identify any songs in seconds"
+#~ msgstr "Tunnista mikä tahansa kappale sekunneissa"
+
+#~ msgid "🌐 Browse the song in the web with the link."
+#~ msgstr "🌐 Selaa kappaletta verkossa linkin avulla."
+
+#~ msgid "Open Menu"
+#~ msgstr "Avaa valikko"
+
+#~ msgid "Show Shortcuts"
+#~ msgstr "Näytä pikanäppäimet"
+
+#~ msgid "Controls"
+#~ msgstr "Ohjaimet"
+
+#~ msgid "Toggle Listen"
+#~ msgstr "Kuuntelu päälle/pois"
+
+#~ msgid "Settings"
+#~ msgstr "Asetukset"
+
+#~ msgid "Clear Song History"
+#~ msgstr "Tyhjennä kappalehistoria"
+
+#~ msgid "Reset Token Value"
+#~ msgstr "Nollaa poletin arvo"
+
+#~ msgid "Welcome to Mousai"
+#~ msgstr "Tervetuloa, tämä on Mousai"
+
+#~ msgid "Enter a valid token"
+#~ msgstr "Anna kelvollinen poletti"
+
+#~ msgid "Submit"
+#~ msgstr "Lähetä"
+
+#~ msgid ""
+#~ "Mousai uses audd.io APIs to work, so it is required to login to <a "
+#~ "href=\"https://dashboard.audd.io/\">their website</a> and get a token. "
+#~ "Leaving this blank will give you a few trials per day."
+#~ msgstr ""
+#~ "Mousai käyttää audd.io-palvelun rajapintoja toimiakseen, joten se vaatii "
+#~ "kirjautumisen <a href=\"https://dashboard.audd.io/\">palvelun sivustolle</"
+#~ "a> ja poletin hankkimisen. Jos jätät tämän kentän tyhjäksi, sinulla on "
+#~ "vain muutama kokeilukerta päivittäin."
+
+#~ msgid "Do not show at startup"
+#~ msgstr "Älä näytä käynnistyksen yhteydessä"
+
+#~ msgid "Open in Browser"
+#~ msgstr "Avaa selaimessa"
+
+#~ msgid "Cancel the Recording"
+#~ msgstr "Peru nauhoittaminen"
+
+#~ msgid "Start Mousaing!"
+#~ msgstr "Aloita Mousaiointi!"
+
+#~ msgid "Muted"
+#~ msgstr "Mykistetty"
+
+#~ msgid "_Clear Song History"
+#~ msgstr "_Tyhjennä kappalehistoria"
+
+#~ msgid "_Reset Token"
+#~ msgstr "_Nollaa poletti"
+
+#~ msgid "Listening"
+#~ msgstr "Kuunnellaan"
+
+#~ msgid "No audio detected"
+#~ msgstr "Ääntä ei ole valittu"
+
+#~ msgid "Please check your audio device."
+#~ msgstr "Tarkista äänilaitteesi asetukset."
+
+#~ msgid "The song was not recognized."
+#~ msgstr "Kappaletta ei tunnistettu."
+
+#~ msgid "Something went wrong."
+#~ msgstr "Jokin meni pieleen."
+
+#~ msgid "Sorry!"
+#~ msgstr "Pahoittelut!"
+
+#~ msgid "Stop Preview"
+#~ msgstr "Pysäytä ääninäyte"
+
+#~ msgid "Play Preview"
+#~ msgstr "Toista ääninäyte"
+
+#~ msgid "Copyright 2021 Dave Patrick"
+#~ msgstr "Tekijänoikeus 2021 Dave Patrick"
+
+#~ msgid "Play preview"
+#~ msgstr "Toista esikatselu"

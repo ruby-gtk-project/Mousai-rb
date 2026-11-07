@@ -1,0 +1,981 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the mousai package.
+# Mehdi Essalehi <messalehi2001@outlook.com>, 2021.
+# Muhammad Yasser <iamrokt@gmail.com>, 2021.
+# Ali Aljishi <ahj696@hotmail.com>, 2023.
+# Ali-98 <ahj696@hotmail.com>, 2023.
+# Yassin Amr <justxeez@gmail.com>, 2025.
+# Ahmed Najmawi <iramosu@protonmail.com>, 2025.
+# Ziad El-sayed <ziadelsayed1797@tutamail.com>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: mousai\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-19 17:29+0800\n"
+"PO-Revision-Date: 2026-04-20 10:09+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Arabic <https://hosted.weblate.org/projects/seadve/mousai/ar/>"
+"\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Weblate 5.17.1-dev\n"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:2
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:7 src/about.rs:12
+#: src/main.rs:64
+msgid "Mousai"
+msgstr "موساي"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:3
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:8
+msgid "Identify songs in seconds"
+msgstr "تبيَّن الأغاني سريعًا"
+
+#. Translators: These are search terms to find this application. Do NOT translate or localize the semicolons. The list MUST also end with a semicolon.
+#: data/io.github.seadve.Mousai.desktop.in.in:9
+msgid "Shazam;Audio;Music;Song;Recognize;Identify;Recognition;"
+msgstr "شازام;صوت;موسيقى;أغنية;تعرف;تبين;أغاني;اغنية;اغاني;Shazam;Audio;Music;Song;Recognize;Identify;Recognition;Mousai;"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:6
+msgid "Window width"
+msgstr "عُرض النافذة"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:11
+msgid "Window height"
+msgstr "ارتفاع النافذة"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:16
+msgid "Whether the window is maximized"
+msgstr "فيما إذا كانت النافذة مكبَّرةً"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:26
+msgid "Audio source type to use in recording audio"
+msgstr "نوع مصدر الصوت ليستخدم في تسجيل الأصوات"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:32
+msgid "API token used by AudD recognition"
+msgstr "رمز واجهة البرمجة الذي يستخدمه تعرُّف AudD"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:37
+msgid "Legacy (Kept for migration)"
+msgstr "عتيق (حوفظ عليه للترحيل)"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:10
+msgid "Discover songs you are aching to know with an easy-to-use interface."
+msgstr "اكتشف أغانٍ تريد معرفتها بواجهة سهلة الاستخدام."
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:11
+msgid ""
+"Mousai is a simple application that can recognize songs similar to Shazam. "
+"Just click the listen button, and then wait a few seconds. It will magically "
+"return the title and artist of that song!"
+msgstr ""
+"موساي هو تطبيق يسير للتعرف على الأغاني، فهذه مثل وظيفة شازام. ما عليك إلا "
+"نقر زر الاستماع والانتظار مهلةً، وإذا به أعطاك عنوان ومؤلف تلك الأغنية!"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:12
+msgid ""
+"Note: This uses the API of audd.io, so it is necessary to log in to their "
+"site to get more trials."
+msgstr ""
+"ملاحظة: هذا التطبيق يستعمل واجهة برمجة audd.io، لذلك يجب عليك الولوج في "
+"موقعهم لتحصل على المزيد من الاستخدامات."
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:13
+msgid "Why you will love Mousai?"
+msgstr "لماذا ستحب موساي؟"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:15
+msgid "🎵 Identify songs within seconds or save for later when offline"
+msgstr "🎵 تبيَّن الأغاني سريعًا أو احفظها لحين تكون غير متصلًا"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:16
+msgid "🎙️ Recognize from desktop audio or your microphone"
+msgstr "🎙️ تبيَّن من صوت سطح المكتب أو من الميكروفون"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:17
+msgid "🎸 Build a repertoire of recognized songs"
+msgstr "🎸 شكِّل تشكيلةً من الأغاني المحقَّقة"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:18
+msgid "🎼 Quickly preview the song within the interface"
+msgstr "🎼 عاين الأغنية سريعًا في الواجهة"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:19
+msgid "🌐 Browse and listen the song from different providers"
+msgstr "🌐 تصفَّح واستمع الأغاني من مصادر مختلفة"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:20
+msgid "📱 Easy-to-use user interface"
+msgstr "📱 واجهة سهلة الاستخدام"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:26
+msgid "Mousai Home Page"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:30
+msgid "Detailed view of identified song"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:34
+msgid "Listening mode detecting the song"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:38
+#, fuzzy
+#| msgid "Recognized Song"
+#| msgid_plural "Recognized Songs"
+msgid "Recognized songs"
+msgstr "لا أغانٍ تعرَّفت عليها"
+
+#: data/resources/ui/history_view.ui:6
+msgid "_Preferences"
+msgstr "ال_تفضيلات"
+
+#: data/resources/ui/history_view.ui:10
+msgid "_Keyboard Shortcuts"
+msgstr "ا_ختصارات لوحة المفاتيح"
+
+#: data/resources/ui/history_view.ui:14
+msgid "_About Mousai"
+msgstr "_عَنْ «موساي»"
+
+#: data/resources/ui/history_view.ui:22
+msgid "Select _All"
+msgstr "حدِّد ال_كلَّ"
+
+#: data/resources/ui/history_view.ui:26
+msgid "_Unselect All"
+msgstr "أل_غِ تحديد الكل"
+
+#: data/resources/ui/history_view.ui:42
+msgid "Home"
+msgstr "المنزل"
+
+#: data/resources/ui/history_view.ui:52
+msgid "Recognize Song"
+msgstr "تبيَّن أغنيةً"
+
+#: data/resources/ui/history_view.ui:53 data/resources/ui/song_page.ui:109
+msgid "Listen"
+msgstr "استمع"
+
+#: data/resources/ui/history_view.ui:65
+msgid "Main Menu"
+msgstr "القائمة الرئيسة"
+
+#: data/resources/ui/history_view.ui:73 src/window/song_tile.rs:361
+msgid "Select"
+msgstr "حدِّد"
+
+#: data/resources/ui/history_view.ui:80 data/resources/ui/history_view.ui:103
+msgid "Search Songs"
+msgstr "ابحث عن أغانٍ"
+
+#: data/resources/ui/history_view.ui:96
+msgid "Cancel Selection"
+msgstr "إلغاء التحديد"
+
+#: data/resources/ui/history_view.ui:97 data/resources/ui/recognizer_view.ui:14
+msgid "Cancel"
+msgstr "ألغِ"
+
+#: data/resources/ui/history_view.ui:117
+msgid "Search songs"
+msgstr "ابحث عن أغانٍ"
+
+#: data/resources/ui/history_view.ui:140
+msgid "Start Recognizing Songs!"
+msgstr "هلمَّ وتبيَّن الأغاني!"
+
+#: data/resources/ui/history_view.ui:141
+msgid "Click the listen button to start"
+msgstr "انقر زر الاستماع لتبدأ"
+
+#: data/resources/ui/history_view.ui:150
+msgid "No Results"
+msgstr "لا توجد نتائج"
+
+#: data/resources/ui/lyrics_page.ui:10 data/resources/ui/song_page.ui:140
+msgid "Lyrics"
+msgstr "الكلمات"
+
+#: data/resources/ui/preferences_dialog.ui:8
+msgid "General"
+msgstr "عام"
+
+#: data/resources/ui/preferences_dialog.ui:11
+msgid "Audio Source"
+msgstr "مصدر الصوت"
+
+#: data/resources/ui/preferences_dialog.ui:12
+msgid "Device used for listening"
+msgstr "الجهاز المستخدم للسمع"
+
+#: data/resources/ui/preferences_dialog.ui:19
+#: src/window/external_link_tile.rs:64
+msgid "AudD"
+msgstr "أودد"
+
+#: data/resources/ui/preferences_dialog.ui:20
+msgid ""
+"You can get yourself an API token from <a href=\"https://dashboard.audd.io/"
+"\">audd.io</a>. Leaving this blank will give you a few trials per day"
+msgstr ""
+"يمكنك الحصول على رمز واجهة برمجة (API) من <a href=\"https://"
+"dashboard.audd.io/\">audd.io</a>. ترك هذا فارغًا يعني أن لك عدة محاولات كل يوم"
+
+#: data/resources/ui/preferences_dialog.ui:23
+msgid "API Token"
+msgstr "رمز واجهة البرمجة (API)"
+
+#: data/resources/ui/recognizer_status.ui:17
+msgid "Offline Mode Enabled"
+msgstr "فُعِّل وضع عدم الاتصال"
+
+#: data/resources/ui/recognizer_status.ui:44
+msgid "Show Offline Mode Recognition Results"
+msgstr "أظهر نتائج التبيُّن أثناء عدم الاتصال"
+
+#: data/resources/ui/recognizer_view.ui:13
+msgid "Cancel Listening"
+msgstr "ألغِ الاستماع"
+
+#: data/resources/ui/recognizer_view.ui:49
+msgid "Offline Mode"
+msgstr "وضع عدم الاتصال"
+
+#: data/resources/ui/shortcuts.ui:6
+msgctxt "shortcut window"
+msgid "General"
+msgstr "عام"
+
+#: data/resources/ui/shortcuts.ui:9
+msgctxt "shortcut window"
+msgid "Open Main Menu"
+msgstr "افتح القائمة الرئيسة"
+
+#: data/resources/ui/shortcuts.ui:15
+msgctxt "shortcut window"
+msgid "Search"
+msgstr "ابحث"
+
+#: data/resources/ui/shortcuts.ui:21
+msgctxt "shortcut window"
+msgid "Show Preferences"
+msgstr "أظهِر التفضيلات"
+
+#: data/resources/ui/shortcuts.ui:27
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "أظهِر الإختصارات"
+
+#: data/resources/ui/shortcuts.ui:33
+msgctxt "shortcut window"
+msgid "Close Window"
+msgstr "إغلاق النافذة"
+
+#: data/resources/ui/shortcuts.ui:39
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "اخرُج"
+
+#: data/resources/ui/shortcuts.ui:47
+msgctxt "shortcut window"
+msgid "Controls"
+msgstr "عناصر التحكُّم"
+
+#: data/resources/ui/shortcuts.ui:50
+msgctxt "shortcut window"
+msgid "Toggle Listen"
+msgstr "بدِّل الاستماع"
+
+#: data/resources/ui/shortcuts.ui:56
+msgctxt "shortcut window"
+msgid "Toggle Playback"
+msgstr "بدِّل إعادة التشغيل"
+
+#: data/resources/ui/song_bar.ui:85
+msgid "Show Song Information"
+msgstr "أظهِر معلومات الأغنية"
+
+#: data/resources/ui/song_bar.ui:145
+msgid "Stop"
+msgstr "توقَّف"
+
+#: data/resources/ui/song_page.ui:13
+msgid "Remove From History"
+msgstr "أزِل من التأريخ"
+
+#: data/resources/ui/song_page.ui:19
+msgid "Copy"
+msgstr "انسخ"
+
+#: data/resources/ui/song_page.ui:122
+msgid "Information"
+msgstr "المعلومات"
+
+#: data/resources/ui/song_page.ui:125
+msgid "Last Heard"
+msgstr "سمعت آخر مرَّة"
+
+#: data/resources/ui/song_page.ui:130
+msgid "Album"
+msgstr "ألبوم"
+
+#: data/resources/ui/song_page.ui:135
+msgid "Release Date"
+msgstr "تاريخ النشر"
+
+#: data/resources/ui/song_tile.ui:30
+msgid "New"
+msgstr "جديد"
+
+#. Translators: Replace "translator-credits" with your names. Put a comma between.
+#: src/about.rs:18
+msgid "translator-credits"
+msgstr "علي الجشي، عمرو ياسين، أحمد النجماوي, زياد السيد"
+
+#: src/about.rs:27
+#, fuzzy
+msgid "Donate"
+msgstr "تبرَع"
+
+#: src/about.rs:28
+msgid "GitHub"
+msgstr "جت‌هب"
+
+#: src/about.rs:30
+msgid "Translate"
+msgstr "ترجم"
+
+#: src/application.rs:209
+msgid "Critical Database Error"
+msgstr "خطأ قاعدة بيانات حرج"
+
+#: src/application.rs:210
+msgid ""
+"Sorry, a critical database error has occurred. This is likely caused by a "
+"tampered or corrupted database. You can try clearing application data. "
+"However, this is not recommended and will delete all your songs and saved "
+"recordings.\n"
+"\n"
+"To report this issue, please launch Mousai in the terminal to include the "
+"logs and submit the bug report to the <a href=\"https://github.com/SeaDve/"
+"Mousai/issues/\">issue page</a>"
+msgstr ""
+"حدث خطأ حرج في قاعدة البيانات. أغلب الظن أن السبب هو فساد قاعدة البيانات، "
+"ولعل حذف بيانات التطبيق يصلحه، ولكن حذفها ليس افضل خيار لأنه سيحذف كل أغانيك "
+"وتسجيلاتك.\n"
+"\n"
+"إن شئت وأردت التبليغ عن هذه المشكلة فشغِّل «موساي» من الطرفية وأرفق السجلات "
+"وأرسل تقرير إلى <a href=\"https://github.com/SeaDve/Mousai/issues/\">صفحة "
+"المشاكل</a>"
+
+#: src/application.rs:215
+msgid "Quit"
+msgstr "اخرُج"
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:31
+msgid "today at %R"
+msgstr "اليوم في %OH:%OM"
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:34
+msgid "yesterday at %R"
+msgstr "أمسًا في %OH:%OM"
+
+#: src/preferences_dialog.rs:103
+msgid "Microphone"
+msgstr "ميكروفون"
+
+#: src/preferences_dialog.rs:104
+msgid "Desktop Audio"
+msgstr "صوت الجهاز"
+
+#: src/recognizer/provider/error.rs:50
+msgid "No Matches Found"
+msgstr "لم يعثر على تطابقات"
+
+#: src/recognizer/provider/error.rs:51
+msgid "Cannot Create Fingerprint From Audio"
+msgstr "تعذَّر إنشاء بصمة من الصوت"
+
+#: src/recognizer/provider/error.rs:52
+msgid "Invalid Token Given"
+msgstr "أُدخل رمز غير صالح"
+
+#: src/recognizer/provider/error.rs:53
+msgid "Token Limit Reached"
+msgstr "بُلغ حدُّ الرموز"
+
+#: src/recognizer/provider/error.rs:54
+msgid "Cannot Connect to the Server"
+msgstr "تعذَّر الاتصال بالخادوم"
+
+#: src/recognizer/provider/error.rs:55
+msgid "Received Other Permanent Error"
+msgstr "اُستلم خطأ دائم آخر"
+
+#: src/window/external_link_tile.rs:59
+msgid "Apple Music"
+msgstr "موسيقى أبل"
+
+#: src/window/external_link_tile.rs:60
+msgid "Browse on Apple Music"
+msgstr "تصفَّح في موسيقى أبل"
+
+#: src/window/external_link_tile.rs:65
+msgid "Browse on AudD"
+msgstr "تصفَّح في AudD"
+
+#: src/window/external_link_tile.rs:69
+msgid "Spotify"
+msgstr "سبوتفاي"
+
+#: src/window/external_link_tile.rs:70
+msgid "Listen on Spotify"
+msgstr "استمع في سبوتفاي"
+
+#: src/window/external_link_tile.rs:74
+msgid "YouTube"
+msgstr "يوتيوب"
+
+#: src/window/external_link_tile.rs:75
+msgid "Search on YouTube"
+msgstr "ابحث في يوتيوب"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/external_link_tile.rs:145
+msgid "Failed to launch {key}"
+msgstr "أخفَق البدء {key}"
+
+#: src/window/history_view.rs:147 src/window/song_page.rs:80
+msgid "Copied to clipboard"
+msgstr "نُسخ للحافظة"
+
+#: src/window/history_view.rs:160
+msgid "Failed to remove selected songs"
+msgstr "تعذَّرت إزالة الأغاني المحدَّدة"
+
+#: src/window/history_view.rs:357
+msgid "Failed to remove song"
+msgstr "تعذَّرت إزالة الأغنية"
+
+#: src/window/history_view.rs:562
+msgid "Failed to show recognizer results"
+msgstr "تعذَّر عرض نتائج المتبيِّن"
+
+#: src/window/history_view.rs:669
+msgid "_Undo"
+msgstr "ت_راجع"
+
+#: src/window/history_view.rs:681
+msgid "Failed to undo"
+msgstr "أخفق التراجع"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:706
+msgid "Removed {n_removed} song"
+msgid_plural "Removed {n_removed} songs"
+msgstr[0] "لم تُزل أي أغنية"
+msgstr[1] "أُزيلت أغنية"
+msgstr[2] "أُزيلت أغنيتان"
+msgstr[3] "أُزيلت {n_removed} أغانٍ"
+msgstr[4] "أُزيلت {n_removed} أغنيةً"
+msgstr[5] "أُزيلت {n_removed} أغنية"
+
+#: src/window/history_view.rs:829
+msgid "Select items"
+msgstr "حدِّد عناصر"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:833
+msgid "Selected {selection_size} song"
+msgid_plural "Selected {selection_size} songs"
+msgstr[0] "لم تُحدَّد أي أغنية"
+msgstr[1] "حُدِّدت أغنية"
+msgstr[2] "حُدِّدت أغنيتان"
+msgstr[3] "حُدِّدت {selection_size} أغانٍ"
+msgstr[4] "حُدِّدت {selection_size} أغنيةً"
+msgstr[5] "حُدِّدت {selection_size} أغنية"
+
+#: src/window/history_view.rs:843
+msgid "Copy Song"
+msgid_plural "Copy Songs"
+msgstr[0] "لا تنسخ أي أغنية"
+msgstr[1] "انسخ الأغنية"
+msgstr[2] "انسخ الأغنيتين"
+msgstr[3] "انسخ الأغاني"
+msgstr[4] "انسخ الأغاني"
+msgstr[5] "انسخ الأغاني"
+
+#: src/window/history_view.rs:850
+msgid "Remove Song From History"
+msgid_plural "Remove Songs From History"
+msgstr[0] "لا تزل الأغنية من التأريخ"
+msgstr[1] "أزل الأغنية من التأريخ"
+msgstr[2] "أزل الأغنيتين من التأريخ"
+msgstr[3] "أزل الأغاني من التأريخ"
+msgstr[4] "أزل الأغاني من التأريخ"
+msgstr[5] "أزل الأغاني من التأريخ"
+
+#: src/window/mod.rs:214
+msgid "Failed to insert song to history"
+msgstr "تعذَّر إدراج الأغنية في التأريخ"
+
+#: src/window/mod.rs:262
+msgid "Please open an issue on GitHub and provide the necessary information"
+msgstr "اكتب مشكلة في جت‌هب وضمِّن فيها المعلومات المطلوبة"
+
+#: src/window/mod.rs:265 src/window/mod.rs:297
+msgid "No, Thanks"
+msgstr "لا"
+
+#: src/window/mod.rs:267
+msgid "Open an Issue"
+msgstr "اكتب تقرير علَّة"
+
+#: src/window/mod.rs:294
+msgid ""
+"Try moving closer to the source or using a different excerpt of the song"
+msgstr "جرِّب الاقتراب من المصدر أو استخدم مقطعًا آخر من الأغنية"
+
+#: src/window/mod.rs:299
+msgid "Try Again"
+msgstr "جرِّب ثانيةً"
+
+#: src/window/mod.rs:334
+msgid "Recording Saved"
+msgstr "حُفظ التسجيل"
+
+#: src/window/mod.rs:342
+msgid "The result will be available when you're back online"
+msgstr "تُتاح النتيجة حالما تتصل"
+
+#: src/window/mod.rs:345
+msgid "Ok, Got It"
+msgstr "حسنًا"
+
+#: src/window/mod.rs:355
+msgid ""
+"The result will be available when your token limit is reset. Wait until the "
+"limit is reset or open preferences and try setting a different token"
+msgstr ""
+"تُتاح النتيجة عند تصفير حد رمزك. انتظر حتى يُصفَّر رمزك أو افتح التفضيلات وغيِّره"
+
+#: src/window/mod.rs:358
+msgid "I'll Wait"
+msgstr "سوف أنتظر"
+
+#: src/window/mod.rs:362
+msgid ""
+"The result will be available when your token is replaced with a valid one. "
+"Open preferences and try setting a different token"
+msgstr ""
+"تُتاح النتيجة عند استبدال برمزك رمزًا جديدًا. افتح التفضيلات وجرِّب تعيين رمز آخر"
+
+#: src/window/mod.rs:365
+msgid "Later"
+msgstr "لاحقًا"
+
+#: src/window/mod.rs:370
+msgid "Open Preferences"
+msgstr "افتح التفضيلات"
+
+#: src/window/mod.rs:466
+msgid "An error occurred in the player"
+msgstr "حصل خطأ في المشغِّل"
+
+#: src/window/playback_button.rs:97
+msgid "Play"
+msgstr "شغِّل"
+
+#: src/window/playback_button.rs:103
+msgid "Pause"
+msgstr "ألبث"
+
+#: src/window/recognized_page.rs:151
+msgid "Recognized Song"
+msgid_plural "Recognized Songs"
+msgstr[0] "لا أغانٍ تعرَّفت عليها"
+msgstr[1] "تعرَّفت على أغنية واحدة"
+msgstr[2] "تعرَّفت على أغنيتين"
+msgstr[3] "تعرَّفت على عدة أغانٍ"
+msgstr[4] "تعرَّفت على عدة أغانٍ"
+msgstr[5] "تعرَّفت على عدة أغانٍ"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognized_page.rs:157
+msgid "Recognized {n_songs} New Song"
+msgid_plural "Recognized {n_songs} New Songs"
+msgstr[0] "لم تُتبيَّن أي أغنية"
+msgstr[1] "تُبيِّنت أغنية"
+msgstr[2] "تُبيِّنت أغنيتان"
+msgstr[3] "تُبيِّنت {n_songs} أغانٍ"
+msgstr[4] "تُبيِّنت {n_songs} أغنيةً"
+msgstr[5] "تُبيِّنت {n_songs} أغنية"
+
+#: src/window/recognized_page.rs:163
+msgid "This song was recognized from your saved recording"
+msgid_plural "These songs were recognized from your saved recordings"
+msgstr[0] "لم تُتبيَّن هذه الأغنية من تسجيلاتك المحفوظة"
+msgstr[1] "تُبيِّنت هذه الأغنية من تسجيلاتك المحفوظة"
+msgstr[2] "تُبيِّنت هاتان الأغنيتان من تسجيلاتك المحفوظة"
+msgstr[3] "تُبيِّنت هذه الأغاني من تسجيلاتك المحفوظة"
+msgstr[4] "تُبيِّنت هذه الأغاني من تسجيلاتك المحفوظة"
+msgstr[5] "تُبيِّنت هذه الأغاني من تسجيلاتك المحفوظة"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognizer_status.rs:172
+msgid "Recognized {n_successful} Out Of {total_minus_failed}"
+msgstr "تُبيِّنت {n_successful} من أصل {total_minus_failed}"
+
+#: src/window/recognizer_view.rs:149
+msgid "Listening…"
+msgstr "يستمع…"
+
+#: src/window/recognizer_view.rs:154
+msgid "Recognizing…"
+msgstr "يتبيَّن…"
+
+#: src/window/song_page.rs:374
+msgid "Unknown"
+msgstr "مجهول"
+
+#: src/window/song_tile.rs:359
+msgid "Unselect"
+msgstr "ألغِ التحديد"
+
+#~ msgid "Donate (Buy Me a Coffee)"
+#~ msgstr "تبرَّع (اشترِ لي كوب قهوة)"
+
+#~ msgid "Select _None"
+#~ msgstr "لا ت_حدِّد أيَّ شيء"
+
+#~ msgid "Dave Patrick Caberto"
+#~ msgstr "ديف باترك كابرتو"
+
+#~ msgid "Determines the audio source to use when available"
+#~ msgstr "يعيِّن مصدر الصوت المستخدَم حال توفره"
+
+#~ msgid "© 2023 Dave Patrick Caberto"
+#~ msgstr "© ٢٠٢٣ ديف باترك كابرتو"
+
+#~ msgid "🎵 Recognize songs within seconds or save for later when offline"
+#~ msgstr "🎵 تبيَّن الأغاني سريعًا أو احفظها إن كنت لست متَّصلًا"
+
+#~ msgid "🎙️ Use microphone or desktop audio"
+#~ msgstr "🎙️ استخدم الميكروفون أو صوت الجهاز"
+
+#~ msgid "Back"
+#~ msgstr "عد"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Navigation"
+#~ msgstr "التنقُّل"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Go Back"
+#~ msgstr "عد"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Go Forward"
+#~ msgstr "تقدَّم"
+
+#~ msgid "Donate (Liberapay)"
+#~ msgstr "تبرَّع (ليبر‌بَي)"
+
+#~ msgid "Donate (PayPal)"
+#~ msgstr "تبرَّع (بي‌بال)"
+
+#~ msgid "Failed to launch {}"
+#~ msgstr "فشل بدء {}"
+
+#~ msgid "Removed {} song"
+#~ msgid_plural "Removed {} songs"
+#~ msgstr[0] "لا تزل الأغنية"
+#~ msgstr[1] "أزل الأغنية"
+#~ msgstr[2] "أزل الأغنيتين"
+#~ msgstr[3] "أزل {} أغانٍ"
+#~ msgstr[4] "أزل {} أغنيةً"
+#~ msgstr[5] "أزل {} أغنية"
+
+#~ msgid "Selected {} song"
+#~ msgid_plural "Selected {} songs"
+#~ msgstr[0] "لم تحدَّد أيُّ أغنية"
+#~ msgstr[1] "حُدِّدت أغنية"
+#~ msgstr[2] "حُدِّدت أغنيتان"
+#~ msgstr[3] "حُدِّدت {} أغانٍ"
+#~ msgstr[4] "حُدِّدت {} أغنيةً"
+#~ msgstr[5] "حُدِّدت {} أغنية"
+
+#~ msgid "Recognized {} New Song"
+#~ msgid_plural "Recognized {} New Songs"
+#~ msgstr[0] "لم تُتبيَّن أي أغنية"
+#~ msgstr[1] "تُبيِّنت أغنية"
+#~ msgstr[2] "تُبيِّنت أغنيتان"
+#~ msgstr[3] "تُبيِّنت {} أغانٍ"
+#~ msgstr[4] "تُبيِّنت {} أغنيةً"
+#~ msgstr[5] "تُبيِّنت {} أغنية"
+
+#~ msgid "Recognized {} Out Of {}"
+#~ msgid_plural "Recognized {} Out Of {} Songs"
+#~ msgstr[0] "لم يُتعرَّف على أيِّ شيء"
+#~ msgstr[1] "تُعُرِّف على واحدة من أصل أغنية"
+#~ msgstr[2] "تُعُرِّف على اثنتين من أصل أغنيتين"
+#~ msgstr[3] "تُعُرِّف على {} من أصل {} أغانٍ"
+#~ msgstr[4] "تُعُرِّف على {} من أصل {} أغنيةً"
+#~ msgstr[5] "تُعُرِّف على {} من أصل {} أغنية"
+
+#~ msgid "Shazam;Audio;Music;Song;Identify;Recognition;"
+#~ msgstr "شازام;صوت;موسيقى;أغنية;تبيين;تعرف;"
+
+#~ msgid ""
+#~ "Mousai is a simple application that can identify song similar to Shazam. "
+#~ "Just click the listen button, and then wait a few seconds. It will "
+#~ "magically return the title and artist of that song!"
+#~ msgstr ""
+#~ "موساي هو تطبيق بإمكانه التعرُّف على الأغاني كشازام. ما عليك إلا نقر زر "
+#~ "السماع والانتظار مهلةً، وبعدها تجد عنوان ومؤلِّف تلك الأغنية!"
+
+#~ msgid ""
+#~ "This is likely caused by a tampered or corrupted database. You can try "
+#~ "clearing application data. However, this is not recommended and will "
+#~ "delete all your songs and saved recordings.\n"
+#~ "\n"
+#~ "To report this issue, please launch Mousai in the terminal to include the "
+#~ "logs and submit the bug report to the <a href=\"https://github.com/SeaDve/"
+#~ "Mousai/issues/\">issue page</a>."
+#~ msgstr ""
+#~ "أغلب الظنِّ أن سبب هذا هو قاعدة بيانات معدَّلة أو فاسدة. لك تجربة مسح بيانات "
+#~ "التطبيق، ولكن هذا يحذف كلَّ أغانيك وتسجيلاتك.\n"
+#~ "\n"
+#~ "إن أردت التبليغ عن هذه المشكلة فشغِّل موساي من الطرفية لتضمِّن السجلَّات، ثمَّ "
+#~ "اكتب تقرير عطل في <a href=\"https://github.com/SeaDve/Mousai/issues/"
+#~ "\">صفحة الأعطال</a>."
+
+#~ msgid "Start Identifying Music"
+#~ msgstr "تبيَّن الأغاني"
+
+#~ msgid "Open Main Menu"
+#~ msgstr "افتح القائمة الرئيسة"
+
+#~ msgid "Search for Songs"
+#~ msgstr "ابحث عن أغانٍ"
+
+#~ msgid "Cancel Select"
+#~ msgstr "ألغِ التحديد"
+
+#~ msgid "Enter song or artist name"
+#~ msgstr "اكتب اسم أغنية أو فنَّان"
+
+#~ msgid "Start Identifying Music!"
+#~ msgstr "تبيَّن الأغاني!"
+
+#~ msgid "Click the listen button to start."
+#~ msgstr "اضغط زرَّ الاستماع لتبدأ."
+
+#~ msgid "No Results Found"
+#~ msgstr "لم يعثر على نتائج"
+
+#~ msgid "Try a different search."
+#~ msgstr "جرِّب بحثًا آخر."
+
+#~ msgid "Determines the audio source to select when available."
+#~ msgstr "يحدِّد مصدر الصوت المختار حال توفُّره."
+
+#~ msgid ""
+#~ "You can get yourself an API token from <a href=\"https://"
+#~ "dashboard.audd.io/\">audd.io</a>. Leaving this blank will give you a few "
+#~ "trials per day."
+#~ msgstr ""
+#~ "بإمكانك الحصول على رمز واجهة برمجة من <a href=\"https://dashboard.audd.io/"
+#~ "\">audd.io</a>. إن تركت هذا فارغًا فلك عدَّة محاولات لكلِّ يوم."
+
+#~ msgid "Go Back"
+#~ msgstr "عد"
+
+#~ msgid "The result will be available when you're back online."
+#~ msgstr "تُتاح النتيجة حالما صرت متصلًا."
+
+#~ msgid "The result will be available when your connection is restored."
+#~ msgstr "سوف تتاح النتيجة فورما تتصل."
+
+#~ msgid "The result will be available when your token limit is reset."
+#~ msgstr "سوف تتاح النتيجة فورما يصفَّر حدُّ رمزك."
+
+#~ msgid ""
+#~ "The result will be available when your token is replaced with a valid one."
+#~ msgstr "سوف تتاح النتيجة فورما يستبدل برمزك رمز صالح."
+
+#~ msgid "Recording saved"
+#~ msgstr "حُفظ التسجيل"
+
+#~ msgid "Ok, got it"
+#~ msgstr "حسنًا"
+
+#~ msgid "Open preferences and try setting a different token."
+#~ msgstr "افتح التفضيلات وجرِّب رمزًا آخر."
+
+#~ msgid ""
+#~ "Wait until the limit is reset or open preferences and try setting a "
+#~ "different token."
+#~ msgstr "انتظر حتى يصفَّر الحدُّ أو افتح التفضيلات وجرِّب رمزًا آخر."
+
+#~ msgid ""
+#~ "Please open an issue on GitHub and provide the necessary information."
+#~ msgstr "اكتب تقرير علَّة في جت‌هب وضمِّن فيه المعلومات المحتاجة."
+
+#~ msgid "Please check your internet connection."
+#~ msgstr "تأكَّد من اتصالك بالإنترنت."
+
+#~ msgid "Ok"
+#~ msgstr "حسنًا"
+
+#~ msgid "Recognized {} new song"
+#~ msgid_plural "Recognized {} new songs"
+#~ msgstr[0] "لم يُتعرَّف على الأغنية"
+#~ msgstr[1] "تُعُرِّف على أغنية جديدة"
+#~ msgstr[2] "تُعُرِّف على أغنيتين جديدتين"
+#~ msgstr[3] "تُعُرِّف على {} أغانٍ جديدة"
+#~ msgstr[4] "تُعُرِّف على {} أغنية جديدة"
+#~ msgstr[5] "تُعُرِّف على {} أغنية جديدة"
+
+#~ msgid "This song was heard while you're offline"
+#~ msgid_plural "These songs were heard while you're offline"
+#~ msgstr[0] "لم يُستمع لهذه الأغنية بينما لم تكن متصلًا"
+#~ msgstr[1] "اُستمع لهذه الأغنية بينما لم تكن متصلًا"
+#~ msgstr[2] "اُستمع لهاتين الأغنيتين بينما لم تكن متصلًا"
+#~ msgstr[3] "اُستمع لهذه الأغاني بينما لم تكن متصلًا"
+#~ msgstr[4] "اُستمع لهذه الأغاني بينما لم تكن متصلًا"
+#~ msgstr[5] "اُستمع لهذه الأغاني بينما لم تكن متصلًا"
+
+#~ msgid "🎵 Identify the title and artist of the song within seconds."
+#~ msgstr "🎵 عرف عنوان وفنان الأغنية في ثوانٍ."
+
+#~ msgid "🎙️ Use your microphone or audio from desktop."
+#~ msgstr "🎙️ استعمل الميكروفون أو الصوت الصادر من حاسوبك."
+
+#~ msgid "🎸 Store the identified song including the album art in history."
+#~ msgstr "🎸 خزن الأغاني المعرفة مع صورة الألبوم في سجل التعريفات."
+
+#~ msgid "🎼 Preview the identified song with the native player."
+#~ msgstr "عاين الأغاني المعرفة بالمشغل المحلي."
+
+#~ msgid "📱 Easy-to-use user interface."
+#~ msgstr "📱 واجهة سهلة الإستعمال."
+
+#~ msgid "⌨️ User-friendly keyboard shortcuts."
+#~ msgstr "⌨️ إختصارات على لوحة المفاتيح سهلة اﻹستعمال."
+
+#~ msgid "Dave Patrick"
+#~ msgstr "Dave Patrick"
+
+#~ msgid "_Preferred Audio Source"
+#~ msgstr "_مصدر الصوت المُفضل"
+
+#~ msgid "Shazam;Music;Song;Identify;"
+#~ msgstr "Shazam;موسيقى;أغنية;تعريف;"
+
+#~ msgid "Identify any songs in seconds"
+#~ msgstr "عرف أي أغنية في ثوانٍ"
+
+#~ msgid "🌐 Browse the song in the web with the link."
+#~ msgstr "تصفح الأغنية على الأنترنيت باستعمال الرابط."
+
+#~ msgid "Open Menu"
+#~ msgstr "فتح القائمة"
+
+#~ msgid "Show Shortcuts"
+#~ msgstr "إظهار الإختصارات"
+
+#~ msgid "Controls"
+#~ msgstr "تحَكم"
+
+#~ msgid "Toggle Listen"
+#~ msgstr "تبديل إلى اﻹستماع"
+
+#~ msgid "Settings"
+#~ msgstr "الإعدادات"
+
+#~ msgid "Clear Song History"
+#~ msgstr "مسح سجل الأغاني"
+
+#~ msgid "Reset Token Value"
+#~ msgstr "إعادة ضبط الرمز"
+
+#~ msgid "Welcome to Mousai"
+#~ msgstr "مرحبا بك في Mousai"
+
+#~ msgid "Enter a valid token"
+#~ msgstr "أدخل رمزاً صالحاً"
+
+#~ msgid "Submit"
+#~ msgstr "إرسال"
+
+#~ msgid ""
+#~ "Mousai uses audd.io APIs to work, so it is required to login to <a "
+#~ "href=\"https://dashboard.audd.io/\">their website</a> and get a token. "
+#~ "Leaving this blank will give you a few trials per day."
+#~ msgstr ""
+#~ "ملاحظة: هذا التطبيق يستعمل واجهة برمجة تطبيق audd.io (أي API)، لذا يجب "
+#~ "تسجيل الدخول <a href=\"https://dashboard.audd.io/\">لموقعهم</a> لأخذ "
+#~ "المزيد من مدد التجريب."
+
+#~ msgid "Do not show at startup"
+#~ msgstr "عدم اﻹظهار عند تشغيل النظام"
+
+#~ msgid "Open in Browser"
+#~ msgstr "الفتح في المتصفح"
+
+#~ msgid "Cancel the Recording"
+#~ msgstr "إلغاء التسجيل"
+
+#~ msgid "Start Mousaing!"
+#~ msgstr "البدأ في التعريف!"
+
+#~ msgid "Muted"
+#~ msgstr "صامت"
+
+#~ msgid "_Clear Song History"
+#~ msgstr "_مسح سجل الأغاني"
+
+#~ msgid "_Reset Token"
+#~ msgstr "__إعادة ضبط الرمز"
+
+#~ msgid "Listening"
+#~ msgstr "جاري الإستماع"
+
+#~ msgid "No audio detected"
+#~ msgstr "لا صوت مستَمع"
+
+#~ msgid "Please check your audio device."
+#~ msgstr "المرجو التأكد من جهاز الصوت."
+
+#~ msgid "The song was not recognized."
+#~ msgstr "لم يتم التعرف على الأغنية."
+
+#~ msgid "Something went wrong."
+#~ msgstr "حدث خطأ ما."
+
+#~ msgid "Sorry!"
+#~ msgstr "عذراً!"
+
+#~ msgid "Stop Preview"
+#~ msgstr "إيقاف المعاينة"
+
+#~ msgid "Play Preview"
+#~ msgstr "تشغيل المعاينة"
+
+#~ msgid "Copyright 2021 Dave Patrick"
+#~ msgstr "الحقوق Dave Patrick 2021"
+
+#~ msgid "Play preview"
+#~ msgstr "تشغيل العينة"

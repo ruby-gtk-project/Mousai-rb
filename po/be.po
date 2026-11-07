@@ -1,0 +1,658 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the mousai package.
+# Yahor <g_egor98@tut.by>, 2023.
+# Yahor <k1llo2810@protonmail.com>, 2023, 2024.
+msgid ""
+msgstr ""
+"Project-Id-Version: mousai\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-19 17:29+0800\n"
+"PO-Revision-Date: 2024-03-05 09:01+0000\n"
+"Last-Translator: Yahor <k1llo2810@protonmail.com>\n"
+"Language-Team: Belarusian <https://hosted.weblate.org/projects/seadve/mousai/"
+"be/>\n"
+"Language: be\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.5-dev\n"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:2
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:7 src/about.rs:12
+#: src/main.rs:64
+msgid "Mousai"
+msgstr "Mousai"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:3
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:8
+msgid "Identify songs in seconds"
+msgstr "Вызначце песні за секунды"
+
+#. Translators: These are search terms to find this application. Do NOT translate or localize the semicolons. The list MUST also end with a semicolon.
+#: data/io.github.seadve.Mousai.desktop.in.in:9
+msgid "Shazam;Audio;Music;Song;Recognize;Identify;Recognition;"
+msgstr "Shazam;Audio;Music;Song;Recognize;Identify;Recognition;музыка;песня;распазнаць;ідэнтыфікаваць;"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:6
+msgid "Window width"
+msgstr "Шырыня акна"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:11
+msgid "Window height"
+msgstr "Вышыня акна"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:16
+msgid "Whether the window is maximized"
+msgstr "Ці разгорнута акно"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:26
+#, fuzzy
+#| msgid "Preferred audio source to use in recording audio"
+msgid "Audio source type to use in recording audio"
+msgstr "Пераважная крыніца гуку для запісу"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:32
+msgid "API token used by AudD recognition"
+msgstr "Токен API, які выкарыстоўваецца для распазнання AudD"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:37
+msgid "Legacy (Kept for migration)"
+msgstr "Састарэла (захавана для міграцыі)"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:10
+msgid "Discover songs you are aching to know with an easy-to-use interface."
+msgstr ""
+"Адкрыйце для сябе песні, якія вам вельмі хочацца ведаць, з дапамогай "
+"простага ў выкарыстанні інтэрфейсу."
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:11
+msgid ""
+"Mousai is a simple application that can recognize songs similar to Shazam. "
+"Just click the listen button, and then wait a few seconds. It will magically "
+"return the title and artist of that song!"
+msgstr ""
+"Mousai - гэта простая праграма, якая можа распазнаваць песні як Shazam. "
+"Проста націсніце кнопку праслухоўвання і пачакайце некалькі секунд. Гэта "
+"магічным чынам верне назву і выканаўцу гэтай песні!"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:12
+msgid ""
+"Note: This uses the API of audd.io, so it is necessary to log in to their "
+"site to get more trials."
+msgstr ""
+"Заўвага: тут выкарыстоўваецца API audd.io, таму неабходна ўвайсці на іх "
+"сайт, каб атрымаць больш пробнага часу."
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:13
+msgid "Why you will love Mousai?"
+msgstr "Чаму вам спадабаецца Mousai?"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:15
+msgid "🎵 Identify songs within seconds or save for later when offline"
+msgstr ""
+"🎵 Вызначце песні за некалькі секунд або захавайце іх на потым у "
+"пазасеткавым рэжыме"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:16
+msgid "🎙️ Recognize from desktop audio or your microphone"
+msgstr "🎙️ Распазнаванне гуку з вашага камп'ютара або мікрафона"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:17
+msgid "🎸 Build a repertoire of recognized songs"
+msgstr "🎸 Стварайце рэпертуар з распазнаных песень"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:18
+msgid "🎼 Quickly preview the song within the interface"
+msgstr "🎼 Хуткі прагляд песні ў інтэрфейсе"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:19
+msgid "🌐 Browse and listen the song from different providers"
+msgstr "🌐 Праглядайце і слухайце песні ад розных пастаўшчыкоў"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:20
+msgid "📱 Easy-to-use user interface"
+msgstr "📱 Лёгкі ў выкарыстанні інтэрфейс"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:26
+msgid "Mousai Home Page"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:30
+msgid "Detailed view of identified song"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:34
+msgid "Listening mode detecting the song"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:38
+#, fuzzy
+#| msgid "Recognized Song"
+#| msgid_plural "Recognized Songs"
+msgid "Recognized songs"
+msgstr "Распазнаная песня"
+
+#: data/resources/ui/history_view.ui:6
+msgid "_Preferences"
+msgstr "_Налады"
+
+#: data/resources/ui/history_view.ui:10
+msgid "_Keyboard Shortcuts"
+msgstr "_Спалучэнні клавіш"
+
+#: data/resources/ui/history_view.ui:14
+msgid "_About Mousai"
+msgstr "_Пра Mousai"
+
+#: data/resources/ui/history_view.ui:22
+msgid "Select _All"
+msgstr "Выбраць_усё"
+
+#: data/resources/ui/history_view.ui:26
+#, fuzzy
+#| msgid "Unselect"
+msgid "_Unselect All"
+msgstr "Адмяніць выбар"
+
+#: data/resources/ui/history_view.ui:42
+msgid "Home"
+msgstr "Галоўная"
+
+#: data/resources/ui/history_view.ui:52
+msgid "Recognize Song"
+msgstr "Распазнаць песню"
+
+#: data/resources/ui/history_view.ui:53 data/resources/ui/song_page.ui:109
+msgid "Listen"
+msgstr "Слухаць"
+
+#: data/resources/ui/history_view.ui:65
+msgid "Main Menu"
+msgstr "Галоўнае меню"
+
+#: data/resources/ui/history_view.ui:73 src/window/song_tile.rs:361
+msgid "Select"
+msgstr "Выбраць"
+
+#: data/resources/ui/history_view.ui:80 data/resources/ui/history_view.ui:103
+msgid "Search Songs"
+msgstr "Пошук песень"
+
+#: data/resources/ui/history_view.ui:96
+msgid "Cancel Selection"
+msgstr "Скасаваць выбар"
+
+#: data/resources/ui/history_view.ui:97 data/resources/ui/recognizer_view.ui:14
+msgid "Cancel"
+msgstr "Скасаваць"
+
+#: data/resources/ui/history_view.ui:117
+msgid "Search songs"
+msgstr "Пошук песень"
+
+#: data/resources/ui/history_view.ui:140
+msgid "Start Recognizing Songs!"
+msgstr "Пачніце распазнаванне песень!"
+
+#: data/resources/ui/history_view.ui:141
+msgid "Click the listen button to start"
+msgstr "Націсніце кнопку слухаць, каб пачаць"
+
+#: data/resources/ui/history_view.ui:150
+msgid "No Results"
+msgstr "Няма вынікаў"
+
+#: data/resources/ui/lyrics_page.ui:10 data/resources/ui/song_page.ui:140
+msgid "Lyrics"
+msgstr "Лірыка"
+
+#: data/resources/ui/preferences_dialog.ui:8
+msgid "General"
+msgstr "Агульнае"
+
+#: data/resources/ui/preferences_dialog.ui:11
+msgid "Audio Source"
+msgstr "Крыніца гуку"
+
+#: data/resources/ui/preferences_dialog.ui:12
+msgid "Device used for listening"
+msgstr "Прылада для праслухоўвання"
+
+#: data/resources/ui/preferences_dialog.ui:19
+#: src/window/external_link_tile.rs:64
+msgid "AudD"
+msgstr "AudD"
+
+#: data/resources/ui/preferences_dialog.ui:20
+msgid ""
+"You can get yourself an API token from <a href=\"https://dashboard.audd.io/"
+"\">audd.io</a>. Leaving this blank will give you a few trials per day"
+msgstr ""
+"Вы можаце атрымаць сабе токен API на <a href=\"https://dashboard.audd.io/"
+"\">audd.io</a>. Калі пакінуць гэтае поле пустым, вы атрымаеце некалькі "
+"пробаў у дзень"
+
+#: data/resources/ui/preferences_dialog.ui:23
+msgid "API Token"
+msgstr "API-токен"
+
+#: data/resources/ui/recognizer_status.ui:17
+msgid "Offline Mode Enabled"
+msgstr "Уключаны пазасеткавы рэжым"
+
+#: data/resources/ui/recognizer_status.ui:44
+msgid "Show Offline Mode Recognition Results"
+msgstr "Паказаць вынікі распазнання ў пазасеткавым рэжыме"
+
+#: data/resources/ui/recognizer_view.ui:13
+msgid "Cancel Listening"
+msgstr "Скасаваць праслухоўванне"
+
+#: data/resources/ui/recognizer_view.ui:49
+msgid "Offline Mode"
+msgstr "Пазасеткавы рэжым"
+
+#: data/resources/ui/shortcuts.ui:6
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Агульнае"
+
+#: data/resources/ui/shortcuts.ui:9
+msgctxt "shortcut window"
+msgid "Open Main Menu"
+msgstr "Адкрыць галоўнае меню"
+
+#: data/resources/ui/shortcuts.ui:15
+msgctxt "shortcut window"
+msgid "Search"
+msgstr "Пошук"
+
+#: data/resources/ui/shortcuts.ui:21
+msgctxt "shortcut window"
+msgid "Show Preferences"
+msgstr "Паказаць налады"
+
+#: data/resources/ui/shortcuts.ui:27
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Паказаць спалучэнні клавіш"
+
+#: data/resources/ui/shortcuts.ui:33
+msgctxt "shortcut window"
+msgid "Close Window"
+msgstr ""
+
+#: data/resources/ui/shortcuts.ui:39
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Выйсці"
+
+#: data/resources/ui/shortcuts.ui:47
+msgctxt "shortcut window"
+msgid "Controls"
+msgstr "Кіраванне"
+
+#: data/resources/ui/shortcuts.ui:50
+msgctxt "shortcut window"
+msgid "Toggle Listen"
+msgstr "Пераключыць праслухоўванне"
+
+#: data/resources/ui/shortcuts.ui:56
+msgctxt "shortcut window"
+msgid "Toggle Playback"
+msgstr "Пераключыць прайграванне"
+
+#: data/resources/ui/song_bar.ui:85
+msgid "Show Song Information"
+msgstr "Паказаць інфармацыю аб песні"
+
+#: data/resources/ui/song_bar.ui:145
+msgid "Stop"
+msgstr "Спыніць"
+
+#: data/resources/ui/song_page.ui:13
+msgid "Remove From History"
+msgstr "Выдаліць з гісторыі"
+
+#: data/resources/ui/song_page.ui:19
+msgid "Copy"
+msgstr "Капіяваць"
+
+#: data/resources/ui/song_page.ui:122
+msgid "Information"
+msgstr "Інфармацыя"
+
+#: data/resources/ui/song_page.ui:125
+msgid "Last Heard"
+msgstr "Апошняе праслухоўванне"
+
+#: data/resources/ui/song_page.ui:130
+msgid "Album"
+msgstr "Альбом"
+
+#: data/resources/ui/song_page.ui:135
+msgid "Release Date"
+msgstr "Дата выпуску"
+
+#: data/resources/ui/song_tile.ui:30
+msgid "New"
+msgstr "Новае"
+
+#. Translators: Replace "translator-credits" with your names. Put a comma between.
+#: src/about.rs:18
+msgid "translator-credits"
+msgstr "Yahor Haurylenka <k1llo2810@gmail.com>"
+
+#: src/about.rs:27
+msgid "Donate"
+msgstr ""
+
+#: src/about.rs:28
+msgid "GitHub"
+msgstr "GitHub"
+
+#: src/about.rs:30
+msgid "Translate"
+msgstr "Перакласці"
+
+#: src/application.rs:209
+msgid "Critical Database Error"
+msgstr "Крытычная памылка базы даных"
+
+#: src/application.rs:210
+msgid ""
+"Sorry, a critical database error has occurred. This is likely caused by a "
+"tampered or corrupted database. You can try clearing application data. "
+"However, this is not recommended and will delete all your songs and saved "
+"recordings.\n"
+"\n"
+"To report this issue, please launch Mousai in the terminal to include the "
+"logs and submit the bug report to the <a href=\"https://github.com/SeaDve/"
+"Mousai/issues/\">issue page</a>"
+msgstr ""
+"На жаль, адбылася крытычная памылка базы даных.Верагодна гэта выклікана "
+"ўмяшаннем у базу даных або яе пашкоджаннем. Вы можаце паспрабаваць ачысціць "
+"даныя праграмы. Аднак гэтага рабіць не рэкамендуецца, бо можа прывесці да "
+"выдалення ўсіх вашых песень і захаваных запісаў.\n"
+"\n"
+"Каб паведаміць аб гэтай праблеме, запусціце Mousai у тэрмінале, каб уключыць "
+"журнал і дашліце справаздачу пра памылку на <a href=\"https://github.com/"
+"SeaDve/Mousai/issues/\">старонцы issue</a>"
+
+#: src/application.rs:215
+msgid "Quit"
+msgstr "Выйсці"
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:31
+msgid "today at %R"
+msgstr "сёння ў %R"
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:34
+msgid "yesterday at %R"
+msgstr "учора ў %R"
+
+#: src/preferences_dialog.rs:103
+msgid "Microphone"
+msgstr "Мікрафон"
+
+#: src/preferences_dialog.rs:104
+msgid "Desktop Audio"
+msgstr "Гук з камп'ютара"
+
+#: src/recognizer/provider/error.rs:50
+msgid "No Matches Found"
+msgstr "Супадзенні не знойдзены"
+
+#: src/recognizer/provider/error.rs:51
+msgid "Cannot Create Fingerprint From Audio"
+msgstr "Не ўдалося стварыць лічбавы адбітак аўдыё"
+
+#: src/recognizer/provider/error.rs:52
+msgid "Invalid Token Given"
+msgstr "Выдадзены несапраўдны токен"
+
+#: src/recognizer/provider/error.rs:53
+msgid "Token Limit Reached"
+msgstr "Дасягнуты ліміт токенаў"
+
+#: src/recognizer/provider/error.rs:54
+msgid "Cannot Connect to the Server"
+msgstr "Не атрымалася злучыцца з серверам"
+
+#: src/recognizer/provider/error.rs:55
+msgid "Received Other Permanent Error"
+msgstr "Атрымана іншая пастаянная памылка"
+
+#: src/window/external_link_tile.rs:59
+msgid "Apple Music"
+msgstr "Apple Music"
+
+#: src/window/external_link_tile.rs:60
+msgid "Browse on Apple Music"
+msgstr "Пошук у Apple Music"
+
+#: src/window/external_link_tile.rs:65
+msgid "Browse on AudD"
+msgstr "Пошук у AudD"
+
+#: src/window/external_link_tile.rs:69
+msgid "Spotify"
+msgstr "Spotify"
+
+#: src/window/external_link_tile.rs:70
+msgid "Listen on Spotify"
+msgstr "Слухаць на Spotify"
+
+#: src/window/external_link_tile.rs:74
+msgid "YouTube"
+msgstr "YouTube"
+
+#: src/window/external_link_tile.rs:75
+msgid "Search on YouTube"
+msgstr "Пошук у YouTube"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/external_link_tile.rs:145
+msgid "Failed to launch {key}"
+msgstr "Не атрымалася запусціць {key}"
+
+#: src/window/history_view.rs:147 src/window/song_page.rs:80
+msgid "Copied to clipboard"
+msgstr "Скапіявана ў буфер абмену"
+
+#: src/window/history_view.rs:160
+msgid "Failed to remove selected songs"
+msgstr "Не ўдалося выдаліць выбраныя песні"
+
+#: src/window/history_view.rs:357
+msgid "Failed to remove song"
+msgstr "Не ўдалося выдаліць песню"
+
+#: src/window/history_view.rs:562
+msgid "Failed to show recognizer results"
+msgstr "Не ўдалося паказаць вынікі распазнавання"
+
+#: src/window/history_view.rs:669
+msgid "_Undo"
+msgstr "_Адрабіць"
+
+#: src/window/history_view.rs:681
+msgid "Failed to undo"
+msgstr "Не ўдалося адрабіць"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:706
+msgid "Removed {n_removed} song"
+msgid_plural "Removed {n_removed} songs"
+msgstr[0] "Выдалена {n_removed} песня"
+msgstr[1] "Выдалена {n_removed} песні"
+msgstr[2] "Выдалена {n_removed} песень"
+
+#: src/window/history_view.rs:829
+msgid "Select items"
+msgstr "Абярыце элементы"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:833
+msgid "Selected {selection_size} song"
+msgid_plural "Selected {selection_size} songs"
+msgstr[0] "Выбрана {selection_size} песня"
+msgstr[1] "Выбрана {selection_size} песні"
+msgstr[2] "Выбрана {selection_size} песень"
+
+#: src/window/history_view.rs:843
+msgid "Copy Song"
+msgid_plural "Copy Songs"
+msgstr[0] "Капіяваць песню"
+msgstr[1] "Капіяваць песні"
+msgstr[2] "Капіяваць песняў"
+
+#: src/window/history_view.rs:850
+msgid "Remove Song From History"
+msgid_plural "Remove Songs From History"
+msgstr[0] "Выдаліць песню з гісторыі"
+msgstr[1] "Выдаліць песні з гісторыі"
+msgstr[2] "Выдаліць песні з гісторыі"
+
+#: src/window/mod.rs:214
+msgid "Failed to insert song to history"
+msgstr "Не ўдалося дадаць песню ў гісторыю"
+
+#: src/window/mod.rs:262
+msgid "Please open an issue on GitHub and provide the necessary information"
+msgstr ""
+"Калі ласка, напішыце аб праблеме на GitHub і падайце неабходную інфармацыю"
+
+#: src/window/mod.rs:265 src/window/mod.rs:297
+msgid "No, Thanks"
+msgstr "Не, дзякуй"
+
+#: src/window/mod.rs:267
+msgid "Open an Issue"
+msgstr "Паведаміць аб праблеме"
+
+#: src/window/mod.rs:294
+msgid ""
+"Try moving closer to the source or using a different excerpt of the song"
+msgstr ""
+"Паспрабуйце наблізіцца да крыніцы гуку або выкарыстаць іншы ўрывак песні"
+
+#: src/window/mod.rs:299
+msgid "Try Again"
+msgstr "Паспрабуйце зноў"
+
+#: src/window/mod.rs:334
+msgid "Recording Saved"
+msgstr "Запіс захаваны"
+
+#: src/window/mod.rs:342
+msgid "The result will be available when you're back online"
+msgstr "Вынік будзе даступны, калі вы зноў будзеце анлайн"
+
+#: src/window/mod.rs:345
+msgid "Ok, Got It"
+msgstr "Добра, усё зразумела"
+
+#: src/window/mod.rs:355
+msgid ""
+"The result will be available when your token limit is reset. Wait until the "
+"limit is reset or open preferences and try setting a different token"
+msgstr ""
+"Вынік будзе даступны, калі ваш ліміт токенаў будзе скінуты. Пачакайце, "
+"пакуль ліміт будзе скінуты, або адкрыйце налады і паспрабуйце дадць іншы "
+"токен"
+
+#: src/window/mod.rs:358
+msgid "I'll Wait"
+msgstr "Я пачакаю"
+
+#: src/window/mod.rs:362
+msgid ""
+"The result will be available when your token is replaced with a valid one. "
+"Open preferences and try setting a different token"
+msgstr ""
+"Вынік будзе даступны, калі ваш токен будзе заменены на сапраўдны. Адкрыйце "
+"налады і паспрабуйце дадаць іншы токен"
+
+#: src/window/mod.rs:365
+msgid "Later"
+msgstr "Пазней"
+
+#: src/window/mod.rs:370
+msgid "Open Preferences"
+msgstr "Адкрыць налады"
+
+#: src/window/mod.rs:466
+msgid "An error occurred in the player"
+msgstr "У плэеры адбылася памылка"
+
+#: src/window/playback_button.rs:97
+msgid "Play"
+msgstr "Прайграць"
+
+#: src/window/playback_button.rs:103
+msgid "Pause"
+msgstr "Паўза"
+
+#: src/window/recognized_page.rs:151
+msgid "Recognized Song"
+msgid_plural "Recognized Songs"
+msgstr[0] "Распазнаная песня"
+msgstr[1] "Распазнаныя песні"
+msgstr[2] "Распазнаныя песні"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognized_page.rs:157
+msgid "Recognized {n_songs} New Song"
+msgid_plural "Recognized {n_songs} New Songs"
+msgstr[0] "Распазнаная {n_songs} новая песня"
+msgstr[1] "Распазнана {n_songs} новыя песні"
+msgstr[2] "Распазнана {n_songs} новых песень"
+
+#: src/window/recognized_page.rs:163
+msgid "This song was recognized from your saved recording"
+msgid_plural "These songs were recognized from your saved recordings"
+msgstr[0] "Гэтая песня была распазнана па вашым захаваным запісе"
+msgstr[1] "Гэтыя песні былі распазнаны па вашых захаваных запісах"
+msgstr[2] "Гэтыя песні былі распазнаны па вашых захаваных запісах"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognizer_status.rs:172
+msgid "Recognized {n_successful} Out Of {total_minus_failed}"
+msgstr "Распазнана {n_successful} з {total_minus_failed}"
+
+#: src/window/recognizer_view.rs:149
+msgid "Listening…"
+msgstr "Праслухоўванне…"
+
+#: src/window/recognizer_view.rs:154
+msgid "Recognizing…"
+msgstr "Распазнаванне…"
+
+#: src/window/song_page.rs:374
+msgid "Unknown"
+msgstr "Невядома"
+
+#: src/window/song_tile.rs:359
+msgid "Unselect"
+msgstr "Адмяніць выбар"
+
+#~ msgid "Donate (Buy Me a Coffee)"
+#~ msgstr "Падтрымаць (Buy Me a Coffee)"
+
+#~ msgid "Select _None"
+#~ msgstr "Ска_саваць выбар"
+
+#~ msgid "Dave Patrick Caberto"
+#~ msgstr "Дэйв Патрык Кабэрта (Dave Patrick Caberto)"
+
+#~ msgid "Determines the audio source to use when available"
+#~ msgstr "Вызначае крыніцу гуку для выкарыстання, калі яна даступная"
+
+#~ msgid "© 2023 Dave Patrick Caberto"
+#~ msgstr "© 2023 Дэйв Патрык Кабэрта"

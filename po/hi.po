@@ -1,0 +1,661 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the mousai package.
+# Hemish <hemish04082005@gmail.com>, 2022.
+# Th3 A6add0n <th3.a6add0n@gmail.com>, 2023.
+# Scrambled777 <weblate.scrambled777@simplelogin.com>, 2024.
+msgid ""
+msgstr ""
+"Project-Id-Version: mousai\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-19 17:29+0800\n"
+"PO-Revision-Date: 2026-04-20 10:10+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Hindi <https://hosted.weblate.org/projects/seadve/mousai/hi/>"
+"\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.17.1-dev\n"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:2
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:7 src/about.rs:12
+#: src/main.rs:64
+msgid "Mousai"
+msgstr "Mousai"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:3
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:8
+msgid "Identify songs in seconds"
+msgstr "सेकेंडों में गाने पहचानें"
+
+#. Translators: These are search terms to find this application. Do NOT translate or localize the semicolons. The list MUST also end with a semicolon.
+#: data/io.github.seadve.Mousai.desktop.in.in:9
+msgid "Shazam;Audio;Music;Song;Recognize;Identify;Recognition;"
+msgstr "शाज़म;ऑडियो;संगीत;गीत;पहचानना;"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:6
+msgid "Window width"
+msgstr "विंडो चौड़ाई"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:11
+msgid "Window height"
+msgstr "विंडो ऊंचाई"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:16
+msgid "Whether the window is maximized"
+msgstr "क्या विंडो अधिकतमीकृत है"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:26
+msgid "Audio source type to use in recording audio"
+msgstr "ऑडियो रिकॉर्ड करने में उपयोग हेतु ऑडियो स्रोत प्रकार"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:32
+msgid "API token used by AudD recognition"
+msgstr "AudD पहचान द्वारा प्रयुक्त API टोकन"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:37
+msgid "Legacy (Kept for migration)"
+msgstr "लेगेसी (प्रवासन हेतु)"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:10
+msgid "Discover songs you are aching to know with an easy-to-use interface."
+msgstr "उपयोग में आसान इंटरफ़ेस के साथ ऐसे गाने खोजें जिन्हें आप जानना चाहते हैं।"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:11
+msgid ""
+"Mousai is a simple application that can recognize songs similar to Shazam. "
+"Just click the listen button, and then wait a few seconds. It will magically "
+"return the title and artist of that song!"
+msgstr ""
+"Mousai एक सरल अनुप्रयोग है जो शज़ाम के समान गानों को पहचान सकता है। बस \"सुनें\" बटन "
+"को दबाएं और फिर कुछ क्षण प्रतीक्षा करें। यह जादुई ढंग से उस गीत का शीर्षक और कलाकार बता "
+"देगा!"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:12
+msgid ""
+"Note: This uses the API of audd.io, so it is necessary to log in to their "
+"site to get more trials."
+msgstr ""
+"नोट: यह audd.io की API का उपयोग करता है, इसलिए अधिक परीक्षण प्राप्त करने के लिए "
+"उनकी साइट पर लॉग इन करना आवश्यक है।"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:13
+msgid "Why you will love Mousai?"
+msgstr "आप Mousai को क्यों पसंद करेंगे?"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:15
+msgid "🎵 Identify songs within seconds or save for later when offline"
+msgstr "🎵 कुछ ही सेकंड में गाने पहचानें या ऑफ़लाइन होने पर बाद के लिए सहेजें"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:16
+msgid "🎙️ Recognize from desktop audio or your microphone"
+msgstr "🎙️ डेस्कटॉप ऑडियो या अपने माइक्रोफोन से पहचानें"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:17
+msgid "🎸 Build a repertoire of recognized songs"
+msgstr "🎸 पहचने गये गीतों का एक संग्रह बनाएं"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:18
+msgid "🎼 Quickly preview the song within the interface"
+msgstr "🎼 इंटरफ़ेस के भीतर गाने का त्वरित पूर्वावलोकन करें"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:19
+msgid "🌐 Browse and listen the song from different providers"
+msgstr "🌐 विभिन्न प्रदाताओं के गाने देखें और सुनें"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:20
+msgid "📱 Easy-to-use user interface"
+msgstr "📱 उपयोग में आसान UI"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:26
+msgid "Mousai Home Page"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:30
+msgid "Detailed view of identified song"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:34
+msgid "Listening mode detecting the song"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:38
+#, fuzzy
+#| msgid "Recognized Song"
+#| msgid_plural "Recognized Songs"
+msgid "Recognized songs"
+msgstr "पहचाना गया गाना"
+
+#: data/resources/ui/history_view.ui:6
+msgid "_Preferences"
+msgstr "प्राथमिकताएं (_P)"
+
+#: data/resources/ui/history_view.ui:10
+msgid "_Keyboard Shortcuts"
+msgstr "कीबोर्ड शॉर्टकट (_K)"
+
+#: data/resources/ui/history_view.ui:14
+msgid "_About Mousai"
+msgstr "_Mousai के बारे में"
+
+#: data/resources/ui/history_view.ui:22
+msgid "Select _All"
+msgstr "सभी चुनें (_A)"
+
+#: data/resources/ui/history_view.ui:26
+#, fuzzy
+#| msgid "Unselect"
+msgid "_Unselect All"
+msgstr "अचयनित करें"
+
+#: data/resources/ui/history_view.ui:42
+msgid "Home"
+msgstr "घर"
+
+#: data/resources/ui/history_view.ui:52
+msgid "Recognize Song"
+msgstr "गाना पहचानें"
+
+#: data/resources/ui/history_view.ui:53 data/resources/ui/song_page.ui:109
+msgid "Listen"
+msgstr "सुनें"
+
+#: data/resources/ui/history_view.ui:65
+msgid "Main Menu"
+msgstr "मुख्य मेनू"
+
+#: data/resources/ui/history_view.ui:73 src/window/song_tile.rs:361
+msgid "Select"
+msgstr "चुनें"
+
+#: data/resources/ui/history_view.ui:80 data/resources/ui/history_view.ui:103
+msgid "Search Songs"
+msgstr "गाने खोजें"
+
+#: data/resources/ui/history_view.ui:96
+msgid "Cancel Selection"
+msgstr "चयन रद्द करें"
+
+#: data/resources/ui/history_view.ui:97 data/resources/ui/recognizer_view.ui:14
+msgid "Cancel"
+msgstr "रद्द करें"
+
+#: data/resources/ui/history_view.ui:117
+msgid "Search songs"
+msgstr "गाने खोजें"
+
+#: data/resources/ui/history_view.ui:140
+msgid "Start Recognizing Songs!"
+msgstr "गाने पहचानना शुरू करें!"
+
+#: data/resources/ui/history_view.ui:141
+msgid "Click the listen button to start"
+msgstr "शुरू करने के लिए \"सुनें\" बटन को दबाएं"
+
+#: data/resources/ui/history_view.ui:150
+msgid "No Results"
+msgstr "कोई परिणाम नहीं"
+
+#: data/resources/ui/lyrics_page.ui:10 data/resources/ui/song_page.ui:140
+msgid "Lyrics"
+msgstr "बोल"
+
+#: data/resources/ui/preferences_dialog.ui:8
+msgid "General"
+msgstr "सामान्य"
+
+#: data/resources/ui/preferences_dialog.ui:11
+msgid "Audio Source"
+msgstr "ऑडियो स्रोत"
+
+#: data/resources/ui/preferences_dialog.ui:12
+msgid "Device used for listening"
+msgstr "सुनने हेतु प्रयुक्त उपकरण"
+
+#: data/resources/ui/preferences_dialog.ui:19
+#: src/window/external_link_tile.rs:64
+msgid "AudD"
+msgstr "AudD"
+
+#: data/resources/ui/preferences_dialog.ui:20
+msgid ""
+"You can get yourself an API token from <a href=\"https://dashboard.audd.io/"
+"\">audd.io</a>. Leaving this blank will give you a few trials per day"
+msgstr ""
+"आप <a href=\"https://dashboard.audd.io/\">audd.io</a> से API टोकन प्राप्त कर "
+"सकते हैं। इसे खाली छोड़ने से आपको प्रतिदिन कुछ प्रयास मिलेंगें"
+
+#: data/resources/ui/preferences_dialog.ui:23
+msgid "API Token"
+msgstr "API टोकन"
+
+#: data/resources/ui/recognizer_status.ui:17
+msgid "Offline Mode Enabled"
+msgstr "ऑफलाइन मोड सक्षम"
+
+#: data/resources/ui/recognizer_status.ui:44
+msgid "Show Offline Mode Recognition Results"
+msgstr "ऑफलाइन मोड पहचान परिणाम दिखाएं"
+
+#: data/resources/ui/recognizer_view.ui:13
+msgid "Cancel Listening"
+msgstr "सुनना रद्द करें"
+
+#: data/resources/ui/recognizer_view.ui:49
+msgid "Offline Mode"
+msgstr "ऑफलाइन मोड"
+
+#: data/resources/ui/shortcuts.ui:6
+msgctxt "shortcut window"
+msgid "General"
+msgstr "सामान्य"
+
+#: data/resources/ui/shortcuts.ui:9
+msgctxt "shortcut window"
+msgid "Open Main Menu"
+msgstr "मुख्य मेनू खोलें"
+
+#: data/resources/ui/shortcuts.ui:15
+msgctxt "shortcut window"
+msgid "Search"
+msgstr "खोजें"
+
+#: data/resources/ui/shortcuts.ui:21
+msgctxt "shortcut window"
+msgid "Show Preferences"
+msgstr "प्राथमिकताएं दिखाएं"
+
+#: data/resources/ui/shortcuts.ui:27
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "शॉर्टकट दिखाएं"
+
+#: data/resources/ui/shortcuts.ui:33
+msgctxt "shortcut window"
+msgid "Close Window"
+msgstr ""
+
+#: data/resources/ui/shortcuts.ui:39
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "बंद करें"
+
+#: data/resources/ui/shortcuts.ui:47
+msgctxt "shortcut window"
+msgid "Controls"
+msgstr "नियंत्रण"
+
+#: data/resources/ui/shortcuts.ui:50
+msgctxt "shortcut window"
+msgid "Toggle Listen"
+msgstr "सुनना शुरू/बंद करें"
+
+#: data/resources/ui/shortcuts.ui:56
+msgctxt "shortcut window"
+msgid "Toggle Playback"
+msgstr "प्लेबैक शुरू/बंद करें"
+
+#: data/resources/ui/song_bar.ui:85
+msgid "Show Song Information"
+msgstr "गाने की जानकारी दिखाएं"
+
+#: data/resources/ui/song_bar.ui:145
+msgid "Stop"
+msgstr "रोकें"
+
+#: data/resources/ui/song_page.ui:13
+msgid "Remove From History"
+msgstr "इतिहास से हटाएं"
+
+#: data/resources/ui/song_page.ui:19
+msgid "Copy"
+msgstr "कॉपी करें"
+
+#: data/resources/ui/song_page.ui:122
+msgid "Information"
+msgstr "जानकारी"
+
+#: data/resources/ui/song_page.ui:125
+msgid "Last Heard"
+msgstr "आखिरी बार सुना"
+
+#: data/resources/ui/song_page.ui:130
+msgid "Album"
+msgstr "एल्बम"
+
+#: data/resources/ui/song_page.ui:135
+msgid "Release Date"
+msgstr "रिलीज़ दिनांक"
+
+#: data/resources/ui/song_tile.ui:30
+msgid "New"
+msgstr "नया"
+
+#. Translators: Replace "translator-credits" with your names. Put a comma between.
+#: src/about.rs:18
+msgid "translator-credits"
+msgstr ""
+"Hemish &lt;hemish04082005@gmail.com&gt;\n"
+"Scrambled777 &lt;weblate.scrambled777@simplelogin.com&gt;"
+
+#: src/about.rs:27
+#, fuzzy
+msgid "Donate"
+msgstr "दान करें"
+
+#: src/about.rs:28
+msgid "GitHub"
+msgstr "GitHub"
+
+#: src/about.rs:30
+msgid "Translate"
+msgstr "अनुवाद करें"
+
+#: src/application.rs:209
+msgid "Critical Database Error"
+msgstr "गंभीर डेटाबेस त्रुटि"
+
+#: src/application.rs:210
+msgid ""
+"Sorry, a critical database error has occurred. This is likely caused by a "
+"tampered or corrupted database. You can try clearing application data. "
+"However, this is not recommended and will delete all your songs and saved "
+"recordings.\n"
+"\n"
+"To report this issue, please launch Mousai in the terminal to include the "
+"logs and submit the bug report to the <a href=\"https://github.com/SeaDve/"
+"Mousai/issues/\">issue page</a>"
+msgstr ""
+"क्षमा करें, एक गंभीर डेटाबेस त्रुटि उत्पन्न हुई है। यह संभवतः किसी छेड़छाड़ या दूषित डेटाबेस के "
+"कारण होता है। आप अनुप्रयोग डेटा साफ करने का प्रयास कर सकते हैं। हालांकि, यह अनुशंसित नहीं "
+"है और यह आपके सभी गाने और सहेजी गई रिकॉर्डिंग हटा देगा।\n"
+"\n"
+"इस समस्या की रिपोर्ट करने के लिए, कृपया लॉग्स को शामिल करने के लिए टर्मिनल में Mousai "
+"को शुरू करें और बग रिपोर्ट <a href=\"https://github.com/SeaDve/Mousai/issues/"
+"\">समस्या पृष्ठ</a> पर जमा करें"
+
+#: src/application.rs:215
+msgid "Quit"
+msgstr "बंद करें"
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:31
+msgid "today at %R"
+msgstr "आज %R बजे"
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:34
+msgid "yesterday at %R"
+msgstr "कल %R बजे"
+
+#: src/preferences_dialog.rs:103
+msgid "Microphone"
+msgstr "माइक्रोफोन"
+
+#: src/preferences_dialog.rs:104
+msgid "Desktop Audio"
+msgstr "डेस्कटॉप ऑडियो"
+
+#: src/recognizer/provider/error.rs:50
+msgid "No Matches Found"
+msgstr "कोई मेल नहीं मिले"
+
+#: src/recognizer/provider/error.rs:51
+msgid "Cannot Create Fingerprint From Audio"
+msgstr "ऑडियो से फिंगरप्रिंट नहीं बना सका"
+
+#: src/recognizer/provider/error.rs:52
+msgid "Invalid Token Given"
+msgstr "अमान्य टोकन प्रदत्त"
+
+#: src/recognizer/provider/error.rs:53
+msgid "Token Limit Reached"
+msgstr "टोकन सीमा पूर्ण"
+
+#: src/recognizer/provider/error.rs:54
+msgid "Cannot Connect to the Server"
+msgstr "सर्वर से नहीं जुड़ सके"
+
+#: src/recognizer/provider/error.rs:55
+msgid "Received Other Permanent Error"
+msgstr "अन्य स्थायी त्रुटि प्राप्त हुई"
+
+#: src/window/external_link_tile.rs:59
+msgid "Apple Music"
+msgstr "Apple Music"
+
+#: src/window/external_link_tile.rs:60
+msgid "Browse on Apple Music"
+msgstr "Apple Music पर देखें"
+
+#: src/window/external_link_tile.rs:65
+msgid "Browse on AudD"
+msgstr "AudD पर देखें"
+
+#: src/window/external_link_tile.rs:69
+msgid "Spotify"
+msgstr "Spotify"
+
+#: src/window/external_link_tile.rs:70
+msgid "Listen on Spotify"
+msgstr "Spotify पर सुनें"
+
+#: src/window/external_link_tile.rs:74
+msgid "YouTube"
+msgstr "YouTube"
+
+#: src/window/external_link_tile.rs:75
+msgid "Search on YouTube"
+msgstr "YouTube पर खोजें"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/external_link_tile.rs:145
+msgid "Failed to launch {key}"
+msgstr "{key} प्रारंभ करने में विफल"
+
+#: src/window/history_view.rs:147 src/window/song_page.rs:80
+msgid "Copied to clipboard"
+msgstr "क्लिपबोर्ड पर कॉपी किया गया"
+
+#: src/window/history_view.rs:160
+msgid "Failed to remove selected songs"
+msgstr "चयनित गाने हटाने में विफल"
+
+#: src/window/history_view.rs:357
+msgid "Failed to remove song"
+msgstr "गाना हटाने में विफल"
+
+#: src/window/history_view.rs:562
+msgid "Failed to show recognizer results"
+msgstr "पहचानकर्ता परिणाम दिखाने में विफल"
+
+#: src/window/history_view.rs:669
+msgid "_Undo"
+msgstr "पूर्ववत करें (_U)"
+
+#: src/window/history_view.rs:681
+msgid "Failed to undo"
+msgstr "पूर्ववत करने में विफल"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:706
+msgid "Removed {n_removed} song"
+msgid_plural "Removed {n_removed} songs"
+msgstr[0] "{n_removed} गाना हटाया"
+msgstr[1] "{n_removed} गाने हटाये"
+
+#: src/window/history_view.rs:829
+msgid "Select items"
+msgstr "वस्तुएं चुनें"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:833
+msgid "Selected {selection_size} song"
+msgid_plural "Selected {selection_size} songs"
+msgstr[0] "{selection_size} गीत चयनित"
+msgstr[1] "{selection_size} गाने चयनित"
+
+#: src/window/history_view.rs:843
+msgid "Copy Song"
+msgid_plural "Copy Songs"
+msgstr[0] "गाना कॉपी करें"
+msgstr[1] "गाने कॉपी करें"
+
+#: src/window/history_view.rs:850
+msgid "Remove Song From History"
+msgid_plural "Remove Songs From History"
+msgstr[0] "इतिहास से गाना हटाएं"
+msgstr[1] "इतिहास से गाने हटाएं"
+
+#: src/window/mod.rs:214
+msgid "Failed to insert song to history"
+msgstr "गाने को इतिहास में सम्मिलित करने में विफल"
+
+#: src/window/mod.rs:262
+msgid "Please open an issue on GitHub and provide the necessary information"
+msgstr "कृपया GitHub पर एक मुद्दा खोलें और आवश्यक जानकारी प्रदान करें"
+
+#: src/window/mod.rs:265 src/window/mod.rs:297
+msgid "No, Thanks"
+msgstr "जी नहीं, धन्यवाद"
+
+#: src/window/mod.rs:267
+msgid "Open an Issue"
+msgstr "एक मुद्दा खोलें"
+
+#: src/window/mod.rs:294
+msgid ""
+"Try moving closer to the source or using a different excerpt of the song"
+msgstr "स्रोत के करीब जाने या गीत के किसी भिन्न अंश का उपयोग करने का प्रयास करें"
+
+#: src/window/mod.rs:299
+msgid "Try Again"
+msgstr "पुनः प्रयास करें"
+
+#: src/window/mod.rs:334
+msgid "Recording Saved"
+msgstr "रिकॉर्डिंग सहेजी गई"
+
+#: src/window/mod.rs:342
+msgid "The result will be available when you're back online"
+msgstr "जब आप वापस ऑनलाइन होंगे तो परिणाम उपलब्ध होगा"
+
+#: src/window/mod.rs:345
+msgid "Ok, Got It"
+msgstr "ठीक है, समझ गया"
+
+#: src/window/mod.rs:355
+msgid ""
+"The result will be available when your token limit is reset. Wait until the "
+"limit is reset or open preferences and try setting a different token"
+msgstr ""
+"परिणाम तब उपलब्ध होगा जब आपकी टोकन सीमा रीसेट हो जाएगी। सीमा रीसेट होने तक "
+"प्रतीक्षा करें या प्राथमिकताएं खोलें और एक अलग टोकन निर्धारित करने का प्रयास करें"
+
+#: src/window/mod.rs:358
+msgid "I'll Wait"
+msgstr "मैं इंतजार करूंगा"
+
+#: src/window/mod.rs:362
+msgid ""
+"The result will be available when your token is replaced with a valid one. "
+"Open preferences and try setting a different token"
+msgstr ""
+"परिणाम तब उपलब्ध होगा जब आपका टोकन मान्य टोकन से बदल दिया जाएगा। प्राथमिकताएं खोलें "
+"और एक अलग टोकन निर्धारित करने का प्रयास करें"
+
+#: src/window/mod.rs:365
+msgid "Later"
+msgstr "बाद में"
+
+#: src/window/mod.rs:370
+msgid "Open Preferences"
+msgstr "प्राथमिकताएं खोलें"
+
+#: src/window/mod.rs:466
+msgid "An error occurred in the player"
+msgstr "प्लेयर में कोई त्रुटि उत्पन्न हुई"
+
+#: src/window/playback_button.rs:97
+msgid "Play"
+msgstr "चलाएं"
+
+#: src/window/playback_button.rs:103
+msgid "Pause"
+msgstr "विराम"
+
+#: src/window/recognized_page.rs:151
+msgid "Recognized Song"
+msgid_plural "Recognized Songs"
+msgstr[0] "पहचाना गया गाना"
+msgstr[1] "पहचाने गये गाने"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognized_page.rs:157
+msgid "Recognized {n_songs} New Song"
+msgid_plural "Recognized {n_songs} New Songs"
+msgstr[0] "{n_songs} नया गाना पहचाना गया"
+msgstr[1] "{n_songs} नये गाने पहचाने गये"
+
+#: src/window/recognized_page.rs:163
+msgid "This song was recognized from your saved recording"
+msgid_plural "These songs were recognized from your saved recordings"
+msgstr[0] "यह गाना आपकी सहेजी गई रिकॉर्डिंग से पहचाना गया"
+msgstr[1] "ये गाने आपकी सहेजी गई रिकॉर्डिंग से पहचाने गए"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognizer_status.rs:172
+msgid "Recognized {n_successful} Out Of {total_minus_failed}"
+msgstr "{total_minus_failed} में से {n_successful} पहचाने गए"
+
+#: src/window/recognizer_view.rs:149
+msgid "Listening…"
+msgstr "सुन रहें हैं…"
+
+#: src/window/recognizer_view.rs:154
+msgid "Recognizing…"
+msgstr "पहचान रहें हैं…"
+
+#: src/window/song_page.rs:374
+msgid "Unknown"
+msgstr "अज्ञात"
+
+#: src/window/song_tile.rs:359
+msgid "Unselect"
+msgstr "अचयनित करें"
+
+#~ msgid "Donate (Buy Me a Coffee)"
+#~ msgstr "दान करें (मेरे लिए कॉफी खरीदें)"
+
+#~ msgid "Select _None"
+#~ msgstr "कुछ नहीं चुनें (_N)"
+
+#~ msgid "Dave Patrick Caberto"
+#~ msgstr "Dave Patrick Caberto"
+
+#~ msgid "Determines the audio source to use when available"
+#~ msgstr "उपलब्ध होने पर उपयोग करने के लिए ऑडियो स्रोत निर्धारित करता है"
+
+#~ msgid "🎵 Recognize songs within seconds or save for later when offline"
+#~ msgstr "🎵 सेकंड में गाने पहचानें या ऑफ़लाइन होने पर बाद के लिए सहेजें"
+
+#~ msgid "🎙️ Use microphone or desktop audio"
+#~ msgstr "🎙️ माइक्रोफ़ोन या डेस्कटॉप ऑडियो का उपयोग करें"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Navigation"
+#~ msgstr "नेविगेशन"
+
+#, fuzzy
+#~ msgid "Donate (Liberapay)"
+#~ msgstr "दान करें (लिबरेपे के द्वारा)"
+
+#, fuzzy
+#~ msgid "Donate (PayPal)"
+#~ msgstr "दान करें (पेपाल के द्वारा)"
+
+#~ msgid "Dave Patrick"
+#~ msgstr "Dave Patrick"

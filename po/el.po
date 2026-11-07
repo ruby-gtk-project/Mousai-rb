@@ -1,0 +1,915 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the mousai package.
+# Nikos <dizars1776@yahoo.gr>, 2022.
+# Nikolaos Georgiou <dizars1776@yahoo.gr>, 2022.
+# greek anon <rnation@bbq59.xyz>, 2023, 2024, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: mousai\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-19 17:29+0800\n"
+"PO-Revision-Date: 2025-01-27 22:57+0000\n"
+"Last-Translator: greek anon <rnation@bbq59.xyz>\n"
+"Language-Team: Greek <https://hosted.weblate.org/projects/seadve/mousai/el/"
+">\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10-dev\n"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:2
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:7 src/about.rs:12
+#: src/main.rs:64
+msgid "Mousai"
+msgstr "Mousai"
+
+#: data/io.github.seadve.Mousai.desktop.in.in:3
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:8
+msgid "Identify songs in seconds"
+msgstr "Εντόπισε τραγούδια σε δευτερόλεπτα"
+
+#. Translators: These are search terms to find this application. Do NOT translate or localize the semicolons. The list MUST also end with a semicolon.
+#: data/io.github.seadve.Mousai.desktop.in.in:9
+msgid "Shazam;Audio;Music;Song;Recognize;Identify;Recognition;"
+msgstr "Shazam;Ήχος;Μουσική;Τραγούδι;Αναγνωρίζω;Εξευρίσκω;Αναγνώριση;"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:6
+msgid "Window width"
+msgstr "Πλάτος παραθύρου"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:11
+msgid "Window height"
+msgstr "Ύψος παραθύρου"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:16
+msgid "Whether the window is maximized"
+msgstr "Εάν το παράθυρο μεγιστοποιείται"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:26
+msgid "Audio source type to use in recording audio"
+msgstr "Τύπος πηγής ήχου προς χρήση για την καταγραφή ήχου"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:32
+msgid "API token used by AudD recognition"
+msgstr "API token που χρησιμοποιείται από την αναγνώριση AudD"
+
+#: data/io.github.seadve.Mousai.gschema.xml.in:37
+msgid "Legacy (Kept for migration)"
+msgstr "Παλαιού τύπου (Διατηρείται για μετεγκατάσταση)"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:10
+msgid "Discover songs you are aching to know with an easy-to-use interface."
+msgstr ""
+"Ανακαλύψτε τραγούδια που πονάτε να αναγνωρίζετε με μια εύχρηστη διεπαφή."
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:11
+msgid ""
+"Mousai is a simple application that can recognize songs similar to Shazam. "
+"Just click the listen button, and then wait a few seconds. It will magically "
+"return the title and artist of that song!"
+msgstr ""
+"Το Mousai είναι μια απλή εφαρμογή που μπορεί να αναγνωρίσει τραγούδια "
+"παρόμοια με το Shazam. Απλώς κάντε κλικ στο κουμπί ακρόαση και, στη "
+"συνέχεια, περιμένετε μερικά δευτερόλεπτα. Θα επιστρέψει μαγικά τον τίτλο και "
+"τον καλλιτέχνη αυτού του τραγουδιού!"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:12
+msgid ""
+"Note: This uses the API of audd.io, so it is necessary to log in to their "
+"site to get more trials."
+msgstr ""
+"Σημείωση: Αυτό χρησιμοποιεί το API του aud.io, επομένως είναι απαραίτητο να "
+"συνδεθείτε στον ιστότοπό τους για να λάβετε περισσότερες δοκιμές."
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:13
+msgid "Why you will love Mousai?"
+msgstr "Γιατί θα αγαπήσετε το Mousai;"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:15
+msgid "🎵 Identify songs within seconds or save for later when offline"
+msgstr ""
+"🎵 Προσδιορίστε τραγούδια μέσα σε δευτερόλεπτα ή αποθηκεύστε τα για αργότερα "
+"όταν είστε εκτός σύνδεσης"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:16
+msgid "🎙️ Recognize from desktop audio or your microphone"
+msgstr "🎙️ Αναγνωρίστε από τον ήχο της επιφάνειας εργασίας ή το μικρόφωνό σας"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:17
+msgid "🎸 Build a repertoire of recognized songs"
+msgstr "🎸 Δημιουργήστε ένα ρεπερτόριο αναγνωρισμένων τραγουδιών"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:18
+msgid "🎼 Quickly preview the song within the interface"
+msgstr "🎼 Γρήγορη προεπισκόπηση του τραγουδιού μέσα στη διεπαφή"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:19
+msgid "🌐 Browse and listen the song from different providers"
+msgstr "🌐 Περιηγηθείτε και ακούστε το τραγούδι από διαφορετικούς παρόχους"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:20
+msgid "📱 Easy-to-use user interface"
+msgstr "📱 Εύκολο στη χρήση διεπαφή χρήστη"
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:26
+msgid "Mousai Home Page"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:30
+msgid "Detailed view of identified song"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:34
+msgid "Listening mode detecting the song"
+msgstr ""
+
+#: data/io.github.seadve.Mousai.metainfo.xml.in.in:38
+#, fuzzy
+#| msgid "Recognized Song"
+#| msgid_plural "Recognized Songs"
+msgid "Recognized songs"
+msgstr "Αναγνωρισμένο τραγούδι"
+
+#: data/resources/ui/history_view.ui:6
+msgid "_Preferences"
+msgstr "_Προτιμήσεις"
+
+#: data/resources/ui/history_view.ui:10
+msgid "_Keyboard Shortcuts"
+msgstr "_Συντομεύσεις Πληκτρολογίου"
+
+#: data/resources/ui/history_view.ui:14
+msgid "_About Mousai"
+msgstr "_Σχετικά με το Mousai"
+
+#: data/resources/ui/history_view.ui:22
+msgid "Select _All"
+msgstr "Επιλογή_Όλων"
+
+#: data/resources/ui/history_view.ui:26
+msgid "_Unselect All"
+msgstr "_Αποεπιλογή όλων"
+
+#: data/resources/ui/history_view.ui:42
+msgid "Home"
+msgstr "Κεντρική"
+
+#: data/resources/ui/history_view.ui:52
+msgid "Recognize Song"
+msgstr "Αναγνωρίστε το τραγούδι"
+
+#: data/resources/ui/history_view.ui:53 data/resources/ui/song_page.ui:109
+msgid "Listen"
+msgstr "Ακούστε"
+
+#: data/resources/ui/history_view.ui:65
+msgid "Main Menu"
+msgstr "Κυρίως Μενού"
+
+#: data/resources/ui/history_view.ui:73 src/window/song_tile.rs:361
+msgid "Select"
+msgstr "Επιλέξτε"
+
+#: data/resources/ui/history_view.ui:80 data/resources/ui/history_view.ui:103
+msgid "Search Songs"
+msgstr "Αναζήτηση Τραγουδιών"
+
+#: data/resources/ui/history_view.ui:96
+msgid "Cancel Selection"
+msgstr "Ακύρωση επιλογής"
+
+#: data/resources/ui/history_view.ui:97 data/resources/ui/recognizer_view.ui:14
+msgid "Cancel"
+msgstr "Ακύρωση"
+
+#: data/resources/ui/history_view.ui:117
+msgid "Search songs"
+msgstr "Αναζήτηση τραγουδιών"
+
+#: data/resources/ui/history_view.ui:140
+msgid "Start Recognizing Songs!"
+msgstr "Ξεκινήστε να αναγνωρίζετε τραγούδια!"
+
+#: data/resources/ui/history_view.ui:141
+msgid "Click the listen button to start"
+msgstr "Κάντε κλικ στο κουμπί ακρόαση για να ξεκινήσετε"
+
+#: data/resources/ui/history_view.ui:150
+msgid "No Results"
+msgstr "Χωρίς αποτέλεσμα"
+
+#: data/resources/ui/lyrics_page.ui:10 data/resources/ui/song_page.ui:140
+msgid "Lyrics"
+msgstr "Στίχοι"
+
+#: data/resources/ui/preferences_dialog.ui:8
+msgid "General"
+msgstr "Γενικά"
+
+#: data/resources/ui/preferences_dialog.ui:11
+msgid "Audio Source"
+msgstr "Πηγή ήχου"
+
+#: data/resources/ui/preferences_dialog.ui:12
+msgid "Device used for listening"
+msgstr "Συσκευή που χρησιμοποιήθηκε για την ακρόαση"
+
+#: data/resources/ui/preferences_dialog.ui:19
+#: src/window/external_link_tile.rs:64
+msgid "AudD"
+msgstr "AudD"
+
+#: data/resources/ui/preferences_dialog.ui:20
+msgid ""
+"You can get yourself an API token from <a href=\"https://dashboard.audd.io/"
+"\">audd.io</a>. Leaving this blank will give you a few trials per day"
+msgstr ""
+"Μπορείτε να αποκτήσετε ένα API token από το <a href=\"https://"
+"dashboard.audd.io/\">audd.io</a>. Αν αφήσετε αυτό το κενό, θα έχετε μερικές "
+"δοκιμές την ημέρα"
+
+#: data/resources/ui/preferences_dialog.ui:23
+msgid "API Token"
+msgstr "API Token"
+
+#: data/resources/ui/recognizer_status.ui:17
+msgid "Offline Mode Enabled"
+msgstr "Ενεργοποιήθηκε η λειτουργία εκτός σύνδεσης"
+
+#: data/resources/ui/recognizer_status.ui:44
+msgid "Show Offline Mode Recognition Results"
+msgstr "Εμφάνιση αποτελεσμάτων από αναγνώρισεις σε λειτουργία εκτός σύνδεσης"
+
+#: data/resources/ui/recognizer_view.ui:13
+msgid "Cancel Listening"
+msgstr "Ακύρωση ακρόασης"
+
+#: data/resources/ui/recognizer_view.ui:49
+msgid "Offline Mode"
+msgstr "Λειτουργία εκτός σύνδεσης"
+
+#: data/resources/ui/shortcuts.ui:6
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Γενικά"
+
+#: data/resources/ui/shortcuts.ui:9
+msgctxt "shortcut window"
+msgid "Open Main Menu"
+msgstr "Ανοίξτε το Κεντρικό Μενού"
+
+#: data/resources/ui/shortcuts.ui:15
+msgctxt "shortcut window"
+msgid "Search"
+msgstr "Αναζήτηση"
+
+#: data/resources/ui/shortcuts.ui:21
+msgctxt "shortcut window"
+msgid "Show Preferences"
+msgstr "Εμφάνιση Προτιμήσεων"
+
+#: data/resources/ui/shortcuts.ui:27
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Εμφάνιση Συντομεύσεων"
+
+#: data/resources/ui/shortcuts.ui:33
+msgctxt "shortcut window"
+msgid "Close Window"
+msgstr ""
+
+#: data/resources/ui/shortcuts.ui:39
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Έξοδος"
+
+#: data/resources/ui/shortcuts.ui:47
+msgctxt "shortcut window"
+msgid "Controls"
+msgstr "Έλεγχοι"
+
+#: data/resources/ui/shortcuts.ui:50
+msgctxt "shortcut window"
+msgid "Toggle Listen"
+msgstr "Εναλλαγή λειτουργίας ακρόασης"
+
+#: data/resources/ui/shortcuts.ui:56
+msgctxt "shortcut window"
+msgid "Toggle Playback"
+msgstr "Εναλλαγή λειτουργίας αναπαραγωγής"
+
+#: data/resources/ui/song_bar.ui:85
+msgid "Show Song Information"
+msgstr "Εμφάνιση πληροφοριών τραγουδιού"
+
+#: data/resources/ui/song_bar.ui:145
+msgid "Stop"
+msgstr "Τέλος"
+
+#: data/resources/ui/song_page.ui:13
+msgid "Remove From History"
+msgstr "Κατάργηση από το ιστορικό"
+
+#: data/resources/ui/song_page.ui:19
+msgid "Copy"
+msgstr "Αντιγραφή"
+
+#: data/resources/ui/song_page.ui:122
+msgid "Information"
+msgstr "Πληροφορίες"
+
+#: data/resources/ui/song_page.ui:125
+msgid "Last Heard"
+msgstr "Τελευταία ακρόαση"
+
+#: data/resources/ui/song_page.ui:130
+msgid "Album"
+msgstr "Άλμπουμ"
+
+#: data/resources/ui/song_page.ui:135
+msgid "Release Date"
+msgstr "Ημερομηνία κυκλοφορίας"
+
+#: data/resources/ui/song_tile.ui:30
+msgid "New"
+msgstr "Νέο"
+
+#. Translators: Replace "translator-credits" with your names. Put a comma between.
+#: src/about.rs:18
+msgid "translator-credits"
+msgstr "συντελεστές-μετάφρασης"
+
+#: src/about.rs:27
+msgid "Donate"
+msgstr ""
+
+#: src/about.rs:28
+msgid "GitHub"
+msgstr "GitHub"
+
+#: src/about.rs:30
+msgid "Translate"
+msgstr "Μετάφραση"
+
+#: src/application.rs:209
+msgid "Critical Database Error"
+msgstr "Κρίσιμο σφάλμα βάσης δεδομένων"
+
+#: src/application.rs:210
+msgid ""
+"Sorry, a critical database error has occurred. This is likely caused by a "
+"tampered or corrupted database. You can try clearing application data. "
+"However, this is not recommended and will delete all your songs and saved "
+"recordings.\n"
+"\n"
+"To report this issue, please launch Mousai in the terminal to include the "
+"logs and submit the bug report to the <a href=\"https://github.com/SeaDve/"
+"Mousai/issues/\">issue page</a>"
+msgstr ""
+"Λυπούμαστε, παρουσιάστηκε ένα κρίσιμο σφάλμα βάσης δεδομένων. Αυτό "
+"πιθανότατα προκαλείται από μια παραποιημένη ή κατεστραμμένη βάση δεδομένων. "
+"Μπορείτε να δοκιμάσετε να διαγράψετε τα δεδομένα της εφαρμογής. Ωστόσο, αυτό "
+"δε συνιστάται και θα διαγράψει όλα τα τραγούδια και τις αποθηκευμένες "
+"ηχογραφήσεις σας.\n"
+"\n"
+"Για να αναφέρετε αυτό το ζήτημα, εκκινήστε το Mousai στο τερματικό για να "
+"συμπεριλάβετε τα αρχεία καταγραφής και υποβάλετε την αναφορά σφαλμάτων στη "
+"<a href=\"https://github.com/SeaDve/Mousai/issues/\">σελίδα ζητήματος</a>"
+
+#: src/application.rs:215
+msgid "Quit"
+msgstr "Έξοδος"
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:31
+msgid "today at %R"
+msgstr "σήμερα στις %R"
+
+#. Translators: `%R` will be replaced with 24-hour formatted datetime (e.g., `13:21`)
+#: src/date_time.rs:34
+msgid "yesterday at %R"
+msgstr "χθές στις %R"
+
+#: src/preferences_dialog.rs:103
+msgid "Microphone"
+msgstr "Μικρόφωνο"
+
+#: src/preferences_dialog.rs:104
+msgid "Desktop Audio"
+msgstr "Ήχος επιφάνειας εργασίας"
+
+#: src/recognizer/provider/error.rs:50
+msgid "No Matches Found"
+msgstr "Δεν βρέθηκαν αντιστοιχίες"
+
+#: src/recognizer/provider/error.rs:51
+msgid "Cannot Create Fingerprint From Audio"
+msgstr "Δεν είναι δυνατή η δημιουργία δακτυλικού αποτυπώματος από ήχο"
+
+#: src/recognizer/provider/error.rs:52
+msgid "Invalid Token Given"
+msgstr "Δόθηκε μη έγκυρο διακριτικό"
+
+#: src/recognizer/provider/error.rs:53
+msgid "Token Limit Reached"
+msgstr "Συμπληρώθηκε το όριο διακριτικών"
+
+#: src/recognizer/provider/error.rs:54
+msgid "Cannot Connect to the Server"
+msgstr "Δεν είναι δυνατή η σύνδεση στον διακομιστή"
+
+#: src/recognizer/provider/error.rs:55
+msgid "Received Other Permanent Error"
+msgstr "Λήφθηκε άλλο μόνιμο σφάλμα"
+
+#: src/window/external_link_tile.rs:59
+msgid "Apple Music"
+msgstr "Apple Music"
+
+#: src/window/external_link_tile.rs:60
+msgid "Browse on Apple Music"
+msgstr "Περιήγηση στο Apple Music"
+
+#: src/window/external_link_tile.rs:65
+msgid "Browse on AudD"
+msgstr "Περιήγηση στο AudD"
+
+#: src/window/external_link_tile.rs:69
+msgid "Spotify"
+msgstr "Spotify"
+
+#: src/window/external_link_tile.rs:70
+msgid "Listen on Spotify"
+msgstr "Ακούστε στο Spotify"
+
+#: src/window/external_link_tile.rs:74
+msgid "YouTube"
+msgstr "YouTube"
+
+#: src/window/external_link_tile.rs:75
+msgid "Search on YouTube"
+msgstr "Αναζήτηση στο YouTube"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/external_link_tile.rs:145
+msgid "Failed to launch {key}"
+msgstr "Αποτυχία εκκίνησης {key}"
+
+#: src/window/history_view.rs:147 src/window/song_page.rs:80
+msgid "Copied to clipboard"
+msgstr "Αντιγράφηκε στο πρόχειρο"
+
+#: src/window/history_view.rs:160
+msgid "Failed to remove selected songs"
+msgstr "Αποτυχία κατάργησης επιλεγμένων τραγουδιών"
+
+#: src/window/history_view.rs:357
+msgid "Failed to remove song"
+msgstr "Η κατάργηση του τραγουδιού απέτυχε"
+
+#: src/window/history_view.rs:562
+msgid "Failed to show recognizer results"
+msgstr "Αποτυχία εμφάνισης αποτελεσμάτων αναγνώρισης"
+
+#: src/window/history_view.rs:669
+msgid "_Undo"
+msgstr "_Αναίρεση"
+
+#: src/window/history_view.rs:681
+msgid "Failed to undo"
+msgstr "Αποτυχία αναίρεσης"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:706
+msgid "Removed {n_removed} song"
+msgid_plural "Removed {n_removed} songs"
+msgstr[0] "Αφαιρέθηκε {n_removed} τραγούδι"
+msgstr[1] "Αφαιρέθηκε {n_removed} τραγούδια"
+
+#: src/window/history_view.rs:829
+msgid "Select items"
+msgstr "Επιλέξτε στοιχεία"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/history_view.rs:833
+msgid "Selected {selection_size} song"
+msgid_plural "Selected {selection_size} songs"
+msgstr[0] "Επιλεγμένο {selection_size} τραγούδι"
+msgstr[1] "Επιλεγμένα {selection_size} τραγούδια"
+
+#: src/window/history_view.rs:843
+msgid "Copy Song"
+msgid_plural "Copy Songs"
+msgstr[0] "Αντιγραφή τραγουδιού"
+msgstr[1] "Αντιγραφή τραγουδιών"
+
+#: src/window/history_view.rs:850
+msgid "Remove Song From History"
+msgid_plural "Remove Songs From History"
+msgstr[0] "Αφαιρέστε το τραγούδι από το ιστορίκο"
+msgstr[1] "Αφαιρέστε τα τραγούδια από το ιστορίκο"
+
+#: src/window/mod.rs:214
+msgid "Failed to insert song to history"
+msgstr "Αποτυχία εισαγωγής τραγουδιού στο ιστορικό"
+
+#: src/window/mod.rs:262
+msgid "Please open an issue on GitHub and provide the necessary information"
+msgstr "Ανοίξτε ένα issue στο GitHub και δώστε τις απαραίτητες πληροφορίες"
+
+#: src/window/mod.rs:265 src/window/mod.rs:297
+msgid "No, Thanks"
+msgstr "Οχι ευχαριστώ"
+
+#: src/window/mod.rs:267
+msgid "Open an Issue"
+msgstr "Ανοίξτε ένα Issue στο GitHub"
+
+#: src/window/mod.rs:294
+msgid ""
+"Try moving closer to the source or using a different excerpt of the song"
+msgstr ""
+"Δοκιμάστε να μετακινηθείτε πιο κοντά στην πηγή ή να χρησιμοποιήσετε ένα "
+"διαφορετικό απόσπασμα του τραγουδιού"
+
+#: src/window/mod.rs:299
+msgid "Try Again"
+msgstr "Προσπάθησε ξανά"
+
+#: src/window/mod.rs:334
+msgid "Recording Saved"
+msgstr "Η Εγγραφή Αποθηκεύτηκε"
+
+#: src/window/mod.rs:342
+msgid "The result will be available when you're back online"
+msgstr "Το αποτέλεσμα θα είναι διαθέσιμο όταν ξανασυνδεθείτε στο Διαδίκτυο"
+
+#: src/window/mod.rs:345
+msgid "Ok, Got It"
+msgstr "Εντάξει, Κατάλαβα"
+
+#: src/window/mod.rs:355
+msgid ""
+"The result will be available when your token limit is reset. Wait until the "
+"limit is reset or open preferences and try setting a different token"
+msgstr ""
+"Το αποτέλεσμα θα είναι διαθέσιμο όταν γίνει επαναφορά του ορίου του "
+"διακριτικού σας. Περιμένετε έως ότου γίνει επαναφορά του ορίου ή ανοίξτε τις "
+"προτιμήσεις και δοκιμάστε να ορίσετε ένα διαφορετικό διακριτικό"
+
+#: src/window/mod.rs:358
+msgid "I'll Wait"
+msgstr "Θα περιμένω"
+
+#: src/window/mod.rs:362
+msgid ""
+"The result will be available when your token is replaced with a valid one. "
+"Open preferences and try setting a different token"
+msgstr ""
+"Το αποτέλεσμα θα είναι διαθέσιμο όταν το διακριτικό σας αντικατασταθεί με "
+"ένα έγκυρο. Ανοίξτε τις προτιμήσεις και δοκιμάστε να ορίσετε ένα διαφορετικό "
+"διακριτικό"
+
+#: src/window/mod.rs:365
+msgid "Later"
+msgstr "Αργότερα"
+
+#: src/window/mod.rs:370
+msgid "Open Preferences"
+msgstr "Ανοίξτε τις Προτιμήσεις"
+
+#: src/window/mod.rs:466
+msgid "An error occurred in the player"
+msgstr "Παρουσιάστηκε σφάλμα στη συσκευή αναπαραγωγής"
+
+#: src/window/playback_button.rs:97
+msgid "Play"
+msgstr "Αναπαραγωγή"
+
+#: src/window/playback_button.rs:103
+msgid "Pause"
+msgstr "Παύση"
+
+#: src/window/recognized_page.rs:151
+msgid "Recognized Song"
+msgid_plural "Recognized Songs"
+msgstr[0] "Αναγνωρισμένο τραγούδι"
+msgstr[1] "Αναγνωρισμένα τραγούδια"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognized_page.rs:157
+msgid "Recognized {n_songs} New Song"
+msgid_plural "Recognized {n_songs} New Songs"
+msgstr[0] "Αναγνωρισμένο {n_songs} νέο τραγούδι"
+msgstr[1] "Αναγνωρισμένα {n_songs} νέα τραγούδια"
+
+#: src/window/recognized_page.rs:163
+msgid "This song was recognized from your saved recording"
+msgid_plural "These songs were recognized from your saved recordings"
+msgstr[0] "Αυτό το τραγούδι αναγνωρίστηκε από την αποθηκευμένη εγγραφή σας"
+msgstr[1] "Αυτά το τραγούδια αναγνωρίστηκαν από τις αποθηκευμένες εγγραφές σας"
+
+#. Translators: Do NOT translate the contents between '{' and '}', this is a variable name.
+#: src/window/recognizer_status.rs:172
+msgid "Recognized {n_successful} Out Of {total_minus_failed}"
+msgstr "Αναγνωρισμένα {n_succif} από {total_minus_failed}"
+
+#: src/window/recognizer_view.rs:149
+msgid "Listening…"
+msgstr "Ακρόαση…"
+
+#: src/window/recognizer_view.rs:154
+msgid "Recognizing…"
+msgstr "Αναγνώριση…"
+
+#: src/window/song_page.rs:374
+msgid "Unknown"
+msgstr "Άγνωστο"
+
+#: src/window/song_tile.rs:359
+msgid "Unselect"
+msgstr "Αποεπιλογή"
+
+#~ msgid "Donate (Buy Me a Coffee)"
+#~ msgstr "Δωρεά (Αγόρασέ μου έναν καφέ)"
+
+#~ msgid "Select _None"
+#~ msgstr "Επιλογή_Κανενός"
+
+#~ msgid "Dave Patrick Caberto"
+#~ msgstr "Dave Patrick Caberto"
+
+#~ msgid "Determines the audio source to use when available"
+#~ msgstr "Καθορίζει την πηγή ήχου που θα χρησιμοποιηθεί όταν είναι διαθέσιμη"
+
+#~ msgid "© 2023 Dave Patrick Caberto"
+#~ msgstr "© 2023 Dave Patrick Caberto"
+
+#~ msgid "🎵 Recognize songs within seconds or save for later when offline"
+#~ msgstr ""
+#~ "🎵 Αναγνώριση τραγουδιών μέσα σε δευτερόλεπτα ή αποθήκευση για αργότερα "
+#~ "όταν είστε εκτός σύνδεσης"
+
+#~ msgid "🎙️ Use microphone or desktop audio"
+#~ msgstr "🎙️ Χρήση μικροφώνου ή ήχου γραφείου εργασίας"
+
+#~ msgid "Back"
+#~ msgstr "Πίσω"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Navigation"
+#~ msgstr "Πλοήγηση"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Go Back"
+#~ msgstr "Πηγαίνετε πίσω"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Go Forward"
+#~ msgstr "Πάμε μπροστά"
+
+#~ msgid "Donate (Liberapay)"
+#~ msgstr "Δωρεά (Liberapay)"
+
+#~ msgid "Donate (PayPal)"
+#~ msgstr "Δωρεά (PayPal)"
+
+#~ msgid "Failed to launch {}"
+#~ msgstr "Απέτυχε να ξεκινήσει {}"
+
+#~ msgid "Removed {} song"
+#~ msgid_plural "Removed {} songs"
+#~ msgstr[0] "Καταργήθηκε {} τραγούδι"
+#~ msgstr[1] "Καταργήθηκαν {} τραγούδια"
+
+#~ msgid "Selected {} song"
+#~ msgid_plural "Selected {} songs"
+#~ msgstr[0] "Επιλεγμένο {} τραγούδι"
+#~ msgstr[1] "Επιλεγμένα {} τραγούδια"
+
+#~ msgid "Recognized {} Out Of {}"
+#~ msgid_plural "Recognized {} Out Of {} Songs"
+#~ msgstr[0] "Αναγνωρίστηκε {} από {}"
+#~ msgstr[1] "Αναγνωρίστηκαν {} από {} τραγούδια"
+
+#~ msgid "Shazam;Audio;Music;Song;Identify;Recognition;"
+#~ msgstr "Shazam;Ήχος;Μουσική;Τραγούδι;Εντοπισμός;Αναγνώριση;"
+
+#~ msgid ""
+#~ "Mousai is a simple application that can identify song similar to Shazam. "
+#~ "Just click the listen button, and then wait a few seconds. It will "
+#~ "magically return the title and artist of that song!"
+#~ msgstr ""
+#~ "Το Mousai είναι μια απλή εφαρμογή που μπορεί να αναγνωρίσει ένα τραγούδι "
+#~ "παρόμοιο με το Shazam. Απλώς κάντε κλικ στο κουμπί ακρόαση και, στη "
+#~ "συνέχεια, περιμένετε μερικά δευτερόλεπτα. Θα επιστρέψει μαγικά τον τίτλο "
+#~ "και τον καλλιτέχνη αυτού του τραγουδιού!"
+
+#~ msgid ""
+#~ "This is likely caused by a tampered or corrupted database. You can try "
+#~ "clearing application data. However, this is not recommended and will "
+#~ "delete all your songs and saved recordings.\n"
+#~ "\n"
+#~ "To report this issue, please launch Mousai in the terminal to include the "
+#~ "logs and submit the bug report to the <a href=\"https://github.com/SeaDve/"
+#~ "Mousai/issues/\">issue page</a>."
+#~ msgstr ""
+#~ "Αυτό πιθανότατα προκαλείται από μια παραποιημένη ή κατεστραμμένη βάση "
+#~ "δεδομένων. Μπορείτε να δοκιμάσετε να διαγράψετε τα δεδομένα της "
+#~ "εφαρμογής. Ωστόσο, αυτό δε συνιστάται και θα διαγράψει όλα τα τραγούδια "
+#~ "και τις αποθηκευμένες ηχογραφήσεις σας.\n"
+#~ "\n"
+#~ "Για να αναφέρετε αυτό το ζήτημα, εκκινήστε το Mousai στο τερματικό για να "
+#~ "συμπεριλάβετε τα αρχεία καταγραφής και υποβάλετε την αναφορά σφαλμάτων "
+#~ "στη <a href=\"https://github.com/SeaDve/Mousai/issues/\">σελίδα "
+#~ "προβλήματος</a>."
+
+#~ msgid "Start Identifying Music"
+#~ msgstr "Ξεκινήστε να αναγνωρίζετε μουσική"
+
+#~ msgid "Open Main Menu"
+#~ msgstr "Άνοιγμα κυρίως Menu"
+
+#~ msgid "Search for Songs"
+#~ msgstr "Αναζήτηση για Τραγούδια"
+
+#~ msgid "Cancel Select"
+#~ msgstr "Ακύρωση Επιλογής"
+
+#~ msgid "Enter song or artist name"
+#~ msgstr "Εισαγωγή ονόματος τραγουδιού ή καλλιτέχνη"
+
+#~ msgid "Start Identifying Music!"
+#~ msgstr "Ξεκινήστε να αναγνωρίζετε μουσική!"
+
+#~ msgid "Click the listen button to start."
+#~ msgstr "Κάντε κλικ στο κουμπί ακρόασης για να ξεκινήσετε."
+
+#~ msgid "No Results Found"
+#~ msgstr "Δεν βρέθηκαν αποτελέσματα"
+
+#~ msgid "Try a different search."
+#~ msgstr "Δοκιμάστε μια διαφορετική αναζήτηση."
+
+#~ msgid "Determines the audio source to select when available."
+#~ msgstr "Καθορίζει την πηγή ήχου που θα επιλέξετε όταν είναι διαθέσιμη."
+
+#~ msgid ""
+#~ "You can get yourself an API token from <a href=\"https://"
+#~ "dashboard.audd.io/\">audd.io</a>. Leaving this blank will give you a few "
+#~ "trials per day."
+#~ msgstr ""
+#~ "Μπορείτε να αποκτήσετε ένα διακριτικό API από το <a href=\"https://"
+#~ "dashboard.audd.io/\">audd.io</a>. Αν αφήσετε αυτό το κενό, θα έχετε "
+#~ "μερικές δοκιμές την ημέρα."
+
+#~ msgid "Go Back"
+#~ msgstr "Πήγαινε πίσω"
+
+#~ msgid "The result will be available when you're back online."
+#~ msgstr "Το αποτέλεσμα θα είναι διαθέσιμο όταν συνδεθείτε ξανά."
+
+#~ msgid "Recording saved"
+#~ msgstr "Η εγγραφή αποθηκεύτηκε"
+
+#~ msgid "Ok, got it"
+#~ msgstr "Εντάξει το κατάλαβα"
+
+#~ msgid "Open preferences and try setting a different token."
+#~ msgstr ""
+#~ "Ανοίξτε τις προτιμήσεις και δοκιμάστε να ορίσετε ένα διαφορετικό "
+#~ "διακριτικό."
+
+#~ msgid ""
+#~ "Wait until the limit is reset or open preferences and try setting a "
+#~ "different token."
+#~ msgstr ""
+#~ "Περιμένετε έως ότου γίνει επαναφορά του ορίου ή ανοίξτε τις προτιμήσεις "
+#~ "και δοκιμάστε να ορίσετε ένα διαφορετικό διακριτικό."
+
+#~ msgid ""
+#~ "Please open an issue on GitHub and provide the necessary information."
+#~ msgstr "Ανοίξτε ένα θέμα στο GitHub και δώστε τις απαραίτητες πληροφορίες."
+
+#~ msgid "Please check your internet connection."
+#~ msgstr "Ελέγξτε τη σύνδεσή σας στο Διαδίκτυο."
+
+#~ msgid "Ok"
+#~ msgstr "Εντάξει"
+
+#~ msgid "Recognized {} new song"
+#~ msgid_plural "Recognized {} new songs"
+#~ msgstr[0] "Αναγνωρίστηκε {} νέο τραγούδι"
+#~ msgstr[1] "Αναγνωρίστηκαν {} νέα τραγούδια"
+
+#~ msgid "This song was heard while you're offline"
+#~ msgid_plural "These songs were heard while you're offline"
+#~ msgstr[0] "Αυτό το τραγούδι ακούστηκε ενώ είστε εκτός σύνδεσης"
+#~ msgstr[1] "Αυτά τα τραγούδια ακούστηκαν ενώ είστε εκτός σύνδεσης"
+
+#~ msgid "Default window width"
+#~ msgstr "Προεπιλεγμένο πλάτος παραθύρου"
+
+#~ msgid "Default window height"
+#~ msgstr "Προεπιλεγμένο ύψος παραθύρου"
+
+#~ msgid "Default window maximized behaviour"
+#~ msgstr "Προεπιλεγμένη μέγιστη συμπεριφορά παραθύρου"
+
+#~ msgid "Contains recently recognized songs"
+#~ msgstr "Περιέχει πρόσφάτως αναγνωρισμένα τραγούδια"
+
+#~ msgid "🎵 Identify the title and artist of the song within seconds."
+#~ msgstr ""
+#~ "🎵 Προσδιορίστε τον τίτλο και τον καλλιτέχνη του τραγουδιού μέσα σε λίγα "
+#~ "δευτερόλεπτα."
+
+#~ msgid "🎙️ Use your microphone or audio from desktop."
+#~ msgstr ""
+#~ "🎙️ ️ ️ Χρησιμοποιήστε το μικρόφωνο ή τον ήχο σας από την επιφάνεια εργασίας."
+
+#~ msgid "🎸 Store the identified song including the album art in history."
+#~ msgstr ""
+#~ "🎸 Αποθηκεύστε το αναγνωρισμένο τραγούδι, συμπεριλαμβανομένου του "
+#~ "εξώφυλλου του άλμπουμ στην ιστορία."
+
+#~ msgid "🎼 Preview the identified song with the native player."
+#~ msgstr ""
+#~ "🎼 Προεπισκόπηση του αναγνωρισμένου τραγουδιού με το δικό σας πρόγραμμα "
+#~ "αναπαραγωγής μουσικής."
+
+#~ msgid "🌐 Browse and listen the song from different providers."
+#~ msgstr "🌐 Περιηγηθείτε και ακούστε το τραγούδι από διαφορετικούς παρόχους."
+
+#~ msgid "📱 Easy-to-use user interface."
+#~ msgstr "📱 Εύκολη στη χρήση διεπαφή χρήστη."
+
+#~ msgid "⌨️ User-friendly keyboard shortcuts."
+#~ msgstr "⌨️ Φιλικές προς το χρήστη συντομεύσεις πληκτρολογίου."
+
+#~ msgid "Dave Patrick"
+#~ msgstr "Dave Patrick"
+
+#~ msgid "_Preferred Audio Source"
+#~ msgstr "_Προτιμώμενη πηγή ήχου"
+
+#~ msgid "Return to Main Page"
+#~ msgstr "Επιστροφή στην Κεντρική Σελίδα"
+
+#~ msgid "Copyright 2022 Dave Patrick"
+#~ msgstr "Πνευματικά δικαιώματα 2022 Dave Patrick"
+
+#~ msgid "Cancelled recording"
+#~ msgstr "Ακυρωμένη εγγραφή"
+
+#~ msgid "Cancelled recognizing"
+#~ msgstr "Ακυρώθηκε η αναγνώριση"
+
+#~ msgid ""
+#~ "Failed to convert the recording to base64. Please report this to Mousai's "
+#~ "bug tracker."
+#~ msgstr ""
+#~ "Αποτυχία μετατροπής της εγγραφής σε base64. Παρακαλούμε να το αναφέρετε "
+#~ "στον ανιχνευτή σφαλμάτων του Mousai."
+
+#~ msgid "Failed to connect to the server."
+#~ msgstr "Αποτυχία σύνδεσης με το διακομιστή."
+
+#~ msgid "Failed to parse response. Please report this to Mousai's bug tracker"
+#~ msgstr ""
+#~ "Αποτυχία ανάλυσης απόκρισης. Παρακαλούμε αναφέρετέ το στον ανιχνευτή "
+#~ "σφαλμάτων του Mousai"
+
+#~ msgid "Daily limit has been reached."
+#~ msgstr "Το ημερήσιο όριο έχει συμπληρωθεί."
+
+#~ msgid "Failed to fingerprint audio. There may be no sound heard."
+#~ msgstr ""
+#~ "Αποτυχία λήψης δακτυλικών αποτυπωμάτων ήχου. Μπορεί να μην ακούγεται ήχος."
+
+#~ msgid "Got invalid status response of {}"
+#~ msgstr "Έλαβε μη έγκυρη απάντηση κατάστασης {}"
+
+#~ msgid "{} Check your internet connection."
+#~ msgstr "{} Ελέγξτε τη σύνδεσή σας στο διαδίκτυο."
+
+#~ msgid "No matches found for this song."
+#~ msgstr "Δεν βρέθηκαν αντιστοιχίες για αυτό το τραγούδι."
+
+#~ msgid "{} Input an API token in the preferences."
+#~ msgstr "{} Εισαγάγετε ένα διακριτικό API στις προτιμήσεις."
+
+#~ msgid "Please input a valid API token."
+#~ msgstr "Εισαγάγετε ένα έγκυρο API token."
+
+#~ msgid "Copied song to clipboard"
+#~ msgstr "Αντιγράφηκε το τραγούδι στο πρόχειρο"
+
+#~ msgid "Click on items to select them"
+#~ msgstr "Κάντε κλικ στα στοιχεία για να τα επιλέξετε"
+
+#~ msgid "Failed to load history"
+#~ msgstr "Η φόρτωση του ιστορικού απέτυχε"

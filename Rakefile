@@ -170,3 +170,40 @@ rescue LoadError
     warn("NOTE: stone_checksums isn't installed, or is disabled for #{RUBY_VERSION} in the current environment")
   end
 end
+
+# kettle-jem:freeze
+### TRANSLATIONS
+# The app reuses upstream's po/ catalogue byte for byte (same domain,
+# "mousai", same msgids) — see po/POTFILES.in and TRANSLATION_PARITY.md.
+#
+# Upstream's po/ uses GNOME's flat layout (po/<locale>.po); the `gettext`
+# gem's own GetText::Tools::Task assumes its own layout
+# (po/<locale>/<domain>.po) for merging/updating POs, which this port does
+# not want — po/*.po are donated translator work and are never regenerated
+# here. So this task only compiles, via `rmsgfmt` directly, each flat
+# po/<locale>.po into locale/<locale>/LC_MESSAGES/mousai.mo, which
+# lib/i18n.rb binds against at runtime.
+desc("Compile po/*.po into locale/<lang>/LC_MESSAGES/mousai.mo")
+namespace("gettext") do
+  namespace("mo") do
+    task("update") do
+      begin
+        require "gettext/tools/msgfmt"
+      rescue LoadError
+        warn("NOTE: the gettext gem isn't installed, or is disabled for #{RUBY_VERSION} in the current environment")
+        next
+      end
+
+      locales = File.read(File.join(__dir__, "po/LINGUAS")).split
+      locales.each do |locale|
+        po_file = File.join(__dir__, "po/#{locale}.po")
+        next unless File.exist?(po_file)
+
+        mo_dir = File.join(__dir__, "locale/#{locale}/LC_MESSAGES")
+        FileUtils.mkdir_p(mo_dir)
+        GetText::Tools::MsgFmt.run(po_file, "-o", File.join(mo_dir, "mousai.mo"))
+      end
+    end
+  end
+end
+# kettle-jem:unfreeze
