@@ -138,6 +138,28 @@ GtkDriver.drive(app, shots: "tmp/shots") do |d, application|
     d.shot("08-song-page")
   end
 
+  # Exercises the song-page.copy-song GAction the same way the copy button's
+  # action-name does — not the raw clipboard call, which would prove nothing
+  # about the action being wired up.
+  d.step("the copy-song action is activated") do
+    current_song_page = application.window.history_view.instance_variable_get(:@song_pages).last
+    current_song_page.root.activate_action("song-page.copy-song", nil)
+  end
+
+  d.step("the clipboard read is requested") do
+    $copied_clipboard_text = nil
+    current_song_page = application.window.history_view.instance_variable_get(:@song_pages).last
+    current_song_page.root.display.clipboard.read_text_async(nil) do |clipboard, result|
+      $copied_clipboard_text = clipboard.read_text_finish(result)
+    end
+  end
+
+  d.step("the clipboard holds the copied song") do
+    d.check("clipboard matches the song's artist - title") do
+      $copied_clipboard_text == application.song_list.to_a.first.artist_title_text
+    end
+  end
+
   d.step("the lyrics page is pushed") do
     application.window.history_view.push_lyrics_page(
       application.song_list.to_a.find { |song| song.lyrics },

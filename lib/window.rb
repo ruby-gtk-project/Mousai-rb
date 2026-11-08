@@ -327,9 +327,15 @@ module Mousai
           end
         end
 
-        @song_list.insert(song)
-        history_view.push_song_page(song)
-        history_view.scroll_to_top
+        begin
+          @song_list.insert(song)
+        rescue => e
+          warn("Failed to insert song to history: #{e}")
+          add_message_toast(I18n.gettext("Failed to insert song to history"))
+        else
+          history_view.push_song_page(song)
+          history_view.scroll_to_top
+        end
       end
   end
 end

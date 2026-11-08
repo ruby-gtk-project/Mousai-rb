@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Mousai
+Comment=Identify songs in seconds
+Type=Application
+Exec=mousai
+Terminal=false
+Categories=GNOME;GTK;Utility;
+# Translators: These are search terms to find this application. Do NOT translate or localize the semicolons. The list MUST also end with a semicolon.
+Keywords=Shazam;Audio;Music;Song;Recognize;Identify;Recognition;
+Icon=io.github.seadve.Mousai
+StartupNotify=true
+X-Purism-FormFactor=Workstation;Mobile;
+DBusActivatable=true

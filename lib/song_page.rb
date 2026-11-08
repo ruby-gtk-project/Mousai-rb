@@ -42,7 +42,9 @@ module Mousai
     end
 
     def build
-      root.tap do
+      root.tap do |page|
+        page.insert_action_group("song-page", action_group)
+
         toolbar_view.tap do |view|
           view.add_top_bar(header_bar)
           view.content = scroller
@@ -54,10 +56,6 @@ module Mousai
 
             remove_button.tap do |button|
               button.signal_connect("clicked") { request_remove }
-            end
-
-            copy_button.tap do |button|
-              button.signal_connect("clicked") { copy_song }
             end
           end
 
@@ -167,6 +165,21 @@ module Mousai
       @copy_button ||= Gtk::Button.new.tap do |button|
         button.tooltip_text = I18n.gettext("Copy")
         button.icon_name = "edit-copy-symbolic"
+        button.action_name = "song-page.copy-song"
+      end
+    end
+
+    # The page's own action group — upstream's `song-page.copy-song`,
+    # installed via `install_action` in `src/window/song_page.rs`.
+    def action_group
+      @action_group ||= Gio::SimpleActionGroup.new.tap do |group|
+        group.add_action(copy_song_action)
+      end
+    end
+
+    def copy_song_action
+      @copy_song_action ||= Gio::SimpleAction.new("copy-song").tap do |action|
+        action.signal_connect("activate") { copy_song }
       end
     end
 
@@ -283,7 +296,7 @@ module Mousai
       def copy_song
         @song.then do |song|
           if song
-            root.display.clipboard.set_text(song.artist_title_text)
+            root.display.clipboard.set(song.artist_title_text)
             @on_toast&.call(I18n.gettext("Copied to clipboard"))
           end
         end

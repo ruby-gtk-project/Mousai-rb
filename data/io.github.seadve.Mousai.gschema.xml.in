@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schemalist>
+  <schema path="/io/github/seadve/Mousai/" id="io.github.seadve.Mousai" gettext-domain="mousai">
+    <key name="window-width" type="i">
+      <default>768</default>
+      <summary>Window width</summary>
+      <description></description>
+    </key>
+    <key name="window-height" type="i">
+      <default>600</default>
+      <summary>Window height</summary>
+      <description></description>
+    </key>
+    <key name="window-maximized" type="b">
+      <default>false</default>
+      <summary>Whether the window is maximized</summary>
+      <description></description>
+    </key>
+
+    <key name="audio-source-type" type="s">
+      <choices>
+        <choice value="microphone"/>
+        <choice value="desktop-audio"/>
+      </choices>
+      <default>"microphone"</default>
+      <summary>Audio source type to use in recording audio</summary>
+      <description></description>
+    </key>
+
+    <key type="s" name="aud-d-api-token">
+      <default>""</default>
+      <summary>API token used by AudD recognition</summary>
+    </key>
+
+    <key type="aa{ss}" name="memory-list">
+      <default>[]</default>
+      <summary>Legacy (Kept for migration)</summary>
+    </key>
+  </schema>
+</schemalist>

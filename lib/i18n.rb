@@ -27,6 +27,11 @@ module Mousai
 
     def ngettext(msgid, msgid_plural, count) = n_(msgid, msgid_plural, count)
 
+    # `msgctxt`-aware lookup, for strings whose English text repeats across
+    # unrelated contexts (upstream's GtkBuilder `context="..."` attribute,
+    # e.g. the shortcuts window's `context="shortcut window"`).
+    def pgettext(msgctxt, msgid) = p_(msgctxt, msgid)
+
     # Like `gettext`, but replaces `{name}` with the value given for `name`.
     def gettext_f(msgid, args)
       freplace(gettext(msgid), args)

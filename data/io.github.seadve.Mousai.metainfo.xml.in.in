@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2024 Dave Patrick Caberto -->
+<component type="desktop-application">
+  <id>io.github.seadve.Mousai</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>Mousai</name>
+  <summary>Identify songs in seconds</summary>
+  <description>
+    <p>Discover songs you are aching to know with an easy-to-use interface.</p>
+    <p>Mousai is a simple application that can recognize songs similar to Shazam. Just click the listen button, and then wait a few seconds. It will magically return the title and artist of that song!</p>
+    <p>Note: This uses the API of audd.io, so it is necessary to log in to their site to get more trials.</p>
+    <p>Why you will love Mousai?</p>
+    <ul>
+      <li>🎵 Identify songs within seconds or save for later when offline</li>
+      <li>🎙️ Recognize from desktop audio or your microphone</li>
+      <li>🎸 Build a repertoire of recognized songs</li>
+      <li>🎼 Quickly preview the song within the interface</li>
+      <li>🌐 Browse and listen the song from different providers</li>
+      <li>📱 Easy-to-use user interface</li>
+    </ul>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/SeaDve/Mousai/main/data/resources/screenshots/screenshot1.png</image>
+      <caption>Mousai Home Page</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/SeaDve/Mousai/main/data/resources/screenshots/screenshot2.png</image>
+      <caption>Detailed view of identified song</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/SeaDve/Mousai/main/data/resources/screenshots/screenshot3.png</image>
+      <caption>Listening mode detecting the song</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/SeaDve/Mousai/main/data/resources/screenshots/screenshot4.png</image>
+      <caption>Recognized songs</caption>
+    </screenshot>
+  </screenshots>
+  <branding>
+    <color type="primary" scheme_preference="light">#99c1f1</color>
+    <color type="primary" scheme_preference="dark">#513d68</color>
+  </branding>
+  <url type="bugtracker">https://github.com/SeaDve/Mousai/issues</url>
+  <url type="homepage">https://github.com/SeaDve/Mousai</url>
+  <url type="donation">https://seadve.github.io/donate/</url>
+  <url type="translate">https://hosted.weblate.org/projects/seadve/mousai</url>
+  <url type="vcs-browser">https://github.com/SeaDve/Mousai</url>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="0.7.10" date="2026-04-19">
+      <description translate="no">
+        <p>This release contains the following changes:</p>
+        <ul>
+          <li>Updated UI</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.7.9" date="2025-08-23">
+      <description translate="no">
+        <p>This release contains the following changes:</p>
+        <ul>
+          <li>Updated UI</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.7.8" date="2024-09-25">
+      <description translate="no">
+        <p>This release contains the following changes:</p>
+        <ul>
+          <li>Lyrics are now on its own view</li>
+          <li>Navigation pages titles are now more consistent</li>
+          <li>Song bar now adapts to narrow mode</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.7.7" date="2024-03-24">
+      <description translate="no">
+        <p>This release contains the following changes:</p>
+        <ul>
+          <li>Offline mode recognition progress is now animated</li>
+          <li>Dialogs are now adaptive</li>
+          <li>Removed blur on song bar</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.7.6" date="2023-11-18">
+      <description translate="no">
+        <p>This release contains the following changes:</p>
+        <ul>
+          <li>Refreshed UI</li>
+          <li>Fixed offline mode handling</li>
+          <li>Fixed long press gesture on song tile</li>
+          <li>Fixed incorrect MPRIS implementation</li>
+          <li>Improved waveform sizing</li>
+          <li>Improved UI navigation</li>
+          <li>Plugged leaks</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.7.5" date="2023-05-02">
+      <description translate="no">
+        <p>This release contains the following changes:</p>
+        <ul>
+          <li>Added suggestions and more helpful messages when a recording is saved</li>
+          <li>Make song information row selectable</li>
+          <li>Fixed not using offline mode on limited and local connections</li>
+          <li>Fixed crash on missing format placeholder on certain translations</li>
+          <li>Improved UI texts writing style</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.7.4" date="2023-04-26">
+      <description translate="no">
+        <p>This release contains new features and fixes:</p>
+        <ul>
+          <li>Added blur background on song player bar</li>
+          <li>Improved saved recording messages</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.7.3" date="2023-04-22">
+      <description translate="no">
+        <p>This release contains a new feature and translation updates:</p>
+        <ul>
+          <li>Save the recording when the error is non-permanent even in non-offline mode</li>
+          <li>Fixed some untranslatable strings</li>
+          <li>Updated Ukrainian, Tamil, Arabic, Dutch, Norwegian Bokmål, Spanish, Italian, Filipino, Greek, Indonesian, and Croatian translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.7.2" date="2023-04-12">
+      <description translate="no">
+        <p>This release contains fixes:</p>
+        <ul>
+          <li>Added tooltip text on select tile button</li>
+          <li>Improved items changed implementation</li>
+          <li>Updated Arabic, Catalan, Ukrainian, Spanish, Italian, Greek, Tamil, French, and Finnish translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.7.1" date="2023-04-09">
+      <description translate="no">
+        <p>This release contains new features and fixes:</p>
+        <ul>
+          <li>Added button to try again on no matches</li>
+          <li>Added missing descriptions on the preferences</li>
+          <li>Search now ignores leading and trailing whitespaces</li>
+          <li>Fixed missing selection mode icon</li>
+          <li>Fixed warnings when a song has no album art link</li>
+          <li>Fixed warnings when a widget child was left on finalize</li>
+          <li>Updated Ukrainian, Dutch, Spanish, Filipino, Finnish, and French translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.7.0" date="2023-04-06">
+      <description translate="no">
+        <p>This update contains huge UI updates and fixes:</p>
+        <ul>
+          <li>New feature-rich UI</li>
+          <li>Added section to browse song information and checkout providers</li>
+          <li>Added offline mode</li>
+          <li>Added fuzzy search on the history</li>
+          <li>Added MPRIS support</li>
+          <li>Added ability to remove individual song from history</li>
+          <li>The title and artist of the song can now be copied from the UI</li>
+          <li>The player is now seekable</li>
+          <li>The recognizing stage is now cancellable</li>
+          <li>Fixed a lot of bugs and improved stability</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.6.6" date="2021-09-08">
+      <description translate="no">
+        <p>This update contains a fix and translation updates:</p>
+        <ul>
+          <li>Fixed wrong audio source</li>
+          <li>Updated Italian translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.6.5" date="2021-09-08">
+      <description translate="no">
+        <p>This is a very minor release containing translations update:</p>
+        <ul>
+          <li>Updated Chinese (Simplified) translations</li>
+          <li>Updated Indonesian translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.6.4" date="2021-09-02">
+      <description translate="no">
+        <p>This update contains new translations:</p>
+        <ul>
+          <li>Updated Turkish translations</li>
+          <li>Updated Polish translations</li>
+          <li>Updated Chinese (Simplified) translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.6.3" date="2021-08-27">
+      <description translate="no">
+        <p>This is a minor release containing updated translations:</p>
+        <ul>
+          <li>Updated Finnish translations</li>
+          <li>Updated German translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.6.2" date="2021-08-25">
+      <description translate="no">
+        <p>This is a fix release:</p>
+        <ul>
+          <li>Fix missing temporary directory</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.6.1" date="2021-08-24">
+      <description translate="no">
+        <p>This release contains bug fixes and translations updates:</p>
+        <ul>
+          <li>Fixed missiong icon on XFCE (thanks to @apandada1)</li>
+          <li>Updated Italian translations</li>
+          <li>Updated Spanish translations</li>
+          <li>Updated Japanese translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.6.0" date="2021-08-22">
+      <description translate="no">
+        <p>This release contains UI and translation improvements:</p>
+        <ul>
+          <li>Improved playing animation</li>
+          <li>Minor performance improvements</li>
+          <li>Updated Occitan translations</li>
+          <li>Updated Ukrainian translations</li>
+          <li>Updated Arabic translations</li>
+          <li>Updated German translations</li>
+          <li>Updated Filipino translations</li>
+          <li>Updated Dutch translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.5.2" date="2021-08-10">
+      <description translate="no">
+        <p>This is a small update with miscellaneous improvements:</p>
+        <ul>
+          <li>Added a beep sound when trying to do something</li>
+          <li>Added Finnish translations</li>
+          <li>Updated Turkish translations</li>
+          <li>Updated Portuguese (Brazil) translations</li>
+          <li>Updated Spanish translations</li>
+          <li>Updated Dutch translations</li>
+          <li>Updated Filipino translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.5.1" date="2021-08-08">
+      <description translate="no">
+        <p>This is a small update with miscellaneous improvements:</p>
+        <ul>
+          <li>More fine-tuned user interface</li>
+          <li>Added Japanese translations</li>
+          <li>Updated Occitan translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.5.0" date="2021-08-06">
+      <description translate="no">
+        <p>A semi-big release containing new features and major bug fixes:</p>
+        <ul>
+          <li>Added the ability to select preferred audio source (Either microphone or from desktop audio)</li>
+          <li>Added animation when playing a song</li>
+          <li>Check if there is an audio detected before sending request</li>
+          <li>Fixed not responding issue when the internet is slow</li>
+          <li>Fix multiple songs playing at once</li>
+          <li>Added Czech translations</li>
+          <li>Updated Filipino translations</li>
+          <li>Updated Turkish translations</li>
+          <li>Updated Dutch translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.4.4" date="2021-08-03">
+      <description translate="no">
+        <p>This update contains translations and minor ui fixes:</p>
+        <ul>
+          <li>Minor user interface improvements</li>
+          <li>Updated Swedish translations</li>
+          <li>Updated Norwegian Bokmål translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.4.3" date="2021-07-28">
+      <description translate="no">
+        <p>This update contains translations and minor fixes:</p>
+        <ul>
+          <li>Better user experience with token dialog</li>
+          <li>Updated Dutch translations</li>
+          <li>Updated Italian translations</li>
+          <li>Updated Turkish translations</li>
+          <li>Updated Spanish translations</li>
+          <li>Updated Esperanto translations</li>
+          <li>Updated French translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.4.2" date="2021-07-03">
+      <description translate="no">
+        <p>This update contains minor fixes:</p>
+        <ul>
+          <li>Added option to not show token dialog at startup</li>
+          <li>Minor performance improvements</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.4.1" date="2021-05-23">
+      <description translate="no">
+        <p>This contains some fixes for the last update:</p>
+        <ul>
+          <li>Improved UI icons</li>
+          <li>Minor performance improvements</li>
+          <li>Added token checker</li>
+          <li>Fixed a bug when clearing history while listening</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.4.0" date="2021-05-22">
+      <description translate="no">
+        <p>A release containing exciting new features and fixes!</p>
+        <ul>
+          <li>New built-in player for the identified music</li>
+          <li>Much improved UI, especially with GTK4</li>
+          <li>Much improved recorder efficiency</li>
+          <li>It now saves the window size</li>
+          <li>Several minor bug fixes</li>
+          <li>Updated Dutch translations</li>
+          <li>Updated German translations</li>
+          <li>Updated Spanish translations</li>
+          <li>Updated Italian translations</li>
+          <li>Updated Filipino translations</li>
+          <li>Updated Turkish translations</li>
+          <li>Updated French translations</li>
+          <li>Updated Norwegian Bokmål translations</li>
+          <li>Updated Portuguese (Brazil) translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.3.2" date="2021-05-05">
+      <description translate="no">
+        <p>Not a big release, but it has some notable changes:</p>
+        <ul>
+          <li>Improved UI experience</li>
+          <li>Much improved performance and startup</li>
+          <li>Added shortcuts for clearing history and resetting token</li>
+          <li>Updated Portuguese translations</li>
+          <li>Updated Turkish translations</li>
+          <li>Updated Filipino translations</li>
+          <li>Updated Dutch translations</li>
+          <li>Updated Indonesian translations</li>
+          <li>Updated French translations</li>
+          <li>Updated Italian translations</li>
+          <li>Updated German translations</li>
+          <li>Updated Spanish translations</li>
+          <li>Updated Chinese (Simplified) translations</li>
+          <li>Updated Portuguese (Brazil) translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.3.1" date="2021-04-09">
+      <description translate="no">
+        <p>Minor improvements:</p>
+        <ul>
+          <li>Minor UI Improvements</li>
+          <li>Window is no longer destroyed on clear history</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.3.0" date="2021-04-08">
+      <description translate="no">
+        <p>New features and performance improvements:</p>
+        <ul>
+          <li>Added a play button to preview songs</li>
+          <li>Song history would not output redundant songs now</li>
+          <li>Code cleaning</li>
+          <li>Added Dutch translations</li>
+          <li>Added Norweigan translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.2.0" date="2021-03-31">
+      <description translate="no">
+        <p>This update brings few bug fixes:</p>
+        <ul>
+          <li>Fixed a bug when there are two similar named songs</li>
+          <li>Fixed an error when the song was not recognized</li>
+          <li>Added an error when the token has run out</li>
+          <li>Added Filipino translations</li>
+          <li>Added Turkish translations</li>
+          <li>Added Portuguese translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.1.0" date="2021-03-30">
+      <description translate="no">
+        <p>Initial release.</p>
+      </description>
+    </release>
+  </releases>
+  <!-- developer_name tag deprecated with Appstream 1.0 -->
+  <developer_name translate="no">Dave Patrick Caberto</developer_name>
+  <developer id="io.github.seadve">
+    <name translate="no">Dave Patrick Caberto</name>
+  </developer>
+  <update_contact>davecruz48@gmail.com</update_contact>
+  <translation type="gettext">mousai</translation>
+  <launchable type="desktop-id">io.github.seadve.Mousai.desktop</launchable>
+  <requires>
+    <display_length compare="ge">360</display_length>
+  </requires>
+  <recommends>
+    <control>keyboard</control>
+    <control>pointing</control>
+    <control>touch</control>
+  </recommends>
+  <custom>
+    <value key="Purism::form_factor">mobile</value>
+  </custom>
+</component>

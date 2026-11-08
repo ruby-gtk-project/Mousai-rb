@@ -474,7 +474,7 @@ module Mousai
       def copy_selected_songs
         snapshot_selected_songs.then do |songs|
           unless songs.empty?
-            root.display.clipboard.set_text(songs.map(&:artist_title_text).join("\n"))
+            root.display.clipboard.set(songs.map(&:artist_title_text).join("\n"))
             @on_message_toast&.call(I18n.gettext("Copied to clipboard"))
           end
         end
@@ -483,8 +483,14 @@ module Mousai
       def remove_selected_songs
         snapshot_selected_songs.then do |songs|
           unless songs.empty?
-            remove_songs(songs.map(&:id))
-            show_undo_remove_song_toast
+            begin
+              remove_songs(songs.map(&:id))
+            rescue => e
+              warn("Failed to remove songs: #{e}")
+              @on_message_toast&.call(I18n.gettext("Failed to remove selected songs"))
+            else
+              show_undo_remove_song_toast
+            end
           end
         end
       end
@@ -525,8 +531,14 @@ module Mousai
       end
 
       def undo_remove_songs
-        @song_list.insert_many(@songs_purgatory)
-        @songs_purgatory = []
+        begin
+          @song_list.insert_many(@songs_purgatory)
+        rescue => e
+          warn("Failed to undo remove song: #{e}")
+          @on_message_toast&.call(I18n.gettext("Failed to undo"))
+        else
+          @songs_purgatory = []
+        end
       end
 
       def forget_removed_songs
@@ -675,8 +687,14 @@ module Mousai
       def remove_song_of(page)
         page.song.then do |song|
           if song
-            remove_songs([song.id])
-            show_undo_remove_song_toast
+            begin
+              remove_songs([song.id])
+            rescue => e
+              warn("Failed to remove song: #{e}")
+              @on_message_toast&.call(I18n.gettext("Failed to remove song"))
+            else
+              show_undo_remove_song_toast
+            end
           end
         end
       end
@@ -706,8 +724,14 @@ module Mousai
             end
           end
 
-          @song_list.insert_many(songs)
-          push_recognized_page(songs)
+          begin
+            @song_list.insert_many(songs)
+          rescue => e
+            warn("Failed to show recognizer results: #{e}")
+            @on_message_toast&.call(I18n.gettext("Failed to show recognizer results"))
+          else
+            push_recognized_page(songs)
+          end
         end
       end
   end
