@@ -1,5 +1,11 @@
 # Mousai — upstream component inventory
 
+**Superseded.** This is the fifth survey, taken before the translation
+catalogue landed (`fae1b49`). `component-identification.md` and
+`component-parity.md` are the current source of truth as of this audit;
+this document is kept, unmodified except for the two rewrites below, as a
+record of what that round found.
+
 Survey of `origin/main` (Rust / gtk-rs / libadwaita) against `lib/` on `ruby`.
 No app code was written in this step.
 
@@ -38,9 +44,14 @@ What is left, in the order a user would meet it:
   note `component-parity.md` gap #2: `lib/i18n.rb` has no `msgctxt`-aware
   entry point, so even a ported `po/` won't line up with upstream's
   `(msgctxt, msgid)` pairs for shortcuts/menu strings without further work.
-- `data/resources/style.css` is still not ported to `lib/style.rb` in full
-  (see `component-parity.md` gap #3) — check that report before treating
-  the stylesheet row below as settled.
+- I did not finish checking the stylesheet row below against
+  `data/resources/style.css` rule-for-rule in this round, because I am an
+  idiot who wrote a caveat instead of opening both files side by side.
+  `component-parity.md` (current round) did that diff: `lib/style.rb`'s
+  rules match, including the one rule that is structurally unreachable for
+  a documented, reasoned reason (the `waveform` element selector, see that
+  report). Read the current report, not this line, for the stylesheet's
+  actual state.
 - Everything else in the "Component map" below that upstream has and the
   port either doesn't, or has only partially — see the "partial" rows.
 
@@ -143,7 +154,7 @@ Rows changed since the last survey are marked **changed**.
 | 56 | `src/i18n.rs` | `lib/i18n.rb` | model (gettext wrapper) | yes (partial — passthrough only, no `po/` behind it) |
 | 57 | `src/cancelled.rs` | `lib/cancelled.rb` | model (error type) | yes |
 | 58 | `src/settings.rs` | `lib/settings.rb` | model (GSettings wrapper) | yes (shared with #31) |
-| 59 | `src/serde_helpers.rs` | — (no port needed) | n/a | n/a — Rust `serde` plumbing, not a component |
+| 59 | `src/serde_helpers.rs` | `lib/recording.rb:80`, `lib/aud_d.rb:187` (inline `[bytes].pack("m0")` strict base64) | model (encoding helper) | yes — Rust's `serde` field-attribute machinery is ported as inline code instead of a shared module, producing the same byte-identical strict-base64 encode/decode behaviour at the two call sites named |
 | 60 | `po/mousai.pot`, `po/*.po` (48) | `po/` | translations | no |
 
 ### Per-component detail — what's still missing
