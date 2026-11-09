@@ -96,18 +96,13 @@ Gem::Specification.new do |spec|
   spec.executables = ["mousai"]
   spec.require_paths = ["lib"]
 
-  # Runtime: the Ruby GTK4 / Libadwaita toolkit this app is built on, plus the
-  # bindings for the audio recognition stack (GstPlay via gstreamer_play, and
-  # libsoup via soup3).
-  spec.add_dependency("glib2", "~> 4.3")
-  spec.add_dependency("gtk4", "~> 4.3")
   spec.add_dependency("adwaita", "~> 4.3")
-  spec.add_dependency("gstreamer_play", "~> 1.1")
-  spec.add_dependency("gstreamer", "~> 4.4")
-  spec.add_dependency("soup3", "~> 1.0")
-  # Translation catalogue: binds po/*.po (reused byte-for-byte from upstream)
-  # at runtime. See lib/i18n.rb and po/POTFILES.in.
   spec.add_dependency("gettext", "~> 3.4")
+  spec.add_dependency("glib2", "~> 4.3")
+  spec.add_dependency("gstreamer", "~> 4.4")
+  spec.add_dependency("gstreamer_play", "~> 1.1")
+  spec.add_dependency("gtk4", "~> 4.3")
+  spec.add_dependency("soup3", "~> 1.0")
 
   # NOTE: It is preferable to list development dependencies in the gemspec due to increased
   #       visibility and discoverability.
